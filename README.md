@@ -1,3 +1,10 @@
+---
+description: >-
+  Framework enabling easy building of electronic registries and verifiable
+  credentials including attestation and verification flows. Part of Project
+  Sunbird. http://sunbird.org
+---
+
 # Welcome to Sunbird Registry and Credentials Framework
 
 ## Sunbird-RC

@@ -1,2 +1,0 @@
-# CODE\_OF\_CONDUCT
-
