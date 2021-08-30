@@ -1,7 +1,8 @@
 # Terminology
+| **Term** | **Description**  |
 
-| **Data** | **`Electronic data of any type. It could be simple data or composite data.`**  |
 | :--- | :--- |
+| **Data** | **Electronic data of any type. It could be simple data or composite data.**  |
 | **Database** | **A software system that stores and manages data.** |
 | **Schema** | **Machine readable definition of data.** |
 | **Actor \(Subject\)** | **A person, entity, or a thing who/which has been identified.** |
