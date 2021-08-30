@@ -10,5 +10,3 @@
 
 Registries based on these principles will drive data accuracy and build trust in the system among the actors of the ecosystem.
 
-### High level Diagram 
-

@@ -6,7 +6,6 @@
 
 ## Registry Concepts
 
-* [Core Principles](registry-concepts/core-principles.md)
 * [Terminology](registry-concepts/terminology.md)
 * [Design Principles](registry-concepts/design-principles.md)
 * [Workflows](registry-concepts/workflows.md)
