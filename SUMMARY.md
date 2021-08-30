@@ -14,6 +14,12 @@
 * [Enrolment](capabilities/enrolment.md)
 * [Claims](capabilities/claims.md)
 
+## Getting Started
+
+* [Schema Creation](getting-started/schema-creation.md)
+* [Install services](getting-started/install-services.md)
+* [Frontend Configuration](getting-started/frontend-configuration.md)
+
 ## Community
 
 * [Contributing](community/contributing.md)
