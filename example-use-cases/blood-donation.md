@@ -1,7 +1,5 @@
 # Blood Donation
 
-
-
 This is a registry of the typical subjects and flows involved in a Blood Donation scenario
 
 ### Subjects
