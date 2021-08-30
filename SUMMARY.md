@@ -33,4 +33,5 @@
 
 * [Contributing](community/contributing.md)
 * [Code of Conduct](community/code_of_conduct.md)
+* [Discussions](https://github.com/Sunbird-RC/community/discussions)
 
