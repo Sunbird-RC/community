@@ -19,3 +19,9 @@
 * [Contributing](community/contributing.md)
 * [Code of Conduct](community/code_of_conduct.md)
 
+## Example Use Cases
+
+* [Immunisation](example-use-cases/immunisation.md)
+* [Blood Donation](example-use-cases/blood-donation.md)
+* [Educational Registry](example-use-cases/educational-registry.md)
+
