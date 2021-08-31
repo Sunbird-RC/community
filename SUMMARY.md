@@ -10,7 +10,7 @@
 * [Design Principles](registry-concepts/design-principles.md)
 * [Workflows](registry-concepts/workflows.md)
 
-## Capabilities
+## Sunbird-RC Capabilities <a id="capabilities"></a>
 
 * [Enrolment](capabilities/enrolment.md)
 * [Claims](capabilities/claims.md)
