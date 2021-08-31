@@ -88,3 +88,11 @@ In this file `layouts` is an array with key/value pairs. They key is the code / 
 
 To avoid CORS issues you can use proxy configuration. Run `npm start` or `ng serve --proxy-config proxy.conf.json`. For additional configuration please check `proxy.conf.json` file.
 
+### Hosting the Frontend
+
+The frontend may be hosted any of the below ways
+
+* As a container. You may create an image with the angular build files. 
+* On a VM
+* In blob storage \(eg: S3, with a CDN in front\)
+
