@@ -25,9 +25,9 @@
 
 ## Example Use Cases
 
+* [Education](example-use-cases/educational-registry.md)
 * [Immunisation](example-use-cases/immunisation.md)
 * [Blood Donation](example-use-cases/blood-donation.md)
-* [Education](example-use-cases/educational-registry.md)
 
 ## Community
 
