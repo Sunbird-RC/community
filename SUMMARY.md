@@ -23,11 +23,11 @@
 * [Setup the Backend](getting-started/setup-the-backend.md)
 * [Setup the Frontend](getting-started/setup-the-frontend.md)
 
-## Example Use Cases
+## Reference Sample Solutions <a id="example-use-cases"></a>
 
-* [Education](example-use-cases/educational-registry.md)
-* [Immunisation](example-use-cases/immunisation.md)
-* [Blood Donation](example-use-cases/blood-donation.md)
+* [Education Registries](example-use-cases/educational-registry.md)
+* [Vaccination Platform](example-use-cases/immunisation.md)
+* [Digital Locker](example-use-cases/blood-donation.md)
 
 ## Community
 

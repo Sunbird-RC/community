@@ -1,13 +1,13 @@
-# Blood Donation
+# Digital Locker
 
-This is a registry of the typical subjects and flows involved in a Blood Donation scenario
+This reference solution provided basic starting point for building a digital locker platform to store and manage credentials of users.
 
 ### Subjects
 
-1. Blood Bank
-2. Blood Donor
+1. Credential Issuer
+2. Digital Locker
+3. End User
 
-### Supported Claims
+### Supported Flows
 
-1. Donation Claim : Added by Donor, and attested by Blood Bank
-
+1. 
