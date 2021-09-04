@@ -1,8 +1,8 @@
 # Table of contents
 
 * [Welcome to Sunbird-RC](README.md)
-* [Evolution of Electronic Registries](evolution-of-electronic-registries.md)
-* [Introduction to Electronic Registries](introduction-to-digital-registries.md)
+* [Evolution of Electronic Registries](evolution-electronic-registries.md)
+* [Introduction to Electronic Registries](intro-electronic-registries.md)
 
 ## Registry Concepts
 
@@ -25,9 +25,9 @@
 
 ## Reference Sample Solutions <a id="example-use-cases"></a>
 
-* [Education Registries](example-use-cases/educational-registry.md)
-* [Vaccination Platform](example-use-cases/immunisation.md)
-* [Digital Locker](example-use-cases/blood-donation.md)
+* [Education Registries](example-use-cases/edu-registries.md)
+* [Vaccination Platform](example-use-cases/vaccination.md)
+* [Digital Locker](example-use-cases/digital-locker.md)
 
 ## Community
 
