@@ -1,4 +1,4 @@
-# Introduction to Digital Registries
+# Introduction to Electronic Registries
 
 All digital platforms require master data and actor \(person/entity/thing\) data related to that system be maintained for identification, validation, etc. For example, a property tax system needs to maintain master data about properties, land boundaries, tax codes, tax payers, inspection officers, etc. in a structured and validated fashion so as to help manage the property tax transaction in a seamless manner. 
 

@@ -2,7 +2,7 @@
 
 * [Welcome to Sunbird Registry and Credentials Framework](README.md)
 * [Evolution of Electronic Registries](evolution-of-electronic-registries.md)
-* [Introduction to Digital Registries](introduction-to-digital-registries.md)
+* [Introduction to Electronic Registries](introduction-to-digital-registries.md)
 
 ## Registry Concepts
 
