@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome to Sunbird Registry and Credentials Framework](README.md)
+* [Welcome to Sunbird-RC](README.md)
 * [Evolution of Electronic Registries](evolution-of-electronic-registries.md)
 * [Introduction to Electronic Registries](introduction-to-digital-registries.md)
 
