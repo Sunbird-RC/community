@@ -4,20 +4,20 @@
 * [Evolution of Electronic Registries](evolution-electronic-registries.md)
 * [Introduction to Electronic Registries](intro-electronic-registries.md)
 
-## Registry Concepts
+## LEARN: Registry Concepts <a id="registry-concepts"></a>
 
 * [Terminology](registry-concepts/terminology.md)
 * [Design Principles](registry-concepts/design-principles.md)
 * [Workflows](registry-concepts/workflows.md)
 
-## Sunbird-RC Capabilities <a id="capabilities"></a>
+## UNDERSTAND: Sunbird-RC Capabilities <a id="capabilities"></a>
 
 * [Enrolment](capabilities/enrolment.md)
 * [Claims](capabilities/claims.md)
 * [Attestation](capabilities/attestation.md)
 * [Discovery](capabilities/discovery.md)
 
-## Getting Started
+## USE: Getting Started <a id="getting-started"></a>
 
 * [Schema Configuration](getting-started/schema-configuration.md)
 * [Setup the Backend](getting-started/setup-the-backend.md)
