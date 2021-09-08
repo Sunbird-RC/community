@@ -28,7 +28,6 @@
 
 ## Reference Solutions & Demos <a id="example-use-cases"></a>
 
-* [Demo Videos](example-use-cases/demo-videos.md)
 * [Education Registries](example-use-cases/edu-registries.md)
 * [Vaccination Platform](example-use-cases/vaccination.md)
 * [Digital Locker](example-use-cases/digital-locker.md)
