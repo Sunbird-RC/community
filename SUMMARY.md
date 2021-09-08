@@ -19,7 +19,7 @@
 
 ## USE: Getting Started <a id="getting-started"></a>
 
-* [Infrastructure Requirements](getting-started/infrastructure-requirements.md)
+* [Technical Requirements](getting-started/infrastructure-requirements.md)
 * [Schema Configuration](getting-started/schema-configuration.md)
 * [Setup the Backend](getting-started/setup-the-backend.md)
 * [Setup the Frontend](getting-started/setup-the-frontend.md)
