@@ -2,7 +2,7 @@
 
 
 
-If an existing database or directory where data exists which needs to be leveraged, following are the scenarios in which it can be done without compromising the core registry principles. 
+If an existing database or directory where data exists which needs to be leveraged, following are the scenarios in which it can be done without compromising the core registry principles.
 
 **Invitation for Registration Scenario**
 
