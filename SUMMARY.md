@@ -21,7 +21,8 @@
 
 * [Schema Configuration](getting-started/schema-configuration.md)
 * [Setup the Backend](getting-started/setup-the-backend.md)
-* [Setup the Frontend](getting-started/setup-the-frontend.md)
+* [Setup the Frontend](getting-started/setup-the-frontend/README.md)
+  * [Leveraging Existing data stores/ directories](getting-started/setup-the-frontend/leveraging-existing-data-stores-directories.md)
 
 ## Reference Sample Solutions <a id="example-use-cases"></a>
 
