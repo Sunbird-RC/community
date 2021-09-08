@@ -24,6 +24,7 @@
 * [Setup the Backend](getting-started/setup-the-backend.md)
 * [Setup the Frontend](getting-started/setup-the-frontend.md)
 * [Leveraging Existing data stores](getting-started/leveraging-existing-data-stores-directories.md)
+* [SSO with existing systems](getting-started/sso-with-existing-systems.md)
 
 ## Reference Sample Solutions <a id="example-use-cases"></a>
 
