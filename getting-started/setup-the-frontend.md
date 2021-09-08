@@ -2,6 +2,8 @@
 
 ### Installation
 
+You can get the latest code from the OpenSaber RC UI Repository [https://github.com/Sunbird-RC/opensaber-rc-ui](https://github.com/Sunbird-RC/opensaber-rc-ui)
+
 This is an Angular 8 project, and you need to install the dependencies, and run the project.
 
 ### Configuration
