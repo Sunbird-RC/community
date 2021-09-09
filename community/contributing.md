@@ -2,9 +2,18 @@
 
 There are several ways in which you can contribute. We're listing the most important ones here : 
 
-1. Contribute Features & Bug fixes 
-2. Implement reference solutions & use cases 
-3. Contribute & help others on the Discussions
-4. Help improve this documentation
-5. Help us spread the word & increase adoption 
+**Contribute Features & Bug fixes**  
+Head over to [Github](https://github.com/Sunbird-RC) and send in your pull requests for new features & bug fixes. For new features, add an Issue as a 'Requests for Comments \(RFC\) to get community feedback on feature ideas & approaches 
+
+**Contribute & help others on the Discussions**  
+Help answer questions & guide adopters on the [discussion board](https://github.com/Sunbird-RC/community/discussions)
+
+**Implement reference solutions & use cases**   
+Have a great idea where Sunbird-RC can be useful ? Add it to the documentation as a Use case. Even better if you can deploy your own copy of Sunbird-RC & add it to the reference solutions & demos section
+
+**Help improve this documentation**  
+This documentation is a collaboration & is managed via Github. The [community](https://github.com/Sunbird-RC/community) repository on Github can be used to contribute to documentation. 
+
+**Be a Product Evangelist**   
+Help us spread the word & increase adoption. A simple tweet can go a long way. But we'd love to see blogs, talks & podcasts as well !
 
