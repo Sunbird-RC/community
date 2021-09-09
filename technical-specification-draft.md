@@ -44,101 +44,101 @@ In the example given below Place is Concept that registry is storing supporting 
 
 #### Example:
 
-{
+`{`
 
- "$schema": "http://json-schema.org/draft-07/schema",
+ `"$schema": "http://json-schema.org/draft-07/schema",`
 
- "type": "object",
+ `"type": "object",`
 
- "properties": {
+ `"properties": {`
 
-   "Place": {
+   `"Place": {`
 
-     "$ref": "\#/definitions/Place"
+     `"$ref": "#/definitions/Place"`
 
-   }
+   `}`
 
- },
+ `},`
 
- "required": \[
+ `"required": [`
 
-   "Place"
+   `"Place"`
 
- \],
+ `],`
 
- "title": "Place",
+ `"title": "Place",`
 
- "definitions": {
+ `"definitions": {`
 
-   "Place": {
+   `"Place": {`
 
-     "$id": "\#/properties/Place",
+     `"$id": "#/properties/Place",`
 
-     "type": "object",
+     `"type": "object",`
 
-     "title": "The Place Schema",
+     `"title": "The Place Schema",`
 
-     "required": \[
+     `"required": [`
 
-       "name",
+       `"name",`
 
-       "city",
+       `"city",`
 
-       "addressRegion",
+       `"addressRegion",`
 
-       "country"
+       `"country"`
 
-     \],
+     `],`
 
-     "properties": {
+     `"properties": {`
 
-       "name": {
+       `"name": {`
 
-         "type": "string"
+         `"type": "string"`
 
-       },
+       `},`
 
-       "city": {
+       `"city": {`
 
-         "type": "string"
+         `"type": "string"`
 
-       },
+       `},`
 
-       "addressLocality": {
+       `"addressLocality": {`
 
-         "type": "string"
+         `"type": "string"`
 
-       },
+       `},`
 
-       "addressRegion": {
+       `"addressRegion": {`
 
-         "type": "string"
+         `"type": "string"`
 
-       },
+       `},`
 
-       "country": {
+       `"country": {`
 
-         "type": "string"
+         `"type": "string"`
 
-       },
+       `},`
 
-       "postalCode": {
+       `"postalCode": {`
 
-         "type": "string"
+         `"type": "string"`
 
-       },
+       `},`
 
-       "contact": {
+       `"contact": {`
 
-         "type": "string"
+         `"type": "string"`
 
-       }
+       `}`
 
-     }
+     `}`
 
-   }
+   `}`
 
- }}  
+ `}}`  
 
 
 ## Configuration
@@ -182,18 +182,17 @@ Primary keys from domain space will help enforce uniqueness of information and m
 
 Example:
 
-"uniqueIndexFields": \[
+`"uniqueIndexFields": [`
 
- "identityValue"
+ `"identityValue"`
 
-\]
+`]`
 
 ### Index field set
 
 Indexes can help in faster access to information, based on usage context index fields can be configured. Example:
 
-"indexFields": \["phoneNumber"\],  
-
+`"indexFields": ["phoneNumber"],`
 
 ### Validation Extensions
 
@@ -203,14 +202,11 @@ JSON LD schema allows defining basic type constraints like numeric type, text or
 
 OpenSaberRC supports following apis for accessing schema:
 
-GET /api/docs/&lt;entityName&gt;.json   
-
+GET /api/docs/&lt;entityName&gt;.json 
 
 Swagger document is accessible at 
 
-GET /api/docs/swagger.json  
-  
-
+GET /api/docs/swagger.json
 
 ## Attestation 
 
@@ -268,76 +264,69 @@ Example: Identity registry can be used to prove the identity of a subject withou
 
 ### Sign up
 
- Enrolment/Signup API supports use cases related to self signup or bulk invites to register in the registry. One of the principles of registry is to avoid stale data loading from databases and give control to subjects in participating in registration and managing their data \(Rather than someone else managing it for them\).  
+ Enrolment/Signup API supports use cases related to self signup or bulk invites to register in the registry. One of the principles of registry is to avoid stale data loading from databases and give control to subjects in participating in registration and managing their data \(Rather than someone else managing it for them\).
 
+`POST /api/v1/{entityName}/invite`
 
-POST /api/v1/{entityName}/invite
+`{`
 
-{
+`”name”:”Suresh”,`
 
-”name”:”Suresh”,
+`”email”:”suresh@example.com”`
 
-”email”:”suresh@example.com”
-
-}  
-
+`}`
 
 ### Update information
 
-PATCH /api/v1/{entityName}/{entityId}  
+`PATCH /api/v1/{entityName}/{entityId}`
 
+`{`
 
-{
+`”fieldPaths”:[”/name”]`
 
-”fieldPaths”:\[”/name”\]
-
-}
+`}`
 
 ## Discovery 
 
 ### Search API
 
-POST /api/v1/search
+`POST /api/v1/search`
 
-{
+`{`
 
- ”email”:”suresh@example.com”
+ `”email”:”suresh@example.com”`
 
-}
+`}`
 
 ### Directory
 
-Example pincode lookup  
+Example pincode lookup
 
+`POST /api/v1/search`
 
-POST /api/v1/search
+`{`
 
-{
+ `”state”:”Karnataka”`
 
- ”state”:”Karnataka”
-
-}  
-
+`}`
 
 ## Consent API
 
 ### Authentication flow
 
-### 
+![](.gitbook/assets/screenshot-2021-09-09-at-3.48.47-pm.png)
 
 ### Request scopes and sharing attributes
 
-GET /partner/api/v1/{entityName}  
-  
-
+GET /partner/api/v1/{entityName}
 
 ## Use Cases
 
-###  Building a Blood donor registry
+ Building a Blood donor registry
 
-###  Building simple pincode directory service
+ Building simple pincode directory service
 
-###  Immunization
+ Immunization
 
-###  Authentication and consent usage in learning application
+Authentication and consent usage in learning application
 
