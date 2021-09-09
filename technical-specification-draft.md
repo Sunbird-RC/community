@@ -33,6 +33,8 @@
 
 ## **Workflow**
 
+![](.gitbook/assets/screenshot-2021-09-09-at-3.46.52-pm.png)
+
 ## **Schema** 
 
 All registries have attributes pertaining to the entity or the fact in question either person or things. Schema defines the structure and constraints of the entity, open saber rc uses standard JSON-LD based schema.  
