@@ -44,101 +44,57 @@ In the example given below Place is Concept that registry is storing supporting 
 
 #### Example:
 
-`{`
+```
+{
+ "$schema": "http://json-schema.org/draft-07/schema",
+ "type": "object",
+ "properties": {
+   "Place": {
+     "$ref": "#/definitions/Place"
+   }
+ },
+ "required": [
+   "Place"
+ ],
+ "title": "Place",
+ "definitions": {
+   "Place": {
+     "$id": "#/properties/Place",
+     "type": "object",
+     "title": "The Place Schema",
+     "required": [
+       "name",
+       "city",
+       "addressRegion",
+       "country"
+     ],
+     "properties": {
+       "name": {
+         "type": "string"
+       },
+       "city": {
+         "type": "string"
+       },
+       "addressLocality": {
+         "type": "string"
+       },
+       "addressRegion": {
+         "type": "string"
+       },
+       "country": {
+         "type": "string"
+       },
+       "postalCode": {
+         "type": "string"
+       },
+       "contact": {
+         "type": "string"
+       }
+     }
+   }
+ }}
 
- `"$schema": "http://json-schema.org/draft-07/schema",`
-
- `"type": "object",`
-
- `"properties": {`
-
-   `"Place": {`
-
-     `"$ref": "#/definitions/Place"`
-
-   `}`
-
- `},`
-
- `"required": [`
-
-   `"Place"`
-
- `],`
-
- `"title": "Place",`
-
- `"definitions": {`
-
-   `"Place": {`
-
-     `"$id": "#/properties/Place",`
-
-     `"type": "object",`
-
-     `"title": "The Place Schema",`
-
-     `"required": [`
-
-       `"name",`
-
-       `"city",`
-
-       `"addressRegion",`
-
-       `"country"`
-
-     `],`
-
-     `"properties": {`
-
-       `"name": {`
-
-         `"type": "string"`
-
-       `},`
-
-       `"city": {`
-
-         `"type": "string"`
-
-       `},`
-
-       `"addressLocality": {`
-
-         `"type": "string"`
-
-       `},`
-
-       `"addressRegion": {`
-
-         `"type": "string"`
-
-       `},`
-
-       `"country": {`
-
-         `"type": "string"`
-
-       `},`
-
-       `"postalCode": {`
-
-         `"type": "string"`
-
-       `},`
-
-       `"contact": {`
-
-         `"type": "string"`
-
-       `}`
-
-     `}`
-
-   `}`
-
- `}}`  
+```
 
 
 ## Configuration
