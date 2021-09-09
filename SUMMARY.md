@@ -3,10 +3,10 @@
 * [Welcome to Sunbird-RC](README.md)
 * [Evolution of Electronic Registries](evolution-electronic-registries.md)
 * [Introduction to Electronic Registries](intro-electronic-registries.md)
+* [Technical Specification Draft](technical-specification-draft.md)
 
 ## LEARN: Registry Concepts <a id="registry-concepts"></a>
 
-* [Technical Specifications](registry-concepts/technical-specifications.md)
 * [Terminology](registry-concepts/terminology.md)
 * [Design Principles](registry-concepts/design-principles.md)
 * [Workflows](registry-concepts/workflows.md)
