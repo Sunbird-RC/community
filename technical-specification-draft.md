@@ -6,7 +6,7 @@ description: >-
 
 # Technical Specification Draft
 
-This is an early draft of the specification. You can give your feedback to improve the same via the [Discussions area](https://github.com/Sunbird-RC/community/discussions/categories/sunbird-rc-technical-specification-feedback).
+_**This is an early draft of the specification. You can give your feedback to improve the same via the**_ [_**Discussions area**_](https://github.com/Sunbird-RC/community/discussions/categories/sunbird-rc-technical-specification-feedback)_**.**_
 
 ## **Introduction**
 
@@ -284,3 +284,10 @@ Building simple pincode directory service
 Immunization
 
 Authentication and consent usage in learning application
+
+## **Open for feedback**
+
+_**This is an early draft of the specification. You can give your feedback to improve the same via the**_ [_**Discussions area**_](https://github.com/Sunbird-RC/community/discussions/categories/sunbird-rc-technical-specification-feedback)_**.**_
+
+## \*\*\*\*
+
