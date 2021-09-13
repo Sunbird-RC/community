@@ -10,6 +10,8 @@ description: >-
 
 If you are implementing a registry in a scenario where some pre-work has already happened & data exists in the form of some sort of a database, it might be prudent \(if the data is deemed accurate & trustworthy\) that some sort of an import mechanism be facilitated.  
 
+Benefits include faster implementation as well as alignment & utilisation of work done in the past allowing you to build on it rather than starting from scratch.  
+
 ### How
 
 If an existing database or directory where data exists which needs to be leveraged, following are the scenarios in which it can be done without compromising the core registry principles.
