@@ -1,4 +1,12 @@
+---
+description: >-
+  Read the draft technical specification for Sunbird RC & help improve it
+  through your feedback
+---
+
 # Technical Specification Draft
+
+This is an early draft of the specification. You can give your feedback to improve the same via the [Discussions area](https://github.com/Sunbird-RC/community/discussions/categories/sunbird-rc-technical-specification-feedback).
 
 ## **Introduction**
 
