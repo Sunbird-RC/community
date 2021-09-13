@@ -2,8 +2,7 @@
 
 ## **Introduction**
 
- All digital platforms require master data and actors \(person/entity/thing\) data related to that system to be maintained for identification, validation, etc. For example, a property tax system needs to maintain master data about properties, land boundaries, tax codes, tax payers, inspection officers, etc. in a structured and validated fashion so as to help manage the property tax transaction in a seamless manner. As India becomes data rich, it is essential that various data about people, entities, geographies, resources, assets, etc. are made available in electronic registries with Open APIs for other applications to seamlessly validate and use attested and authenticated data. This is even more critical when it comes to people and entities where various claims can be electronically validated against such registries via open APIs avoiding paper based validations, thus increasing trust while decreasing cost of validation.  
-
+All digital platforms require master data and actors \(person/entity/thing\) data related to that system to be maintained for identification, validation, etc. For example, a property tax system needs to maintain master data about properties, land boundaries, tax codes, tax payers, inspection officers, etc. in a structured and validated fashion so as to help manage the property tax transaction in a seamless manner. As India becomes data rich, it is essential that various data about people, entities, geographies, resources, assets, etc. are made available in electronic registries with Open APIs for other applications to seamlessly validate and use attested and authenticated data. This is even more critical when it comes to people and entities where various claims can be electronically validated against such registries via open APIs avoiding paper based validations, thus increasing trust while decreasing cost of validation.
 
 ## **Core principles**
 
@@ -13,7 +12,7 @@
 
 ## **Terminology**
 
-| Data | Electronic data of any type. It could be simple data or composite data.  |
+| Data | Electronic data of any type. It could be simple data or composite data. |
 | :--- | :--- |
 | Database | A software system that stores and manages data. |
 | Schema | Machine readable definition of data. |
@@ -23,7 +22,7 @@
 | Registration | Act of registering/enrolling the actor into a system |
 | Claim | A statement that is made by an actor which can be verified. |
 | Attestation | An act of verifying and authorizing specific data in a digitally signed fashion by an authorized individual/entity \(whose identities are typically linked to some other registries\). |
-| Discovery | An act of finding specific entries in a registry through a search/find mechanism.  |
+| Discovery | An act of finding specific entries in a registry through a search/find mechanism. |
 | Assertion | An act of verifying a claim. |
 | Consent | Approval of an actor given to another person/system to access the data of that actor for purposes of transaction/interaction. |
 | Credential | Digitally represented verifiable artifacts containing a qualification, achievement, milestone, fact, etc issued to an actor for them to be able to make claims. |
@@ -35,16 +34,15 @@
 
 ![](.gitbook/assets/screenshot-2021-09-09-at-3.46.52-pm.png)
 
-## **Schema** 
+## **Schema**
 
-All registries have attributes pertaining to the entity or the fact in question either person or things. Schema defines the structure and constraints of the entity, open saber rc uses standard JSON-LD based schema.  
-
+All registries have attributes pertaining to the entity or the fact in question either person or things. Schema defines the structure and constraints of the entity, open saber rc uses standard JSON-LD based schema.
 
 In the example given below Place is Concept that registry is storing supporting name, city, addressRegion \(state\) and country.
 
 #### Example:
 
-```
+```text
 {
  "$schema": "http://json-schema.org/draft-07/schema",
  "type": "object",
@@ -93,13 +91,11 @@ In the example given below Place is Concept that registry is storing supporting 
      }
    }
  }}
-
 ```
-
 
 ## Configuration
 
- In addition to JSON LD specific data types OpenSaberRC supports various extension configurations under “\_osConfig”. Access, indexing, primary key etc are configurable using schema configuration.
+In addition to JSON LD specific data types OpenSaberRC supports various extension configurations under “\_osConfig”. Access, indexing, primary key etc are configurable using schema configuration.
 
 #### Entity and Properties
 
@@ -107,30 +103,29 @@ In the example given below Place is Concept that registry is storing supporting 
 
 Supported types:
 
- String - Unicode text, additional regular expressions restrictions can be applied.
+String - Unicode text, additional regular expressions restrictions can be applied.
 
- Enum - restricted list of values
+Enum - restricted list of values
 
- Number - numeric data
+Number - numeric data
 
 #### List of attributes
 
- Collection of data values are also supported as multiple data value might represent the entity property for example subjects taught : \[“english”,”science”, “mathematics”\]
+Collection of data values are also supported as multiple data value might represent the entity property for example subjects taught : \[“english”,”science”, “mathematics”\]
 
 ### Visibility scope:
 
-3 types of visibility on attributes. 
+3 types of visibility on attributes.
 
 1. Public 
 2. Private \(privateFields\)
 3. Internal
 
-Public data attributes are available in discovery by default any sort of permission / authorization is not needed by default. 
+Public data attributes are available in discovery by default any sort of permission / authorization is not needed by default.
 
 Private attributes can be accessed by the owner by default, with consent 3rd party can access the data field.
 
-Internal fields are system fields that only serve internal functionalities, these can never be accessed by any actors in the system.  
-
+Internal fields are system fields that only serve internal functionalities, these can never be accessed by any actors in the system.
 
 #### Primary Keys for Entities
 
@@ -140,7 +135,7 @@ Example:
 
 `"uniqueIndexFields": [`
 
- `"identityValue"`
+`"identityValue"`
 
 `]`
 
@@ -158,13 +153,13 @@ JSON LD schema allows defining basic type constraints like numeric type, text or
 
 OpenSaberRC supports following apis for accessing schema:
 
-GET /api/docs/&lt;entityName&gt;.json 
+GET /api/docs/&lt;entityName&gt;.json
 
-Swagger document is accessible at 
+Swagger document is accessible at
 
 GET /api/docs/swagger.json
 
-## Attestation 
+## Attestation
 
 ### Configuration
 
@@ -174,53 +169,49 @@ Example:
 
 #### "attestationPolicies": \[
 
-####  {
+#### {
 
-####    "property": "experience/\[\]",
+#### "property": "experience/\[\]",
 
-####    "paths": \[
+#### "paths": \[
 
-####      "experience"
+#### "experience"
 
-####    \],
+#### \],
 
-####    "attestorEntity": "Institute",
+#### "attestorEntity": "Institute",
 
-####    "conditions": "\(ATTESTOR\#$.instituteName\#.contains\(REQUESTER\#$.institute\#\)\)"
+#### "conditions": "\(ATTESTOR\#$.instituteName\#.contains\(REQUESTER\#$.institute\#\)\)"
 
-####  },
+#### },
 
 ### Attestation API
 
 #### Attestation Types
 
-Since there will be mixed attestation requirements which need human verification and in some cases attestations can be completely digital, To begin with registries can allow both manual and automatic attestation types. A teacher rewarding and attesting the grades can be manual activity, identity claim can be attested digitally by identity provider like aadhaar. 
+Since there will be mixed attestation requirements which need human verification and in some cases attestations can be completely digital, To begin with registries can allow both manual and automatic attestation types. A teacher rewarding and attesting the grades can be manual activity, identity claim can be attested digitally by identity provider like aadhaar.
 
 Manual Attestation
 
- Manual attestation may need workflow, by default registry supports raising claim to pre-configured attestation requirement. The claim will be routed to appropriate authority / role based on the configuration. Once the claim gets approved / rejected it will show the status of respective fields in the claim as verified / invalid respectively.  
-
+Manual attestation may need workflow, by default registry supports raising claim to pre-configured attestation requirement. The claim will be routed to appropriate authority / role based on the configuration. Once the claim gets approved / rejected it will show the status of respective fields in the claim as verified / invalid respectively.
 
 Attestor configuration is controlled with “attestorEntity” configuration.
 
 Automated attestation
 
- Digital registries can inter-operate sharing the trusted claims and information among themselves. For doing so claim can be routed to automated registry verifier which will proxy for another registry and take care of verification and attestation. Such attestation can be time bound or one time attestation.  
-
+Digital registries can inter-operate sharing the trusted claims and information among themselves. For doing so claim can be routed to automated registry verifier which will proxy for another registry and take care of verification and attestation. Such attestation can be time bound or one time attestation.
 
 Example: Identity registry can be used to prove the identity of a subject without manual verification. Mobile OTP based consent flow can verify the identity and mark subjects name as verified. Eventually certificates issued by educational institutions can also get verified digitally.
 
 #### Custom extensions
 
- Attestation workflow might need custom stages and transition rules based on the usecase. Attestation is extensible to add or customize these workflows and add custom rules based on the need.  
-  
-
+Attestation workflow might need custom stages and transition rules based on the usecase. Attestation is extensible to add or customize these workflows and add custom rules based on the need.
 
 ## Enrolment / Signup
 
 ### Sign up
 
- Enrolment/Signup API supports use cases related to self signup or bulk invites to register in the registry. One of the principles of registry is to avoid stale data loading from databases and give control to subjects in participating in registration and managing their data \(Rather than someone else managing it for them\).
+Enrolment/Signup API supports use cases related to self signup or bulk invites to register in the registry. One of the principles of registry is to avoid stale data loading from databases and give control to subjects in participating in registration and managing their data \(Rather than someone else managing it for them\).
 
 `POST /api/v1/{entityName}/invite`
 
@@ -242,7 +233,7 @@ Example: Identity registry can be used to prove the identity of a subject withou
 
 `}`
 
-## Discovery 
+## Discovery
 
 ### Search API
 
@@ -250,7 +241,7 @@ Example: Identity registry can be used to prove the identity of a subject withou
 
 `{`
 
- `”email”:”suresh@example.com”`
+`”email”:”suresh@example.com”`
 
 `}`
 
@@ -262,7 +253,7 @@ Example pincode lookup
 
 `{`
 
- `”state”:”Karnataka”`
+`”state”:”Karnataka”`
 
 `}`
 
@@ -278,11 +269,11 @@ GET /partner/api/v1/{entityName}
 
 ## Use Cases
 
- Building a Blood donor registry
+Building a Blood donor registry
 
- Building simple pincode directory service
+Building simple pincode directory service
 
- Immunization
+Immunization
 
 Authentication and consent usage in learning application
 

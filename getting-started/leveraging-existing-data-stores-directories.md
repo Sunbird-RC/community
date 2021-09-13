@@ -1,4 +1,16 @@
+---
+description: >-
+  leverage existing trustworthy sources of data to accelerate registry
+  implementation
+---
+
 # Leveraging Existing data stores
+
+### Why
+
+If you are implementing a registry in a scenario where some pre-work has already happened & data exists in the form of some sort of a database, it might be prudent \(if the data is deemed accurate & trustworthy\) that some sort of an import mechanism be facilitated.  
+
+### How
 
 If an existing database or directory where data exists which needs to be leveraged, following are the scenarios in which it can be done without compromising the core registry principles.
 
