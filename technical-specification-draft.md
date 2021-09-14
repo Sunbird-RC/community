@@ -1,5 +1,5 @@
 ---
-description: >-
+Call for participation: >-
   Read the draft technical specification for Sunbird RC & help improve it
   through your feedback
 ---
@@ -141,17 +141,16 @@ Primary keys from domain space will help enforce uniqueness of information and m
 
 Example:
 
-`"uniqueIndexFields": [`
+```
+"uniqueIndexFields": [ "identityValue", ... ]
 
-`"identityValue"`
-
-`]`
+```
 
 ### Index field set
 
 Indexes can help in faster access to information, based on usage context index fields can be configured. Example:
 
-`"indexFields": ["phoneNumber"],`
+`"indexFields": ["phoneNumber", ... ],`
 
 ### Validation Extensions
 
@@ -161,11 +160,15 @@ JSON LD schema allows defining basic type constraints like numeric type, text or
 
 OpenSaberRC supports following apis for accessing schema:
 
-GET /api/docs/&lt;entityName&gt;.json
+```
+GET /api/docs/{entityName}.json
+```
 
 Swagger document is accessible at
 
+```
 GET /api/docs/swagger.json
+```
 
 ## Attestation
 
@@ -174,24 +177,17 @@ GET /api/docs/swagger.json
 Attestation on given set of fields is configurable with schema configuration. Below is the example for attestation requirement using DSL.
 
 Example:
-
-#### "attestationPolicies": \[
-
-#### {
-
-#### "property": "experience/\[\]",
-
-#### "paths": \[
-
-#### "experience"
-
-#### \],
-
-#### "attestorEntity": "Institute",
-
-#### "conditions": "\(ATTESTOR\#$.instituteName\#.contains\(REQUESTER\#$.institute\#\)\)"
-
-#### },
+```
+ "attestationPolicies": [
+ {
+     "property": "experience/\[\]",
+     "paths": [ "experience" ],
+     "attestorEntity": "Institute",
+     "conditions": "\(ATTESTOR\#$.instituteName\#.contains\(REQUESTER\#$.institute\#\)\)"
+ }, 
+  ...
+ ]
+```
 
 ### Attestation API
 
@@ -221,49 +217,43 @@ Attestation workflow might need custom stages and transition rules based on the 
 
 Enrolment/Signup API supports use cases related to self signup or bulk invites to register in the registry. One of the principles of registry is to avoid stale data loading from databases and give control to subjects in participating in registration and managing their data \(Rather than someone else managing it for them\).
 
-`POST /api/v1/{entityName}/invite`
-
-`{`
-
-`”name”:”Suresh”,`
-
-`”email”:”suresh@example.com”`
-
-`}`
+```
+POST /api/v1/{entityName}/invite
+{
+”name”:”Suresh”,
+”email”:”suresh@example.com”
+}
+```
 
 ### Update information
 
-`PATCH /api/v1/{entityName}/{entityId}`
-
-`{`
-
-`”fieldPaths”:[”/name”]`
-
-`}`
+```
+PATCH /api/v1/{entityName}/{entityId}
+{
+  ”fieldPaths”:[”/name”]
+}
+```
 
 ## Discovery
 
 ### Search API
 
-`POST /api/v1/search`
-
-`{`
-
-`”email”:”suresh@example.com”`
-
-`}`
+```
+POST /api/v1/search
+{
+  ”email”:”suresh@example.com”
+}
+```
 
 ### Directory
 
 Example pincode lookup
 
-`POST /api/v1/search`
-
-`{`
-
-`”state”:”Karnataka”`
-
-`}`
+```
+POST /api/v1/search
+{
+  ”state”:”Karnataka”
+}
 
 ## Consent API
 
