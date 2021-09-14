@@ -1,8 +1,6 @@
 # Technical Requirements
 
-
-
-#### Requirements for Service / API
+## Requirements for Service / API
 
 | Software | Recommended | Minimum Version |
 | :--- | :--- | :--- |
@@ -10,7 +8,4 @@
 | Linux / Docker | any | any |
 | Postgre sql | v12 | v8 |
 | Redis | 6 | 4 |
-
-
-
 

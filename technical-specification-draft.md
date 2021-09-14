@@ -141,9 +141,8 @@ Primary keys from domain space will help enforce uniqueness of information and m
 
 Example:
 
-```
+```text
 "uniqueIndexFields": [ "identityValue", ... ]
-
 ```
 
 ### Index field set
@@ -160,13 +159,13 @@ JSON LD schema allows defining basic type constraints like numeric type, text or
 
 OpenSaberRC supports following apis for accessing schema:
 
-```
+```text
 GET /api/docs/{entityName}.json
 ```
 
 Swagger document is accessible at
 
-```
+```text
 GET /api/docs/swagger.json
 ```
 
@@ -177,7 +176,8 @@ GET /api/docs/swagger.json
 Attestation on given set of fields is configurable with schema configuration. Below is the example for attestation requirement using DSL.
 
 Example:
-```
+
+```text
  "attestationPolicies": [
  {
      "property": "experience/\[\]",
@@ -217,7 +217,7 @@ Attestation workflow might need custom stages and transition rules based on the 
 
 Enrolment/Signup API supports use cases related to self signup or bulk invites to register in the registry. One of the principles of registry is to avoid stale data loading from databases and give control to subjects in participating in registration and managing their data \(Rather than someone else managing it for them\).
 
-```
+```text
 POST /api/v1/{entityName}/invite
 {
 ”name”:”Suresh”,
@@ -227,7 +227,7 @@ POST /api/v1/{entityName}/invite
 
 ### Update information
 
-```
+```text
 PATCH /api/v1/{entityName}/{entityId}
 {
   ”fieldPaths”:[”/name”]
@@ -238,7 +238,7 @@ PATCH /api/v1/{entityName}/{entityId}
 
 ### Search API
 
-```
+```text
 POST /api/v1/search
 {
   ”email”:”suresh@example.com”
@@ -249,11 +249,7 @@ POST /api/v1/search
 
 Example pincode lookup
 
-```
-POST /api/v1/search
-{
-  ”state”:”Karnataka”
-}
+\`\`\` POST /api/v1/search { ”state”:”Karnataka” }
 
 ## Consent API
 

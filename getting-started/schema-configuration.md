@@ -114,3 +114,4 @@ Indexes can help in faster access to information, based on usage context index f
 ### Validation Extensions
 
 JSON LD schema allows defining basic type constraints like numeric type, text or list of items etc. Also it allows a list of possible values for given attributes \(enum\) and regular expressions based constraints for the value.
+
