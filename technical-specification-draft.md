@@ -119,7 +119,7 @@ Number - numeric data
 
 #### List of attributes
 
-Collection of data values are also supported as multiple data value might represent the entity property for example subjects taught : \[“english”,”science”, “mathematics”\]
+Collection of data values are also supported as multiple data value might represent the entity property for example subjects taught : `[“english”,”science”, “mathematics”]`
 
 ### Visibility scope:
 
