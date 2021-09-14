@@ -7,6 +7,7 @@
 
 ## LEARN: Registry Concepts <a id="registry-concepts"></a>
 
+* [Verbs](registry-concepts/verbs.md)
 * [Terminology](registry-concepts/terminology.md)
 * [Design Principles](registry-concepts/design-principles.md)
 * [Workflows](registry-concepts/workflows.md)
@@ -14,9 +15,12 @@
 ## UNDERSTAND: Sunbird-RC Capabilities <a id="capabilities"></a>
 
 * [Enrolment](capabilities/enrolment.md)
+* [Athenticate](capabilities/consent.md)
+* [Consent](capabilities/consent.md)
 * [Claims](capabilities/claims.md)
 * [Attestation](capabilities/attestation.md)
 * [Discovery](capabilities/discovery.md)
+* [Update](capabilities/update.md)
 
 ## USE: Getting Started <a id="getting-started"></a>
 
