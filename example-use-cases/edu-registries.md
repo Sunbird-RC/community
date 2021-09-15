@@ -19,3 +19,9 @@ This is a registry of the common subjects involved in an educational system, and
 
 The source code to install this example can be found at [https://github.com/ref-registries/edu-core-registries](https://github.com/ref-registries/edu-core-registries)
 
+### Demo Videos
+
+#### Sunbird RC Education Use Case
+
+{% embed url="https://www.youtube.com/watch?v=pu9kZLE08uM" %}
+
