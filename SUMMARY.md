@@ -45,5 +45,5 @@
 
 ---
 
-* [Sample](sample.md)
+* [API sample](sample.md)
 
