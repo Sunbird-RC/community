@@ -1,2 +1,2 @@
-# Athenticate
+# Authenticate
 

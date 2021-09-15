@@ -15,7 +15,7 @@
 ## UNDERSTAND: Sunbird-RC Capabilities <a id="capabilities"></a>
 
 * [Enrolment](capabilities/enrolment.md)
-* [Athenticate](capabilities/athenticate.md)
+* [Authenticate](capabilities/athenticate.md)
 * [Consent](capabilities/consent.md)
 * [Claims](capabilities/claims.md)
 * [Attestation](capabilities/attestation.md)
