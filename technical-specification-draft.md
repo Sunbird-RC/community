@@ -207,6 +207,14 @@ Digital registries can inter-operate sharing the trusted claims and information 
 
 Example: Identity registry can be used to prove the identity of a subject without manual verification. Mobile OTP based consent flow can verify the identity and mark subjects name as verified. Eventually certificates issued by educational institutions can also get verified digitally.
 
+```
+POST /api/v1/{entityName}/{entityId}/attest/{propertyID}
+{ 
+  "action":"GRANT_CLAIM"
+  ...
+}
+```
+
 #### Custom extensions
 
 Attestation workflow might need custom stages and transition rules based on the usecase. Attestation is extensible to add or customize these workflows and add custom rules based on the need.
@@ -249,7 +257,9 @@ POST /api/v1/search
 
 Example pincode lookup
 
-\`\`\` POST /api/v1/search { ”state”:”Karnataka” }
+``` 
+POST /api/v1/search { ”state”:”Karnataka” }
+```
 
 ## Consent API
 
@@ -259,21 +269,20 @@ Example pincode lookup
 
 ### Request scopes and sharing attributes
 
+```
 GET /partner/api/v1/{entityName}
+```
 
 ## Use Cases
 
-Building a Blood donor registry
-
-Building simple pincode directory service
-
-Immunization
-
-Authentication and consent usage in learning application
+* Building a Blood donor registry
+* Building simple pincode directory service
+* Education registry
+* Immunization
+* Authentication and consent usage in learning application
 
 ## **Open for feedback**
 
 _**This is an early draft of the specification. You can give your feedback to improve the same via the**_ [_**Discussions area**_](https://github.com/Sunbird-RC/community/discussions/categories/sunbird-rc-technical-specification-feedback)_**.**_
 
-## \*\*\*\*
 
