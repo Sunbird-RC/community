@@ -23,5 +23,5 @@ The source code to install this example can be found at [https://github.com/ref-
 
 #### Sunbird RC Education Use Case
 
-{% embed url="https://www.youtube.com/watch?v=pu9kZLE08uM" %}
+{% embed url="https://youtu.be/XNEWA_pMhuU" %}
 
