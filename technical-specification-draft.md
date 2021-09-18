@@ -207,7 +207,7 @@ Digital registries can inter-operate sharing the trusted claims and information 
 
 Example: Identity registry can be used to prove the identity of a subject without manual verification. Mobile OTP based consent flow can verify the identity and mark subjects name as verified. Eventually certificates issued by educational institutions can also get verified digitally.
 
-```
+```text
 POST /api/v1/{entityName}/{entityId}/attest/{propertyID}
 { 
   "action":"GRANT_CLAIM"
@@ -257,7 +257,7 @@ POST /api/v1/search
 
 Example pincode lookup
 
-``` 
+```text
 POST /api/v1/search { ”state”:”Karnataka” }
 ```
 
@@ -269,7 +269,7 @@ POST /api/v1/search { ”state”:”Karnataka” }
 
 ### Request scopes and sharing attributes
 
-```
+```text
 GET /partner/api/v1/{entityName}
 ```
 
@@ -284,5 +284,4 @@ GET /partner/api/v1/{entityName}
 ## **Open for feedback**
 
 _**This is an early draft of the specification. You can give your feedback to improve the same via the**_ [_**Discussions area**_](https://github.com/Sunbird-RC/community/discussions/categories/sunbird-rc-technical-specification-feedback)_**.**_
-
 
