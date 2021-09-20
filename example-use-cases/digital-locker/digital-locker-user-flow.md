@@ -20,6 +20,8 @@ description: Exploration of reference solution for digital locker like solution.
 
 ### **User Flow \(Consumer\)**
 
+![](../../.gitbook/assets/image.png)
+
 #### **A. Registration/Onboarding**
 
 ![](https://lh6.googleusercontent.com/-DN5cdPyDLvr7o4DWoD-X9oHiZCfbjgYkPydKDDVOAWTopyN-bp_Er-AwpqdIPxG6hu8PYoV2kfHIwdgrhT6cyDvMPS3pPmM2xHKEx-n5myyjtveKH3xJGIFsvOwudhAd1uMCyjA=s0)
