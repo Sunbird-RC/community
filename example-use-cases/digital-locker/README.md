@@ -6,7 +6,7 @@ This reference solution provided basic starting point for building a digital loc
 
 **High Level Diagram \(WIP\)**
 
-![](../.gitbook/assets/digilocker-registry-and-credentialing-with-sunbird-rc.png)
+![](../../.gitbook/assets/digilocker-registry-and-credentialing-with-sunbird-rc.png)
 
 ### Subjects
 

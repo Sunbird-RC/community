@@ -35,7 +35,8 @@
 
 * [Education Registries](example-use-cases/edu-registries.md)
 * [Vaccination Platform](example-use-cases/vaccination.md)
-* [Digital Locker](example-use-cases/digital-locker.md)
+* [Digital Locker](example-use-cases/digital-locker/README.md)
+  * [User Flow](example-use-cases/digital-locker/digital-locker-user-flow.md)
 
 ## Community
 
