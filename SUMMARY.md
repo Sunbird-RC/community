@@ -12,7 +12,7 @@
 * [Design Principles](registry-concepts/design-principles.md)
 * [Workflows](registry-concepts/workflows.md)
 
-## UNDERSTAND: Sunbird-RC Capabilities <a id="capabilities"></a>
+## LEARN: Sunbird-RC Capabilities <a id="capabilities"></a>
 
 * [Enrolment](capabilities/enrolment.md)
 * [Authenticate](capabilities/athenticate.md)
@@ -24,6 +24,7 @@
 
 ## USE: Getting Started <a id="getting-started"></a>
 
+* [Source Code](https://github.com/Sunbird-RC/)
 * [Technical Requirements](getting-started/infrastructure-requirements.md)
 * [Schema Configuration](getting-started/schema-configuration.md)
 * [Setup the Backend](getting-started/setup-the-backend.md)
@@ -43,5 +44,6 @@
 * [Contributing](community/contributing.md)
 * [Code of Conduct](community/code_of_conduct.md)
 * [Status By Track](community/status-by-track.md)
+* [Report Issues](https://github.com/Sunbird-RC/community/issues)
 * [Discussions](https://github.com/Sunbird-RC/community/discussions)
 
