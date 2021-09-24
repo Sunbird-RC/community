@@ -40,7 +40,7 @@ All digital platforms require master data and actors \(person/entity/thing\) dat
 
 ## **Workflow**
 
-![](.gitbook/assets/screenshot-2021-09-09-at-3.46.52-pm.png)
+![](../.gitbook/assets/screenshot-2021-09-09-at-3.46.52-pm.png)
 
 ## **Schema**
 
@@ -265,7 +265,7 @@ POST /api/v1/search { ”state”:”Karnataka” }
 
 ### Authentication flow
 
-![](.gitbook/assets/screenshot-2021-09-09-at-3.48.47-pm.png)
+![](../.gitbook/assets/screenshot-2021-09-09-at-3.48.47-pm.png)
 
 ### Request scopes and sharing attributes
 

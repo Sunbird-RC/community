@@ -1,36 +1,36 @@
 # Table of contents
 
 * [Welcome to Sunbird-RC](README.md)
-* [Evolution of Electronic Registries](evolution-electronic-registries.md)
-* [Introduction to Electronic Registries](intro-electronic-registries.md)
-* [Technical Specification Draft](technical-specification-draft.md)
 
-## LEARN: Registry Concepts <a id="registry-concepts"></a>
+## LEARN
 
-* [Verbs](registry-concepts/verbs.md)
-* [Terminology](registry-concepts/terminology.md)
-* [Design Principles](registry-concepts/design-principles.md)
-* [Workflows](registry-concepts/workflows.md)
+* [Introduction to Electronic Registries](learn/intro-electronic-registries.md)
+* [Evolution of Electronic Registries](learn/evolution-electronic-registries.md)
+* [Core Registry Verbs](learn/verbs.md)
+* [Technical Specification Draft](learn/technical-specification-draft.md)
+* [Design Principles](learn/design-principles.md)
+* [Workflows](learn/workflows.md)
+* [Terminology](learn/terminology.md)
 
-## LEARN: Sunbird-RC Capabilities <a id="capabilities"></a>
+---
 
-* [Enrolment](capabilities/enrolment.md)
-* [Authenticate](capabilities/athenticate.md)
-* [Consent](capabilities/consent.md)
-* [Claims](capabilities/claims.md)
-* [Attestation](capabilities/attestation.md)
-* [Discovery](capabilities/discovery.md)
-* [Update](capabilities/update.md)
+* [Enrolment](enrolment.md)
+* [Authenticate](athenticate.md)
+* [Consent](consent.md)
+* [Claims](claims.md)
+* [Attestation](attestation.md)
+* [Discovery](discovery.md)
+* [Update](update.md)
 
-## USE: Getting Started <a id="getting-started"></a>
+## USE
 
 * [Source Code](https://github.com/Sunbird-RC/)
-* [Technical Requirements](getting-started/infrastructure-requirements.md)
-* [Schema Configuration](getting-started/schema-configuration.md)
-* [Setup the Backend](getting-started/setup-the-backend.md)
-* [Setup the Frontend](getting-started/setup-the-frontend.md)
-* [Leveraging Existing data stores](getting-started/leveraging-existing-data-stores-directories.md)
-* [SSO with existing systems](getting-started/sso-with-existing-systems.md)
+* [Technical Requirements](use/infrastructure-requirements.md)
+* [Schema Configuration](use/schema-configuration.md)
+* [Setup the Backend](use/setup-the-backend.md)
+* [Setup the Frontend](use/setup-the-frontend.md)
+* [Leveraging Existing data stores](use/leveraging-existing-data-stores-directories.md)
+* [SSO with existing systems](use/sso-with-existing-systems.md)
 
 ## Reference Solutions & Demos <a id="example-use-cases"></a>
 
@@ -39,11 +39,11 @@
 * [Digital Locker](example-use-cases/digital-locker/README.md)
   * [User Flow](example-use-cases/digital-locker/digital-locker-user-flow.md)
 
-## Community
+## ENGAGE
 
-* [Contributing](community/contributing.md)
-* [Code of Conduct](community/code_of_conduct.md)
-* [Status By Track](community/status-by-track.md)
-* [Report Issues](https://github.com/Sunbird-RC/community/issues)
-* [Discussions](https://github.com/Sunbird-RC/community/discussions)
+* [Contributing](engage/contributing.md)
+* [Code of Conduct](engage/code_of_conduct.md)
+* [Status By Track](engage/status-by-track.md)
+* [Report](https://github.com/Sunbird-RC/community/issues)
+* [Discuss](https://github.com/Sunbird-RC/community/discussions)
 

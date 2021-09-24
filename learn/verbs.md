@@ -1,4 +1,4 @@
-# Verbs
+# Core Registry Verbs
 
 ## Registry Seven key verbs
 
