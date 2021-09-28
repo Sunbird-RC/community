@@ -35,8 +35,8 @@ All digital platforms require master data and actors \(person/entity/thing\) dat
 | Consent | Approval of an actor given to another person/system to access the data of that actor for purposes of transaction/interaction. |
 | Credential | Digitally represented verifiable artifacts containing a qualification, achievement, milestone, fact, etc issued to an actor for them to be able to make claims. |
 | Registry | An Electronic Registry is a system, acting as a single source of truth that houses a set of common attributes of the actor in a trustable \(attested\) and non-repudiable \(audited\) fashion, made available in the control of the actor enabling actors to authenticate themselves and make claims about them with their consent which can be electronically verified by 3rd party systems. |
-| Education Information Provider \(EIP\) | An authorized entity or a person who manages a SoR for enabling specific transactions/interactions among various actors. This entity using their systems of record then provides verifiable \(digitally\) credentials, documents, certificates, and transaction/interaction data etc. back to actors. |
-| Education Information Users \(EIU\) | An entity that is accessing credentials/data of an actor with necessary consent of the actor for making assertions and providing various services/products. |
+| Information Provider  | An authorized entity or a person who manages a SoR for enabling specific transactions/interactions among various actors. This entity using their systems of record then provides verifiable \(digitally\) credentials, documents, certificates, and transaction/interaction data etc. back to actors. |
+| Information Users  | An entity that is accessing credentials/data of an actor with necessary consent of the actor for making assertions and providing various services/products. |
 
 ## **Workflow**
 
