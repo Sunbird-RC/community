@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome to Sunbird-RC](README.md)
+* [Welcome to Sunbird RC](README.md)
 
 ## LEARN
 

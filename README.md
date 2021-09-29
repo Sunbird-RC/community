@@ -1,6 +1,6 @@
-# Welcome to Sunbird-RC
+# Welcome to Sunbird RC
 
-## What's Sunbird-RC?
+## What's Sunbird RC?
 
 Sunbird-RC contains a set of frameworks to enable you to rapidly build next generation electronic registries and verifiable credentials including attestation and verification flows. This is an independently usable  open source framework. This is part of overall [Sunbird](https://sunbird.org/) open source initiative.
 
