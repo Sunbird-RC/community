@@ -34,7 +34,8 @@
 
 ## Reference Solutions & Demos <a id="example-use-cases"></a>
 
-* [Education Registries](example-use-cases/edu-registries.md)
+* [Education Registries](example-use-cases/edu-registries/README.md)
+  * [User Flow](example-use-cases/edu-registries/user-flow.md)
 * [Vaccination Platform](example-use-cases/vaccination.md)
 * [Digital Locker](example-use-cases/digital-locker/README.md)
   * [User Flow](example-use-cases/digital-locker/digital-locker-user-flow.md)
