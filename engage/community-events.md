@@ -1,0 +1,17 @@
+---
+description: >-
+  This page will list the schedule of our community events & also provide
+  recordings of past events.
+---
+
+# Community Events
+
+## Open Workshop on Installing & Configuring Registries with Sunbird RC on 7th October, 3 15 PM to 4 15 PM IST
+
+Join our first open workshop and engage with the development team to understand the nuances of installing & configuring Sunbird RC for your registry use case. 
+
+Sunbird RC contains a set of frameworks to enable you to rapidly build next generation electronic registries and verifiable credentials including attestation and verification flows.   
+  
+Meeting Link : [https://us06web.zoom.us/j/83505586192](https://www.google.com/url?q=https://us06web.zoom.us/j/83505586192&sa=D&source=calendar&ust=1633862257262697&usg=AOvVaw2cVwRTOBl8vQYvSw3WPppF)  
+Meeting ID: 835 0558 6192 \| Passcode: 900993
+
