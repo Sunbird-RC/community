@@ -48,6 +48,6 @@
 * [Roadmap](engage/product-roadmap.md)
 * [Status By Track](engage/status-by-track.md)
 * [Report](https://github.com/Sunbird-RC/community/issues)
-* [Discuss](https://github.com/Sunbird-RC/community/discussions)
+* [Discuss](engage/discuss.md)
 * [Website](https://sunbirdrc.dev/)
 
