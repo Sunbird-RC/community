@@ -12,10 +12,5 @@ Join our first open workshop and engage with the development team to understand 
 
 Sunbird RC contains a set of frameworks to enable you to rapidly build next generation electronic registries and verifiable credentials including attestation and verification flows. If there are specific questions or areas you want us to cover in the session, please do post ideas & questions on the [Github Discussions](https://github.com/Sunbird-RC/community/discussions). 
 
-  
-Date & Time : 7th October, 3.15 PM - 4.15 PM IST  
-Meeting Link : [https://us06web.zoom.us/j/83505586192](https://us06web.zoom.us/j/83505586192)  
-Meeting ID: 835 0558 6192 \| Passcode: 900993
-
-
+{% embed url="https://www.youtube.com/watch?v=gGR5JvPY9F0" caption="Sunbird RC Open Workshop 7th October, Recording" %}
 
