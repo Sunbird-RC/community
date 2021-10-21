@@ -38,7 +38,7 @@ All digital platforms require master data and actors (person/entity/thing) data 
 
 ## **Schema**
 
-All registries have attributes pertaining to the entity or the fact in question either person or things. Schema defines the structure and constraints of the entity, Sunbird-RC uses standard JSON-LD based schema.
+All registries have attributes pertaining to the entity or the fact in question either person or things. Schema defines the structure and constraints of the entity, Sunbird RC uses standard JSON-LD based schema.
 
 In the example given below Place is Concept that registry is storing supporting name, city, addressRegion (state) and country.
 
@@ -97,7 +97,7 @@ In the example given below Place is Concept that registry is storing supporting 
 
 ## Configuration
 
-In addition to JSON LD specific data types OpenSaberRC supports various extension configurations under “\_osConfig”. Access, indexing, primary key etc are configurable using schema configuration.
+In addition to JSON LD specific data types Sunbird RC supports various extension configurations under “\_osConfig”. Access, indexing, primary key etc are configurable using schema configuration.
 
 #### Entity and Properties
 
@@ -187,7 +187,7 @@ Example:
 
 #### Attestation Types
 
-Since there will be mixed attestation requirements which need human verification and in some cases attestations can be completely digital, To begin with registries can allow both manual and automatic attestation types. A teacher rewarding and attesting the grades can be manual activity, identity claim can be attested digitally by identity provider like aadhaar.
+Since there will be mixed attestation requirements which need human verification and in some cases attestations can be completely digital, To begin with registries can allow both manual and automatic attestation types. A teacher rewarding and attesting the grades can be manual activity, identity claim can be attested digitally by identity provider like Aadhaar.
 
 Manual Attestation
 
