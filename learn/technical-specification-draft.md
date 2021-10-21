@@ -1,42 +1,36 @@
----
-Call for participation: >-
-  Read the draft technical specification for Sunbird RC & help improve it
-  through your feedback
----
-
 # Technical Specification Draft
 
 _**This is an early draft of the specification. You can give your feedback to improve the same via the**_ [_**Discussions area**_](https://github.com/Sunbird-RC/community/discussions/categories/sunbird-rc-technical-specification-feedback)_**.**_
 
 ## **Introduction**
 
-All digital platforms require master data and actors \(person/entity/thing\) data related to that system to be maintained for identification, validation, etc. For example, a property tax system needs to maintain master data about properties, land boundaries, tax codes, tax payers, inspection officers, etc. in a structured and validated fashion so as to help manage the property tax transaction in a seamless manner. As India becomes data rich, it is essential that various data about people, entities, geographies, resources, assets, etc. are made available in electronic registries with Open APIs for other applications to seamlessly validate and use attested and authenticated data. This is even more critical when it comes to people and entities where various claims can be electronically validated against such registries via open APIs avoiding paper based validations, thus increasing trust while decreasing cost of validation.
+All digital platforms require master data and actors (person/entity/thing) data related to that system to be maintained for identification, validation, etc. For example, a property tax system needs to maintain master data about properties, land boundaries, tax codes, tax payers, inspection officers, etc. in a structured and validated fashion so as to help manage the property tax transaction in a seamless manner. As the world becomes data rich, it is essential that various data about people, entities, geographies, resources, assets, etc. are made available in electronic registries with Open APIs for other applications to seamlessly validate and use attested and authenticated data. This is even more critical when it comes to people and entities where various claims can be electronically validated against such registries via open APIs avoiding paper based validations, thus increasing trust while decreasing cost of validation.
 
 ## **Core principles**
 
-* LIVE: Due to its changing nature, such data often goes stale \(not up-to-date\), thus increasing the cost of collection and maintenance. For example, information about schools and teachers, their contact details, etc. get outdated, forcing departments to redo data collection every few years, and digitise, through time consuming processes.
-* REUSEABLE: Even if such data is maintained by one system, it is not available to be reused by other systems forcing every department needing such data to repeat data collection and maintenance. 
+* LIVE: Due to its changing nature, such data often goes stale (not up-to-date), thus increasing the cost of collection and maintenance. For example, information about schools and teachers, their contact details, etc. get outdated, forcing departments to redo data collection every few years, and digitise, through time consuming processes.
+* REUSEABLE: Even if such data is maintained by one system, it is not available to be reused by other systems forcing every department needing such data to repeat data collection and maintenance.&#x20;
 * TRUSTWORTHY: When data is exchanged between systems, trust of that data is established by ensuring the entire record itself is digitally signed and the fact that registry record comes with attestations along with the data. For example, a list of schools downloaded as a CSV file from a portal cannot be trusted by other systems since there is no guarantee that it is authentic and has not been edited subsequently.
 
 ## **Terminology**
 
-| Data | Electronic data of any type. It could be simple data or composite data. |
-| :--- | :--- |
-| Database | A software system that stores and manages data. |
-| Schema | Machine readable definition of data. |
-| Actor \(Subject\) | A person, entity, or a thing who/which has been identified. |
-| Transaction/ Interaction Data | Data representing details of an interaction/transaction that was done among one or more actors within a system. |
-| SoR \(System of Record\) | A software system that is the primary system to enable a specific set of transactions/interactions through a set of workflows and user interfaces. Identities of actors participating in these transactions/interactions maybe linked to a registry. |
-| Registration | Act of registering/enrolling the actor into a system |
-| Claim | A statement that is made by an actor which can be verified. |
-| Attestation | An act of verifying and authorizing specific data in a digitally signed fashion by an authorized individual/entity \(whose identities are typically linked to some other registries\). |
-| Discovery | An act of finding specific entries in a registry through a search/find mechanism. |
-| Assertion | An act of verifying a claim. |
-| Consent | Approval of an actor given to another person/system to access the data of that actor for purposes of transaction/interaction. |
-| Credential | Digitally represented verifiable artifacts containing a qualification, achievement, milestone, fact, etc issued to an actor for them to be able to make claims. |
-| Registry | An Electronic Registry is a system, acting as a single source of truth that houses a set of common attributes of the actor in a trustable \(attested\) and non-repudiable \(audited\) fashion, made available in the control of the actor enabling actors to authenticate themselves and make claims about them with their consent which can be electronically verified by 3rd party systems. |
-| Information Provider  | An authorized entity or a person who manages a SoR for enabling specific transactions/interactions among various actors. This entity using their systems of record then provides verifiable \(digitally\) credentials, documents, certificates, and transaction/interaction data etc. back to actors. |
-| Information Users  | An entity that is accessing credentials/data of an actor with necessary consent of the actor for making assertions and providing various services/products. |
+| Data                          | Electronic data of any type. It could be simple data or composite data.                                                                                                                                                                                                                                                                                                                   |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Database                      | A software system that stores and manages data.                                                                                                                                                                                                                                                                                                                                           |
+| Schema                        | Machine readable definition of data.                                                                                                                                                                                                                                                                                                                                                      |
+| Actor (Subject)               | A person, entity, or a thing who/which has been identified.                                                                                                                                                                                                                                                                                                                               |
+| Transaction/ Interaction Data | Data representing details of an interaction/transaction that was done among one or more actors within a system.                                                                                                                                                                                                                                                                           |
+| SoR (System of Record)        | A software system that is the primary system to enable a specific set of transactions/interactions through a set of workflows and user interfaces. Identities of actors participating in these transactions/interactions maybe linked to a registry.                                                                                                                                      |
+| Registration                  | Act of registering/enrolling the actor into a system                                                                                                                                                                                                                                                                                                                                      |
+| Claim                         | A statement that is made by an actor which can be verified.                                                                                                                                                                                                                                                                                                                               |
+| Attestation                   | An act of verifying and authorizing specific data in a digitally signed fashion by an authorized individual/entity (whose identities are typically linked to some other registries).                                                                                                                                                                                                      |
+| Discovery                     | An act of finding specific entries in a registry through a search/find mechanism.                                                                                                                                                                                                                                                                                                         |
+| Assertion                     | An act of verifying a claim.                                                                                                                                                                                                                                                                                                                                                              |
+| Consent                       | Approval of an actor given to another person/system to access the data of that actor for purposes of transaction/interaction.                                                                                                                                                                                                                                                             |
+| Credential                    | Digitally represented verifiable artifacts containing a qualification, achievement, milestone, fact, etc issued to an actor for them to be able to make claims.                                                                                                                                                                                                                           |
+| Registry                      | An Electronic Registry is a system, acting as a single source of truth that houses a set of common attributes of the actor in a trustable (attested) and non-repudiable (audited) fashion, made available in the control of the actor enabling actors to authenticate themselves and make claims about them with their consent which can be electronically verified by 3rd party systems. |
+| Information Provider          | An authorized entity or a person who manages a SoR for enabling specific transactions/interactions among various actors. This entity using their systems of record then provides verifiable (digitally) credentials, documents, certificates, and transaction/interaction data etc. back to actors.                                                                                       |
+| Information Users             | An entity that is accessing credentials/data of an actor with necessary consent of the actor for making assertions and providing various services/products.                                                                                                                                                                                                                               |
 
 ## **Workflow**
 
@@ -44,13 +38,13 @@ All digital platforms require master data and actors \(person/entity/thing\) dat
 
 ## **Schema**
 
-All registries have attributes pertaining to the entity or the fact in question either person or things. Schema defines the structure and constraints of the entity, open saber rc uses standard JSON-LD based schema.
+All registries have attributes pertaining to the entity or the fact in question either person or things. Schema defines the structure and constraints of the entity, Sunbird-RC uses standard JSON-LD based schema.
 
-In the example given below Place is Concept that registry is storing supporting name, city, addressRegion \(state\) and country.
+In the example given below Place is Concept that registry is storing supporting name, city, addressRegion (state) and country.
 
 #### Example:
 
-```text
+```
 {
  "$schema": "http://json-schema.org/draft-07/schema",
  "type": "object",
@@ -125,8 +119,8 @@ Collection of data values are also supported as multiple data value might repres
 
 3 types of visibility on attributes.
 
-1. Public 
-2. Private \(privateFields\)
+1. Public&#x20;
+2. Private (privateFields)
 3. Internal
 
 Public data attributes are available in discovery by default any sort of permission / authorization is not needed by default.
@@ -141,7 +135,7 @@ Primary keys from domain space will help enforce uniqueness of information and m
 
 Example:
 
-```text
+```
 "uniqueIndexFields": [ "identityValue", ... ]
 ```
 
@@ -153,19 +147,19 @@ Indexes can help in faster access to information, based on usage context index f
 
 ### Validation Extensions
 
-JSON LD schema allows defining basic type constraints like numeric type, text or list of items etc. Also it allows a list of possible values for given attributes \(enum\) and regular expressions based constraints for the value.
+JSON LD schema allows defining basic type constraints like numeric type, text or list of items etc. Also it allows a list of possible values for given attributes (enum) and regular expressions based constraints for the value.
 
 ### Schema access api:
 
 OpenSaberRC supports following apis for accessing schema:
 
-```text
+```
 GET /api/docs/{entityName}.json
 ```
 
 Swagger document is accessible at
 
-```text
+```
 GET /api/docs/swagger.json
 ```
 
@@ -177,7 +171,7 @@ Attestation on given set of fields is configurable with schema configuration. Be
 
 Example:
 
-```text
+```
  "attestationPolicies": [
  {
      "property": "experience/\[\]",
@@ -207,7 +201,7 @@ Digital registries can inter-operate sharing the trusted claims and information 
 
 Example: Identity registry can be used to prove the identity of a subject without manual verification. Mobile OTP based consent flow can verify the identity and mark subjects name as verified. Eventually certificates issued by educational institutions can also get verified digitally.
 
-```text
+```
 POST /api/v1/{entityName}/{entityId}/attest/{propertyID}
 { 
   "action":"GRANT_CLAIM"
@@ -223,9 +217,9 @@ Attestation workflow might need custom stages and transition rules based on the 
 
 ### Sign up
 
-Enrolment/Signup API supports use cases related to self signup or bulk invites to register in the registry. One of the principles of registry is to avoid stale data loading from databases and give control to subjects in participating in registration and managing their data \(Rather than someone else managing it for them\).
+Enrolment/Signup API supports use cases related to self signup or bulk invites to register in the registry. One of the principles of registry is to avoid stale data loading from databases and give control to subjects in participating in registration and managing their data (Rather than someone else managing it for them).
 
-```text
+```
 POST /api/v1/{entityName}/invite
 {
 ”name”:”Suresh”,
@@ -235,7 +229,7 @@ POST /api/v1/{entityName}/invite
 
 ### Update information
 
-```text
+```
 PATCH /api/v1/{entityName}/{entityId}
 {
   ”fieldPaths”:[”/name”]
@@ -246,7 +240,7 @@ PATCH /api/v1/{entityName}/{entityId}
 
 ### Search API
 
-```text
+```
 POST /api/v1/search
 {
   ”email”:”suresh@example.com”
@@ -257,7 +251,7 @@ POST /api/v1/search
 
 Example pincode lookup
 
-```text
+```
 POST /api/v1/search { ”state”:”Karnataka” }
 ```
 
@@ -269,7 +263,7 @@ POST /api/v1/search { ”state”:”Karnataka” }
 
 ### Request scopes and sharing attributes
 
-```text
+```
 GET /partner/api/v1/{entityName}
 ```
 
@@ -284,4 +278,3 @@ GET /partner/api/v1/{entityName}
 ## **Open for feedback**
 
 _**This is an early draft of the specification. You can give your feedback to improve the same via the**_ [_**Discussions area**_](https://github.com/Sunbird-RC/community/discussions/categories/sunbird-rc-technical-specification-feedback)_**.**_
-
