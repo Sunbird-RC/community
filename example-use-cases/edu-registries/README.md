@@ -13,7 +13,7 @@ This is a registry of the common subjects involved in an educational system, and
 
 1. Board Affiliation Claim : Added by Institute, and attested by Education Board
 2. Teaching Experience Claim : Added by Teacher and attested by Institute
-3. Education Experience Claim : Added by Student and attested by a Teacher who is part of the related Institute \(A Teacher is part of the institute as long as they have an active experience for the Institute in question\)
+3. Education Experience Claim : Added by Student and attested by a Teacher who is part of the related Institute (A Teacher is part of the institute as long as they have an active experience for the Institute in question)
 
 ## Source Code
 
@@ -23,5 +23,4 @@ The source code to install this example can be found at [https://github.com/ref-
 
 ### Sunbird RC Education Use Case
 
-{% embed url="https://youtu.be/XNEWA\_pMhuU" caption="" %}
-
+{% embed url="https://youtu.be/XNEWA_pMhuU" %}
