@@ -8,9 +8,9 @@ All digital platforms require master data and actors (person/entity/thing) data 
 
 ## **Core principles**
 
-* LIVE: Due to its changing nature, such data often goes stale (not up-to-date), thus increasing the cost of collection and maintenance. For example, information about schools and teachers, their contact details, etc. get outdated, forcing departments to redo data collection every few years, and digitise, through time consuming processes.
-* REUSEABLE: Even if such data is maintained by one system, it is not available to be reused by other systems forcing every department needing such data to repeat data collection and maintenance.&#x20;
-* TRUSTWORTHY: When data is exchanged between systems, trust of that data is established by ensuring the entire record itself is digitally signed and the fact that registry record comes with attestations along with the data. For example, a list of schools downloaded as a CSV file from a portal cannot be trusted by other systems since there is no guarantee that it is authentic and has not been edited subsequently.
+- LIVE: Due to its changing nature, such data often goes stale (not up-to-date), thus increasing the cost of collection and maintenance. For example, information about schools and teachers, their contact details, etc. get outdated, forcing departments to redo data collection every few years, and digitise, through time consuming processes.
+- REUSEABLE: Even if such data is maintained by one system, it is not available to be reused by other systems forcing every department needing such data to repeat data collection and maintenance.
+- TRUSTWORTHY: When data is exchanged between systems, trust of that data is established by ensuring the entire record itself is digitally signed and the fact that registry record comes with attestations along with the data. For example, a list of schools downloaded as a CSV file from a portal cannot be trusted by other systems since there is no guarantee that it is authentic and has not been edited subsequently.
 
 ## **Terminology**
 
@@ -97,7 +97,7 @@ In the example given below Place is Concept that registry is storing supporting 
 
 ## Configuration
 
-In addition to JSON LD specific data types Sunbird RC supports various extension configurations under “\_osConfig”. Access, indexing, primary key etc are configurable using schema configuration.
+In addition to JSON LD specific data types Sunbird RC supports various extension configurations under `\_osConfig`. Access, indexing, primary key etc are configurable using schema configuration.
 
 #### Entity and Properties
 
@@ -113,13 +113,13 @@ Number - numeric data
 
 #### List of attributes
 
-Collection of data values are also supported as multiple data value might represent the entity property for example subjects taught : `[“english”,”science”, “mathematics”]`
+Collection of data values are also supported as multiple data value might represent the entity property for example subjects taught : `["english","science, "mathematics"]`
 
 ### Visibility scope:
 
 3 types of visibility on attributes.
 
-1. Public&#x20;
+1. Public
 2. Private (privateFields)
 3. Internal
 
@@ -178,7 +178,7 @@ Example:
      "paths": [ "experience" ],
      "attestorEntity": "Institute",
      "conditions": "\(ATTESTOR\#$.instituteName\#.contains\(REQUESTER\#$.institute\#\)\)"
- }, 
+ },
   ...
  ]
 ```
@@ -203,7 +203,7 @@ Example: Identity registry can be used to prove the identity of a subject withou
 
 ```
 POST /api/v1/{entityName}/{entityId}/attest/{propertyID}
-{ 
+{
   "action":"GRANT_CLAIM"
   ...
 }
@@ -222,8 +222,8 @@ Enrolment/Signup API supports use cases related to self signup or bulk invites t
 ```
 POST /api/v1/{entityName}/invite
 {
-”name”:”Suresh”,
-”email”:”suresh@example.com”
+"name”:"Suresh",
+"email":"suresh@example.com"
 }
 ```
 
@@ -232,7 +232,7 @@ POST /api/v1/{entityName}/invite
 ```
 PATCH /api/v1/{entityName}/{entityId}
 {
-  ”fieldPaths”:[”/name”]
+  "fieldPaths":["/name"]
 }
 ```
 
@@ -243,7 +243,7 @@ PATCH /api/v1/{entityName}/{entityId}
 ```
 POST /api/v1/search
 {
-  ”email”:”suresh@example.com”
+  "email":"suresh@example.com"
 }
 ```
 
@@ -252,7 +252,7 @@ POST /api/v1/search
 Example pincode lookup
 
 ```
-POST /api/v1/search { ”state”:”Karnataka” }
+POST /api/v1/search { "state":"Karnataka" }
 ```
 
 ## Consent API
@@ -269,11 +269,11 @@ GET /partner/api/v1/{entityName}
 
 ## Use Cases
 
-* Building a Blood donor registry
-* Building simple pincode directory service
-* Education registry
-* Immunization
-* Authentication and consent usage in learning application
+- Building a Blood donor registry
+- Building simple pincode directory service
+- Education registry
+- Immunization
+- Authentication and consent usage in learning application
 
 ## **Open for feedback**
 
