@@ -1,0 +1,39 @@
+name: Feature Request
+description: I want to see something added to Sunbird RC!
+title: '[FEAT]: '
+labels: ['enhancement', 'triage']
+body:
+  - type: markdown
+    attributes:
+      value:
+        Hi there! Thanks for taking the time to request this feature and helping
+        make Sunbird RC better for everyone! We'll get back to you as soon as
+        possible.
+  - type: dropdown
+    id: application
+    attributes:
+      label: What is the feature request for?
+      options:
+        - Registry Core
+        - Registry CLI
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: What problem/inconvenience (if any) will this feature solve?
+      placeholder: Why should we add this feature?
+      value:
+        It is inconvenient for me to do .... If we add this feature, it would
+        make it easier to do ....
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Describe the feature clearly.
+      placeholder:
+        Screenshots/GIFs showing a mock up of the feature would be great too!
+      value: Add a new command that does ....
+    validations:
+      required: true

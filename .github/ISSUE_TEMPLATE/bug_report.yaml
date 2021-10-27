@@ -1,0 +1,55 @@
+name: Bug Report
+description: Something's not working properly!
+title: '[BUG]: '
+labels: ['bug', 'triage']
+body:
+  - type: markdown
+    attributes:
+      value:
+        Hi there! Thanks for taking the time to file this bug report and helping
+        make Sunbird RC better for everyone! We'll get back to you as soon as
+        possible.
+  - type: dropdown
+    id: application
+    attributes:
+      label: What is the bug related to?
+      options:
+        - Registry Core
+        - Registry CLI
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What went wrong?
+      description:
+        What did you see that went wrong or did not work as you expected it too?
+      placeholder: Tell us what you see!
+      value: A bug happened!
+    validations:
+      required: true
+  - type: textarea
+    id: what-should-have-happened
+    attributes:
+      label: What did you expect to see?
+      description: Describe what you thought you would see
+      placeholder: Tell us what you thought you would see!
+      value: A bug should not have happened, instead ...
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description:
+        Any more information/screenshot that would help us fix the issue
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs/output
+      description:
+        Please copy and paste any relevant logs/output. This will be
+        automatically formatted into code, so no need for backticks.
+      render: shell
