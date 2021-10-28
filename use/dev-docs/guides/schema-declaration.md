@@ -7,7 +7,7 @@ The following is an example schema for a student entity. The comments should
 guide you as to which fields are required, and what fields should be adjusted as
 per your needs.
 
-```json
+```jsonc
 // -- file: student.json
 // -- note: real schema files do not allow inline comments, remove them all incase you are copying and pasting this example.
 
