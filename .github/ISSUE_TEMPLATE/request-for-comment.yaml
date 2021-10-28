@@ -1,0 +1,32 @@
+name: Request For Comments (RFC)
+description: I wanted to share an idea and get feedback from the community!
+title: '[RFC]: '
+labels: ['question', 'rfc']
+body:
+  - type: markdown
+    attributes:
+      value:
+        Hi there! Thanks for taking the time to request this feature and helping
+        make Sunbird RC better for everyone! We'll get back to with our thoughts
+        on your idea as soon as possible.
+  - type: textarea
+    id: purpose
+    attributes:
+      label: What problem/inconvenience (if any) is this RFC related to?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Describe the your idea clearly and in detail
+    validations:
+      required: true
+  - type: textarea
+    id: open-questions
+    attributes:
+      label: Open Questions
+      placeholder:
+        Lay out any open questions/problems and related thoughts that you might
+        have stumbled across while writing up this proposal.
+    validations:
+      required: false
