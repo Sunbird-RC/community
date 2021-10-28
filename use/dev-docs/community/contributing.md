@@ -28,8 +28,8 @@ and jump straight into fixing bugs or adding new features!
 ## Improve Documentation
 
 The documentation is just a bunch of Markdown files in the
-[`community`](https://github.com/sunbird-rc/community/main/tree/latest). Feel
-free to open a PR that:
+[`community`](https://github.com/sunbird-rc/community/) repository. Feel free to
+open a PR that:
 
 - makes the docs clearer/easier to understand
 - fixes typos
