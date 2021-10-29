@@ -6,4 +6,4 @@ description: User Flow for Education use case
 
 #### High Level User Flow
 
-![](<../../.gitbook/assets/NDEAR - User Flow for Demo.jpeg>)
+![](<../../.gitbook/assets/NDEAR - User Flow for Demo (1).jpeg>)
