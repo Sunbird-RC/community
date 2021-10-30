@@ -1,5 +1,5 @@
 ---
-description: Exploration of reference solution for digital locker like solution.
+description: Exploration of reference solution for eLocker like solution.
 ---
 
 # User Flow
@@ -9,10 +9,10 @@ description: Exploration of reference solution for digital locker like solution.
 1.  **Consumer:**
 
     I would like to have easy access of my documents, so that I can use it whenever required.
-2.  **Issuer: **
+2.  \*\*Issuer: \*\*
 
     I would like to manage the issuance of certificate at one place.
-3.  **Accepting Party/3rd Party: **
+3.  \*\*Accepting Party/3rd Party: \*\*
 
     (WIP)I would like to access documents of my customer easily, so that I can review and process the next steps of my customer’s claim…
 
@@ -30,9 +30,9 @@ description: Exploration of reference solution for digital locker like solution.
 
 #### **C. Upload Documents**
 
-As a consumer, I want to upload documents and self-attest or get it attested/verified by the issuer, so that I can use and share the documents whenever required.&#x20;
+As a consumer, I want to upload documents and self-attest or get it attested/verified by the issuer, so that I can use and share the documents whenever required.
 
-1.  Self Attest&#x20;
+1.  Self Attest
 
     ![](https://lh4.googleusercontent.com/oZOxjIgXMHiGIInXishg3k4WDdRDtVWjhne1KUr8uzJ6F\_F1dkOzTnWQ\_OpymsDN32OWAJcKH75W4L86XTtQfSMP7W4jVe4yKgGpah-yIIOR457BeSRKtMgwMjwrLyO7lx9V-WCj=s0)
 2.  Attestation by Issuer
