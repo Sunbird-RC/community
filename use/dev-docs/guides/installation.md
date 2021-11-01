@@ -18,18 +18,6 @@ recommended that you use `git-bash`, which you can install from
 Type `echo Hi` in the terminal once it is installed. If installed correctly, you
 should see `Hi` appear when you hit enter.
 
-### Git
-
-Installation instructions for Git can be found
-[here](https://github.com/git-guides/install-git).
-
-Run `git --version` in the terminal if `git` has been installed correctly:
-
-```sh
-$ git --version
-git version 2.33.0
-```
-
 ### NodeJS
 
 Installation instructions for NodeJS can be found
@@ -81,12 +69,12 @@ $ npm install --global registry-cli
 To check if the Registry CLI has been installed correctly, run:
 
 ```
-$ registry --help
+$ registry help
 ```
 
 This should show you all the commands you can execute using the CLI.
 
 ## Next Steps
 
-Now that you have the Registry CLI running, you can
+Now that you have the Registry CLI installed, you can
 [setup your own registry instance](setup-registry-instance.md).

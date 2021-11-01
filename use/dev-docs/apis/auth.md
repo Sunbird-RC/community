@@ -8,7 +8,7 @@ operations like retrieving, searching, updating and attesting.
 To authenticate as an entity, we need to make the following request:
 
 ```http
-POST /auth/realms/sunbird-rc/protocol/openid-connect/token
+POST /auth/realms/{realm}/protocol/openid-connect/token
 ```
 
 | Field          | In     | Type     | Description                                                                                 |
@@ -57,14 +57,14 @@ curl --location \
 	--data 'username={username}' \
 	--data 'password=opensaber@123' \
 	--data 'grant_type=password' \
-	'http://{keycloak-url}/auth/realms/sunbird-rc/protocol/openid-connect/token'
+	'http://{keycloak-url}/auth/realms/{realm}/protocol/openid-connect/token'
 ```
 
 ### HTTPie
 
 ```sh
 http --form post \
-	'http://{keycloak-url}/auth/realms/sunbird-rc/protocol/openid-connect/token' \
+	'http://{keycloak-url}/auth/realms/{realm}/protocol/openid-connect/token' \
 	'content-type: application/x-www-form-urlencoded' \
 	'client_id=registry-frontend' \
 	'username={username}' \

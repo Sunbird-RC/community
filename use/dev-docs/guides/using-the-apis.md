@@ -1,7 +1,7 @@
 # Using the APIs
 
 The following guide walks you through the different Registry APIs using the
-example of a teacher-student registry.
+example of a student-teacher registry.
 
 ## Creating An Entity
 
