@@ -1,18 +1,41 @@
 # Contributing
 
-There are several ways in which you can contribute. We're listing the most important ones here :&#x20;
+Thank you for your interest in contributing to Sunbird RC. You can contribute in
+any one of the following ways:
 
-**Contribute Features & Bug fixes**\
-Head over to [Github](https://github.com/Sunbird-RC) and send in your pull requests for new features & bug fixes. For new features, add an Issue as a 'Requests for Comments (RFC) to get community feedback on feature ideas & approaches&#x20;
+- [Report Bugs/Request Features](#report-bugs-request-features)
+- [Contribute To The Core Registry](#contribute-to-the-core-registry)
+- [Contribute To The Registry CLI](#contribute-to-the-registry-cli)
+- [Improve Documentation](#improve-documentation)
 
-**Contribute & help others on the Discussions**\
-****Help answer questions & guide adopters on the [discussion board](https://github.com/Sunbird-RC/community/discussions)
+## Report Bugs/Request Features
 
-**Implement reference solutions & use cases **\
-****Have a great idea where Sunbird-RC can be useful ? Add it to the documentation as a Use case. Even better if you can deploy your own copy of Sunbird-RC & add it to the reference solutions & demos section
+Something not working correctly? Something feels wrong? Or want to see a new
+feature added?
+[Open an issue](https://github.com/sunbird-rc/community/issues/new/choose)!
 
-**Help improve this documentation**\
-****This documentation is a collaboration & is managed via Github. The [community](https://github.com/Sunbird-RC/community) repository on Github can be used to contribute to documentation.&#x20;
+## Contribute To The Core Registry
 
-**Be a Product Evangelist **\
-****Help us spread the word & increase adoption. A simple tweet can go a long way. But we'd love to see blogs, talks & podcasts as well !
+A contributing guide for the core registry does not exist as of now. PRs adding
+this are welcome!
+
+## Contribute To The Registry CLI
+
+Take a look at the
+[contributing guide for the Registry CLI](https://github.com/sunbird-rc/sunbird-rc-core/blob/main/tools/cli/docs/contributing.md)
+and jump straight into fixing bugs or adding new features!
+
+## Improve Documentation
+
+The documentation is just a bunch of Markdown files in the
+[`community`](https://github.com/sunbird-rc/community/) repository. Feel free to
+open a PR that:
+
+- makes the docs clearer/easier to understand
+- fixes typos
+- adds a section about something new
+- adds something that was previously left out of docs
+
+### Thanks!
+
+Thank you for your contribution!!

@@ -112,33 +112,25 @@ This should create a JAR file in the `java/registry/target` folder.
 Place all your schema files in the
 `java/registry/src/main/resources/public/_schemas/` folder.
 
-A sample set of schemas for a simple teacher-student registry can be found
-[here](https://github.com/gamemaker1/registry-setup-files/tree/main/schemas/).
+A sample set of schemas for a simple student-teacher registry can be found
+[here](https://github.com/sunbird-rc/sunbird-rc-core/tree/main/tools/cli/src/templates/examples/student-teacher/schemas/).
 You can learn how to write your own schemas by following
 [this guide](schema-declaration.md).
 
 ## Configure And Start Dependent Services
 
 Run the following in terminal to download
-[this](https://github.com/gamemaker1/registry-setup-files/blob/main/docker-compose.yaml)
+[this](https://github.com/sunbird-rc/sunbird-rc-core/blob/main/tools/cli/src/templates/examples/student-teacher/docker-compose.yaml)
 Docker Compose file:
 
 ```sh
-$ curl https://raw.githubusercontent.com/gamemaker1/registry-setup-files/main/docker-compose.yaml > docker-compose.yml
-```
-
-Then edit your hosts file (`/etc/hosts` on Linux/MacOS,
-`C:\Windows\System32\Drivers\etc\hosts` on Windows) and add the following line
-at the end:
-
-```
-127.0.0.1 kc
+$ curl https://raw.githubusercontent.com/sunbird-rc/sunbird-rc-core/main/tools/cli/src/templates/examples/student-teacher/docker-compose.yaml > docker-compose.yml
 ```
 
 To download a minimal keycloak configuration, run the following:
 
 ```sh
-$ curl https://raw.githubusercontent.com/gamemaker1/registry-setup-files/main/imports/realm-export.json > import/realm-export.json
+$ curl https://raw.githubusercontent.com/sunbird-rc/sunbird-rc-core/main/tools/cli/src/templates/examples/student-teacher/imports/realm-export.json > import/realm-export.json
 ```
 
 Then start Keycloak (`kc`), Postgres (`db`), Elastic Search (`es`) and the
@@ -153,10 +145,9 @@ $ docker-compose up kc db es cs
 Before we can start the registry, we need to regenerate and retrieve the client
 secret for the `admin-api` client in Keycloak. To do that, follow these steps:
 
-- Go to http://localhost:8080.
+- Go to http://localhost:8080/auth/admin/master/console/#/realms.
 - Login using the username `admin` and password `admin`.
-- Change the current realm from `Master` by hovering over `Master` in the top
-  left and clicking `Sunbird RC` when it appears.
+- Click `Sunbird RC`.
 - Click `Clients` in the panel on the left.
 - Click `admin-api`.
 - Click the `Credentials` tab.
