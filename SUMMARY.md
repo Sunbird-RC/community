@@ -12,12 +12,12 @@
 * [Workflows](learn/workflows.md)
 * [Terminology](learn/terminology.md)
 
-***
+---
 
 * [Consent](consent.md)
 * [Discovery](discovery.md)
 
-## Usage
+## Use
 
 * [Technical Requirements](use/infrastructure-requirements.md)
 * [Schema Configuration](use/schema-configuration.md)
@@ -28,31 +28,27 @@
 
 ## Developer Documentation
 
-* [Installation Guide](guides/installation.md)
-* [Setting Up Your Own Registry Instance](guides/setup-registry-instance.md)
+* [Installation Guide](developer-documentation/installation-guide.md)
+* [Setup A Registry Instance](developer-documentation/setup-a-registry-instance.md)
 
 ---
 
-* [An Introduction To Schemas](guides/introduction-to-schemas.md)
-* [Using The APIs](guides/using-the-apis.md)
-* [Creating Your Own Schemas](guides/schema-declaration.md)
+* [Introduction To Schemas](developer-documentation/introduction-to-schemas.md)
+* [Using The APIs](developer-documentation/using-the-apis.md)
+* [Creating Your Own Schemas](developer-documentation/creating-your-own-schemas.md)
 
 ---
 
-* [Running The Registry From Source](guides/dev-setup.md)
+* [Developer Setup](developer-documentation/developer-setup.md)
 
----
+## API Reference
 
-* [Creating An Entity](apis/create.md)
-* [Authenticating As An Entity](apis/auth.md)
-* [Retrieving An Entity](apis/retrieve.md)
-* [Updating An Entity](apis/update.md)
-* [Making A Claim](apis/claim.md)
-* [Attesting/Rejecting A Claim](apis/attest.md)
-
----
-
-* [Contributing](engage/contributing.md)
+* [Creating An Entity](api-reference/creating-an-entity.md)
+* [Authenticating As An Entity](api-reference/authenticating-as-an-entity.md)
+* [Retrieving An Entity](api-reference/retrieving-an-entity.md)
+* [Updating An Entity](api-reference/updating-an-entity.md)
+* [Making A Claim](api-reference/making-a-claim.md)
+* [Attesting A Claim](api-reference/attesting-a-claim.md)
 
 ## Reference Solutions & Demos <a href="example-use-cases" id="example-use-cases"></a>
 
