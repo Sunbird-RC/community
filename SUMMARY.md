@@ -12,7 +12,7 @@
 * [Workflows](learn/workflows.md)
 * [Terminology](learn/terminology.md)
 
----
+***
 
 * [Consent](consent.md)
 * [Discovery](discovery.md)
@@ -31,14 +31,11 @@
 * [Installation Guide](developer-documentation/installation-guide.md)
 * [Setup A Registry Instance](developer-documentation/setup-a-registry-instance.md)
 
----
+***
 
 * [Introduction To Schemas](developer-documentation/introduction-to-schemas.md)
 * [Using The APIs](developer-documentation/using-the-apis.md)
 * [Creating Your Own Schemas](developer-documentation/creating-your-own-schemas.md)
-
----
-
 * [Developer Setup](developer-documentation/developer-setup.md)
 
 ## API Reference
@@ -59,12 +56,10 @@
   * [User Flow](example-use-cases/digital-locker/digital-locker-user-flow.md)
 * [Skils & Work Credendials Platform](example-use-cases/skill-and-work-credentials-platform.md)
 
-
-
 ## Links
 
 * [Source Code](https://github.com/Sunbird-RC/)
-* [Website](https://sunbirdrc.dev/)
+* [Website](https://sunbirdrc.dev)
 
 ## Community
 
