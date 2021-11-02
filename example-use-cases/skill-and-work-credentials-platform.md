@@ -1,6 +1,15 @@
 # Skils & Work Credendials Platform
 
-This reference solution provides a starting point to create a platform to allow people to collect credentials related to their skills, work experience , share them & get them verified digitally to get related benefits. Currently we have have envisaged providing the following type of credentials Training Credential : Proof or Training Attended Work Credential : Proof of Work Done/ EmploymentSkill Credential : Proof of Skills showcased/assessed Reputation Credential : Proof or reputation using a verified review/rating The following Demo Scenario is currently being developed.
+This reference solution provides a starting point to create a platform to allow people to collect credentials related to their skills, work experience , share them & get them verified digitally to get related benefits.&#x20;
+
+Currently we have have envisaged providing the following type of credentials&#x20;
+
+* Training Credential : Proof or Training Attended
+* Skill Credential : Proof of Skills showcased/assessed&#x20;
+* Work Credential : Proof of Work Done/ Employment
+* Reputation Credential : Proof or reputation using a verified review/rating
+
+&#x20;The following Demo Scenario is currently being developed.&#x20;
 
 ACT #1 Pulse Skilling Center in Nashik registers with the National Skill Registry Platform&#x20;
 
