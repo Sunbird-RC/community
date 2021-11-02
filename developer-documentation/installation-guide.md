@@ -27,7 +27,7 @@ Run `node -v` in the terminal if `node` has been installed correctly:
 
 ```sh
 $ node -v
-v16.11.0
+v16.13.0
 ```
 
 ### Docker
@@ -73,8 +73,3 @@ $ registry help
 ```
 
 This should show you all the commands you can execute using the CLI.
-
-## Next Steps
-
-Now that you have the Registry CLI installed, you can
-[setup your own registry instance](setup-registry-instance.md).

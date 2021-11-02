@@ -18,9 +18,6 @@ $ registry init
 > Don't copy-paste the `$` signs, they indicate that what follows is a terminal
 > command
 
-This will setup and start a registry using Docker on your machine.
-
-## Next Steps
-
-Now that you have a registry instance up and running, you can jump straight into
-[using the APIs](using-the-apis.md).
+This will present you with a set of questions to setup the registry. For the
+purpose of this getting started guide, you can hit enter and use the default
+values for the registry.

@@ -86,14 +86,14 @@ curl --location \
 	--data 'username=1234567890' \
 	--data 'password=opensaber@123' \
 	--data 'grant_type=password' \
-	'http://kc:8080/auth/realms/sunbird-rc/protocol/openid-connect/token'
+	'http://localhost:8080/auth/realms/sunbird-rc/protocol/openid-connect/token'
 ```
 
 **HTTPie**
 
 ```sh
 http --form post \
-	'http://kc:8080/auth/realms/sunbird-rc/protocol/openid-connect/token' \
+	'http://localhost:8080/auth/realms/sunbird-rc/protocol/openid-connect/token' \
 	'content-type: application/x-www-form-urlencoded' \
 	'client_id=registry-frontend' \
 	'username=1234567890' \
