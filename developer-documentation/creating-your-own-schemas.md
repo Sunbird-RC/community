@@ -7,10 +7,10 @@ The following is an example schema for a student entity. The comments should
 guide you as to which fields are required, and what fields should be adjusted as
 per your needs.
 
-```jsonc
-// -- file: student.json
-// -- note: real schema files do not allow inline comments, remove them all incase you are copying and pasting this example.
+> Note: Schema files cannot contain comments. The following example has been
+> commented for your understanding only.
 
+```json
 {
 	// This must be at the top of all schemas. See http://json-schema.org/understanding-json-schema/reference/schema.html#schema
 	"$schema": "http://json-schema.org/draft-07/schema",
@@ -77,7 +77,8 @@ per your needs.
 				// Set the attestation type to `MANUAL` if another entity needs to login
 				// and verify the claim
 				"type": "MANUAL",
-				// What type of entity should be able to attest the claim
+				// What type of entity should be able to attest the claim OR the role an
+				// entity should have (in Keycloak) for them to be able to attest the claim
 				"attestorEntity": "Teacher",
 				// The condition for a certain entity to be able to attest the claim. In
 				// this case, the attestor Teacher entity must be in the same school as
@@ -87,4 +88,32 @@ per your needs.
 		]
 	}
 }
+```
+
+To add a new entity to the registry, place the JSON file defining its schema in
+the schemas folder. If you have setup the registry using the Registry CLI, place
+the JSON file in the `config/schemas` folder. If you are running the registry
+from its source, place the schemas in the
+`java/registry/src/main/resources/public/_schemas` folder. If you are using a
+`docker-compose.yaml` file to start the registry, the schema folder will be
+mentioned in the file under the `volumes` section in the registry container's
+configuration.
+
+Then restart the registry by running the following:
+
+```sh
+# If using a docker-compose file:
+$ docker compose up --force-recreate -d
+# If using the Registry CLI:
+$ registry restart
+```
+
+Wait approximately 40 seconds for the containers to start. You can view the
+status of the registry by running the following:
+
+```sh
+# If using a docker-compose file:
+$ docker compose ps
+# If using the Registry CLI:
+$ registry status
 ```
