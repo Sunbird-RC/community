@@ -8,11 +8,12 @@ To create an entity, we need to make the following HTTP request:
 POST /api/v1/{entity-type}/invite
 ```
 
-| Field          | In     | Type     | Description                  |
-| -------------- | ------ | -------- | ---------------------------- |
-| `content-type` | header | `string` | Set to `application/json`    |
-| `entity-type`  | path   | `string` | The type of entity to create |
-| `...`          | body   | `object` | The entity's data            |
+| Field           | In     | Type     | Description                    |
+| --------------- | ------ | -------- | ------------------------------ |
+| `content-type`  | header | `string` | Set to `application/json`      |
+| `authorization` | header | `string` | Set to `bearer {access-token}` |
+| `entity-type`   | path   | `string` | The type of entity to create   |
+| `...`           | body   | `object` | The entity's data              |
 
 ## Response
 
@@ -67,3 +68,7 @@ echo '{
 	'{registry-url}/api/v1/{entity-type}/invite' \
 	'content-type: application/json'
 ```
+
+> `{registry-url}` is usually http://localhost:{port}. The port can be found
+> under the `rg` section in the `docker-compose.yaml` file and is usually
+> `8081`.

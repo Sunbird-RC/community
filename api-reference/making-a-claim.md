@@ -9,14 +9,15 @@ request:
 PUT /api/v1/{entity-type}/{id}/{field}?send=true
 ```
 
-| Field          | In     | Type      | Description                                          |
-| -------------- | ------ | --------- | ---------------------------------------------------- |
-| `content-type` | header | `string`  | Set to `application/json`                            |
-| `entity-type`  | path   | `string`  | The type of entity to modify                         |
-| `id`           | path   | `string`  | The ID of entity to modify                           |
-| `field`        | path   | `string`  | The field whose value we are sending for attestation |
-| `send`         | query  | `boolean` | Set to `true`                                        |
-| `...`          | body   | `any`     | The value of the claim                               |
+| Field           | In     | Type      | Description                                          |
+| --------------- | ------ | --------- | ---------------------------------------------------- |
+| `content-type`  | header | `string`  | Set to `application/json`                            |
+| `authorization` | header | `string`  | Set to `bearer {access-token}`                       |
+| `entity-type`   | path   | `string`  | The type of entity to modify                         |
+| `id`            | path   | `string`  | The ID of entity to modify                           |
+| `field`         | path   | `string`  | The field whose value we are sending for attestation |
+| `send`          | query  | `boolean` | Set to `true`                                        |
+| `...`           | body   | `any`     | The value of the claim                               |
 
 ## Response
 
@@ -81,3 +82,7 @@ echo '...field-value' | http put \
 	'authorization: bearer {access-token}' \
 	'send==true'
 ```
+
+> `{registry-url}` is usually http://localhost:{port}. The port can be found
+> under the `rg` section in the `docker-compose.yaml` file and is usually
+> `8081`.

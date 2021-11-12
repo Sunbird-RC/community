@@ -11,6 +11,7 @@ POST /api/v1/{attestor-entity-type}/claims/{claim-id}/attest
 | Field                  | In     | Type     | Description                                                                     |
 | ---------------------- | ------ | -------- | ------------------------------------------------------------------------------- |
 | `content-type`         | header | `string` | Set to `application/json`                                                       |
+| `authorization`        | header | `string` | Set to `bearer {access-token}`                                                  |
 | `attestor-entity-type` | path   | `string` | The attestor entity types                                                       |
 | `claim-id`             | path   | `string` | The ID of the claim to attest                                                   |
 | `action`               | body   | `string` | Set to `GRANT_CLAIM` to attest the claim and `REJECT_CLAIM` to reject the claim |
@@ -45,3 +46,7 @@ echo '{
 	'content-type: application/json' \
 	'authorization: bearer {access-token}'
 ```
+
+> `{registry-url}` is usually http://localhost:{port}. The port can be found
+> under the `rg` section in the `docker-compose.yaml` file and is usually
+> `8081`.

@@ -57,17 +57,24 @@ curl --location \
 	--data 'username={username}' \
 	--data 'password=opensaber@123' \
 	--data 'grant_type=password' \
-	'http://{keycloak-url}/auth/realms/{realm}/protocol/openid-connect/token'
+	'{keycloak-url}/auth/realms/{realm}/protocol/openid-connect/token'
 ```
 
 ### HTTPie
 
 ```sh
 http --form post \
-	'http://{keycloak-url}/auth/realms/{realm}/protocol/openid-connect/token' \
+	'{keycloak-url}/auth/realms/{realm}/protocol/openid-connect/token' \
 	'content-type: application/x-www-form-urlencoded' \
 	'client_id=registry-frontend' \
 	'username={username}' \
 	'password=opensaber@123' \
 	'grant_type=password'
 ```
+
+> `{keycloak-url}` is usually http://localhost:8081, and `{realm}` is usually
+> `sunbird-rc`.
+>
+> The `{keycloak-url}` is usually `localhost:{port}`. The port can be found
+> under the `kc` section in the `docker-compose.yaml` file. The `{realm}` can be
+> found at the top of the `realm-export.json` file used to configure keycloak.
