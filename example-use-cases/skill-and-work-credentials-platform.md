@@ -37,4 +37,7 @@ Act #8 Mohandas completes 3 Years & decides to move to Coimbatore.&#x20;
 
 **Of the above, the initial Pilot Demo covers Training & Skill Credentials. (Act#1 Act#7)**&#x20;
 
-A Demo video will be posted soon.&#x20;
+{% embed url="https://youtu.be/X1Vs3GFR8UU" %}
+Skills Platform Demo
+{% endembed %}
+
