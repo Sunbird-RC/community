@@ -8,12 +8,13 @@ To update an entity, we need to make the following HTTP request:
 PUT /api/v1/{entity-type}/{id}
 ```
 
-| Field          | In     | Type     | Description                  |
-| -------------- | ------ | -------- | ---------------------------- |
-| `content-type` | header | `string` | Set to `application/json`    |
-| `entity-type`  | path   | `string` | The type of entity to modify |
-| `id`           | id     | `string` | The ID of entity to modify   |
-| `...`          | body   | `object` | The entity's data            |
+| Field           | In     | Type     | Description                    |
+| --------------- | ------ | -------- | ------------------------------ |
+| `content-type`  | header | `string` | Set to `application/json`      |
+| `authorization` | header | `string` | Set to `bearer {access-token}` |
+| `entity-type`   | path   | `string` | The type of entity to modify   |
+| `id`            | id     | `string` | The ID of entity to modify     |
+| `...`           | body   | `object` | The entity's data              |
 
 ## Response
 
@@ -60,3 +61,7 @@ echo '{
 	'content-type: application/json' \
 	'authorization: bearer {access-token}'
 ```
+
+> `{registry-url}` is usually http://localhost:{port}. The port can be found
+> under the `rg` section in the `docker-compose.yaml` file and is usually
+> `8081`.

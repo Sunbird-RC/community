@@ -8,12 +8,12 @@ To retrieve an entity, we need to make the following HTTP request:
 GET /api/v1/{entity-type}/{id} HTTP/1.1
 ```
 
-| Field           | In     | Type     | Description                                                                                                    |
-| --------------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------- |
-| `content-type`  | header | `string` | Set to `application/json`                                                                                      |
-| `authorization` | header | `string` | Set to `bearer {access-token}` (substitute the access token for the one retrieved in the authentication step ) |
-| `entity-type`   | path   | `string` | The type of entity to retrieve                                                                                 |
-| `id`            | path   | `string` | The ID of the entity to retrieve                                                                               |
+| Field           | In     | Type     | Description                      |
+| --------------- | ------ | -------- | -------------------------------- |
+| `content-type`  | header | `string` | Set to `application/json`        |
+| `authorization` | header | `string` | Set to `bearer {access-token}`   |
+| `entity-type`   | path   | `string` | The type of entity to retrieve   |
+| `id`            | path   | `string` | The ID of the entity to retrieve |
 
 ## Response
 
@@ -57,3 +57,7 @@ http get \
 	'{registry-url}/api/v1/{entity-type}/{id}' \
 	'authorization: bearer {access-token}'
 ```
+
+> `{registry-url}` is usually http://localhost:{port}. The port can be found
+> under the `rg` section in the `docker-compose.yaml` file and is usually
+> `8081`.

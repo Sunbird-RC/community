@@ -108,8 +108,9 @@ $ docker compose up --force-recreate -d
 $ registry restart
 ```
 
-Wait approximately 40 seconds for the containers to start. You can view the
-status of the registry by running the following:
+If you restarted the containers manually (without the CLI), then wait
+approximately 40 seconds for the containers to start. You can view the status of
+the registry by running the following:
 
 ```sh
 # If using a docker-compose file:
@@ -117,3 +118,10 @@ $ docker compose ps
 # If using the Registry CLI:
 $ registry status
 ```
+
+> `docker compose up --force-recreate -d` is only required when a change is made
+> to the configuration (e.g.: an environment variable is updated in the
+> `docker-compose.yaml` file, a new entity schema file was placed in the schemas
+> folder). If you simply want to restart the registry process running in the
+> container, a simple `docker compose restart` or `registry restart --soft` will
+> suffice.
