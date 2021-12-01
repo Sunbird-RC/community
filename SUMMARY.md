@@ -46,8 +46,10 @@
 * [Updating An Entity](api-reference/updating-an-entity.md)
 * [Making A Claim](api-reference/making-a-claim.md)
 * [Attesting A Claim](api-reference/attesting-a-claim.md)
+* [Credential API](api-reference/credential-api.md)
+* [Certificate API](api-reference/certificate-api.md)
 
-## Reference Solutions & Demos <a href="example-use-cases" id="example-use-cases"></a>
+## Reference Solutions & Demos <a href="#example-use-cases" id="example-use-cases"></a>
 
 * [Education Registries](example-use-cases/edu-registries/README.md)
   * [User Flow](example-use-cases/edu-registries/user-flow.md)
