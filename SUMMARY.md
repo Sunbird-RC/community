@@ -48,6 +48,7 @@
 * [Attesting A Claim](api-reference/attesting-a-claim.md)
 * [Credential API](api-reference/credential-api.md)
 * [Certificate API](api-reference/certificate-api.md)
+* [Other APIs](api-reference/other-apis.md)
 
 ## Reference Solutions & Demos <a href="#example-use-cases" id="example-use-cases"></a>
 
