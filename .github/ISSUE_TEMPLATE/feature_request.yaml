@@ -15,6 +15,7 @@ body:
       label: What is the feature request for?
       options:
         - Registry Core
+        - Registry Frontend/UI
         - Registry CLI
         - Documentation
         - Other
@@ -34,6 +35,4 @@ body:
       label: Describe the feature clearly.
       placeholder:
         Screenshots/GIFs showing a mock up of the feature would be great too!
-      value: Add a new command that does ....
-    validations:
-      required: true
+      value: Add a new feature that does ....

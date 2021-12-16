@@ -15,6 +15,7 @@ body:
       label: What is the bug related to?
       options:
         - Registry Core
+        - Registry Frontend/UI
         - Registry CLI
         - Documentation
         - Other
@@ -48,8 +49,10 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: Relevant logs/output
+      label: Relevant logs/output (if any)
       description:
         Please copy and paste any relevant logs/output. This will be
         automatically formatted into code, so no need for backticks.
+        Please also include the output of the `registry version` command
+        if this issue is related to the Registry CLI.
       render: shell
