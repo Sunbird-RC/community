@@ -9,3 +9,9 @@
 | Postgre sql | v12 | v8 |
 | Redis | 6 | 4 |
 
+## Other tooling Used 
+Keycloak
+Elastic Search
+
+## Stock Frontend Interface
+Angular 8
