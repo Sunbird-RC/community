@@ -9,7 +9,7 @@
 | Postgre sql    | v12         | v8              |
 | Redis          | 6           | 4               |
 
-## Other tooling sed
+## Other tooling used
 
 Keycloak&#x20;
 
