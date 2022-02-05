@@ -1,6 +1,6 @@
 # Education Registries
 
-This is a reference solution built on Sunbird RC demonstrating registry of the common subjects involved in an educational system, and flows that allow attesting some of the most common claims like that of education history of students and teaching history of teachers.
+This is a registry of the common subjects involved in an educational system, and flows that allow attesting some of the most common claims like that of education history of students and teaching history of teachers.
 
 ## Subjects
 

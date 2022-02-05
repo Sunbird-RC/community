@@ -1,8 +1,8 @@
-# eLocker
+# Digital Locker
 
 ## eLocker (Digital Locker)
 
-This reference solution provided basic starting point for building a digital eLocker platform to store and manage credentials of users.
+Sunbird eLocker is a reference solution built on Sunbird RC to help countries quickly establish their digital locker platform. This reference solution is provided as a basic starting point for building a digital eLocker platform to store and manage credentials of users.
 
 **High Level Diagram (WIP)**
 
