@@ -96,10 +96,10 @@ Here is what the URL looks like when it's url-encoded:
 To go through the consent flow, click on the URL and login as an entity. In this
 case, we can login as the `Teacher` entity we created in the
 [Creating An Entity section](#creating-an-entity) - enter `1234567890` as the
-username and `opensaber@123` as the password.
+username and `test` as the password.
 
 > Here, `registry-frontend` is the preconfigured client we use to make requests
-> to keycloak and `opensaber@123` is the default password for all entities.
+> to keycloak and `test` is the default password for all entities.
 
 Once you have authenticated yourself as the `Teacher`, you will see a consent
 screen, asking you to grant access to `Registry Frontend`. Click `YES` to grant
@@ -190,7 +190,7 @@ curl --location \
 	--header 'content-type: application/x-www-form-urlencoded' \
 	--data 'client_id=registry-frontend' \
 	--data 'username=1234567890' \
-	--data 'password=opensaber@123' \
+	--data 'password=test' \
 	--data 'grant_type=password' \
 	'http://localhost:8080/auth/realms/sunbird-rc/protocol/openid-connect/token'
 ```
@@ -203,12 +203,12 @@ http --form post \
 	'content-type: application/x-www-form-urlencoded' \
 	'client_id=registry-frontend' \
 	'username=1234567890' \
-	'password=opensaber@123' \
+	'password=test' \
 	'grant_type=password'
 ```
 
 > Here, `registry-frontend` is the preconfigured client we use to make requests
-> to keycloak and `opensaber@123` is the default password for all entities.
+> to keycloak and `test` is the default password for all entities.
 
 This API call should return a JSON object as follows:
 
