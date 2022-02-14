@@ -16,7 +16,7 @@ POST /auth/realms/{realm}/protocol/openid-connect/token
 | `content-type` | header | `string` | Set to `application/x-www-form-urlencoded`                                                  |
 | `client_id`    | body   | `string` | Set to `registry-frontend`                                                                  |
 | `username`     | body   | `string` | The `_osConfig.ownershipAttributes.userId` of the entity according to the schema            |
-| `password`     | body   | `string` | Set to `opensaber@123` (default password, specified in registry config/docker compose file) |
+| `password`     | body   | `string` | Set to `test` (default password, specified in registry config/docker compose file) |
 | `grant_type`   | body   | `string` | Set to `password`                                                                           |
 
 ## Response
@@ -55,7 +55,7 @@ curl --location \
 	--header 'content-type: application/x-www-form-urlencoded' \
 	--data 'client_id=registry-frontend' \
 	--data 'username={username}' \
-	--data 'password=opensaber@123' \
+	--data 'password=test' \
 	--data 'grant_type=password' \
 	'{keycloak-url}/auth/realms/{realm}/protocol/openid-connect/token'
 ```
@@ -68,7 +68,7 @@ http --form post \
 	'content-type: application/x-www-form-urlencoded' \
 	'client_id=registry-frontend' \
 	'username={username}' \
-	'password=opensaber@123' \
+	'password=test' \
 	'grant_type=password'
 ```
 
