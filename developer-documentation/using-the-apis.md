@@ -352,6 +352,7 @@ This will update the entity in the registry and return the following object:
 	"responseCode": "OK"
 }
 ```
+## Deleting An Entity
 
 ## Making A Claim
 
