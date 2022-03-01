@@ -354,6 +354,36 @@ This will update the entity in the registry and return the following object:
 ```
 ## Deleting An Entity
 
+We can delete entities in the registry using the
+[Delete Entity API Endpoint](../api-reference/delete-an-entity.md).
+
+So to delete the subject our `Teacher` entity, we would make the following API call:
+
+**cURL**
+
+```sh
+curl --location \
+	 --request 'DELETE' \
+	 --header 'content-type: application/json' \
+	 --header 'authorization: bearer {access-token}' \
+	 'http://localhost:8081/api/v1/Teacher/{id}'
+```
+
+**HTTPie**
+
+```sh
+http DELETE \
+	'http://localhost:8081/api/v1/Teacher/{id}' \
+	'content-type: application/json' \
+	'authorization: bearer {access-token}'
+```
+
+> Replace the `{id}` above with the entity's `osid` you saved from the create
+> entity request. Replace the `{access-token}` with the `Teacher` entity's
+> access token from the consent/authentication step.
+
+This will delete the entity in the registry and return a blank HTTP 200 response.   
+
 ## Making A Claim
 
 To make a claim, we can use the
