@@ -44,6 +44,7 @@
 * [Authenticating As An Entity](api-reference/authenticating-as-an-entity.md)
 * [Retrieving An Entity](api-reference/retrieving-an-entity.md)
 * [Updating An Entity](api-reference/updating-an-entity.md)
+* [Deleting An Entity](api-reference/delete-an-entity.md)
 * [Making A Claim](api-reference/making-a-claim.md)
 * [Attesting A Claim](api-reference/attesting-a-claim.md)
 * [Credential API](api-reference/credential-api.md)
