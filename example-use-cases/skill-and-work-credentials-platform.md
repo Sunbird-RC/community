@@ -9,7 +9,7 @@ Currently we have have envisaged providing the following type of credentials&#x2
 * Work Credential : Proof of Work Done/ Employment
 * Reputation Credential : Proof or reputation using a verified review/rating
 
-** The following Demo Scenario is currently being developed. **
+&#x20;**The following Demo Scenario is currently being developed.**&#x20;
 
 ACT #1 Pulse Skilling Center in Nashik registers with the National Skill Registry Platform&#x20;
 
