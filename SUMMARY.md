@@ -63,6 +63,7 @@
 ## Links
 
 * [Source Code](https://github.com/Sunbird-RC/)
+* [Releases & Changelogs](https://github.com/Sunbird-RC/sunbird-rc-core/releases)
 * [Website](https://sunbirdrc.dev)
 
 ## Community
@@ -73,4 +74,3 @@
 * [Community Events](engage/community-events.md)
 * [Roadmap](engage/product-roadmap.md)
 * [Status By Track](engage/status-by-track.md)
-* [Releases & Changelogs](https://github.com/Sunbird-RC/sunbird-rc-core/releases)
