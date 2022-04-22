@@ -41,3 +41,10 @@ Act #8 Mohandas completes 3 Years & decides to move to Coimbatore.&#x20;
 Skills Platform Demo
 {% endembed %}
 
+## Source Code
+
+The source code to install this example can be found at [https://github.com/Sunbird-RC/demo-skills-registry](https://github.com/Sunbird-RC/demo-skills-registry)
+
+## Demo/Sandbox site link
+
+Usecase implementation can be found here at [https://skills.xiv.in/](https://skills.xiv.in)
