@@ -17,7 +17,11 @@ This is a reference solution built on Sunbird RC demonstrating registry of the c
 
 ## Source Code
 
-The source code to install this example can be found at [https://github.com/ref-registries/edu-core-registries](https://github.com/ref-registries/edu-core-registries)
+The source code to install this example can be found at [https://github.com/Sunbird-RC/demo-education-registry](https://github.com/Sunbird-RC/demo-education-registry)
+
+## Demo/Sandbox site link
+
+Usecase implementation can be found here at [https://ndear.xiv.in/](https://ndear.xiv.in)
 
 ## Demo Videos
 
