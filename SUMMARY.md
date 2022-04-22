@@ -59,6 +59,7 @@
 * [Digital Locker](example-use-cases/digital-locker/README.md)
   * [User Flow](example-use-cases/digital-locker/digital-locker-user-flow.md)
 * [Skils & Work Credendials Platform](example-use-cases/skill-and-work-credentials-platform.md)
+* [Certificate Issuance](example-use-cases/certificate-issuance.md)
 
 ## Links
 
