@@ -2,7 +2,7 @@
 
 ### Installation
 
-You can get the latest code from the OpenSaber RC UI Repository [https://github.com/Sunbird-RC/opensaber-rc-ui](https://github.com/Sunbird-RC/opensaber-rc-ui)
+You can get the latest code from the Sunbird RC UI Repository [https://github.com/Sunbird-RC/sunbird-rc-ui](https://github.com/Sunbird-RC/sunbird-rc-ui)
 
 This is an Angular 8 project, and you need to install the dependencies, and run the project.
 
@@ -14,7 +14,7 @@ The application needs to be configured with the appropriate fields to be able to
 
 | Key | Value |
 | :--- | :--- |
-| `baseUrl` | Base URL for the OpenSaber backend. Eg: [https://registry.com/api](https://registry.com/api) |
+| `baseUrl` | Base URL for the Sunbird backend. Eg: [https://registry.com/api](https://registry.com/api) |
 | `schemaUrl` | URL to the OpenAPI schema definition. This could be a HTTP path or a path to a local file Eg: [https://registry.com/api/schema.json](https://registry.com/api/schema.json) OR /assets/schema.json |
 | `logo` | URL to logo. This logo is displayed in the header of the UI |
 
@@ -54,7 +54,7 @@ In this file `forms` is an array with key/value pairs. They key is the code / sl
 
 #### Layouts
 
-The `layouts.json` is used to define how the public and private profile pages look like. For each entity in OpenSaber backend, a layout file should be defined with the fields and the order in which they should display.
+The `layouts.json` is used to define how the public and private profile pages look like. For each entity in Sunbird backend, a layout file should be defined with the fields and the order in which they should display.
 
 In this file `layouts` is an array with key/value pairs. They key is the code / slug of the layout page which is used to access the form. Eg: if the key for a layout is `employee-profile` that page can be accessed via `/profile/employee-profile`. Each layout definition will have the below fields -
 

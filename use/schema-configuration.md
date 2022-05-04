@@ -61,7 +61,7 @@ In the example given below Place is Concept that registry is storing supporting 
 
 ## Configuration
 
-In addition to JSON LD specific data types OpenSaberRC supports various extension configurations under “\_osConfig”. Access, indexing, primary key etc are configurable using schema configuration.
+In addition to JSON LD specific data types SunbirdRC supports various extension configurations under “\_osConfig”. Access, indexing, primary key etc are configurable using schema configuration.
 
 #### Entity and Properties
 

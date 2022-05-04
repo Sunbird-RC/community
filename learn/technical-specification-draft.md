@@ -151,7 +151,7 @@ JSON LD schema allows defining basic type constraints like numeric type, text or
 
 ### Schema access api:
 
-OpenSaberRC supports following apis for accessing schema:
+SunbirdRC supports following apis for accessing schema:
 
 ```
 GET /api/docs/{entityName}.json
