@@ -21,7 +21,7 @@ The source code to install this example can be found at [https://github.com/Sunb
 
 ## Demo/Sandbox site link
 
-Usecase implementation can be found here at [https://ndear.xiv.in/](https://ndear.xiv.in)
+Usecase implementation can be found here at [https://demo-education-registry.xiv.in/](https://demo-education-registry.xiv.in/)
 
 ## Demo Videos
 
