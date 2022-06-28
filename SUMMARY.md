@@ -36,8 +36,8 @@
 * [Introduction To Schemas](developer-documentation/introduction-to-schemas.md)
 * [Using The APIs](developer-documentation/using-the-apis.md)
 * [Creating Your Own Schemas](developer-documentation/creating-your-own-schemas.md)
-* [VC Verification Module](vc-verification-module.md)
 * [Developer Setup](developer-documentation/developer-setup.md)
+* [VC Verification Module](vc-verification-module.md)
 
 ## API Reference
 

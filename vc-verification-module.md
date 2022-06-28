@@ -8,15 +8,15 @@ description: >-
 
 This NPM module is developed for scanning the QR(Quick Response) codes inside your Angular applications. This library is designed to be used in sunbird RC platforms.
 
-**To use this module you need to follow a few steps.**
+### **To use this module you need to follow the below steps**
 
-1. Install vc-verification npm package in your angular project. Using below command
+1. Install the vc-verification npm package in your angular project. Using the below command
 
 ```
 npm i vc-verification
 ```
 
-2\. You need to install the @zxing/ngx-scanner npm module. Before install this npm module you need to check your angular compatible version with this package version. You can check the details below too.
+2\. You need to install the @zxing/ngx-scanner npm module. Before installing this npm module you need to check your angular compatible version with this package version. You can check the details below too.
 
 Run cmd -
 
@@ -33,4 +33,117 @@ npm i @zxing/ngx-scanner@vx.x.x
 
 \
 For more detail about compatible version you can check this doc - [https://www.npmpeer.dev/packages/@zxing/ngx-scanner/compatibility](https://www.npmpeer.dev/packages/@zxing/ngx-scanner/compatibility)
+
+3\. Import **vc-verification** and **@zxing/ngx-scanner** library in your **app.module.ts** file
+
+```
+import { VerifyModule } from 'vc-verification';
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
+
+import * as configData from '../assets/config.json';  // Read config from .json file
+
+Or
+// Add configuration in app.module.ts file
+const configData = {
+  baseUrl: "assets/api/event-detail.json",
+ }
+
+@NgModule({
+  declarations: [
+   AppComponent
+  ],
+  imports: [
+  .....
+  ......
+    VerifyModule.forChild(configData),  < —
+    ZXingScannerModule, < —
+    .....
+  ......
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+
+export class AppModule { }
+
+```
+
+4.1 Anyone can use the Default Scan template using the sb-vc-verify selector or he/she can use only verify service too.
+
+Add below code in your app.component.html file
+
+```
+ <sb-vc-verification> </sb-vc-verification>
+```
+
+4.2 If anyone wants to change labels and messages from template. You can pass it through item property.
+
+app.component.html
+
+```
+<sb-vc-verification [item]="itemData"></sb-vc-verification>
+```
+
+App.component.ts : Change the value of key
+
+```
+this.itemData = 
+{
+       "scanNote”:”To verify any eLocker document, simply scan the QR code that's on the document.”,
+       "verify_certificate": 'Verify Certificate',
+       "scan_qrcode": 'Scan QR Code',
+       "detecting_qrcode": 'Detecting QR code',
+       "back": 'Back',
+       "certificate_isverified": 'Certificate is verified',
+       "verify_another_Certificate": 'Verify another Certificate',
+       "cetificate_not_valid": 'This Certificate is not valid',
+       “scan_qrcode_again” : ‘Please scan QR code again’
+     }
+
+   });
+```
+
+4.3 If anyone wants to use their own he/she can implement their own UI and he/she can use service methods of vc-verification library.
+
+**App.component.ts**: Import service file in your component where you want to call vc-verification library service method call.
+
+```
+import { VerifyService } from 'verify-module'; 
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+ 
+  constructor(public verifyService: VerifyService) {
+
+    this.verifyService.scanSuccessHandler(event).then((res) => {
+      console.log(res);
+    })
+  }
+
+}
+```
+
+**List of service methods**
+
+| Method Name                     | Parameter | Description                          |
+| ------------------------------- | --------- | ------------------------------------ |
+| enableScanner()                 | -         | To Hide/show scanner screen          |
+| scanSuccessHandler($event: any) | $event    | This method used to verify scan data |
+|                                 |           |                                      |
+
+## Markdown
+
+1.  You need to install the @zxing/ngx-scanner npm module. Before installing this npm module you need to check your angular compatible version with this package version. You can check the details below too.
+
+    \
+    Run cmd -\
+    \
+    `npm i @zxing/ngx-scanner@vx.x.x`
+2.
+3.
+4.
 
