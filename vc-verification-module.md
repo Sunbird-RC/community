@@ -16,7 +16,7 @@ This NPM module is developed for scanning the QR(Quick Response) codes inside yo
 npm i vc-verification
 ```
 
-2\. You need to install the @zxing/ngx-scanner npm module. Before installing this npm module you need to check your angular compatible version with this package version. You can check the details below too.
+**2.** You need to install the @zxing/ngx-scanner npm module. Before installing this npm module you need to check your angular compatible version with this package version. You can check the details below too.
 
 Run cmd -
 
@@ -133,7 +133,6 @@ export class AppComponent {
 | ------------------------------- | --------- | ------------------------------------ |
 | enableScanner()                 | -         | To Hide/show scanner screen          |
 | scanSuccessHandler($event: any) | $event    | This method used to verify scan data |
-|                                 |           |                                      |
 
 ## Source Code
 
