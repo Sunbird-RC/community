@@ -135,15 +135,6 @@ export class AppComponent {
 | scanSuccessHandler($event: any) | $event    | This method used to verify scan data |
 |                                 |           |                                      |
 
-## Markdown
+## Source Code
 
-1.  You need to install the @zxing/ngx-scanner npm module. Before installing this npm module you need to check your angular compatible version with this package version. You can check the details below too.
-
-    \
-    Run cmd -\
-    \
-    `npm i @zxing/ngx-scanner@vx.x.x`
-2.
-3.
-4.
-
+The source code to install this example can be found at [https://github.com/Sunbird-RC/vc-verification](https://github.com/Sunbird-RC/vc-verification)
