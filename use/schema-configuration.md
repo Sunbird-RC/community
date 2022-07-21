@@ -53,6 +53,9 @@ In the example given below Place is Concept that registry is storing supporting 
        },
        "contact": {
          "type": "string"
+       },
+       "email": {
+         "type": "string"
        }
      }
    }
@@ -75,6 +78,16 @@ Enum - restricted list of values
 
 Number - numeric data
 
+Integer - The integer type is used for integral numbers
+
+Object - Objects are the mapping type in JSON. They map “keys” to “values”. In JSON, the “keys” must always be strings. Each of these pairs is conventionally referred to as a “property”.
+
+Array - Arrays are used for ordered elements. In JSON, each element in an array may be of a different type.
+
+Boolean - The boolean type matches only two special values: true and false. Note that values that evaluate to true or false, such as 1 and 0, are not accepted by the schema.
+
+More details are available here [Type-specific keywords](https://json-schema.org/understanding-json-schema/reference/type.html).
+
 #### List of attributes
 
 Collection of data values are also supported as multiple data value might represent the entity property for example subjects taught : \[“english”,”science”, “mathematics”\]
@@ -87,23 +100,18 @@ Collection of data values are also supported as multiple data value might repres
 2. Private \(privateFields\)
 3. Internal
 
-Public data attributes are available in discovery by default any sort of permission / authorization is not needed by default.
+Public data attributes are available in discovery by default any sort of permission / authorization is not needed by default. By default all fields are public.
 
 Private attributes can be accessed by the owner by default, with consent 3rd party can access the data field.
 
 Internal fields are system fields that only serve internal functionalities, these can never be accessed by any actors in the system.
 
-#### Primary Keys for Entities
-
-Primary keys from domain space will help enforce uniqueness of information and make it easily accessible. “uniqueIndexFields” can be used to configure the same.
-
-Example:
-
-`"uniqueIndexFields": [`
-
-`"identityValue"`
-
-`]`
+### System fields:
+The following property is used to add additional audit fields to entity, to know who/when created/updated the entity.
+1. _osCreatedAt
+2. _osUpdatedAt
+3. _osCreatedBy
+4. _osUpdatedBy
 
 ### Index field set
 
@@ -111,54 +119,100 @@ Indexes can help in faster access to information, based on usage context index f
 
 `"indexFields": ["phoneNumber"],`
 
+### Primary Keys for Entities
+
+Primary keys from domain space will help enforce uniqueness of information and make it easily accessible. “uniqueIndexFields” can be used to configure the same.
+
+Example:
+
+`"uniqueIndexFields": ["identityProperty"]`
+
 ### Validation Extensions
 
 JSON LD schema allows defining basic type constraints like numeric type, text or list of items etc. Also it allows a list of possible values for given attributes \(enum\) and regular expressions based constraints for the value.
 
-### Add registry based on roles
+### Roles
+#### Add registry based on roles
 Using `roles` config, one can set the authorization for add operation
 
 Example:
 let's say there are two registries Teacher and EducationCertificate, assume only Teacher can add the EducationCertificate, then assign role "teacher" to the relevant user in a keycloack and add the "roles" : ["teacher"] in the EducationCertificate config, now only token which has the role "teacher" can add the EducationCertificate
 
-### Invite based on roles
+#### Invite based on roles
 Using `inviteRoles` config, one can set the authorization for invite operation
+
+#### Delete based on roles
+Using `deleteRoles` config, one can set the authorization for delete operation
 
 #### Example: 
 ##### 1. Only teacher can invite student
-let's say there are two registries Teacher and Student, assume only Teacher can invite the Student, then assign role "teacher" to the relevant user in a keycloack and add the "inviteRoles" : ["teacher"] in the Student schema config, now only token which has the role "teacher" can invite the Student. 
+Let's say there are two registries Teacher and Student, assume only Teacher can invite the Student, then assign role "teacher" to the relevant user in a keycloack and add the "inviteRoles" : ["teacher"] in the Student schema config, now only token which has the role "teacher" can invite the Student. 
 
 ##### 2. Anyone can invite student
 Set "inviteRoles" : ["anonymous"] in Student schema config, now anyone can invite the Student
 
+##### _Anonymous role: Any of the above role configs can be set to anonymous to allow anonymous access to the respective operations_
 
 ### Create login for registry
 By default login is disabled for the registry, we need to set `enableLogin:true` inorder to create the user in keycloak.
+Login credentials for an entity can be configured through `ownershipAttributes` attributes. This attributes contains a list of objects for which a user enitity in keycloak will be created.
 
+```
+"ownershipAttributes": [
+      {
+        "email": "/email",
+        "mobile": "/contact",
+        "userId": "/contact"
+      }
+    ]
+```
+We can have more than one owner for an entity. The respective json paths for the fields needs to be configured. All the properties are mandatory for creating an owner.  
 ### Attestation policy
 List of policies can be configured for the attestation.
 
-```
+```json
 {
-    "property": "educationDetails/[]",
-    "paths": ["$.educationDetails[?(@.osid == 'PROPERTY_ID')]['instituteName', 'program', 'graduationYear', 'marks']", "$.identityDetails['fullName']"],
+              
+    // The unique name for the attestation policy
+    "name": "studentInstituteAttest",
+    // The schema for the additional input to be captured that is not part of the schema/entity
+    "additionalInput": {
+      "enrollmentNumber": {"type": "string"}
+    },
+    // The fields/properties to be used for attestation. The value of the below mentioned properties
+    // will be extracted and sent for attestation.
+    // The path to the field (dot-separate fields if the field is nested, $
+    // is the root of the entity)
+    "attestationProperties": {
+      "name": "$.name",
+      "educationDetails": "$.school"
+    },
+    // Set the attestation type to `MANUAL` if another entity needs to login
+    // and verify the claim
     "type": "MANUAL",
-    "attestorEntity": "Teacher",
-    "conditions": "(ATTESTOR#$.experience.[*].instituteOSID#.contains(REQUESTER#$.instituteOSID#) && ATTESTOR#$.experience[?(@.instituteOSID == REQUESTER#$.instituteOSID#)]['_osState']#.contains('PUBLISHED'))"
+    // What type of entity should be able to attest the claim OR the role an
+    // entity should have (in Keycloak) for them to be able to attest the claim
+    "attestorPlugin": "did:internal:ClaimPluginActor?entity=Teacher",
+    // The condition for a certain entity to be able to attest the claim. In
+    // this case, the attestor Teacher entity must be in the same school as
+    // the Student entity to attest the claim
+    "conditions": "(ATTESTOR#$.school#.contains(REQUESTER#$.school#))"
 }
 ```
-### Attestation Policy Attributes,
-#### Property
-It is used to pick up the specific property from the registry.
-`"property": "educationDetails/[]"` this will pick up the educationDetails property for the attestation.
-#### Paths
-After attestation the system will store what are all the attributes are attessted, paths will basically helps us to pick those primary attributes which are used for the attestation and it gets saved in `_osAttestedData`
-### Attestation Type
-#### MANUAL
-In this type two types of user will come into the picture, i.e Attestor and Requestor, Requestor will rise a claim, and the Attestor will approve/reject.
-The authorization of the attestor will be defined in the config using `condition` attribute.
+#### Attestation Policy Attributes:
+#### name
+A unique name for identifying an attestation policy. This name will be used to refer an attestation policy while raising a claim.
+#### attestationProperties
+This field refers the schema properties which will be considered for attestation.
+#### additionalInput
+This denotes the additional inputs that needs to be captured outside the existing entity/schema fields for generating/processing the attestation.
+#### type
+This denotes if the attestation should be raised manually or automatically.
+- MANUAL:
+In this two types of user will come into the picture, i.e Attestor and Requestor, Requestor will rise a claim, and the Attestor will approve/reject.
+The authorization of the attestor will be defined in the config using `conditions` attribute.
 
-Example: Only teacher from the particular institue can attest the student, 
+Example: Only teacher from the particular institute can attest the student, 
 ```
 Student Education
 {
@@ -197,5 +251,56 @@ Teacher Experience
 }
 ```
 For this scenario the condition would be,
-```conditions: "(ATTESTOR#$.experience.[*].instituteOSID#.contains(REQUESTER#$.instituteOSID#) && ATTESTOR#$.experience[?(@.instituteOSID == REQUESTER#$.instituteOSID#)"```
-The above snippet says that attestor's education institue  and requestor's experience must belongs to the same institute.
+```conditions: "(ATTESTOR#$.experience.[*].instituteOSID#.contains(REQUESTER#$.instituteOSID#))"```
+The above snippet says that attestor's education institute  and requestor's experience must belong to the same institute.
+
+- AUTOMATED: If the attestation policy is `AUTOMATED` then a claim will be initiated automatically without any user intervention/API calls. When there is any addition/modification to the `attestationProperties` then the matching attestation policy will be triggered and executed.
+
+#### attestorPlugin
+This denotes who processes the claims that is been raised by the user. By default SunbirdRC will be shipped with a `ClaimPluginActor` who will process and store the respective claims in DB. If we need additional or different functionalities then we can 
+
+### Credential Template
+This property holds the template to be used for generating the VC. It needs to be a template that follows W3C standards. It can be an url or the template object can be defined inline. The signed data (VC) generated by this template will be used to generate a QR Code. 
+- Ex: inline: 
+```json
+{
+  ...
+  "credentialTemplate": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://gist.githubusercontent.com/dileepbapat/eb932596a70f75016411cc871113a789/raw/498e5af1d94784f114b32c1ab827f951a8a24def/skill"
+    ],
+    "type": [
+      "VerifiableCredential"
+    ],
+    "issuanceDate": "2021-08-27T10:57:57.237Z",
+    "credentialSubject": {
+      "type": "Person",
+      "name": "{{name}}",
+      "trainedOn": "{{trainingTitle}}"
+    },
+    "issuer": "did:web:sunbirdrc.dev/vc/skill"
+  },
+  ...
+}
+```
+- Ex: external url
+```json
+{
+  ...
+  "credentialTemplate": "https://gist.githubusercontent.com/tejash-jl/550aa1365c37e09065f1f134c936530d/raw/54f10668f8cad3953d9b09c09212d4ec4434ae7f/SkillExternalCredentialTemplate.json"
+  ...
+}
+```
+
+### Certificate Template
+This property holds the template to be used for generating visual certificate. The key can be used while downloading the certificate.
+```json
+{
+  ...
+  "certificateTemplates": {
+    "svg": "https://raw.githubusercontent.com/dileepbapat/ref-sunbirdrc-certificate/main/schemas/templates/TrainingCertificate.svg"
+  },
+  ...
+}
+```
