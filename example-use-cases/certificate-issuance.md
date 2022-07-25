@@ -8,6 +8,6 @@ The source code to install this example can be found at [https://github.com/Sunb
 
 ## Demo/Sandbox site link
 
-Usecase implementation can be found here at [https://sunbird-certificate-demo.xiv.in/](https://sunbird-certificate-demo.xiv.in)
+Usecase implementation can be found here at [https://sunbird-certificate-demo.xiv.in/](https://sunbird-certificate-demo.xiv.in/)
 
 \
