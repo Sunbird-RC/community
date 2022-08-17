@@ -59,9 +59,10 @@
 * [Vaccination Platform](example-use-cases/vaccination.md)
 * [ELocker](example-use-cases/digital-locker/README.md)
   * [User Flow](example-use-cases/digital-locker/digital-locker-user-flow.md)
-* [Skils & Work Credendials Platform](example-use-cases/skill-and-work-credentials-platform/README.md)
+* [Skils & Work Credendials Platform](example-use-cases/skill-and-work-credentials-platform.md)
   * [User Flow](example-use-cases/skill-and-work-credentials-platform/user-flow.md)
-* [Certificate Issuance](example-use-cases/certificate-issuance.md)
+* [Certificate Issuance](example-use-cases/certificate-issuance/README.md)
+  * [User Flow](example-use-cases/certificate-issuance/user-flow.md)
 * [Admin Portal (WIP)](example-use-cases/admin-portal-wip/README.md)
   * [User Flow](example-use-cases/admin-portal-wip/user-flow.md)
 
