@@ -57,7 +57,7 @@
 * [Education Registries](example-use-cases/edu-registries/README.md)
   * [User Flow](example-use-cases/edu-registries/user-flow.md)
 * [Vaccination Platform](example-use-cases/vaccination.md)
-* [Digital Locker](example-use-cases/digital-locker/README.md)
+* [ELocker](example-use-cases/digital-locker/README.md)
   * [User Flow](example-use-cases/digital-locker/digital-locker-user-flow.md)
 * [Skils & Work Credendials Platform](example-use-cases/skill-and-work-credentials-platform.md)
 * [Certificate Issuance](example-use-cases/certificate-issuance.md)
@@ -70,6 +70,7 @@
 * [Releases & Changelogs](https://github.com/Sunbird-RC/sunbird-rc-core/releases)
 * [Website](https://sunbirdrc.dev)
 * [Roadmap](https://github.com/orgs/Sunbird-RC/projects/9/views/1)
+* [Reference links](links/reference-links.md)
 
 ## Community
 
