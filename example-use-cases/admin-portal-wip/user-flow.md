@@ -6,13 +6,13 @@ description: Following steps will be included in the setup
 
 ## User Personas
 
-**Administrator**&#x20;
+**Administrator / Adopters**
 
 As an administrator, I would like to complete the registry setup and manage the entity details and configurations
 
 ## User Flow
 
-Below steps will be available in installation setup&#x20;
+Below steps will be available in completing installation setup
 
 1. Administrator login
 2. Get started page
