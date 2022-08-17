@@ -61,7 +61,8 @@
   * [User Flow](example-use-cases/digital-locker/digital-locker-user-flow.md)
 * [Skils & Work Credendials Platform](example-use-cases/skill-and-work-credentials-platform.md)
 * [Certificate Issuance](example-use-cases/certificate-issuance.md)
-* [Admin Portal (WIP)](example-use-cases/admin-portal-wip.md)
+* [Admin Portal (WIP)](example-use-cases/admin-portal-wip/README.md)
+  * [User Flow](example-use-cases/admin-portal-wip/user-flow.md)
 
 ## Links
 

@@ -2,7 +2,7 @@
 
 Registry setup & configuration workflow can be streamlined with this. This will act as a easy installation guide for new users. The specified workflow will be available after basic installation to complete the registry and issuance setup.
 
-Workflow screens: Coming soon
+
 
 ## Source Code
 
