@@ -11,11 +11,7 @@
 * [Design Principles](learn/design-principles.md)
 * [Workflows](learn/workflows.md)
 * [Terminology](learn/terminology.md)
-
-***
-
-* [Consent](consent.md)
-* [Discovery](discovery.md)
+* [Core Capabilities](learn/core-capabilities.md)
 
 ## Use
 
@@ -25,7 +21,6 @@
 * [Setup the Frontend](use/setup-the-frontend.md)
 * [Leveraging Existing data stores](use/leveraging-existing-data-stores-directories.md)
 * [SSO with existing systems](use/sso-with-existing-systems.md)
-* [Core capabilities](use/core-capabilities.md)
 
 ## Developer Documentation
 
