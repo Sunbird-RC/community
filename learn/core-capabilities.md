@@ -1,5 +1,5 @@
 # Core Capabilities (WIP)
-<img width="800" alt="Screenshot 2022-10-14 at 7 40 58 PM" src="https://user-images.githubusercontent.com/580711/195899958-d88fd936-2a91-424c-9f92-ed86613b9f9a.png">
+<img width="900" alt="Screenshot 2022-10-14 at 7 40 58 PM" src="https://user-images.githubusercontent.com/580711/195899958-d88fd936-2a91-424c-9f92-ed86613b9f9a.png">
 
 
 A governing body would be able to get started with building Registry and Credentialing platform after [installation](https://docs.sunbirdrc.dev/use/infrastructure-requirements)
