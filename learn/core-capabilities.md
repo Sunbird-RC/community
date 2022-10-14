@@ -4,15 +4,10 @@
 
 ## Bootstrapping Registry
 
-### Defining Schema as per Policy
-
-### Defining presentation template
-
-### Configuring workflow (Rules, Attestation, Consent)
-
-### Management Admin Portal
-
-
+* Defining Schema as per Policy
+* Defining presentation template
+* Configuring workflow (Rules, Attestation, Consent)
+* Management Admin Portal
 
 ## Veriable Credentials (VC)
 
