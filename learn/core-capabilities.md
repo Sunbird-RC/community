@@ -2,11 +2,6 @@
 <img width="600" alt="Screenshot 2022-10-14 at 7 40 58 PM" src="https://user-images.githubusercontent.com/580711/195899958-d88fd936-2a91-424c-9f92-ed86613b9f9a.png">
 
 
-A governing body would be able to get started with building Registry and Credentialing platform after [installation](https://docs.sunbirdrc.dev/use/infrastructure-requirements)
-in 2 ways, through:
-1. [Command Line](https://docs.sunbirdrc.dev/developer-documentation/setup-a-registry-instance)
-2. [Administration Portal](https://docs.sunbirdrc.dev/example-use-cases/admin-portal-wip)
-
 ## Registry
 A governing body/authority would be able to build registry that acts as a single source of truth
 1. Define Schema as per policy:
