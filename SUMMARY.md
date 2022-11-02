@@ -12,6 +12,7 @@
 * [Workflows](learn/workflows.md)
 * [Terminology](learn/terminology.md)
 * [Core Capabilities](learn/core-capabilities.md)
+* [FAQs](learn/faqs.md)
 
 ## Use
 
@@ -21,6 +22,16 @@
 * [Setup the Frontend](use/setup-the-frontend.md)
 * [Leveraging Existing data stores](use/leveraging-existing-data-stores-directories.md)
 * [SSO with existing systems](use/sso-with-existing-systems.md)
+
+## Build
+
+* [Build Registry and Credential platform](<build/Build Registry & Credential Platform/README.md>)
+  * [Command Line](<build/Build Registry & Credential Platform/command-line.md>)
+  * [Tenant/Admin Portal](<build/Build Registry & Credential Platform/tenant-admin-portal/README.md>)
+    * [Login and Get Started](<build/Build Registry & Credential Platform/tenant-admin-portal/login-and-get-started.md>)
+    * [Create Schema](<build/Build Registry & Credential Platform/tenant-admin-portal/create-schema.md>)
+    * [Attestation Workflows (WIP)](<build/Build Registry & Credential Platform/tenant-admin-portal/attestation-workflows-wip.md>)
+    * [Verifiable Credential Template (WIP)](<build/Build Registry & Credential Platform/tenant-admin-portal/verifiable-credential-template-wip.md>)
 
 ## Developer Documentation
 
@@ -52,15 +63,13 @@
 
 * [Education Registries](example-use-cases/edu-registries/README.md)
   * [User Flow](example-use-cases/edu-registries/user-flow.md)
-* [Vaccination Platform](example-use-cases/vaccination.md)
-* [ELocker](example-use-cases/digital-locker/README.md)
-  * [User Flow](example-use-cases/digital-locker/digital-locker-user-flow.md)
-* [Skils & Work Credendials Platform](example-use-cases/skill-and-work-credentials-platform.md)
-  * [User Flow](example-use-cases/skill-and-work-credentials-platform/user-flow.md)
 * [Certificate Issuance](example-use-cases/certificate-issuance.md)
   * [User Flow](example-use-cases/certificate-issuance/user-flow.md)
-* [Admin Portal (WIP)](example-use-cases/admin-portal-wip/README.md)
-  * [User Flow](example-use-cases/admin-portal-wip/user-flow.md)
+* [ELocker](example-use-cases/digital-locker/README.md)
+  * [User Flow](example-use-cases/digital-locker/digital-locker-user-flow.md)
+* [Vaccination Platform](example-use-cases/vaccination.md)
+* [Skils & Work Credendials Platform](example-use-cases/skill-and-work-credentials-platform.md)
+  * [User Flow](example-use-cases/skill-and-work-credentials-platform/user-flow.md)
 
 ## Links
 

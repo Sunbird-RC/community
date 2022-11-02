@@ -1,0 +1,2 @@
+# Verifiable Credential Template (WIP)
+
