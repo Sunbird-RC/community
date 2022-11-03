@@ -33,6 +33,9 @@
     * [Create Schema](<build/Build Registry & Credential Platform/tenant-admin-portal/create-schema.md>)
     * [Attestation Workflows (WIP)](<build/Build Registry & Credential Platform/tenant-admin-portal/attestation-workflows-wip.md>)
     * [Verifiable Credential Template (WIP)](<build/Build Registry & Credential Platform/tenant-admin-portal/verifiable-credential-template-wip.md>)
+    * [Ownership (WIP)](<build/Build Registry & Credential Platform/tenant-admin-portal/ownership-wip.md>)
+    * [Publish (WIP)](<build/Build Registry & Credential Platform/tenant-admin-portal/publish-wip.md>)
+    * [Dashboard](<build/Build Registry & Credential Platform/tenant-admin-portal/dashboard.md>)
 
 ## Developer Documentation
 
