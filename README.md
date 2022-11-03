@@ -8,9 +8,8 @@ Sunbird RC is listed as a global Digital Public Good (DPG) within the [Digital P
 
 This is an independently usable digital building block and is part of overall [Sunbird](https://sunbird.org/) open source initiative. Similar to various projects under Sunbird, this is also open sourced under MIT license and you are free to adopt for your purposes. We strongly encourage you to contribute back, participate in the community to help improve this project.
 
-Use the Github  [discussions board](https://github.com/Sunbird-RC/community/discussions) or [use this invite to join Discord community channel](https://discord.gg/Q5mvw2mGC8) to participate in the community and help improve. For feature requests and issues, use the [issue tracker](https://github.com/Sunbird-RC/community/issues). We also encourage you to help fix documentation and code by doing pull requests on the appropriate repos here.
+Use the Github [discussions board](https://github.com/Sunbird-RC/community/discussions) or [use this invite to join Discord community channel](https://discord.gg/Q5mvw2mGC8) to participate in the community and help improve. For feature requests and issues, use the [issue tracker](https://github.com/Sunbird-RC/community/issues). We also encourage you to help fix documentation and code by doing pull requests on the appropriate repos here.
 
 Copyright © 2020 EkStep Foundation. All content here is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/) unless otherwise noted.
 
-## Sunbird RC Roadmap
-https://github.com/orgs/Sunbird-RC/projects/9/views/1
+##
