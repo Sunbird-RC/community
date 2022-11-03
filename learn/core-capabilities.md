@@ -48,4 +48,4 @@ A governing body/authority would be able to build registry that acts as a single
 Citizen (credential owners/holders) can access Verifiable Credentials anytime anywhere.
 
 1. Fetch and store personal verifiable credentials
-2. Consent based sharing of verifiable credentiala
+2. Consent based sharing of verifiable credentials
