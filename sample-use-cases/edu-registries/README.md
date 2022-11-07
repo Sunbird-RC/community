@@ -15,15 +15,13 @@ This is a reference solution built on Sunbird RC demonstrating registry of the c
 2. Teaching Experience Claim : Added by Teacher and attested by Institute
 3. Education Experience Claim : Added by Student and attested by a Teacher who is part of the related Institute (A Teacher is part of the institute as long as they have an active experience for the Institute in question)
 
-## Source Code
 
-The source code to install this example can be found at [https://github.com/Sunbird-RC/demo-education-registry](https://github.com/Sunbird-RC/demo-education-registry)
 
-Project link: [https://github.com/orgs/Sunbird-RC/projects/5](https://github.com/orgs/Sunbird-RC/projects/5)
+#### High Level User Flow
 
-## Demo/Sandbox site link
+![](<../../.gitbook/assets/NDEAR - User Flow for Demo (1).jpeg>)
 
-Usecase implementation can be found here at [https://demo-education-registry.xiv.in/](https://demo-education-registry.xiv.in/)
+
 
 ## Demo Videos
 

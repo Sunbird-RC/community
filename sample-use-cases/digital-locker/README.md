@@ -1,8 +1,20 @@
----
-description: Exploration of reference solution for eLocker like solution.
----
+# ELocker
 
-# User Flow
+## eLocker (Digital Locker)
+
+Sunbird eLocker is a reference solution built on Sunbird RC to help countries quickly establish their digital locker platform. This reference solution is provided as a basic starting point for building a digital eLocker platform to store and manage credentials of users.
+
+**High Level Diagram (WIP)**
+
+![](../../.gitbook/assets/digilocker-registry-and-credentialing-with-sunbird-rc.png)
+
+### Subjects
+
+1. Credential Issuer
+2. eLocker
+3. End User
+
+
 
 ### **User Personas**
 
@@ -15,7 +27,6 @@ description: Exploration of reference solution for eLocker like solution.
 3.  \*\*Accepting Party/3rd Party: \*\*
 
     (WIP)I would like to access documents of my customer easily, so that I can review and process the next steps of my customer’s claim…
-
 
 ### **User Flows (Issuer)**
 
@@ -31,7 +42,8 @@ description: Exploration of reference solution for eLocker like solution.
 
       Connecting to existing system
 
-
 ### **User Flows (Accepting/3rd Party)**
 
 ![](https://lh3.googleusercontent.com/Yp3qVYF3\_oMtgXQrsoav-OO\_Jld673cXWImFbU8bfYB5vO5zVRXFjURmRWYzkwG\_VTu36\_mrnV1D1bI6jbw0hPLT9VedPSGqBpC7m8g3MHjGjGSTxdl42OipH62KK5auy6TbQ7\_1=s0)
+
+##

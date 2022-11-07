@@ -63,17 +63,17 @@
 * [Certificate API](api-reference/certificate-api.md)
 * [Other APIs](api-reference/other-apis.md)
 
-## Reference Solutions & Demos <a href="#example-use-cases" id="example-use-cases"></a>
+## Samples <a href="#sample-use-cases" id="sample-use-cases"></a>
 
-* [Education Registries](example-use-cases/edu-registries/README.md)
-  * [User Flow](example-use-cases/edu-registries/user-flow.md)
-* [Certificate Issuance](example-use-cases/certificate-issuance.md)
-  * [User Flow](example-use-cases/certificate-issuance/user-flow.md)
-* [ELocker](example-use-cases/digital-locker/README.md)
-  * [User Flow](example-use-cases/digital-locker/digital-locker-user-flow.md)
-* [Vaccination Platform](example-use-cases/vaccination.md)
-* [Skils & Work Credendials Platform](example-use-cases/skill-and-work-credentials-platform.md)
-  * [User Flow](example-use-cases/skill-and-work-credentials-platform/user-flow.md)
+* [Education Registries](sample-use-cases/edu-registries/README.md)
+  * [Installation Guide](sample-use-cases/edu-registries/installation-guide.md)
+* [Certificate Issuance](sample-use-cases/certificate-issuance/README.md)
+  * [Installation Guide](sample-use-cases/certificate-issuance/installation-guide.md)
+* [ELocker](sample-use-cases/digital-locker/README.md)
+  * [Installation Guide](sample-use-cases/digital-locker/installation-guide.md)
+* [Vaccination Platform](sample-use-cases/vaccination.md)
+* [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform/README.md)
+  * [Installation Guide](sample-use-cases/skill-and-work-credentials-platform/user-flow.md)
 
 ## Links
 

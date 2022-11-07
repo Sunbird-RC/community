@@ -1,6 +1,4 @@
-# Certificate Issuance
-
-This shows the certificate registry using Sunbird RC and Issuance system for new issuers on platform.
+# Installation Guide
 
 ## Source Code
 
@@ -11,5 +9,3 @@ Project link: [https://github.com/orgs/Sunbird-RC/projects/6](https://github.com
 ## Demo/Sandbox site link
 
 Usecase implementation can be found here at [https://sunbird-certificate-demo.xiv.in/](https://sunbird-certificate-demo.xiv.in/)
-
-\

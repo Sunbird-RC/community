@@ -1,4 +1,15 @@
-# User Flow
+# Skills & Work Credentials
+
+This reference solution provides a starting point to create a platform to allow people to collect credentials related to their skills, work experience , share them & get them verified digitally to get related benefits.&#x20;
+
+Currently we have have envisaged providing the following type of credentials&#x20;
+
+* Training Credential : Proof or Training Attended
+* Skill Credential : Proof of Skills showcased/assessed&#x20;
+* Work Credential : Proof of Work Done/ Employment
+* Reputation Credential : Proof or reputation using a verified review/rating
+
+## User Flow
 
 **User Personas**
 
@@ -36,6 +47,6 @@ Act #8 Mohandas completes 3 Years & decides to move to Coimbatore.&#x20;
 
 **Of the above, the initial Pilot Demo covers Training & Skill Credentials. (Act#1 Act#7)**&#x20;
 
-{% embed url="https://youtu.be/X1Vs3GFR8UU" %}
-Skills Platform Demo
-{% endembed %}
+{% embed url="https://www.youtube.com/watch?v=X1Vs3GFR8UU" %}
+
+##
