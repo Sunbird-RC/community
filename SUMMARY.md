@@ -29,14 +29,14 @@
 
 * [Build Registry and Credential platform](<build/Build Registry & Credential Platform/README.md>)
   * [Command Line](<build/Build Registry & Credential Platform/command-line.md>)
-  * [Tenant/Admin Portal](<build/Build Registry & Credential Platform/tenant-admin-portal/README.md>)
-    * [Login and Get Started](<build/Build Registry & Credential Platform/tenant-admin-portal/login-and-get-started.md>)
-    * [Create Schema](<build/Build Registry & Credential Platform/tenant-admin-portal/create-schema.md>)
-    * [Attestation Workflows (WIP)](<build/Build Registry & Credential Platform/tenant-admin-portal/attestation-workflows-wip.md>)
-    * [Verifiable Credential Template (WIP)](<build/Build Registry & Credential Platform/tenant-admin-portal/verifiable-credential-template-wip.md>)
-    * [Ownership (WIP)](<build/Build Registry & Credential Platform/tenant-admin-portal/ownership-wip.md>)
-    * [Publish (WIP)](<build/Build Registry & Credential Platform/tenant-admin-portal/publish-wip.md>)
-    * [Dashboard](<build/Build Registry & Credential Platform/tenant-admin-portal/dashboard.md>)
+  * [Admin Portal](<build/Build Registry & Credential Platform/admin-portal/README.md>)
+    * [Login and Get Started](<build/Build Registry & Credential Platform/admin-portal/login-and-get-started.md>)
+    * [Create Schema](<build/Build Registry & Credential Platform/admin-portal/create-schema.md>)
+    * [Attestation Workflows (WIP)](<build/Build Registry & Credential Platform/admin-portal/attestation-workflows-wip.md>)
+    * [Verifiable Credential Template (WIP)](<build/Build Registry & Credential Platform/admin-portal/verifiable-credential-template-wip.md>)
+    * [Ownership (WIP)](<build/Build Registry & Credential Platform/admin-portal/ownership-wip.md>)
+    * [Publish (WIP)](<build/Build Registry & Credential Platform/admin-portal/publish-wip.md>)
+    * [Dashboard](<build/Build Registry & Credential Platform/admin-portal/dashboard.md>)
 
 ## Developer Documentation
 
