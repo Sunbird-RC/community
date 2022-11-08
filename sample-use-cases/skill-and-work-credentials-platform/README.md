@@ -1,5 +1,7 @@
 # Skills & Work Credentials
 
+![](../../.gitbook/assets/image.png)
+
 This reference solution provides a starting point to create a platform to allow people to collect credentials related to their skills, work experience , share them & get them verified digitally to get related benefits.&#x20;
 
 Currently we have have envisaged providing the following type of credentials&#x20;

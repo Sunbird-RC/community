@@ -23,18 +23,18 @@ Get Started in two ways:
    * Ownership
 2. Using sample use cases: If your scenario is close to one of the sample use case, you can get started immediately. Please note you can edit the settings of these use cases later as per your requirement.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Depending on the above selection the Wizard steps:
 
 1.  Building Registry: \
     For building registry you need to create schema and Publish it.
 
-    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 2.  Registry and Issuance is selected:\
     If you have selected issuance service, then you can create VC template for the schemas.
 
-    <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 3. Registry and Attestation-Claim is selected:
    * You can define attestation workflow
    *   You can create VC template for each attestation workflow

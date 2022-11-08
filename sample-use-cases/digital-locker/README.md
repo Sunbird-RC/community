@@ -1,5 +1,7 @@
 # ELocker
 
+## ![](<../../.gitbook/assets/image (5).png>)
+
 ## eLocker (Digital Locker)
 
 Sunbird eLocker is a reference solution built on Sunbird RC to help countries quickly establish their digital locker platform. This reference solution is provided as a basic starting point for building a digital eLocker platform to store and manage credentials of users.
