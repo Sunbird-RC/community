@@ -6,13 +6,13 @@
 
 ## Development Status
 
-### Admin/Tenant Portal
-
-{% embed url="https://github.com/orgs/Sunbird-RC/projects/10" %}
-
 ### Sunbird RC Core
 
 {% embed url="https://github.com/orgs/Sunbird-RC/projects/3/views/1" %}
+
+### Admin Portal
+
+{% embed url="https://github.com/orgs/Sunbird-RC/projects/10" %}
 
 ### Sample (Reference Solutions)
 
