@@ -1,8 +1,8 @@
 # Core Capabilities
 
-<figure><img src="https://user-images.githubusercontent.com/580711/195899958-d88fd936-2a91-424c-9f92-ed86613b9f9a.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2022-11-08 at 12.11.40 PM.png" alt=""><figcaption></figcaption></figure>
 
-
+<figure><img src="../.gitbook/assets/Screenshot 2022-11-08 at 12.13.36 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## Registry
 
