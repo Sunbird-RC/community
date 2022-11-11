@@ -30,7 +30,7 @@ Depending on the above selection the Wizard steps:
 1.  Building Registry: \
     For building registry you need to create schema and Publish it.
 
-    <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 2.  Registry and Issuance is selected:\
     If you have selected issuance service, then you can create VC template for the schemas.
 
