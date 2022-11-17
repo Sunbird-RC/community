@@ -16,7 +16,7 @@ POST /auth/realms/{realm}/protocol/openid-connect/token
 | `content-type` | header | `string` | Set to `application/x-www-form-urlencoded`                                                  |
 | `client_id`    | body   | `string` | Set to `registry-frontend`                                                                  |
 | `username`     | body   | `string` | The `_osConfig.ownershipAttributes.userId` of the entity according to the schema            |
-| `password`     | body   | `string` | Set to `test` (default password, specified in registry config/docker compose file) |
+| `password`     | body   | `string` | Set to `abcd@123` (default password, specified in registry's application.yml/docker compose file) |
 | `grant_type`   | body   | `string` | Set to `password`                                                                           |
 
 ## Response
@@ -72,9 +72,9 @@ http --form post \
 	'grant_type=password'
 ```
 
-> `{keycloak-url}` is usually http://localhost:8081, and `{realm}` is usually
+> `{keycloak-url}` is usually http://localhost:8080, and `{realm}` is usually
 > `sunbird-rc`.
 >
 > The `{keycloak-url}` is usually `localhost:{port}`. The port can be found
-> under the `kc` section in the `docker-compose.yaml` file. The `{realm}` can be
+> under the `keycloak` section in the `docker-compose.yml` file. The `{realm}` can be
 > found at the top of the `realm-export.json` file used to configure keycloak.

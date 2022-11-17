@@ -10,8 +10,9 @@ GET /api/v1/{entity-type}/{id} HTTP/1.1
 
 | Field           | In     | Type     | Description                      |
 | --------------- | ------ | -------- | -------------------------------- |
-| `content-type`  | header | `string` | Set to `application/json`        |
-| `authorization` | header | `string` | Set to `bearer {access-token}`   |
+| `content-type`  | header | `string` | Set to `application/json` to retrieve in json. Other allowed values include `application/vc+ld+json`, `application/ld+json`, `application/pdf`       |
+| `template-key` | header | `string` | Set appropriate value. Only required in case of `content-type` being `application/pdf`
+| `authorization` | header | `string` | Set to `Bearer {access-token}`   |
 | `entity-type`   | path   | `string` | The type of entity to retrieve   |
 | `id`            | path   | `string` | The ID of the entity to retrieve |
 
@@ -46,7 +47,7 @@ Important variables in the response body:
 curl --location \
 	--request GET \
 	--header 'content-type: application/json' \
-	--header 'authorization: bearer {access-token}' \
+	--header 'authorization: Bearer {access-token}' \
 	'{registry-url}/api/v1/{entity-type}/{id}'
 ```
 
@@ -55,7 +56,7 @@ curl --location \
 ```sh
 http get \
 	'{registry-url}/api/v1/{entity-type}/{id}' \
-	'authorization: bearer {access-token}'
+	'authorization: Bearer {access-token}'
 ```
 
 > `{registry-url}` is usually http://localhost:{port}. The port can be found

@@ -6,17 +6,13 @@ request:
 ## Request
 
 ```http
-PUT /api/v1/{entity-type}/{id}/{field}?send=true
+POST /api/v1/send
 ```
 
 | Field           | In     | Type      | Description                                          |
 | --------------- | ------ | --------- | ---------------------------------------------------- |
 | `content-type`  | header | `string`  | Set to `application/json`                            |
-| `authorization` | header | `string`  | Set to `bearer {access-token}`                       |
-| `entity-type`   | path   | `string`  | The type of entity to modify                         |
-| `id`            | path   | `string`  | The ID of entity to modify                           |
-| `field`         | path   | `string`  | The field whose value we are sending for attestation |
-| `send`          | query  | `boolean` | Set to `true`                                        |
+| `authorization` | header | `string`  | Set to `Bearer {access-token}|                                      
 | `...`           | body   | `any`     | The value of the claim                               |
 
 ## Response
@@ -39,7 +35,7 @@ This will send the claim for attestation and return the following object:
 }
 ```
 
-If you retrieve the entity by the [Retrieve Entity API Endpoint](./retrieve.md),
+If you retrieve the entity by the [Retrieve Entity API Endpoint](./retrieving-an-entity.md),
 you will get the following object in response:
 
 ```json
@@ -66,7 +62,7 @@ Important variables in the response body:
 
 ```sh
 curl --location \
-	--request 'PUT' \
+	--request 'POST' \
 	--header 'content-type: application/json' \
 	--header 'authorization: bearer {access-token}' \
 	--data-raw '...field-value' \
@@ -76,7 +72,7 @@ curl --location \
 ### HTTPie
 
 ```sh
-echo '...field-value' | http put \
+printf '...field-value' | http POST \
 	'{registry-url}/api/v1/{entity-type}/{id}/{field}' \
 	'content-type: application/json' \
 	'authorization: bearer {access-token}' \
