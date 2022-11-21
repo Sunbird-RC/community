@@ -56,9 +56,14 @@
 * [Inviting An Entity](api-reference/inviting-an-entity.md)
 * [Authenticating As An Entity](api-reference/authenticating-as-an-entity.md)
 * [Retrieving An Entity](api-reference/retrieving-an-entity.md)
+* [Creating A Schema](api-reference/create-a-schema.md)
+* [Create An Entity](api-reference/create-an-entity.md)
 * [Updating An Entity](api-reference/updating-an-entity.md)
 * [Deleting An Entity](api-reference/delete-an-entity.md)
+* [Search An Entity](api-reference/search-an-entity.md)
+* [Uploading A Template](api-reference/upload-template.md)
 * [Making A Claim](api-reference/making-a-claim.md)
+* [Retrieving All Claims](api-reference/retrieving-all-claims.md)
 * [Attesting A Claim](api-reference/attesting-a-claim.md)
 * [Credential API](api-reference/credential-api.md)
 * [Certificate API](api-reference/certificate-api.md)
@@ -66,15 +71,11 @@
 
 ## Samples <a href="#sample-use-cases" id="sample-use-cases"></a>
 
-* [Education Registries](sample-use-cases/edu-registries/README.md)
-  * [Installation Guide](sample-use-cases/edu-registries/installation-guide.md)
-* [Certificate Issuance](sample-use-cases/certificate-issuance/README.md)
-  * [Installation Guide](sample-use-cases/certificate-issuance/installation-guide.md)
-* [ELocker](sample-use-cases/digital-locker/README.md)
-  * [Installation Guide](sample-use-cases/digital-locker/installation-guide.md)
+* [Education Registries](sample-use-cases/edu-registries.md)
+* [Certificate Issuance](sample-use-cases/certificate-issuance.md)
+* [ELocker](sample-use-cases/digital-locker.md)
 * [Vaccination Platform](sample-use-cases/vaccination.md)
-* [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform/README.md)
-  * [Installation Guide](sample-use-cases/skill-and-work-credentials-platform/user-flow.md)
+* [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform.md)
 
 ## Links
 

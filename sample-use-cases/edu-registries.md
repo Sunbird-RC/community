@@ -1,6 +1,6 @@
 # Education Registries
 
-![](<../../.gitbook/assets/image (1) (1).png>)
+![](<../.gitbook/assets/image (1) (1).png>)
 
 Education Registry is a sample (a reference solution) built on Sunbird RC demonstrating registry of the common subjects involved in an educational system, and flows that allow attesting some of the most common claims like that of education history of students and teaching history of teachers.
 
@@ -13,13 +13,11 @@ Education Registry is a sample (a reference solution) built on Sunbird RC demons
 
 ### User Journey
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-11-08 at 11.51.42 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2022-11-08 at 11.51.42 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### User Flow
 
-![](<../../.gitbook/assets/NDEAR - User Flow for Demo (1).jpeg>)
-
-
+![](<../.gitbook/assets/NDEAR - User Flow for Demo.jpeg>)
 
 ## Supported Claims
 
@@ -29,6 +27,18 @@ Education Registry is a sample (a reference solution) built on Sunbird RC demons
 
 ## Demo Videos
 
-### Sunbird RC Education Use Case
+### Sunbird RC Education Use Case Video
+
+
 
 {% embed url="https://youtu.be/XNEWA_pMhuU" %}
+
+## Source Code
+
+The source code to install this example can be found at [https://github.com/Sunbird-RC/demo-education-registry](https://github.com/Sunbird-RC/demo-education-registry)
+
+Project link: [https://github.com/orgs/Sunbird-RC/projects/5](https://github.com/orgs/Sunbird-RC/projects/5)
+
+## Demo/Sandbox site link
+
+Use case implementation can be found here at [https://demo-education-registry.xiv.in/](https://demo-education-registry.xiv.in/)
