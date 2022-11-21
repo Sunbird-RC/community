@@ -66,15 +66,11 @@
 
 ## Samples <a href="#sample-use-cases" id="sample-use-cases"></a>
 
-* [Education Registries](sample-use-cases/edu-registries/README.md)
-  * [Installation Guide](sample-use-cases/edu-registries/installation-guide.md)
-* [Certificate Issuance](sample-use-cases/certificate-issuance/README.md)
-  * [Installation Guide](sample-use-cases/certificate-issuance/installation-guide.md)
-* [ELocker](sample-use-cases/digital-locker/README.md)
-  * [Installation Guide](sample-use-cases/digital-locker/installation-guide.md)
+* [Education Registries](sample-use-cases/edu-registries.md)
+* [Certificate Issuance](sample-use-cases/certificate-issuance.md)
+* [ELocker](sample-use-cases/digital-locker.md)
 * [Vaccination Platform](sample-use-cases/vaccination.md)
-* [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform/README.md)
-  * [Installation Guide](sample-use-cases/skill-and-work-credentials-platform/user-flow.md)
+* [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform.md)
 
 ## Links
 
