@@ -52,13 +52,17 @@
 * [VC Verification Module](vc-verification-module.md)
 
 ## API Reference
-
 * [Creating An Entity](api-reference/creating-an-entity.md)
 * [Authenticating As An Entity](api-reference/authenticating-as-an-entity.md)
 * [Retrieving An Entity](api-reference/retrieving-an-entity.md)
+* [Creating A Schema](api-reference/create-a-schema.md)
+* [Create An Entity](api-reference/create-an-entity.md)
 * [Updating An Entity](api-reference/updating-an-entity.md)
 * [Deleting An Entity](api-reference/delete-an-entity.md)
+* [Search An Entity](api-reference/search-an-entity.md)
+* [Uploading A Template](api-reference/upload-template.md)
 * [Making A Claim](api-reference/making-a-claim.md)
+* [Retrieving All Claims](api-reference/retrieving-all-claims.md)
 * [Attesting A Claim](api-reference/attesting-a-claim.md)
 * [Credential API](api-reference/credential-api.md)
 * [Certificate API](api-reference/certificate-api.md)

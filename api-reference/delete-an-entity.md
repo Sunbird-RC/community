@@ -27,18 +27,18 @@ curl --location \
 	 --request 'DELETE' \
 	 --header 'content-type: application/json' \
 	 --header 'authorization: bearer {access-token}' \
-	 'http://localhost:8081/api/v1/Teacher/{id}'
+	 '{registry-url}/api/v1/Teacher/{id}'
 ```
 
 **HTTPie**
 
 ```sh
 http DELETE \
-	'http://localhost:8081/api/v1/Teacher/{id}' \
+	'{registry-url}/api/v1/Teacher/{id}' \
 	'content-type: application/json' \
 	'authorization: bearer {access-token}'
 ```
 
 > `{registry-url}` is usually http://localhost:{port}. The port can be found
-> under the `rg` section in the `docker-compose.yaml` file and is usually
+> under the `registry` section in the `docker-compose.yml` file and is usually
 > `8081`.
