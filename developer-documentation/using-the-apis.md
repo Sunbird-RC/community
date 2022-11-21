@@ -3,10 +3,10 @@
 The following guide walks you through the different Registry APIs using the
 example of a student-teacher registry.
 
-## Creating An Entity
+## Inviting An Entity
 
 We can create entities in the registry using the
-[Create Entity API Endpoint](../api-reference/creating-an-entity.md).
+[Invite Entity API Endpoint](../api-reference/inviting-an-entity.md).
 
 To create a `Teacher` entity named Pranav Agate who teaches Math at UP Public
 School, we would make the following API call:
@@ -95,7 +95,7 @@ Here is what the URL looks like when it's url-encoded:
 
 To go through the consent flow, click on the URL and login as an entity. In this
 case, we can login as the `Teacher` entity we created in the
-[Creating An Entity section](#creating-an-entity) - enter `1234567890` as the
+[Inviting An Entity section](#inviting-an-entity) - enter `1234567890` as the
 username and `test` as the password.
 
 > Here, `registry-frontend` is the preconfigured client we use to make requests

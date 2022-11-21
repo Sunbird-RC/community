@@ -1,6 +1,6 @@
-# Creating An Entity
+# Inviting An Entity
 
-To create an entity, we need to make the following HTTP request:
+To invite an entity, we need to make the following HTTP request:
 
 ## Request
 
@@ -21,7 +21,7 @@ This will store the entity in the registry and return the following object:
 
 ```json
 {
-	"id": "open-saber.registry.invite",
+	"id": "sunbird-rc.registry.invite",
 	"ver": "1.0",
 	"ets": 1634198998956,
 	"params": {
@@ -54,21 +54,25 @@ curl --location \
 	--request 'POST' \
 	--header 'content-type: application/json' \
 	--data-raw '{
-		...claims
+		"phoneNumber": "1234567890",
+		"school": "UP Public School",
+		"subject": "Math",
+		"name": "Pranav Agate",
 	}' \
-	'{registry-url}/api/v1/{entity-type}/invite'
+	'{registry-url}/api/v1/Teacher/invite'
 ```
 
 ### HTTPie
 
 ```sh
-echo '{
-	...claims
-}' | http post \
-	'{registry-url}/api/v1/{entity-type}/invite' \
-	'content-type: application/json'
+printf '{
+    "name": "Pranav Agate",
+    "teaches": "Math",
+    "school": "UP Public School"
+}'| http POST '{registry-url}/api/v1/Teacher/invite' \
+ Content-Type:'application/json'
 ```
 
 > `{registry-url}` is usually http://localhost:{port}. The port can be found
-> under the `rg` section in the `docker-compose.yaml` file and is usually
+> under the `registry` section in the `docker-compose.yml` file and is usually
 > `8081`.

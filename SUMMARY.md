@@ -52,7 +52,8 @@
 * [VC Verification Module](vc-verification-module.md)
 
 ## API Reference
-* [Creating An Entity](api-reference/creating-an-entity.md)
+
+* [Inviting An Entity](api-reference/inviting-an-entity.md)
 * [Authenticating As An Entity](api-reference/authenticating-as-an-entity.md)
 * [Retrieving An Entity](api-reference/retrieving-an-entity.md)
 * [Creating A Schema](api-reference/create-a-schema.md)

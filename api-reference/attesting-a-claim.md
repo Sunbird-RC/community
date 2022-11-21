@@ -11,7 +11,7 @@ POST /api/v1/{attestor-entity-type}/claims/{claim-id}/attest
 | Field                  | In     | Type     | Description                                                                     |
 | ---------------------- | ------ | -------- | ------------------------------------------------------------------------------- |
 | `content-type`         | header | `string` | Set to `application/json`                                                       |
-| `authorization`        | header | `string` | Set to `bearer {access-token}`                                                  |
+| `authorization`        | header | `string` | Set to `Bearer {access-token}`                                                  |
 | `attestor-entity-type` | path   | `string` | The attestor entity types                                                       |
 | `claim-id`             | path   | `string` | The ID of the claim to attest                                                   |
 | `action`               | body   | `string` | Set to `GRANT_CLAIM` to attest the claim and `REJECT_CLAIM` to reject the claim |
@@ -39,9 +39,9 @@ curl --location \
 ### HTTPie
 
 ```sh
-echo '{
+printf '{
 	"action": "GRANT_CLAIM"
-}' | http post \
+}' | http POST \
 	'{registry-url}/api/v1/{attestor-entity-type}/claims/{claim-id}/attest' \
 	'content-type: application/json' \
 	'authorization: bearer {access-token}'

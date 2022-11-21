@@ -22,7 +22,7 @@ This will update the entity in the registry and return the following object:
 
 ```json
 {
-	"id": "open-saber.registry.update",
+	"id": "sunbird-rc.registry.update",
 	"ver": "1.0",
 	"ets": 1634371946769,
 	"params": {
@@ -46,7 +46,10 @@ curl --location \
 	--header 'content-type: application/json' \
 	--header 'authorization: bearer {access-token}' \
 	--data-raw '{
-		...updated-claims
+		"phoneNumber": "1234567891",
+		"school": "UP Public School",
+		"subject": "Math",
+		"name": "Pranav Agate",
 	}' \
 	'{registry-url}/api/v1/{entity-type}/{id}'
 ```
@@ -54,8 +57,11 @@ curl --location \
 ### HTTPie
 
 ```sh
-echo '{
-	...updated-claims
+printf '{
+	"phoneNumber": "1234567891",
+	"school": "UP Public School",
+	"subject": "Math",
+	"name": "Pranav Agate",
 }' | http put \
 	'{registry-url}/api/v1/{entity-type}/{id}' \
 	'content-type: application/json' \
@@ -63,5 +69,5 @@ echo '{
 ```
 
 > `{registry-url}` is usually http://localhost:{port}. The port can be found
-> under the `rg` section in the `docker-compose.yaml` file and is usually
+> under the `registry` section in the `docker-compose.yml` file and is usually
 > `8081`.
