@@ -1,19 +1,16 @@
-# Using the APIs
+# Using The APIs
 
-The following guide walks you through the different Registry APIs using the
-example of a student-teacher registry.
+The following guide walks you through the different Registry APIs using the example of a student-teacher registry.
 
 ## Inviting An Entity
 
-We can create entities in the registry using the
-[Invite Entity API Endpoint](../api-reference/inviting-an-entity.md).
+We can create entities in the registry using the [Invite Entity API Endpoint](broken-reference).
 
-To create a `Teacher` entity named Pranav Agate who teaches Math at UP Public
-School, we would make the following API call:
+To create a `Teacher` entity named Pranav Agate who teaches Math at UP Public School, we would make the following API call:
 
 **cURL**
 
-```sh
+```
 curl --location \
 	--request 'POST' \
 	--header 'content-type: application/json' \
@@ -29,7 +26,7 @@ curl --location \
 
 **HTTPie**
 
-```sh
+```
 echo '{
 	"name": "Pranav Agate",
 	"phoneNumber": "1234567890",
@@ -68,19 +65,13 @@ Important variables in the response body:
 
 ## Requesting Access To An Entity's Data
 
-A client application can request access to an entity's data through an OAuth 2.0
-flow by creating a scope in the registry that maps (via the `User Property`
-mapper) the scope to give the client permission to access the data.
+A client application can request access to an entity's data through an OAuth 2.0 flow by creating a scope in the registry that maps (via the `User Property` mapper) the scope to give the client permission to access the data.
 
-To go through the consent flow, we must first decide which scope to request. In
-this case, we will be requesting the `openid` scope to get access to all the
-public fields of the entity. Then, we must construct a URL to request the entity
-to grant us access to their data as follows:
+To go through the consent flow, we must first decide which scope to request. In this case, we will be requesting the `openid` scope to get access to all the public fields of the entity. Then, we must construct a URL to request the entity to grant us access to their data as follows:
 
-> The following example has been indented and split into multiple lines for
-> readability only.
+> The following example has been indented and split into multiple lines for readability only.
 
-```sh
+```
 # Keycloak's consent endpoint
 http://localhost:8080/auth/realms/sunbird-rc/protocol/openid-connect/auth?
  scope=openid& # The space separated list of scopes we want the entity to grant us access to
@@ -93,33 +84,19 @@ Here is what the URL looks like when it's url-encoded:
 
 `http://localhost:8080/auth/realms/sunbird-rc/protocol/openid-connect/auth?scope=openid&response_type=code&redirect_uri=*&client_id=registry-frontend`
 
-To go through the consent flow, click on the URL and login as an entity. In this
-case, we can login as the `Teacher` entity we created in the
-[Inviting An Entity section](#inviting-an-entity) - enter `1234567890` as the
-username and `test` as the password.
+To go through the consent flow, click on the URL and login as an entity. In this case, we can login as the `Teacher` entity we created in the [Inviting An Entity section](using-the-apis.md#inviting-an-entity) - enter `1234567890` as the username and `test` as the password.
 
-> Here, `registry-frontend` is the preconfigured client we use to make requests
-> to keycloak and `test` is the default password for all entities.
+> Here, `registry-frontend` is the preconfigured client we use to make requests to keycloak and `test` is the default password for all entities.
 
-Once you have authenticated yourself as the `Teacher`, you will see a consent
-screen, asking you to grant access to `Registry Frontend`. Click `YES` to grant
-access to the client and continue with the consent flow.
+Once you have authenticated yourself as the `Teacher`, you will see a consent screen, asking you to grant access to `Registry Frontend`. Click `YES` to grant access to the client and continue with the consent flow.
 
-Once you click `YES`, it will redirect you to `http://localhost:8080/auth/*`.
-You will see an error page, as we have not setup a frontend application to parse
-the response and request an access token automatically. For this example (and to
-gain a better understanding of how the consent flow works), we will parse
-keycloak's response manually.
+Once you click `YES`, it will redirect you to `http://localhost:8080/auth/*`. You will see an error page, as we have not setup a frontend application to parse the response and request an access token automatically. For this example (and to gain a better understanding of how the consent flow works), we will parse keycloak's response manually.
 
-Notice that the URL query parameters contain two variables: `session_state` and
-`code`. The `code` parameter is of most importance here - it is a one-time code
-that will allow us to retrieve an access token with access to the entity's data.
-Copy the value of the `code` parameter (everything after `code=` in the URL). To
-retrieve an access token, we make the following request:
+Notice that the URL query parameters contain two variables: `session_state` and `code`. The `code` parameter is of most importance here - it is a one-time code that will allow us to retrieve an access token with access to the entity's data. Copy the value of the `code` parameter (everything after `code=` in the URL). To retrieve an access token, we make the following request:
 
 **cURL**
 
-```sh
+```
 curl --location \
 	--request POST \
 	--header 'content-type: application/x-www-form-urlencoded' \
@@ -132,7 +109,7 @@ curl --location \
 
 **HTTPie**
 
-```sh
+```
 http --form post \
 	'http://localhost:8080/auth/realms/sunbird-rc/protocol/openid-connect/token' \
 	'content-type: application/x-www-form-urlencoded' \
@@ -142,9 +119,7 @@ http --form post \
 	'grant_type=authorization_code'
 ```
 
-> If you get a `invalid_grant: Code not valid` error, just go through the
-> consent flow again. The `code` expires quickly, so try to make the request for
-> the access token as soon as you get redirected to the redirect URL!
+> If you get a `invalid_grant: Code not valid` error, just go through the consent flow again. The `code` expires quickly, so try to make the request for the access token as soon as you get redirected to the redirect URL!
 
 This API call should return a JSON object as follows:
 
@@ -170,21 +145,17 @@ Important variables in the response body:
 | `token_type`   | body | `string` | Should be `Bearer`, else we have gotten the wrong token                        |
 | `scope`        | body | `string` | This should contain `openid`, and this means we successfully got user consent! |
 
-Once we have the access token, we can start retrieving and modifying entity
-data.
+Once we have the access token, we can start retrieving and modifying entity data.
 
 ## Authenticating As An Entity
 
-We can authenticate as entities using the
-[Authenticate As Entity API Endpoint](../api-reference/authenticating-as-an-entity.md).
-**This step is only required if consent is turned off for the frontend client.**
+We can authenticate as entities using the [Authenticate As Entity API Endpoint](../api-reference/registry/authenticating-as-an-entity.md). **This step is only required if consent is turned off for the frontend client.**
 
-So to authenticate as the `Teacher` entity we just created, we would make the
-following API call:
+So to authenticate as the `Teacher` entity we just created, we would make the following API call:
 
 **cURL**
 
-```sh
+```
 curl --location \
 	--request POST \
 	--header 'content-type: application/x-www-form-urlencoded' \
@@ -197,7 +168,7 @@ curl --location \
 
 **HTTPie**
 
-```sh
+```
 http --form post \
 	'http://localhost:8080/auth/realms/sunbird-rc/protocol/openid-connect/token' \
 	'content-type: application/x-www-form-urlencoded' \
@@ -207,8 +178,7 @@ http --form post \
 	'grant_type=password'
 ```
 
-> Here, `registry-frontend` is the preconfigured client we use to make requests
-> to keycloak and `test` is the default password for all entities.
+> Here, `registry-frontend` is the preconfigured client we use to make requests to keycloak and `test` is the default password for all entities.
 
 This API call should return a JSON object as follows:
 
@@ -236,15 +206,13 @@ Important variables in the response body:
 
 ## Retrieving An Entity
 
-We can retrieve entities in the registry using the
-[Retrieve Entity API Endpoint](../api-reference/retrieving-an-entity.md).
+We can retrieve entities in the registry using the [Retrieve Entity API Endpoint](broken-reference).
 
-So to retrieve the entity we created earlier, we would make the following
-request:
+So to retrieve the entity we created earlier, we would make the following request:
 
 **cURL**
 
-```sh
+```
 curl --location \
 	--request GET \
 	--header 'content-type: application/json' \
@@ -254,15 +222,13 @@ curl --location \
 
 **HTTPie**
 
-```sh
+```
 http get \
 	'http://localhost:8081/api/v1/Teacher/{id}' \
 	'authorization: bearer {access-token}'
 ```
 
-> Replace the `{id}` above with the entity's `osid` you saved from the create
-> entity request. Replace the `{access-token}` with the `Teacher` entity's
-> access token from the consent/authentication step.
+> Replace the `{id}` above with the entity's `osid` you saved from the create entity request. Replace the `{access-token}` with the `Teacher` entity's access token from the consent/authentication step.
 
 This will return the entity's JSON representation as follows:
 
@@ -287,15 +253,13 @@ Important variables in the response body:
 
 ## Updating An Entity
 
-We can update entities in the registry using the
-[Update Entity API Endpoint](../api-reference/updating-an-entity.md).
+We can update entities in the registry using the [Update Entity API Endpoint](broken-reference).
 
-So to update the subject our `Teacher` entity Pranav Agate teaches to `Biology`,
-we would make the following API call:
+So to update the subject our `Teacher` entity Pranav Agate teaches to `Biology`, we would make the following API call:
 
 **cURL**
 
-```sh
+```
 curl --location \
 	--request 'PUT' \
 	--header 'content-type: application/json' \
@@ -312,7 +276,7 @@ curl --location \
 
 **HTTPie**
 
-```sh
+```
 echo '{
 	"name": "Pranav Agate",
 	"phoneNumber": "1234567890",
@@ -325,15 +289,9 @@ echo '{
 	'authorization: bearer {access-token}'
 ```
 
-> Replace the `{id}` above with the entity's `osid` you saved from the create
-> entity request. Replace the `{access-token}` with the `Teacher` entity's
-> access token from the consent/authentication step.
+> Replace the `{id}` above with the entity's `osid` you saved from the create entity request. Replace the `{access-token}` with the `Teacher` entity's access token from the consent/authentication step.
 
-> We need to send the whole entity and not just the updated fields because that
-> is how RESTful APIs work. A PUT call should replace the existing record in the
-> database with the new object as-is. To know more about this, take a look at
-> the accepted answer on
-> [this SO question](https://stackoverflow.com/questions/28459418/use-of-put-vs-patch-methods-in-rest-api-real-life-scenarios).
+> We need to send the whole entity and not just the updated fields because that is how RESTful APIs work. A PUT call should replace the existing record in the database with the new object as-is. To know more about this, take a look at the accepted answer on [this SO question](https://stackoverflow.com/questions/28459418/use-of-put-vs-patch-methods-in-rest-api-real-life-scenarios).
 
 This will update the entity in the registry and return the following object:
 
@@ -352,16 +310,16 @@ This will update the entity in the registry and return the following object:
 	"responseCode": "OK"
 }
 ```
+
 ## Deleting An Entity
 
-We can delete entities in the registry using the
-[Delete Entity API Endpoint](../api-reference/delete-an-entity.md).
+We can delete entities in the registry using the [Delete Entity API Endpoint](broken-reference).
 
 So to delete the subject our `Teacher` entity, we would make the following API call:
 
 **cURL**
 
-```sh
+```
 curl --location \
 	 --request 'DELETE' \
 	 --header 'content-type: application/json' \
@@ -371,30 +329,26 @@ curl --location \
 
 **HTTPie**
 
-```sh
+```
 http DELETE \
 	'http://localhost:8081/api/v1/Teacher/{id}' \
 	'content-type: application/json' \
 	'authorization: bearer {access-token}'
 ```
 
-> Replace the `{id}` above with the entity's `osid` you saved from the create
-> entity request. Replace the `{access-token}` with the `Teacher` entity's
-> access token from the consent/authentication step.
+> Replace the `{id}` above with the entity's `osid` you saved from the create entity request. Replace the `{access-token}` with the `Teacher` entity's access token from the consent/authentication step.
 
-This will delete the entity in the registry and return a blank HTTP 200 response.   
+This will delete the entity in the registry and return a blank HTTP 200 response.
 
 ## Making A Claim
 
-To make a claim, we can use the
-[Claim API Endpoint](../api-reference/making-a-claim.md).
+To make a claim, we can use the [Claim API Endpoint](broken-reference).
 
-First, let us create a `Student` entity named Prashant Joshi who also goes to UP
-Public School:
+First, let us create a `Student` entity named Prashant Joshi who also goes to UP Public School:
 
 **cURL**
 
-```sh
+```
 curl --location \
 	--request 'POST' \
 	--header 'content-type: application/json' \
@@ -409,7 +363,7 @@ curl --location \
 
 **HTTPie**
 
-```sh
+```
 echo '{
 	"name": "Prashant Joshi",
 	"phoneNumber": "9876543210",
@@ -420,18 +374,11 @@ echo '{
 	'content-type: application/json'
 ```
 
-Next, we can get an access token for Prashant by either making a POST request to
-the authentication server (see the
-[Authenticating As An Entity section](#authenticating-as-an-entity) to know how
-to do that) OR by requesting entity consent to access their data (see the
-[Requesting Access To An Entity's Data section](#requesting-access-to-an-entitys-data)
-to know how to do that). The default registry instance setup by the CLI has
-consent enabled, so we will follow the consent flow to retrieve an access token.
+Next, we can get an access token for Prashant by either making a POST request to the authentication server (see the [Authenticating As An Entity section](using-the-apis.md#authenticating-as-an-entity) to know how to do that) OR by requesting entity consent to access their data (see the [Requesting Access To An Entity's Data section](using-the-apis.md#requesting-access-to-an-entitys-data) to know how to do that). The default registry instance setup by the CLI has consent enabled, so we will follow the consent flow to retrieve an access token.
 
-Then, we can send the claim (that Prashant is a student at UP Public School) for
-attestation by making the following request:
+Then, we can send the claim (that Prashant is a student at UP Public School) for attestation by making the following request:
 
-```sh
+```
 curl --location \
 	--request 'PUT' \
 	--header 'content-type: application/json' \
@@ -442,7 +389,7 @@ curl --location \
 
 **HTTPie**
 
-```sh
+```
 echo '"UP Public School"' | http put \
 	'http://localhost:8081/api/v1/Student/{id}/school' \
 	'content-type: application/json' \
@@ -450,9 +397,7 @@ echo '"UP Public School"' | http put \
 	'send==true'
 ```
 
-> Replace the `{id}` above with the entity's `osid` you saved from the create
-> entity request. Replace the `{access-token}` with the `Student` entity's
-> access token from the consent/authentication step.
+> Replace the `{id}` above with the entity's `osid` you saved from the create entity request. Replace the `{access-token}` with the `Student` entity's access token from the consent/authentication step.
 
 This will send the claim for attestation and return the following object:
 
@@ -472,9 +417,7 @@ This will send the claim for attestation and return the following object:
 }
 ```
 
-If you retrieve the `Student` entity by following the
-[Retrieving An Entity section](#retrieving-an-entity), you will get the
-following object in response:
+If you retrieve the `Student` entity by following the [Retrieving An Entity section](using-the-apis.md#retrieving-an-entity), you will get the following object in response:
 
 ```json
 {
@@ -499,15 +442,13 @@ Important variables in the response body:
 
 ## Attesting/Reject A Claim
 
-We can attest/reject an entity's claim using the
-[Attest Claim API Endpoint](../api/attesting-a-calim.md).
+We can attest/reject an entity's claim using the [Attest Claim API Endpoint](../api/attesting-a-calim.md).
 
-So to attest the claim we made in the previous section (that Prashant is a
-student at UP Public School), we make the following request:
+So to attest the claim we made in the previous section (that Prashant is a student at UP Public School), we make the following request:
 
 **cURL**
 
-```sh
+```
 curl --location \
 	--request 'POST' \
 	--header 'content-type: application/json' \
@@ -520,7 +461,7 @@ curl --location \
 
 **HTTPie**
 
-```sh
+```
 echo '{
 	"action": "GRANT_CLAIM"
 }' | http post \
@@ -529,9 +470,6 @@ echo '{
 	'authorization: bearer {access-token}'
 ```
 
-> Replace the `{claim-id}` above with the `_osClaimId/school` you saved from the
-> make a claim request. Replace the `{access-token}` with the `Teacher` entity's
-> access token from the consent/authentication step. Replace `GRANT_CLAIM` with
-> `REJECT_CLAIM` to reject the claim instead.
+> Replace the `{claim-id}` above with the `_osClaimId/school` you saved from the make a claim request. Replace the `{access-token}` with the `Teacher` entity's access token from the consent/authentication step. Replace `GRANT_CLAIM` with `REJECT_CLAIM` to reject the claim instead.
 
 This will attest/reject the claim and return a blank HTTP 200 response.
