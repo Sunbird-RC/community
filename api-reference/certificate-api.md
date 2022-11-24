@@ -2,7 +2,7 @@
 
 Downloading PDF version of certificate
 
-{% swagger method="get" path="EntityName/Id" baseUrl="/api/v1/" summary="Download pdf certificate" %}
+{% swagger method="get" path="EntityNames/Id" baseUrl="/api/v1/" summary="Download pdf certificate" %}
 {% swagger-description %}
 
 {% endswagger-description %}

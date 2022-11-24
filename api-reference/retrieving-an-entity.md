@@ -8,14 +8,14 @@ To retrieve an entity, we need to make the following HTTP request:
 GET /api/v1/{entity-type}/{id} HTTP/1.1
 ```
 
-| Field           | In     | Type     | Description                      |
-| --------------- | ------ | -------- | -------------------------------- |
-| `content-type`  | header | `string` | Set to `application/json` to retrieve in json. Other allowed values include `application/vc+ld+json`, `application/ld+json`, `application/pdf`, `image/svg+xml`, `text/html`       |
-| `template-key` | header | `string` | `template-key` is an optional header, it can be used for `pdf/html/svg` content type. It should be one of the keys mentioned in certificateTemplates in the schema config.|
-| `template` | header | `string` | `template` is an optional header where we can pass the URL of the external template directly in the API. To use this `enable_external_templates` ENV needs to be enabled.
-| `authorization` | header | `string` | Set to `Bearer {access-token}`   |
-| `entity-type`   | path   | `string` | The type of entity to retrieve   |
-| `id`            | path   | `string` | The ID of the entity to retrieve |
+| Field           | In     | Type     | Description                                                                                                                                                                  |
+| --------------- | ------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `content-type`  | header | `string` | Set to `application/json` to retrieve in json. Other allowed values include `application/vc+ld+json`, `application/ld+json`, `application/pdf`, `image/svg+xml`, `text/html` |
+| `template-key`  | header | `string` | `template-key` is an optional header, it can be used for `pdf/html/svg` content type. It should be one of the keys mentioned in certificateTemplates in the schema config.   |
+| `template`      | header | `string` | `template` is an optional header where we can pass the URL of the external template directly in the API. To use this `enable_external_templates` ENV needs to be enabled.    |
+| `authorization` | header | `string` | Set to Bearer {access-token}.                                                                                                                                                |
+| `entity-type`   | path   | `string` | The type of entity to retrieve                                                                                                                                               |
+| `id`            | path   | `string` | The ID of the entity to retrieve                                                                                                                                             |
 
 ## Response
 
@@ -44,7 +44,7 @@ Important variables in the response body:
 
 ### cURL
 
-```sh
+```
 curl --location \
 	--request GET \
 	--header 'content-type: application/json' \
@@ -54,12 +54,10 @@ curl --location \
 
 ### HTTPie
 
-```sh
+```
 http get \
 	'{registry-url}/api/v1/{entity-type}/{id}' \
 	'authorization: Bearer {access-token}'
 ```
 
-> `{registry-url}` is usually http://localhost:{port}. The port can be found
-> under the `rg` section in the `docker-compose.yaml` file and is usually
-> `8081`.
+> `{registry-url}` is usually http://localhost:{port}. The port can be found under the `rg` section in the `docker-compose.yaml` file and is usually `8081`.

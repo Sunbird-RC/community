@@ -8,22 +8,21 @@ To create an entity, we need to make the following HTTP request:
 POST /api/v1/{entity-type}
 ```
 
-| Field           | In     | Type     | Description                    |
-| --------------- | ------ | -------- | ------------------------------ |
-| `content-type`  | header | `string` | Set to `application/json`      |
-| `authorization` | header | `string` | Set to `bearer {access-token}` |
-| `entity-type`   | path   | `string` | The type of entity to create   |
-| `mode`          | query  | `string` | Optional query parameter whose value can be `async` if creating an entity should be asynchronously handled
-| `...`           | body   | `object` | The entity's data              |
+| Field           | In     | Type     | Description                                                                                                |
+| --------------- | ------ | -------- | ---------------------------------------------------------------------------------------------------------- |
+| `content-type`  | header | `string` | Set to `application/json`                                                                                  |
+| `authorization` | header | `string` | Set to `bearer {access-token}`                                                                             |
+| `entity-type`   | path   | `string` | The type of entity to create                                                                               |
+| `mode`          | query  | `string` | Optional query parameter whose value can be `async` if creating an entity should be asynchronously handled |
+| `...`           | body   | `object` | The entity's data                                                                                          |
 
-> Sample Request Body <br>
-{<br>
-&emsp;"name": "Sunbird",<br>
-&emsp;"school": "UP Public School",<br>
-&emsp;"phoneNumber": "1234567890",<br>
-&emsp;"subject": "Math"<br>
-}
-
+> Sample Request Body\
+> {\
+>  "name": "Sunbird",\
+>  "school": "UP Public School",\
+>  "phoneNumber": "1234567890",\
+>  "subject": "Math"\
+> }
 
 ## Response
 
@@ -54,12 +53,11 @@ Important variables in the response body:
 
 ## Usage
 
-So to create a `Teacher` entity named Pranav Agate who teaches Math at UP Public
-School, we would make the following API call:
+So to create a `Teacher` entity named Pranav Agate who teaches Math at UP Public School, we would make the following API call:
 
 ### cURL
 
-```sh
+```shell
 curl --location \
 	--request 'POST' \
 	--header 'content-type: application/json' \
@@ -76,7 +74,7 @@ curl --location \
 
 ### HTTPie
 
-```sh
+```http
 printf '{
             "name": "Pranav Agate",
             "school": "UP Public School",
@@ -87,6 +85,4 @@ printf '{
 	'content-type: application/json'
 ```
 
-> `{registry-url}` is usually http://localhost:{port}. The port can be found
-> under the `registry` section in the `docker-compose.yml` file and is usually
-> `8081`.
+> `{registry-url}` is usually http://localhost:{port}. The port can be found under the `registry` section in the `docker-compose.yml` file and is usually `8081`.
