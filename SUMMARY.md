@@ -42,6 +42,7 @@
 
 * [Installation Guide](developer-documentation/installation-guide.md)
 * [Setup A Registry Instance](developer-documentation/setup-a-registry-instance.md)
+* [Configuration](developer-documentation/configuration.md)
 
 ***
 
