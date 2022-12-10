@@ -1,4 +1,4 @@
-# Tenant/Admin Portal
+# Admin Portal
 
 Registry setup & configuration workflow can be streamlined with Admin Portal.
 
