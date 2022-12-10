@@ -29,6 +29,12 @@ On local machines, Docker is recommended.
 
 For development, a single VM with docker will work.
 
+The steps to setup the development environment is available here.
+
+{% content-ref url="../developer-documentation/installation-guide.md" %}
+[installation-guide.md](../developer-documentation/installation-guide.md)
+{% endcontent-ref %}
+
 For production, Kubernetes is recommended.
 
 ## Typical Requirement for production
