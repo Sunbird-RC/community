@@ -12,6 +12,7 @@
 * [Workflows](learn/workflows.md)
 * [Terminology](learn/terminology.md)
 * [Core Capabilities](learn/core-capabilities.md)
+* [Components](learn/components.md)
 * [Possibilities](learn/possibilities.md)
 * [Roadmap](learn/roadmap.md)
 * [FAQs](learn/faqs.md)
