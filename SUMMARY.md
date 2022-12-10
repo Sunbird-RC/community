@@ -85,7 +85,8 @@
 
 ## Samples <a href="#sample-use-cases" id="sample-use-cases"></a>
 
-* [Education Registries](sample-use-cases/edu-registries.md)
+* [Education Registries](sample-use-cases/edu-registries/README.md)
+  * [Installation](sample-use-cases/edu-registries/installation.md)
 * [Certificate Issuance](sample-use-cases/certificate-issuance.md)
 * [ELocker](sample-use-cases/digital-locker.md)
 * [Vaccination Platform](sample-use-cases/vaccination.md)
