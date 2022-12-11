@@ -4,11 +4,11 @@
 
 All registries have attributes pertaining to the entity or the fact in question either person or things. Schema defines the structure and constraints of the entity, open saber rc uses standard JSON-LD based schema.
 
-In the example given below Place is Concept that registry is storing supporting name, city, addressRegion \(state\) and country.
+In the example given below Place is Concept that registry is storing supporting name, city, addressRegion (state) and country.
 
 #### Example:
 
-```text
+```
 {
  "$schema": "http://json-schema.org/draft-07/schema",
  "type": "object",
@@ -90,14 +90,14 @@ More details are available here [Type-specific keywords](https://json-schema.org
 
 #### List of attributes
 
-Collection of data values are also supported as multiple data value might represent the entity property for example subjects taught : \[“english”,”science”, “mathematics”\]
+Collection of data values are also supported as multiple data value might represent the entity property for example subjects taught : \[“english”,”science”, “mathematics”]
 
 ### Visibility scope:
 
 3 types of visibility on attributes.
 
-1. Public 
-2. Private \(privateFields\)
+1. Public
+2. Private (privateFields)
 3. Internal
 
 Public data attributes are available in discovery by default any sort of permission / authorization is not needed by default. By default all fields are public.
@@ -107,11 +107,13 @@ Private attributes can be accessed by the owner by default, with consent 3rd par
 Internal fields are system fields that only serve internal functionalities, these can never be accessed by any actors in the system.
 
 ### System fields:
+
 The following property is used to add additional audit fields to entity, to know who/when created/updated the entity.
-1. _osCreatedAt
-2. _osUpdatedAt
-3. _osCreatedBy
-4. _osUpdatedBy
+
+1. osCreatedAt
+2. osUpdatedAt
+3. osCreatedBy
+4. osUpdatedBy
 
 ### Index field set
 
@@ -129,33 +131,39 @@ Example:
 
 ### Validation Extensions
 
-JSON LD schema allows defining basic type constraints like numeric type, text or list of items etc. Also it allows a list of possible values for given attributes \(enum\) and regular expressions based constraints for the value.
+JSON LD schema allows defining basic type constraints like numeric type, text or list of items etc. Also it allows a list of possible values for given attributes (enum) and regular expressions based constraints for the value.
 
 ### Roles
+
 #### Add registry based on roles
+
 Using `roles` config, one can set the authorization for add operation
 
-Example:
-let's say there are two registries Teacher and EducationCertificate, assume only Teacher can add the EducationCertificate, then assign role "teacher" to the relevant user in a keycloack and add the "roles" : ["teacher"] in the EducationCertificate config, now only token which has the role "teacher" can add the EducationCertificate
+Example: let's say there are two registries Teacher and EducationCertificate, assume only Teacher can add the EducationCertificate, then assign role "teacher" to the relevant user in a keycloack and add the "roles" : \["teacher"] in the EducationCertificate config, now only token which has the role "teacher" can add the EducationCertificate
 
 #### Invite based on roles
+
 Using `inviteRoles` config, one can set the authorization for invite operation
 
 #### Delete based on roles
+
 Using `deleteRoles` config, one can set the authorization for delete operation
 
-#### Example: 
-##### 1. Only teacher can invite student
-Let's say there are two registries Teacher and Student, assume only Teacher can invite the Student, then assign role "teacher" to the relevant user in a keycloack and add the "inviteRoles" : ["teacher"] in the Student schema config, now only token which has the role "teacher" can invite the Student. 
+#### Example:
 
-##### 2. Anyone can invite student
-Set "inviteRoles" : ["anonymous"] in Student schema config, now anyone can invite the Student
+**1. Only teacher can invite student**
 
-##### _Anonymous role: Any of the above role configs can be set to anonymous to allow anonymous access to the respective operations_
+Let's say there are two registries Teacher and Student, assume only Teacher can invite the Student, then assign role "teacher" to the relevant user in a keycloack and add the "inviteRoles" : \["teacher"] in the Student schema config, now only token which has the role "teacher" can invite the Student.
+
+**2. Anyone can invite student**
+
+Set "inviteRoles" : \["anonymous"] in Student schema config, now anyone can invite the Student
+
+_**Anonymous role: Any of the above role configs can be set to anonymous to allow anonymous access to the respective operations**_
 
 ### Create login for registry
-By default login is disabled for the registry, we need to set `enableLogin:true` inorder to create the user in keycloak.
-Login credentials for an entity can be configured through `ownershipAttributes` attributes. This attributes contains a list of objects for which a user enitity in keycloak will be created.
+
+By default login is disabled for the registry, we need to set `enableLogin:true` inorder to create the user in keycloak. Login credentials for an entity can be configured through `ownershipAttributes` attributes. This attributes contains a list of objects for which a user enitity in keycloak will be created.
 
 ```
 "ownershipAttributes": [
@@ -166,8 +174,11 @@ Login credentials for an entity can be configured through `ownershipAttributes` 
       }
     ]
 ```
-We can have more than one owner for an entity. The respective json paths for the fields needs to be configured. All the properties are mandatory for creating an owner.  
+
+We can have more than one owner for an entity. The respective json paths for the fields needs to be configured. All the properties are mandatory for creating an owner.
+
 ### Attestation policy
+
 List of policies can be configured for the attestation.
 
 ```json
@@ -199,20 +210,29 @@ List of policies can be configured for the attestation.
     "conditions": "(ATTESTOR#$.school#.contains(REQUESTER#$.school#))"
 }
 ```
-#### Attestation Policy Attributes:
-#### name
-A unique name for identifying an attestation policy. This name will be used to refer an attestation policy while raising a claim.
-#### attestationProperties
-This field refers the schema properties which will be considered for attestation.
-#### additionalInput
-This denotes the additional inputs that needs to be captured outside the existing entity/schema fields for generating/processing the attestation.
-#### type
-This denotes if the attestation should be raised manually or automatically.
-- MANUAL:
-In this two types of user will come into the picture, i.e Attestor and Requestor, Requestor will rise a claim, and the Attestor will approve/reject.
-The authorization of the attestor will be defined in the config using `conditions` attribute.
 
-Example: Only teacher from the particular institute can attest the student, 
+#### Attestation Policy Attributes:
+
+#### name
+
+A unique name for identifying an attestation policy. This name will be used to refer an attestation policy while raising a claim.
+
+#### attestationProperties
+
+This field refers the schema properties which will be considered for attestation.
+
+#### additionalInput
+
+This denotes the additional inputs that needs to be captured outside the existing entity/schema fields for generating/processing the attestation.
+
+#### type
+
+This denotes if the attestation should be raised manually or automatically.
+
+* MANUAL: In this two types of user will come into the picture, i.e Attestor and Requestor, Requestor will rise a claim, and the Attestor will approve/reject. The authorization of the attestor will be defined in the config using `conditions` attribute.
+
+Example: Only teacher from the particular institute can attest the student,
+
 ```
 Student Education
 {
@@ -250,18 +270,21 @@ Teacher Experience
   }
 }
 ```
-For this scenario the condition would be,
-```conditions: "(ATTESTOR#$.experience.[*].instituteOSID#.contains(REQUESTER#$.instituteOSID#))"```
-The above snippet says that attestor's education institute  and requestor's experience must belong to the same institute.
 
-- AUTOMATED: If the attestation policy is `AUTOMATED` then a claim will be initiated automatically without any user intervention/API calls. When there is any addition/modification to the `attestationProperties` then the matching attestation policy will be triggered and executed.
+For this scenario the condition would be, `conditions: "(ATTESTOR#$.experience.[*].instituteOSID#.contains(REQUESTER#$.instituteOSID#))"` The above snippet says that attestor's education institute and requestor's experience must belong to the same institute.
+
+* AUTOMATED: If the attestation policy is `AUTOMATED` then a claim will be initiated automatically without any user intervention/API calls. When there is any addition/modification to the `attestationProperties` then the matching attestation policy will be triggered and executed.
 
 #### attestorPlugin
-This denotes who processes the claims that is been raised by the user. By default SunbirdRC will be shipped with a `ClaimPluginActor` who will process and store the respective claims in DB. If we need additional or different functionalities then we can 
+
+This denotes who processes the claims that is been raised by the user. By default SunbirdRC will be shipped with a `ClaimPluginActor` who will process and store the respective claims in DB. If we need additional or different functionalities then we can
 
 ### Credential Template
-This property holds the template to be used for generating the VC. It needs to be a template that follows W3C standards. It can be an url or the template object can be defined inline. The signed data (VC) generated by this template will be used to generate a QR Code. 
-- Ex: inline: 
+
+This property holds the template to be used for generating the VC. It needs to be a template that follows W3C standards. It can be an url or the template object can be defined inline. The signed data (VC) generated by this template will be used to generate a QR Code.
+
+* Ex: inline:
+
 ```json
 {
   ...
@@ -284,7 +307,9 @@ This property holds the template to be used for generating the VC. It needs to b
   ...
 }
 ```
-- Ex: external url
+
+* Ex: external url
+
 ```json
 {
   ...
@@ -294,7 +319,9 @@ This property holds the template to be used for generating the VC. It needs to b
 ```
 
 ### Certificate Template
+
 This property holds the template to be used for generating visual certificate. The key can be used while downloading the certificate.
+
 ```json
 {
   ...
