@@ -145,10 +145,6 @@ Example: let's say there are two registries Teacher and EducationCertificate, as
 
 Using `inviteRoles` config, one can set the authorization for invite operation
 
-#### Delete based on roles
-
-Using `deleteRoles` config, one can set the authorization for delete operation
-
 #### Example:
 
 **1. Only teacher can invite student**
