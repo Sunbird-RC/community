@@ -1,6 +1,6 @@
 # Education Registries
 
-![](<../../.gitbook/assets/image (1) (1).png>)
+![](<../../.gitbook/assets/image (1) (1) (3).png>)
 
 Education Registry is a sample (a reference solution) built on Sunbird RC demonstrating registry of the common subjects involved in an educational system, and flows that allow attesting some of the most common claims like that of education history of students and teaching history of teachers.
 
