@@ -43,3 +43,13 @@ Check the status of all the services after the restart
 ```bash
 registry status
 ```
+
+### API Documentation
+
+The postman collection is available&#x20;
+
+{% embed url="https://github.com/Sunbird-RC/demo-education-registry/blob/main/Tech%20Webinar.postman_collection.json" %}
+
+Jupyter Notebook
+
+{% embed url="https://github.com/Sunbird-RC/demo-education-registry/blob/main/edu-attestation-flows.ipynb" %}
