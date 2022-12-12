@@ -39,7 +39,7 @@
     * [Create Schema](build/build-registry-and-credential-platform/admin-portal/get-started/create-schema.md)
     * [Attestation Workflows (WIP)](build/build-registry-and-credential-platform/admin-portal/get-started/attestation-workflows-wip.md)
     * [VC Template](developer-documentation/admin-portal/get-started/vc-template/README.md)
-      * [Custom VC Template](developer-documentation/admin-portal/get-started/vc-template/custom-verifiable-credential-template.md)
+      * [Custom VC Template](developer-documentation/admin-portal/get-started/vc-template/verifiable-credential-template-wip.md)
     * [Ownership (WIP)](build/build-registry-and-credential-platform/admin-portal/get-started/ownership-wip.md)
     * [Publish (WIP)](build/build-registry-and-credential-platform/admin-portal/get-started/publish-wip.md)
   * [Dashboard](<build/Build Registry & Credential Platform/admin-portal/dashboard.md>)

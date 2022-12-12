@@ -1,5 +1,5 @@
 ---
-description: Access Administrator/Tenant Portal
+description: Access Administrator Portal
 ---
 
 # Get Started
@@ -10,31 +10,45 @@ Get Started in two ways:
    * Attestation and Claim
    * Verifiable Credentials: To create VC template&#x20;
    * Ownership
-2. Using sample use cases: If your scenario is close to one of the sample use case, you can get started immediately. Please note you can edit the settings of these use cases later as per your requirement.
+2. Using sample use cases: \
+   If your scenario is close to one of the sample use case, you can get started immediately by cloning the sample use case. Please note you can edit the settings of these use cases later as per your requirement.
 
 <figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-Depending on the above selection the Wizard steps:
+### Building Registry
 
-1.  Building Registry: \
-    For building registry you need to create schema and Publish it.
+1. Click **Start** to build your registry
+2. You can optionally select any or all of the sunbird RC modules.
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
-2.  Registry and Issuance is selected:\
-    If you have selected issuance service, then you can create VC template for the schemas.
+<figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
-3. Registry and Attestation-Claim is selected:
-   * You can define attestation workflow
-   *   You can create VC template for each attestation workflow
+Depending on the sunbird RC modules selected, you will get following steps:
 
-       <figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
-4. Registry, Attestation-Claim and Issuance is selected:
-   *   VC template creation will include both templates for each attestation workflow and for each schema
+*   If you have **not** selected any additional modules:\
+    You can 'create schema' and 'Publish' it, to build registry.
 
-       <figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
-5. All the modules are selected:\
-   The getting started wizard will include all modules as follows:
+    <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+*   If you have selected 'Verifiable Credentials':\
+    You can 'create schema' and 'add VC template' for the schemas.\
 
-<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+*   If you have selected "Attestation & Claim":\
+    You can 'Create Schema', 'Add Attestation Workflow', 'Add VC template' for the attestation workflow and Publish the schema.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+*   If you have selected "Ownership":\
+    You can "Add Ownership" details on who would be authorised to manage the schema/entities.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+*   If you have selected all the modules:\
+    You can configure all the modules and Publish it.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
+### Using Sample Use cases
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
