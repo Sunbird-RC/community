@@ -30,7 +30,7 @@ Yes, field and user interface level validations can be defined
 
 The schema needs to be created first, before seeding the data to the registry
 
-**The registry is throwing unauthorized issues (401) on retrieving entity. The registry throws "getaddrinfo ENOTFOUND keycloak" error.**
+#### **The registry is throwing unauthorized issues (401) on retrieving entity. The registry throws "getaddrinfo ENOTFOUND keycloak" error.**
 
 In dev/local setup, it is required that keycloak hostname is added to '/etc/hosts' file.&#x20;
 
