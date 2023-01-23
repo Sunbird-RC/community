@@ -92,3 +92,5 @@ printf '{
 ```
 
 > `{registry-url}` is usually http://localhost:{port}. The port can be found under the `registry` section in the `docker-compose.yml` file and is usually `8081`.
+
+#### Note: Invite API doesn't validate the required parameters. Invite API is designed to be used to invite another actor to the system with minimal information, hence required validations will not be applied. Instead, use [create an entity API](create-an-entity.md).

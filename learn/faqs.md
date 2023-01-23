@@ -42,8 +42,6 @@ vi /etc/hosts
 ...
 ```
 
-Use \`[http://keycloak:8080/auth/realms/sunbird-rc/protocol/openid-connect/token](http://keycloak:8080/auth/realms/sunbird-rc/protocol/openid-connect/token)\` url to fetch the token
-
 ## Ownership
 
 #### Can citizens be allowed to login into the registry to view and suggest updation to his registry entry?&#x20;
