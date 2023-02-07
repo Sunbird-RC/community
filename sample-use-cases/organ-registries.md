@@ -17,13 +17,13 @@ Citizens can pledge to donate their organs once they are declared brain stem dea
 
 ### User Persona for Pledge Registry
 
-1\.     Citizen (Pledger/Donor/Recipient)
+1\.     Citizen (Pledger)
 
 2\.     National Organ and Tissue Transplant Organization
 
 ### User Journey
 
-![](<../.gitbook/assets/image (24).png>)
+<img src="../.gitbook/assets/image (24).png" alt="" data-size="original">
 
 
 
