@@ -7,23 +7,23 @@ The organ registries are facilitated with the capability to issue verifiable dig
 ### Type of Registries
 
 * Pledge Registry
-* Live Donor Registry
-* Recipient Registry
-* Cadaver Registry
+* Live Donor Registry (WIP)
+* Recipient Registry (WIP)
+* Cadaver Registry (WIP)
 
 ### Pledge Registry
 
 Citizens can pledge to donate their organs once they are declared brain stem dead.&#x20;
 
-### User Persona for Pledge Registry
+#### User Persona for Pledge Registry
 
 1\.     Citizen (Pledger)
 
-2\.     National Organ and Tissue Transplant Organization
+2\.     Issuing Authority
 
-### User Journey
+#### User Journey
 
-<img src="../.gitbook/assets/image (24).png" alt="" data-size="original">
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-07 at 7.44.52 PM.png" alt=""><figcaption></figcaption></figure>
 
 
 
