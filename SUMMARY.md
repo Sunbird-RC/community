@@ -88,6 +88,7 @@
 
 * [Education Registries](sample-use-cases/edu-registries/README.md)
   * [Installation](sample-use-cases/edu-registries/installation.md)
+* [Organ Registries](sample-use-cases/organ-registries.md)
 * [Certificate Issuance](sample-use-cases/certificate-issuance.md)
 * [ELocker](sample-use-cases/digital-locker.md)
 * [Vaccination Platform](sample-use-cases/vaccination.md)
