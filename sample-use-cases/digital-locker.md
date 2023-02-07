@@ -1,6 +1,6 @@
 # ELocker
 
-## ![](<../.gitbook/assets/image (5) (1).png>)
+## ![](<../.gitbook/assets/image (5) (1) (2).png>)
 
 ## eLocker (Digital Locker)
 
