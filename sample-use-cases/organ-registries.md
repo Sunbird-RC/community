@@ -23,19 +23,17 @@ Citizens can pledge to donate their organs once they are declared brain stem dea
 
 2\.     Issuing Authority
 
-#### User Journey
-
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+#### &#x20;User Journey
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-02-07 at 7.44.52 PM.png" alt=""><figcaption></figcaption></figure>
 
 
 
-### Source Code
+#### Source Code
 
 [https://github.com/Sunbird-RC/demo-donor-registry](https://github.com/Sunbird-RC/demo-donor-registry)
 
-### Demo/Sandbox Site link
+#### Demo/Sandbox Site link
 
 Use case implementation can be found here at [http://demo-donor-registry.xiv.in/](http://demo-donor-registry.xiv.in/)
 
