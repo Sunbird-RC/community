@@ -1,6 +1,6 @@
 # Organ Registries
 
-![](<../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (5) (2).png>)
 
 Organ Registry is a sample (a reference solution) built on Sunbird RC demonstrating registry of the about available donors in the country who have pledged to donate their organs and enable verification of authentic recipients seeking organ transplant so that unnecessary or fraudulent organ requests can be avoided.
 
@@ -25,6 +25,8 @@ Citizens can pledge to donate their organs once they are declared brain stem dea
 
 #### User Journey
 
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../.gitbook/assets/Screenshot 2023-02-07 at 7.44.52 PM.png" alt=""><figcaption></figcaption></figure>
 
 
@@ -36,5 +38,7 @@ Citizens can pledge to donate their organs once they are declared brain stem dea
 ### Demo/Sandbox Site link
 
 Use case implementation can be found here at [http://demo-donor-registry.xiv.in/](http://demo-donor-registry.xiv.in/)
+
+
 
 \

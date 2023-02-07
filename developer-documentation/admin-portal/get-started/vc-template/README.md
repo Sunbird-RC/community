@@ -21,4 +21,4 @@ If you have created Attestation Workflow:
 2. For each attestation workflow, you can add a VC template.
 3. You can select existing template or [create custom template](https://docs.sunbirdrc.dev/developer-documentation/admin-portal/get-started/vc-template/custom-verifiable-credential-template)
 
-<figure><img src="../../../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (2) (2).png" alt=""><figcaption></figcaption></figure>
