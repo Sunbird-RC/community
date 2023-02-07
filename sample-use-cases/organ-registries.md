@@ -23,6 +23,8 @@ Citizens can pledge to donate their organs once they are declared brain stem dea
 
 ### User Journey
 
+![](<../.gitbook/assets/image (24).png>)
+
 
 
 ### Source Code
@@ -31,6 +33,6 @@ Citizens can pledge to donate their organs once they are declared brain stem dea
 
 ### Demo/Sandbox Site link
 
-
+Use case implementation can be found here at [http://demo-donor-registry.xiv.in/](http://demo-donor-registry.xiv.in/)
 
 \
