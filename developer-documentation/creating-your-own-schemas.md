@@ -1,14 +1,10 @@
 # Creating Your Own Schemas
 
-Each registry can store data as entities. An entity is defined by its schema.
-This guide demonstrates how to create a schema to define your own entity.
+Each registry can store data as entities. An entity is defined by its schema. This guide demonstrates how to create a schema to define your own entity.
 
-The following is an example schema for a student entity. The comments should
-guide you as to which fields are required, and what fields should be adjusted as
-per your needs.
+The following is an example schema for a student entity. The comments should guide you as to which fields are required, and what fields should be adjusted as per your needs.
 
-> Note: Schema files cannot contain comments. The following example has been
-> commented for your understanding only.
+> Note: Schema files cannot contain comments. The following example has been commented for your understanding only.
 
 ```json
 {
@@ -133,38 +129,24 @@ per your needs.
 }
 ```
 
-To add a new entity to the registry, place the JSON file defining its schema in
-the schemas folder. If you have setup the registry using the Registry CLI, place
-the JSON file in the `config/schemas` folder. If you are running the registry
-from its source, place the schemas in the
-`java/registry/src/main/resources/public/_schemas` folder. If you are using a
-`docker-compose.yaml` file to start the registry, the schema folder will be
-mentioned in the file under the `volumes` section in the registry container's
-configuration.
+To add a new entity to the registry, place the JSON file defining its schema in the schemas folder. If you have setup the registry using the Registry CLI, place the JSON file in the `config/schemas` folder. If you are running the registry from its source, place the schemas in the `java/registry/src/main/resources/public/_schemas` folder. If you are using a `docker-compose.yaml` file to start the registry, the schema folder will be mentioned in the file under the `volumes` section in the registry container's configuration.
 
 Then restart the registry by running the following:
 
-```sh
+```
 # If using a docker-compose file:
 $ docker compose up --force-recreate -d
 # If using the Registry CLI:
 $ registry restart
 ```
 
-If you restarted the containers manually (without the CLI), then wait
-approximately 40 seconds for the containers to start. You can view the status of
-the registry by running the following:
+If you restarted the containers manually (without the CLI), then wait approximately 40 seconds for the containers to start. You can view the status of the registry by running the following:
 
-```sh
+```
 # If using a docker-compose file:
 $ docker compose ps
 # If using the Registry CLI:
 $ registry status
 ```
 
-> `docker compose up --force-recreate -d` is only required when a change is made
-> to the configuration (e.g.: an environment variable is updated in the
-> `docker-compose.yaml` file, a new entity schema file was placed in the schemas
-> folder). If you simply want to restart the registry process running in the
-> container, a simple `docker compose restart` or `registry restart --soft` will
-> suffice.
+> `docker compose up --force-recreate -d` is only required when a change is made to the configuration (e.g.: an environment variable is updated in the `docker-compose.yaml` file, a new entity schema file was placed in the schemas folder). If you simply want to restart the registry process running in the container, a simple `docker compose restart` or `registry restart --soft` will suffice.
