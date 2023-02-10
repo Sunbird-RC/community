@@ -29,6 +29,10 @@ schema name
 json schema
 {% endswagger-parameter %}
 
+{% swagger-parameter in="body" name="status" %}
+DRAFT | PUBLISHED
+{% endswagger-parameter %}
+
 {% swagger-response status="200: OK" description="Success Response of entity Created" %}
 ```javascript
 {
