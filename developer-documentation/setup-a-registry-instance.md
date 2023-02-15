@@ -54,9 +54,3 @@ Make sure that the status of all the services is in the `running` state. If any 
 docker-compose restart <service-name>
 ```
 
-To restart the registry use the below command
-
-```sh
-SCHEMA_DIR=config/schemas docker-compos up -d --force-recreate --no-deps registry
-```
-
