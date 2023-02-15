@@ -21,8 +21,8 @@ Set to
  . The token should be a admin token
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="status" type="" required="true" %}
-PUBLISHED
+{% swagger-parameter in="body" name="..." type="" required="true" %}
+The entity's data
 {% endswagger-parameter %}
 
 {% swagger-parameter in="path" name="id" required="true" %}
