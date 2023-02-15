@@ -46,6 +46,7 @@
 * [Configuration](developer-documentation/configuration.md)
 * [Developer Setup](developer-documentation/developer-setup.md)
 * [VC Verification Module](vc-verification-module.md)
+* [Audit Configuration](developer-documentation/audit-configuration.md)
 
 ## API Reference
 
