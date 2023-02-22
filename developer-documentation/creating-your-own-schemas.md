@@ -53,10 +53,10 @@ The following is an example schema for a student entity. The comments should gui
         // The following property is used to add additional audit fields to entity, to know
         // who/when created/updated the entity. 
         "systemFields": [
-        "osCreatedAt",
-        "osUpdatedAt",
-        "osCreatedBy",
-        "osUpdatedBy"
+        "_osCreatedAt",
+        "_osUpdatedAt",
+        "_osCreatedBy",
+        "_osUpdatedBy"
         ],
         // The following field is used to define the role who will be allowed to use the POST /api/v1/<Schema> API
         // to create the entity. The role will be validated with jwt token passed with the API.
