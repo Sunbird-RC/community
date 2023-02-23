@@ -135,11 +135,11 @@ JSON LD schema allows defining basic type constraints like numeric type, text or
 
 ### Roles
 
-#### Add registry based on roles
+#### Manage registry based on roles
 
-Using `roles` config, one can set the authorization for add operation
+Using `roles` config, one can set the authorization for crud operations on the schema
 
-Example: let's say there are two registries Teacher and EducationCertificate, assume only Teacher can add the EducationCertificate, then assign role "teacher" to the relevant user in a keycloack and add the "roles" : \["teacher"] in the EducationCertificate config, now only token which has the role "teacher" can add the EducationCertificate
+Example: let's say there are two registries Teacher and EducationCertificate, assume only Teacher can manage (add/update/delete) the EducationCertificate, then assign role "teacher" to the relevant user in a keycloack and add the "roles" : \["teacher"] in the EducationCertificate config, now only token which has the role "teacher" can manage the EducationCertificate
 
 #### Invite based on roles
 

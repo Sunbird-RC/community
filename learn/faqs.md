@@ -85,20 +85,3 @@ Sunbird RC can work on the below DBs:&#x20;
 1. Graph database (Neo4J)&#x20;
 2. Relational databases (Postgresql, HSQLDB, H2, MariaDB, MySQL, MSSQLServer)&#x20;
 3. NoSQL databases (Cassandra)
-
-## Keycloak
-
-#### How to enable password based login in keycloak instead of otp based login?
-
-Currently, we have added custom SPI and themes to support otp based login in keycloak. If your usecase requires password based login, then the below changes need to be done in keycloak.\
-**Changing the theme**\
-1\. Login to keycloak admin console\
-2\. Goto `Clients` > `registry-frontend`\
-3\. Select `keycloak` in `Login Theme` option\
-4\. Save the changes\
-**Update login flow**\
-****1. Login to keycloak admin console\
-2\. Goto `Authentication` > `Bindings`\
-``3. Select `browser` in `Browser Flow` option\
-4\. Save the changes
-
