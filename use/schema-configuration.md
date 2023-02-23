@@ -139,7 +139,7 @@ JSON LD schema allows defining basic type constraints like numeric type, text or
 
 Using `roles` config, one can set the authorization for crud operations on the schema
 
-Example: let's say there are two registries Teacher and EducationCertificate, assume only Teacher can manage (add/update/delete) the EducationCertificate, then assign role "teacher" to the relevant user in a keycloack and add the "roles" : \["teacher"] in the EducationCertificate config, now only token which has the role "teacher" can manage the EducationCertificate
+Example: let's say there are two registries Teacher and EducationCertificate, assume only Teacher can manage (add/update/delete) the EducationCertificate, then assign role "teacher" to the relevant user in a keycloak and add the "roles" : \["teacher"] in the EducationCertificate config, now only token which has the role "teacher" can manage the EducationCertificate
 
 #### Invite based on roles
 
