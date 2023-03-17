@@ -5,7 +5,6 @@
 ## Learn
 
 * [Introduction](learn/intro-electronic-registries.md)
-* [What are Electronic Registries?](learn/what-are-electronic-registries.md)
 * [Why do we need Electronic Registries?](learn/why-do-we-need-electronic-registries.md)
 * [Evolution of Electronic Registries](learn/evolution-electronic-registries.md)
 * [Core Registry Verbs](learn/verbs.md)

@@ -42,12 +42,12 @@ Docker version 20.10.9, build c2ea9bc90b
 
 ### Docker Compose
 
-Installation instructions can be found [here](https://docs.docker.com/engine/install/).
+Installation instructions can be found [here](https://docs.docker.com/compose/install/).
 
-Run `docker-compose -v` in terminal to check if `docker-compose` has been installed correctly:
+Run `docker compose version` in the terminal to check if `docker compose` has been installed correctly:
 
 ```
-$ docker-compose -v
+$ docker compose version
 Docker Compose version 2.0.1
 ```
 
