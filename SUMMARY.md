@@ -92,7 +92,7 @@
 * [Organ Registries](sample-use-cases/organ-registries.md)
 * [Certificate Issuance](sample-use-cases/certificate-issuance.md)
 * [ELocker](sample-use-cases/digital-locker.md)
-* [Vaccination Platform](sample-use-cases/vaccination.md)
+* [Vaccination Platform](example-use-cases/vaccination.md)
 * [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform.md)
 
 ## Links
