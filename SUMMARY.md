@@ -118,6 +118,7 @@
 
 * [Discussions](community/discussions.md)
 * [Contributing](engage/contributing.md)
+* [Contribution Guidebook](community/contribution-guidebook.md)
 * [Code of Conduct](engage/code-of-conduct.md)
 * [Community Events](engage/community-events.md)
 * [Status By Track](engage/status-by-track.md)
