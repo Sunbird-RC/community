@@ -5,10 +5,14 @@
 ## Learn
 
 * [Introduction](learn/intro-electronic-registries.md)
-* [Evolution of Electronic Registries](learn/evolution-electronic-registries.md)
-* [Core Registry Verbs](learn/verbs.md)
+* [Electronic Registries](learn/electronic-registries/README.md)
+  * [Evolution of Electronic Registries](learn/electronic-registries/evolution-electronic-registries.md)
+  * [What issues will Electronic Registries address?](learn/electronic-registries/what-issues-will-electronic-registries-address.md)
+  * [What are the features of electronic registries?](learn/electronic-registries/verbs.md)
+  * [Benefits of Electronic Registries](learn/electronic-registries/benefits-of-electronic-registries.md)
+  * [Design Principles](learn/electronic-registries/design-principles.md)
+  * [Use Case](learn/electronic-registries/use-case.md)
 * [Technical Specification Draft](learn/technical-specification-draft.md)
-* [Design Principles](learn/design-principles.md)
 * [Workflows](learn/workflows.md)
 * [Terminology](learn/terminology.md)
 * [Core Capabilities](learn/core-capabilities.md)
@@ -92,7 +96,7 @@
 * [Organ Registries](sample-use-cases/organ-registries.md)
 * [Certificate Issuance](sample-use-cases/certificate-issuance.md)
 * [ELocker](sample-use-cases/digital-locker.md)
-* [Vaccination Platform](example-use-cases/vaccination.md)
+* [Vaccination Platform](sample-use-cases/vaccination.md)
 * [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform.md)
 
 ## Links
