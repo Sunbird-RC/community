@@ -6,11 +6,11 @@
 
 * [Introduction](learn/intro-electronic-registries.md)
 * [Electronic Registries](learn/electronic-registries/README.md)
-  * [Evolution of Electronic Registries](learn/electronic-registries/evolution-electronic-registries.md)
+  * [Evolution of Electronic Registries](learn/evolution-electronic-registries.md)
   * [What issues will Electronic Registries address?](learn/electronic-registries/what-issues-will-electronic-registries-address.md)
   * [What are the features of electronic registries?](learn/electronic-registries/verbs.md)
   * [Benefits of Electronic Registries](learn/electronic-registries/benefits-of-electronic-registries.md)
-  * [Design Principles](learn/electronic-registries/design-principles.md)
+  * [Design Principles](learn/design-principles.md)
   * [Use Case](learn/electronic-registries/use-case.md)
 * [Technical Specification Draft](learn/technical-specification-draft.md)
 * [Workflows](learn/workflows.md)
@@ -20,6 +20,13 @@
 * [Possibilities](learn/possibilities.md)
 * [Roadmap](learn/roadmap.md)
 * [FAQs](learn/faqs.md)
+* [Verifiable Credentials](learn/verifiable-credentials/README.md)
+  * [What issues will Verifiable Credentials address?](learn/verifiable-credentials/what-issues-will-verifiable-credentials-address.md)
+  * [What are the key roles in Verifiable Credentials?](learn/verifiable-credentials/what-are-the-key-roles-in-verifiable-credentials.md)
+  * [What are the components of Verifiable Credentials?](learn/verifiable-credentials/what-are-the-components-of-verifiable-credentials.md)
+  * [What are the benefits of Verifiable Credentials?](learn/verifiable-credentials/what-are-the-benefits-of-verifiable-credentials.md)
+  * [Digital Credentials vs Verifiable Credentials](learn/verifiable-credentials/digital-credentials-vs-verifiable-credentials.md)
+  * [Use Cases](learn/verifiable-credentials/use-cases.md)
 
 ## Use
 
