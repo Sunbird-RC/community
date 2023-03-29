@@ -4,7 +4,7 @@ The Key roles involved in the Verifiable Credentials ecosystem are:
 
 **Holder:** Someone who owns the credentials as a proof and is responsible for generating presentations from them. Examples include students, employees, citizens, customers, parents of a children etc.
 
-I**ssuer:** A legal entity responsible for asserting claims about the holder or the subject about a verifiable event by issuing a verifiable credential to a holder. Few examples of issuers include government issuing national ID to the citizens, Universities issuing degrees to the students and employers issuing experience certificate to the employees.
+**Issuer:** A legal entity responsible for asserting claims about the holder or the subject about a verifiable event by issuing a verifiable credential to a holder. Few examples of issuers include government issuing national ID to the citizens, Universities issuing degrees to the students and employers issuing experience certificate to the employees.
 
 **Subject:** An entity about which the verifiable claim is being made. For example: children, student, a pet etc.
 
