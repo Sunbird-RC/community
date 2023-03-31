@@ -11,7 +11,7 @@
   * [What are the features of electronic registries?](learn/electronic-registries/verbs.md)
   * [Benefits of Electronic Registries](learn/electronic-registries/benefits-of-electronic-registries.md)
   * [Design Principles](learn/design-principles.md)
-  * [Use Case](learn/electronic-registries/use-case.md)
+  * [Use Cases](learn/electronic-registries/use-cases.md)
 * [Technical Specification Draft](learn/technical-specification-draft.md)
 * [Workflows](learn/workflows.md)
 * [Terminology](learn/terminology.md)
