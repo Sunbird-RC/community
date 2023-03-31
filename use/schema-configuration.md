@@ -2,7 +2,7 @@
 
 ## **Schema**
 
-All registries have attributes pertaining to the entity or the fact in question either person or things. Schema defines the structure and constraints of the entity, open saber rc uses standard JSON-LD based schema.
+All registries have attributes pertaining to the entity or the fact in question either person or things. Schema defines the structure and constraints of the entity, Sunbird RC uses standard JSON-LD based schema.
 
 In the example given below Place is Concept that registry is storing supporting name, city, addressRegion (state) and country.
 
