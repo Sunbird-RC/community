@@ -10,7 +10,11 @@ description: >-
 
 We connect every two weeks on Thursday, 3:00 – 4:00 pm for a roadmap discussion.
 
-Next Event - on Thursday, April 6⋅3:00 – 4:00 pm [Add to your calendar](https://calendar.google.com/calendar/event?action=TEMPLATE\&tmeid=NzlkNDRhZjQzM2RsdGgwYTMxc2lkdDhlM2xfMjAyMzA0MDZUMDkzMDAwWiByZW51a2Ffc0B0ZWtkaXRlY2hub2xvZ2llcy5jb20\&tmsrc=renuka\_s%40tekditechnologies.com\&scp=ALL)
+Next Event - on Thursday, April 6⋅3:00 – 4:00 pm
+
+Google Meet joining info [Video call link](https://meet.google.com/jmx-zbxv-oui). [Add to your calendar](https://calendar.google.com/calendar/event?action=TEMPLATE\&tmeid=NzlkNDRhZjQzM2RsdGgwYTMxc2lkdDhlM2xfMjAyMzA0MDZUMDkzMDAwWiByZW51a2Ffc0B0ZWtkaXRlY2hub2xvZ2llcy5jb20\&tmsrc=renuka\_s%40tekditechnologies.com\&scp=ALL)
+
+
 
 
 
