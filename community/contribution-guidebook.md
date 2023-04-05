@@ -42,3 +42,5 @@
    2. Triage team
    3. Product council
    4. Architecture council
+   5. Marking the issue as a duplicate
+      1. Adding \[Duplicate] in the heading and closing the issue with the original issue link as a comment&#x20;
