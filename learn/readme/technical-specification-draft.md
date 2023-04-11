@@ -8,9 +8,9 @@ All digital platforms require master data and actors (person/entity/thing) data 
 
 ## **Core principles**
 
-- LIVE: Due to its changing nature, such data often goes stale (not up-to-date), thus increasing the cost of collection and maintenance. For example, information about schools and teachers, their contact details, etc. get outdated, forcing departments to redo data collection every few years, and digitise, through time consuming processes.
-- REUSEABLE: Even if such data is maintained by one system, it is not available to be reused by other systems forcing every department needing such data to repeat data collection and maintenance.
-- TRUSTWORTHY: When data is exchanged between systems, trust of that data is established by ensuring the entire record itself is digitally signed and the fact that registry record comes with attestations along with the data. For example, a list of schools downloaded as a CSV file from a portal cannot be trusted by other systems since there is no guarantee that it is authentic and has not been edited subsequently.
+* LIVE: Due to its changing nature, such data often goes stale (not up-to-date), thus increasing the cost of collection and maintenance. For example, information about schools and teachers, their contact details, etc. get outdated, forcing departments to redo data collection every few years, and digitise, through time consuming processes.
+* REUSEABLE: Even if such data is maintained by one system, it is not available to be reused by other systems forcing every department needing such data to repeat data collection and maintenance.
+* TRUSTWORTHY: When data is exchanged between systems, trust of that data is established by ensuring the entire record itself is digitally signed and the fact that registry record comes with attestations along with the data. For example, a list of schools downloaded as a CSV file from a portal cannot be trusted by other systems since there is no guarantee that it is authentic and has not been edited subsequently.
 
 ## **Terminology**
 
@@ -34,7 +34,7 @@ All digital platforms require master data and actors (person/entity/thing) data 
 
 ## **Workflow**
 
-![](../.gitbook/assets/screenshot-2021-09-09-at-3.46.52-pm.png)
+![](../../.gitbook/assets/screenshot-2021-09-09-at-3.46.52-pm.png)
 
 ## **Schema**
 
@@ -259,7 +259,7 @@ POST /api/v1/search { "state":"Karnataka" }
 
 ### Authentication flow
 
-![](../.gitbook/assets/screenshot-2021-09-09-at-3.48.47-pm.png)
+![](../../.gitbook/assets/screenshot-2021-09-09-at-3.48.47-pm.png)
 
 ### Request scopes and sharing attributes
 
@@ -269,11 +269,11 @@ GET /partner/api/v1/{entityName}
 
 ## Use Cases
 
-- Building a Blood donor registry
-- Building simple pincode directory service
-- Education registry
-- Immunization
-- Authentication and consent usage in learning application
+* Building a Blood donor registry
+* Building simple pincode directory service
+* Education registry
+* Immunization
+* Authentication and consent usage in learning application
 
 ## **Open for feedback**
 

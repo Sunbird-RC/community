@@ -1,6 +1,6 @@
-# Components
+# High level architecture
 
-<figure><img src="../.gitbook/assets/components.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/components.png" alt=""><figcaption></figcaption></figure>
 
 #### Registry (Core)
 

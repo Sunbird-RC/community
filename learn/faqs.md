@@ -97,8 +97,8 @@ Currently, we have added custom SPI and themes to support otp based login in key
 3\. Select `keycloak` in `Login Theme` option\
 4\. Save the changes\
 **Update login flow**\
-****1. Login to keycloak admin console\
+1\. Login to keycloak admin console\
 2\. Goto `Authentication` > `Bindings`\
-``3. Select `browser` in `Browser Flow` option\
+3\. Select `browser` in `Browser Flow` option\
 4\. Save the changes
 

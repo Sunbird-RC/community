@@ -1,25 +1,8 @@
 # Table of contents
 
-* [Sunbird RC Overview](README.md)
-
 ## Learn
 
-* [Introduction](learn/intro-electronic-registries.md)
-* [Electronic Registries](learn/electronic-registries/README.md)
-  * [Evolution of Electronic Registries](learn/evolution-electronic-registries.md)
-  * [What issues will Electronic Registries address?](learn/electronic-registries/what-issues-will-electronic-registries-address.md)
-  * [What are the features of electronic registries?](learn/electronic-registries/verbs.md)
-  * [Benefits of Electronic Registries](learn/electronic-registries/benefits-of-electronic-registries.md)
-  * [Design Principles](learn/design-principles.md)
-  * [Use Cases](learn/electronic-registries/use-cases.md)
-* [Technical Specification Draft](learn/technical-specification-draft.md)
-* [Workflows](learn/workflows.md)
-* [Terminology](learn/terminology.md)
-* [Core Capabilities](learn/core-capabilities.md)
-* [High level architecture](learn/high-level-architecture.md)
-* [Possibilities](learn/possibilities.md)
-* [Roadmap](learn/roadmap.md)
-* [FAQs](learn/faqs.md)
+* [Introduction](README.md)
 * [Verifiable Credentials](learn/verifiable-credentials/README.md)
   * [What issues will Verifiable Credentials address?](learn/verifiable-credentials/what-issues-will-verifiable-credentials-address.md)
   * [What are the key roles in Verifiable Credentials?](learn/verifiable-credentials/what-are-the-key-roles-in-verifiable-credentials.md)
@@ -27,6 +10,26 @@
   * [What are the benefits of Verifiable Credentials?](learn/verifiable-credentials/what-are-the-benefits-of-verifiable-credentials.md)
   * [Digital Credentials vs Verifiable Credentials](learn/verifiable-credentials/digital-credentials-vs-verifiable-credentials.md)
   * [Use Cases](learn/verifiable-credentials/use-cases.md)
+* [Electronic Registries](learn/electronic-registries/README.md)
+  * [Evolution of Electronic Registries](learn/evolution-electronic-registries.md)
+  * [What issues will Electronic Registries address?](learn/electronic-registries/what-issues-will-electronic-registries-address.md)
+  * [Benefits of Electronic Registries](learn/electronic-registries/benefits-of-electronic-registries.md)
+  * [Design Principles](learn/design-principles.md)
+  * [Use Cases](learn/electronic-registries/use-cases.md)
+* [Sunbird RC Overview](learn/readme/README.md)
+  * [Core Registry Verbs](learn/readme/verbs.md)
+  * [Why do we need Sunbird RC?](learn/readme/why-do-we-need-sunbird-rc.md)
+  * [What Sunbird RC is and what it's not? (WIP)](learn/readme/what-sunbird-rc-is-and-what-its-not-wip.md)
+  * [Core Capabilities](learn/readme/core-capabilities.md)
+  * [Technical Specification Draft](learn/readme/technical-specification-draft.md)
+  * [Workflows](learn/readme/workflows.md)
+  * [High level architecture](learn/readme/high-level-architecture.md)
+  * [Sunbird RC in action](learn/readme/sunbird-rc-in-action/README.md)
+    * [Implementations](learn/readme/sunbird-rc-in-action/implementations.md)
+    * [Possibilities](learn/readme/sunbird-rc-in-action/possibilities.md)
+* [Roadmap](learn/roadmap.md)
+* [Terminology](learn/terminology.md)
+* [FAQs](learn/faqs.md)
 
 ## Use
 
