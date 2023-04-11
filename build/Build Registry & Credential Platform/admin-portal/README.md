@@ -6,10 +6,10 @@ Registry setup & configuration workflow can be streamlined with Admin Portal.
    * _Details coming soon_
 2. Create Registry Instance
    * _Details coming soon_
-3. Access Tenant Portal:
-   * [Login](https://demo-admin-portal.xiv.in/) to tenant/admin portal
-   * Create schema to manage your registry and credential platform&#x20;
-   * Customize theme of your platform (coming soon)
+3. Access administrator portal:
+   * [Login](https://demo-admin-portal.xiv.in/) to admin portal
+   * [Create schema](https://docs.sunbirdrc.dev/\~/changes/ZV4lFZMKighmbjr9sJml/developer-documentation/admin-portal/get-started/create-schema) to manage your registry and credential platform&#x20;
+   * Customise theme of your platform _(coming soon)_
 
 
 

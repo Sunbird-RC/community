@@ -13,7 +13,7 @@ Get Started in two ways:
 2. Using sample use cases: \
    If your scenario is close to one of the sample use case, you can get started immediately by cloning the sample use case. Please note you can edit the settings of these use cases later as per your requirement.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Building Registry
 
@@ -32,7 +32,7 @@ Depending on the sunbird RC modules selected, you will get following steps:
     You can 'create schema' and 'add VC template' for the schemas.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
 *   If you have selected "Attestation & Claim":\
     You can 'Create Schema', 'Add Attestation Workflow', 'Add VC template' for the attestation workflow and Publish the schema.\
 
@@ -47,8 +47,8 @@ Depending on the sunbird RC modules selected, you will get following steps:
     You can configure all the modules and Publish it.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (15) (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 ### Using Sample Use cases
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
