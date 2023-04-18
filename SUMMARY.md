@@ -40,7 +40,8 @@
 * [Setup the Backend](use/setup-the-backend.md)
 * [Setup the Frontend](use/setup-the-frontend.md)
 * [Leveraging Existing data stores](use/leveraging-existing-data-stores-directories.md)
-* [SSO with existing systems](use/sso-with-existing-systems.md)
+* [SSO with existing systems](use/sso-with-existing-systems/README.md)
+  * [Digilocker Meripehchaan SSO](use/sso-with-existing-systems/digilocker-meripehchaan-sso.md)
 
 ## Developer Documentation
 
