@@ -72,6 +72,7 @@
   * [Create An Entity](api-reference/registry/create-an-entity.md)
   * [Invite An Entity](api-reference/registry/invite-an-entity.md)
   * [Generate token](api-reference/registry/authenticating-as-an-entity.md)
+  * [Generate admin token](api-reference/registry/authenticating-as-an-entity-1.md)
   * [Get An Entity](api-reference/registry/get-an-entity.md)
   * [Get An Entity By Id](api-reference/registry/get-an-entity-by-id.md)
   * [Update An Entity](api-reference/registry/update-an-entity.md)
