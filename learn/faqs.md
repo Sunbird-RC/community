@@ -44,6 +44,8 @@ vi /etc/hosts
 
 Use \`[http://keycloak:8080/auth/realms/sunbird-rc/protocol/openid-connect/token](http://keycloak:8080/auth/realms/sunbird-rc/protocol/openid-connect/token)\` url to fetch the token
 
+API documentation for generating the token is available here, [authenticating-as-an-entity.md](../api-reference/registry/authenticating-as-an-entity.md "mention") [generate-admin-token.md](../api-reference/registry/generate-admin-token.md "mention")
+
 ## Ownership
 
 #### Can citizens be allowed to login into the registry to view and suggest updation to his registry entry?&#x20;
