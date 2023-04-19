@@ -8,7 +8,7 @@
 * The default admin credentials will be (admin / admin). Update the default admin password for security reasons.
 * Goto roles section and add a `admin` role if not present
 
-You can create a new user or update the existing user with the above role. A [client](authenticating-as-an-entity-1.md#steps-to-create-a-client-with-an-admin-role) can also be used if you have a backend service that will call the registry APIs.
+You can create a new user or update the existing user with the above role. A [client](generate-admin-token.md#steps-to-create-a-client-with-an-admin-role) can also be used if you have a backend service that will call the registry APIs.
 
 #### Steps to create a user and attach an admin role
 
