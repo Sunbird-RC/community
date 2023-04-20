@@ -16,7 +16,9 @@ The government, educational industry, and other ecosystems issue certificates, l
 
 **Sunbird RC** is a "low code" framework to enable organizations to rapidly build next generation electronic registries and verifiable credentials. Sunbird RC uses a set of configurations to rapidly build out registries, automatically generate CRUD (create/ read/ update/ delete) APIs without any coding, enable registry searches and access via open APIs, issue and manage verifiable credentials, manage user consent flows if required, manage attestation and verification flows, etc.
 
-Sunbird RC is listed as a global Digital Public Good (DPG) within the [Digital Public Good Alliance (DPGA) registry](https://digitalpublicgoods.net/registry/). Sunbird RC is the core engine within [DIVOC](https://divoc.dev/), a globally recognized DPG for vaccination and health credentialing. Sunbird RC is also part of India's massively adopted [DIKSHA](https://diksha.gov.in/) school education platform used at population scale.
+Sunbird RC is listed as a global Digital Public Good (DPG) within the [Digital Public Good Alliance (DPGA) registry](https://digitalpublicgoods.net/registry/). It meets the DPG standard of privacy and other applicable best practices, does no harm by design, and is of high relevance for attainment of the United Nations 2030 Sustainable Development Goals. Sunbird RC is the core engine within [DIVOC](https://divoc.dev/), a globally recognized DPG for vaccination and health credentialing. Sunbird RC is also part of India's massively adopted [DIKSHA](https://diksha.gov.in/) school education platform used at population scale.
+
+Sunbird RC is open sourced under [MIT license](https://opensource.org/licenses/MIT). Any individual or organisation can leverage this building block for free for their purposes in accordance with the MIT license. We strongly encourage you to participate in the community and contribute back to help improve this project.
 
 
 
