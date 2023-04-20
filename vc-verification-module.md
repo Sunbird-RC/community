@@ -87,21 +87,38 @@ app.component.html
 App.component.ts : Change the value of key
 
 ```
-this.itemData = 
-{
-       "scanNote”:”To verify any eLocker document, simply scan the QR code that's on the document.”,
-       "verify_certificate": 'Verify Certificate',
-       "scan_qrcode": 'Scan QR Code',
-       "detecting_qrcode": 'Detecting QR code',
-       "back": 'Back',
-       "certificate_isverified": 'Certificate is verified',
-       "verify_another_Certificate": 'Verify another Certificate',
-       "cetificate_not_valid": 'This Certificate is not valid',
-       “scan_qrcode_again” : ‘Please scan QR code again’
-     }
-
-   });
+this.itemData =
+ {
+      "scanner_type": "ZBAR_QRCODE",
+      "showResult": [
+        { "title": "Name", "path": "credentialSubject.name" },
+        { "title": "Father Name", "path": "credentialSubject.fatherName" },
+        { "title": "Date of Issuance", "path": "issuanceDate",  'type' : 'date' },
+        { "title": "ABHA Number", "path": "credentialSubject.id",  "removeStr" : "did:abha:" },
+        { "title": "NOTTO ID", "path": "credentialSubject.nottoId" },
+        { "title": "Organs", "path": "credentialSubject.pledge.organs" },
+        { "title": "Tissues", "path": "credentialSubject.pledge.tissues" },
+        {  "title": "Emergency Contact Details", "path": "credentialSubject.emergency.mobileNumber" }
+      ],
+      "scanNote": "To verify pledge certificate, simply scan the QR code that's on the document.",
+      "certificateTitle": 'Pledge Certificate',
+      "verify_another_Certificate": 'Verify another Certificate',
+      "cetificate_not_valid": 'This Certificate is not valid',
+      "scan_qrcode_again": "Please scan QR code again"
+    });
 ```
+
+  This library supports the two QR code scanners (ZXING_QRCODE and ZBAR_QRCODE). By default enable the ZXING_QRCODE scanner to scan QR code. If you want to change the scanner, the user needs to set the **scanner_type** property value to the **ZBAR_QRCODE**.
+ 
+  Difference between ZXING_QRCODE and ZBAR_QRCODE.
+   - ZXING_QRCODE doesn't scan QR code which contains a large amount of data, it's working fine with simple QR codes (will Deprecate soon).
+   - ZBAR_QRCODE supports fast scanning and easily scans QR code which contains large amounts of data.
+   
+   
+   From v10 introduced one more **showResult** object under itemData to configure what certificate data the user wants to display on the result card after verifying QR code. In this  object user need to add property path and title which is display on verified card.
+  - to show date on card, you wants to add **type** property with **date** value
+   - if you want remove any string from value, you can achieve this by using **removeStr** property 
+  
 
 4.3 If anyone wants to use their own he/she can implement their own UI and he/she can use service methods of vc-verification library.
 
@@ -133,6 +150,10 @@ export class AppComponent {
 | ------------------------------- | --------- | ------------------------------------ |
 | enableScanner()                 | -         | To Hide/show scanner screen          |
 | scanSuccessHandler($event: any) | $event    | This method used to verify scan data |
+
+## Change Button Color
+
+To change the button color, user need to override **vc-btnPrimary** css class in stye.css
 
 ## Source Code
 
