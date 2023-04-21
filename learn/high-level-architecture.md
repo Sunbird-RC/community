@@ -32,6 +32,14 @@ This service is required to send SMS or emails to the users. This service is use
 
 This service is used to expose public keys that are used to generate verifiable credentials. It has APIs that exposes all the public keys or issuer-based public key. This API will be used by the verification services to verify the issued verifiable credentials.&#x20;
 
+#### Metrics service
+
+This service is used to handle all the events emitted by registry through kafka. The service stores this events in clickhouse. However the service can be used to connect different databases.  Service also exposes an API which returns all the events emitted
+
+#### Clickhouse
+
+Clickhouse is a open source database. We are using clickhouse to store all the events that are emitted in this clickhouse
+
 #### Context proxy service
 
 This service will be used by verifying clients to proxy the context URLs that are used in the verifiable credentials. The public facing verifying clients needs to access the content of the context URLs that are present in the verifiable credentials. If the client is UI based application, the context URLs will be blocked due to CORS issues. This service can be used to overcome the CORS issue. The context URLs can be routed to this service which can proxy and return back the contents.&#x20;

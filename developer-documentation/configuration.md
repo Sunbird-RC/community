@@ -75,6 +75,9 @@ description: Registry provides following configuration properties
 | **manager\_type**                                | if using a single instance of registry, set this value to DefinitionsManager else set to DistributedDefinitionsManager                                                                                                                                                                                                                         |
 | **service\_retry\_maxAttempts**                  | The number of times an attempt must be made to reach to the service                                                                                                                                                                                                                                                                            |
 | **service\_retry\_backoff\_delay**               | The fixed time interval, in milliseconds, between each such attempt.                                                                                                                                                                                                                                                                           |
+| **metrics\_enabled**                             | boolean value that indicates whether metrics should be enabled or not. if enabled, registry will start emitting events                                                                                                                                                                                                                         |
+| **metrics\_topic**                               | kafka topic name to which events will be emitted                                                                                                                                                                                                                                                                                               |
+| **event\_providerName**                          | name of provider to be used for emitting events. For eg: if Kafka is used, the value should be `dev.sunbirdrc.registry.service.impl.KafkaEventService`. If file is to be used to store events the value should be \``dev.sunbirdrc.registry.service.impl.FileEventService.java`\`                                                              |
 
 ### Claims Service
 
@@ -104,3 +107,14 @@ description: Registry provides following configuration properties
 | **emailsmtp.password**                                                          | password for that email address                                                           |
 | **emailsmtp.enable**                                                            | flag to enable sending email using email api                                              |
 | **TRACK\_NOTIFICATIONS in environment variable**                                | boolean value to track all sent notifications and fetch them if needed                    |
+
+### Metrics Service
+
+| Properties                    | Description                                                           |
+| ----------------------------- | --------------------------------------------------------------------- |
+| **CLICK\_HOUSE\_URL**         | clickhouse database url along with port on which clickhouse is hosted |
+| **CLICKHOUSE\_DATABASE**      | database name where the events will be stored                         |
+| **KAFKA\_BOOTSTRAP\_SERVERS** | url along with port number on which kafka is running                  |
+| **KAFKA\_METRICS\_TOPIC**     | topic name to which registry produces events                          |
+| **DATABASE\_PROVIDER\_NAME**  | type of database being used. eg clickhouse                            |
+

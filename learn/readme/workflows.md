@@ -1,6 +1,6 @@
 # Workflows
 
-<figure><img src="../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
 
 1. **User Registration/Onboarding**
    1. Self-Registration

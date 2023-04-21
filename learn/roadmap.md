@@ -32,7 +32,7 @@
 
 #### Roadmap
 
-<figure><img src="../.gitbook/assets/Screenshot 2022-11-08 at 1.05.49 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2022-11-08 at 1.05.49 PM (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Development Status
 
