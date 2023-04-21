@@ -15,6 +15,10 @@ This reference solution has been designed to enable the needs of potential RC ad
 
 ## Reference solution Components
 
+## Issuance Portal
+
+[https://docs.sunbirdrc.dev/reference-solutions/certificate-issuance](https://docs.sunbirdrc.dev/reference-solutions/certificate-issuance)
+
 ### Certificate signer
 
 [https://docs.sunbirdrc.dev/learn/readme/high-level-architecture#certificate-signer](https://docs.sunbirdrc.dev/learn/readme/high-level-architecture#certificate-signer)
@@ -42,8 +46,16 @@ This reference solution has been designed to enable the needs of potential RC ad
 
 ### Certificate/Presentation service&#x20;
 
-[https://docs.sunbirdrc.dev/learn/readme/high-level-architecture#certificate-api](https://docs.sunbirdrc.dev/learn/readme/high-level-architecture#certificate-api)
+https://docs.sunbirdrc.dev/learn/readme/high-level-architecture#certificate-api[^1]
 
 * **Code** - [https://github.com/Sunbird-RC/sunbird-rc-core/tree/main/services/certificate-api](https://github.com/Sunbird-RC/sunbird-rc-core/tree/main/services/certificate-api)
 * **Configs** - [https://docs.sunbirdrc.dev/developer-documentation/configuration#certificate-api-service](https://docs.sunbirdrc.dev/developer-documentation/configuration#certificate-api-service)
+
+### Dashboard & Metrics
+
+[https://docs.sunbirdrc.dev/developer-documentation/metrics](https://docs.sunbirdrc.dev/developer-documentation/metrics)
+
+
+
+[^1]: 
 
