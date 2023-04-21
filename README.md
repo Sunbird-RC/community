@@ -23,3 +23,5 @@ Sunbird RC is open sourced under [MIT license](https://opensource.org/licenses/M
 
 
 _**“This website abides by the**_ [_**Terms of Use**_](https://sunbird.org/terms-conditions) _**and**_ [_**Privacy Policy**_](https://sunbird.org/privacy-policy) _**of**_ [_**www.sunbird.org**_](http://www.sunbird.org)_**.”**_&#x20;
+
+_“Copyright © 2021 EkStep Foundation. This work is licensed under a_ [_Creative Commons Attribution (CC-BY-4.0) International License_](https://creativecommons.org/licenses/by/4.0/) _unless otherwise noted.”_
