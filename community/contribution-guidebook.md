@@ -15,7 +15,7 @@
 
     You can engage using Discussions for general questions, Ideas & Enhancement suggestions, Show & tell, etc.&#x20;
 
-<figure><img src="../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/unknown (5).png" alt=""><figcaption></figcaption></figure>
 
 2. **Create an issue (or a ticket)**
    1. Provide sufficient details i.e. Title, Description, Screenshots, Videos, Environment, etc

@@ -110,15 +110,19 @@
   * [Swagger JSON API](api-reference/other-apis/swagger-json-api.md)
   * [Health API](api-reference/other-apis/health-api.md)
 
-## Samples <a href="#sample-use-cases" id="sample-use-cases"></a>
+## Reference Solutions
 
-* [Education Registries](sample-use-cases/edu-registries/README.md)
-  * [Installation](sample-use-cases/edu-registries/installation.md)
-* [Organ Registries](sample-use-cases/organ-registries.md)
-* [Certificate Issuance](sample-use-cases/certificate-issuance.md)
-* [ELocker](sample-use-cases/digital-locker.md)
-* [Vaccination Platform](sample-use-cases/vaccination.md)
-* [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform.md)
+* [Education](reference-solutions/education/README.md)
+  * [Education Ecosystem](reference-solutions/education/education-ecosystem/README.md)
+    * [Installation](reference-solutions/education/education-ecosystem/installation.md)
+  * [Education Registries](reference-solutions/education/edu-registries/README.md)
+    * [Installation](reference-solutions/education/edu-registries/installation.md)
+* [Organ Registries](reference-solutions/organ-registries.md)
+* [Certificate Issuance](reference-solutions/certificate-issuance/README.md)
+  * [Portal User Guide](reference-solutions/certificate-issuance/portal-user-guide.md)
+* [ELocker](reference-solutions/digital-locker.md)
+* [Vaccination Platform](reference-solutions/vaccination.md)
+* [Skills & Work Credentials](reference-solutions/skill-and-work-credentials-platform.md)
 
 ## Links
 
