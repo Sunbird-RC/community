@@ -76,5 +76,6 @@ The registry core service will require a Redis cache layer when the core service
 
 Kafka service is required to create entities in an asynchronous fashion. If the system needs to handle high load and high availability the entity creation(with generating credentials) can be processed asynchronously using Kafka.&#x20;
 
+#### Bulk Issuance
 
-
+Bulk issuance service will allow the issuers to upload their csv files and issue credentials to all those actors present in each row of a csv. The service also has the capability to return a file based reports which will download a csv file which will contain a column of errors that occurred for a that specific actors data

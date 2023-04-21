@@ -118,3 +118,18 @@ description: Registry provides following configuration properties
 | **KAFKA\_METRICS\_TOPIC**     | topic name to which registry produces events                          |
 | **DATABASE\_PROVIDER\_NAME**  | type of database being used. eg clickhouse                            |
 
+
+
+### Bulk Issuance
+
+| Properties            | Description                            |
+| --------------------- | -------------------------------------- |
+| REGISTRY\_BASE\_URL   | url on which registry is hosted        |
+| DATABASE\_HOST        | host address of database               |
+| DATABASE\_PORT        | port on which database is running      |
+| DATABASE\_USER        | username of database                   |
+| DATABASE\_PASSWORD    | password for that user of the database |
+| DATABASE\_NAME        | database name                          |
+| KEYCLOAK\_PUBLIC\_KEY | public key from keycloak               |
+| KEYCLOAK\_URL         | url for keycloak                       |
+| KEYCLOAK\_REALM       | keycloak realm name                    |
