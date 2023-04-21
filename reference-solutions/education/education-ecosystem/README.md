@@ -53,9 +53,12 @@ https://docs.sunbirdrc.dev/learn/readme/high-level-architecture#certificate-api[
 
 ### Dashboard & Metrics
 
+Sunbird RC allows for the 'emit' of events, which can be used to observe what is happening within the RC system. The system can be configured to emit events for actions such as ADD/ EDIT/ DELETE of credentials, or other actions carried out. Any adopter can configure the system to emit events that are required for the generation of metrics of interest. The followings are the links to the code and the configs for the RC dashboard
+
 [https://docs.sunbirdrc.dev/developer-documentation/metrics](https://docs.sunbirdrc.dev/developer-documentation/metrics)
 
-
+* **Config** - [https://docs.sunbirdrc.dev/developer-documentation/configuration#metrics-service](https://docs.sunbirdrc.dev/developer-documentation/configuration#metrics-service)&#x20;
+* **Code** - [https://github.com/varadeth/sunbird-rc-core/tree/metric\_service/services/metrics](https://github.com/varadeth/sunbird-rc-core/tree/metric\_service/services/metrics)
 
 [^1]: 
 
