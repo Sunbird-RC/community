@@ -1,4 +1,4 @@
-# Installation
+# Setup
 
 ### Backend Setup <a href="#_btcqa01b80kx" id="_btcqa01b80kx"></a>
 

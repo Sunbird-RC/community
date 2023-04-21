@@ -114,7 +114,7 @@
 
 * [Education](reference-solutions/education/README.md)
   * [Education Ecosystem](reference-solutions/education/education-ecosystem/README.md)
-    * [Setup](reference-solutions/education/education-ecosystem/setup.md)
+    * [Setup](reference-solutions/education/education-ecosystem/installation.md)
   * [Education Registries](reference-solutions/education/edu-registries/README.md)
     * [Installation](reference-solutions/education/edu-registries/installation.md)
 * [Organ Registries](reference-solutions/organ-registries.md)
