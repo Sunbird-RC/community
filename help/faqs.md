@@ -64,7 +64,7 @@ Sunbird RC provides multiple channels through which you can follow updates and s
 
 * **GitHub**: Sunbird RC's [GitHub repository](https://github.com/orgs/Sunbird-RC/repositories) is the primary source for technical and project management updates. You can follow the repository to receive notifications about new releases, bug fixes, and other technical updates.
 * **Social accounts**: Sunbird maintains active social media accounts on [Twitter](https://twitter.com/Sunbird\_EkStep) and [LinkedIn](https://www.linkedin.com/company/sunbirdbuildingblocks/). By following these accounts, you can receive regular updates and news about the platform, as well as insights from the Sunbird team.
-* **GitHub Discussions and Discord**: Sunbird RC has active discussion forums on [GitHub](https://github.com/Sunbird-RC/community/discussions) and Discord, where community members can engage with one another and discuss topics related to the platform. These forums are a great way to stay connected with the Sunbird RC community and get involved in ongoing discussions.
+* **GitHub Discussions and Discord**: Sunbird RC has active discussion forums on [GitHub](https://github.com/Sunbird-RC/community/discussions) and [Discord](https://discord.gg/Q5mvw2mGC8), where community members can engage with one another and discuss topics related to the platform. These forums are a great way to stay connected with the Sunbird RC community and get involved in ongoing discussions.
 
 **How can I contribute/participate?**
 
