@@ -11,7 +11,7 @@ We encourage you to participate in the discussion forum, ask questions, and shar
 
 
 
-<table data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="center"></td><td align="center"><a href="https://github.com/Sunbird-RC/community/discussions">GitHub Discussion</a></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"><a href="https://discord.gg/Q5mvw2mGC8">Discord Chat</a></td><td align="center"></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="center"></td><td align="center"><a href="https://github.com/Sunbird-RC/community/discussions">GitHub Discussion</a></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"><a href="https://discord.gg/Q5mvw2mGC8">Discord Chat</a></td><td align="center"></td></tr></tbody></table>
 
 
 
