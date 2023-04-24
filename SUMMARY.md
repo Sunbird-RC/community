@@ -127,7 +127,7 @@
 * [Source Code](https://github.com/Sunbird-RC/)
 * [Releases & Changelogs](https://github.com/Sunbird-RC/sunbird-rc-core/releases)
 * [Website](https://sunbirdrc.dev)
-* [Roadmap](https://github.com/orgs/Sunbird-RC/projects/9/views/1)
+* [Roadmap](https://github.com/orgs/Sunbird-RC/projects/16/views/1)
 * [Reference links](links/reference-links.md)
 * [Design](links/design.md)
 
