@@ -60,7 +60,7 @@ Sunbird RC allows for the 'emit' of events, which can be used to observe what is
 * **Config** - [https://docs.sunbirdrc.dev/developer-documentation/configuration#metrics-service](https://docs.sunbirdrc.dev/developer-documentation/configuration#metrics-service)&#x20;
 * **Code** - [https://github.com/varadeth/sunbird-rc-core/tree/metric\_service/services/metrics](https://github.com/varadeth/sunbird-rc-core/tree/metric\_service/services/metrics)
 
-Example dashboards
+**Example dashboard**
 
 <figure><img src="../../../.gitbook/assets/screenshot-demo-education-registry.xiv.in-2023.04.21-18_58_45.png" alt=""><figcaption></figcaption></figure>
 

@@ -2,7 +2,7 @@
 
 ### **Pre-requisites**
 
-It is required to have followed all the steps mentioned in the [installation guide](../../../developer-documentation/installation-guide.md)
+It is required to have followed all the steps mentioned in the [installation guide](../../developer-documentation/installation-guide.md)
 
 ### Configure Schemas
 

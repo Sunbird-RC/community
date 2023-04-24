@@ -90,13 +90,13 @@ Yes, we can treat the Sunbird-registry as a master registry (a layer above the s
 
 Yes, this can be done through scripts that allow bulk import of the source data into the registry.
 
-#### Can we configure rules based validation on data which comes into the registry either through API or data being input through a form?
+#### Can we configure rules-based validation on data which comes into the registry either through API or data being input through a form?
 
-Yes, since SunbirdRC supports defining a registry schema using a JSONSchema format, the properties can be defined with validations like mentioned here: https://json-schema.org/draft/2019-09/json-schema-validation.html#:\~:text=JSON%20Schema%20validation%20asserts%20constraints,descriptive%20metadata%20and%20usage%20hints.
+Yes, since Sunbird RC supports defining a registry schema using a JSON Schema format, the properties can be defined with validations like mentioned here: https://json-schema.org/draft/2019-09/json-schema-validation.html#:\~:text=JSON%20Schema%20validation%20asserts%20constraints,descriptive%20metadata%20and%20usage%20hints.
 
 #### Is there a facility to easily create a form for inputting data into registry followed by approval process?&#x20;
 
-Yes, the SunbirdRC UI supports the generation of dynamic forms, based on the schema created; as well as support creating “approval” workflows to aid the attestation & subsequent persistence of the “data” into the registry.
+Yes, the Sunbird RC UI supports the generation of dynamic forms, based on the schema created; as well as support creating “approval” workflows to aid the attestation & subsequent persistence of the “data” into the registry.
 
 #### Can schema be re-defined (i.e., adding some extra data fields or removing certain fields)? If Yes, how versioning is managed and what happens to existing requests with old schema.&#x20;
 
@@ -104,7 +104,7 @@ No, it doesn't support versioning now. This needs to be handled manually outside
 
 #### Can validations be defined at field level, at the database level and also at the user interface level?&#x20;
 
-Yes, field and user interface level validations can be defined
+Yes, field and user interface level validations can be defined.
 
 #### Does bulk upload of facilities create schema automatically, if yes all that one can do while creating schema be achieved through bulk upload also?&#x20;
 

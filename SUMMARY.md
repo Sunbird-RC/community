@@ -30,8 +30,6 @@
     * [Implementations](learn/readme/sunbird-rc-in-action/implementations.md)
     * [Possibilities](learn/readme/sunbird-rc-in-action/possibilities.md)
 * [Roadmap](learn/roadmap.md)
-* [Terminology](learn/terminology.md)
-* [FAQs](learn/faqs.md)
 
 ## Use
 
@@ -115,14 +113,14 @@
 * [Education](reference-solutions/education/README.md)
   * [Education Ecosystem](reference-solutions/education/education-ecosystem/README.md)
     * [Setup](reference-solutions/education/education-ecosystem/installation.md)
-  * [Education Registries](reference-solutions/education/edu-registries/README.md)
-    * [Installation](reference-solutions/education/edu-registries/installation.md)
-* [Organ Registries](reference-solutions/organ-registries.md)
-* [Certificate Issuance](reference-solutions/certificate-issuance/README.md)
+  * [Education Registries](sample-use-cases/edu-registries/README.md)
+    * [Installation](sample-use-cases/edu-registries/installation.md)
+* [Organ Registries](sample-use-cases/organ-registries.md)
+* [Certificate Issuance](sample-use-cases/certificate-issuance.md)
   * [Portal User Guide](reference-solutions/certificate-issuance/portal-user-guide.md)
-* [ELocker](reference-solutions/digital-locker.md)
-* [Vaccination Platform](reference-solutions/vaccination.md)
-* [Skills & Work Credentials](reference-solutions/skill-and-work-credentials-platform.md)
+* [ELocker](sample-use-cases/digital-locker.md)
+* [Vaccination Platform](sample-use-cases/vaccination.md)
+* [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform.md)
 
 ## Links
 
@@ -141,3 +139,8 @@
 * [Code of Conduct](engage/code-of-conduct.md)
 * [Community Events](engage/community-events.md)
 * [Status By Track](engage/status-by-track.md)
+
+## HELP
+
+* [FAQs](help/faqs.md)
+* [Glossary](help/terminology.md)
