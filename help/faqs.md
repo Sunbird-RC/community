@@ -74,7 +74,7 @@ Sunbird RC welcomes contributions from the community. There are several ways in 
 
 **Contributing to the core registry:** If you have experience with software development, you can contribute to the core registry by submitting bug fixes, code improvements, or new features. You can do this by submitting a pull request on the Sunbird RC GitHub repository.
 
-**Contributing to the registry CLI**:  If you have experience with CLI development, you can contribute to the registry CLI by submitting code improvements or new features.
+**Contributing to the registry CLI**:  If you have experience with CLI development, you can [contribute to the registry CLI ](https://github.com/Sunbird-RC/sunbird-rc-core/blob/main/tools/cli/contributing.md)by submitting code improvements or new features.
 
 **Improving documentation:** Another way to contribute to Sunbird RC is by improving the documentation. This can include updating existing documentation, adding new sections, or improving the clarity and accuracy of the documentation.
 
