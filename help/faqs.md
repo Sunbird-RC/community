@@ -70,7 +70,7 @@ Sunbird RC provides multiple channels through which you can follow updates and s
 
 Sunbird RC welcomes contributions from the community. There are several ways in which you can contribute, including:
 
-**Reporting bugs/requesting features**: If you encounter any issues while using Sunbird RC or have suggestions for new features, you can report them on the project's GitHub repository. This helps the Sunbird RC team identify and address issues more quickly.
+**Reporting bugs/requesting features**: If you encounter any issues while using Sunbird RC or have suggestions for new features, you can [report ](https://github.com/sunbird-rc/community/issues/new/choose)them on the project's GitHub repository. This helps the Sunbird RC team identify and address issues more quickly.
 
 **Contributing to the core registry:** If you have experience with software development, you can contribute to the core registry by submitting bug fixes, code improvements, or new features. You can do this by submitting a pull request on the Sunbird RC GitHub repository.
 
