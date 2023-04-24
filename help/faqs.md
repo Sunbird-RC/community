@@ -63,7 +63,7 @@ Sunbird RC uses Verifiable Credentials (VCs) which are signed by asymmetric keys
 Sunbird RC provides multiple channels through which you can follow updates and stay informed about the latest developments. These channels include:
 
 * **GitHub**: Sunbird RC's GitHub repository is the primary source for technical and project management updates. You can follow the repository to receive notifications about new releases, bug fixes, and other technical updates.
-* **Social accounts**: Sunbird RC maintains active social media accounts on Twitter and LinkedIn. By following these accounts, you can receive regular updates and news about the platform, as well as insights and commentary from the Sunbird RC team.
+* **Social accounts**: Sunbird maintains active social media accounts on [Twitter](https://twitter.com/Sunbird\_EkStep) and [LinkedIn](https://www.linkedin.com/company/sunbirdbuildingblocks/). By following these accounts, you can receive regular updates and news about the platform, as well as insights from the Sunbird team.
 * **GitHub Discussions and Discord**: Sunbird RC has active discussion forums on GitHub and Discord, where community members can engage with one another and discuss topics related to the platform. These forums are a great way to stay connected with the Sunbird RC community and get involved in ongoing discussions.
 
 **How can I contribute/participate?**
