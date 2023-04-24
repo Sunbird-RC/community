@@ -133,7 +133,7 @@
 
 ## Community
 
-* [Discussions](community/discussions.md)
+* [Discussion Forum](community/discussions.md)
 * [Contributing](engage/contributing.md)
 * [Contribution Guidebook](community/contribution-guidebook.md)
 * [Code of Conduct](engage/code-of-conduct.md)

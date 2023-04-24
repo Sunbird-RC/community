@@ -1,5 +1,8 @@
 # Contribution Guidebook
 
+Thank you for your interest in contributing to Sunbird Registry and Credentials (RC)! This guidebook is designed to help you get started with contributing to the Sunbird RC project.&#x20;
+
+\
 **There are many ways to contribute to an open-source project, even if you are not a programmer or developer. Here are some suggestions on how you can start.**
 
 1. Start small: If you are new to open source, start with small contributions such as reporting bugs, fixing documentation, or helping with translations.
