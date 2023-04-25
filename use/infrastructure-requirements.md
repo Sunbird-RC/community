@@ -4,7 +4,7 @@
 
 ![](<../.gitbook/assets/Screenshot 2022-03-15 at 8.19.08 AM.png>)
 
-## Requirements for Service / API
+## Tech Stack
 
 | Software/Language | Recommended | Minimum Version |
 | ----------------- | ----------- | --------------- |
