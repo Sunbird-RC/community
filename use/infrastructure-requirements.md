@@ -6,18 +6,23 @@
 
 ## Requirements for Service / API
 
-| Software       | Recommended | Minimum Version |
-| -------------- | ----------- | --------------- |
-| Java           | 1.8         | 1.8             |
-| Linux / Docker | any         | any             |
-| Postgre sql    | v12         | v8              |
-| Redis          | 6           | 4               |
-
-## Other tooling used
-
-Keycloak for Authentication
-
-Elastic Search for Discovery
+| Software/Language | Recommended | Minimum Version |
+| ----------------- | ----------- | --------------- |
+| Java              | 1.8         | 1.8             |
+| Node JS           | v18.12.1    | v18.12.1        |
+| Go Lang           | 1.15        | 1.15            |
+| Linux / Docker    | any         | any             |
+| Postgre sql       | latest      | v8              |
+| Redis             | latest      | 4               |
+| ElasticSearch     | 7.10.1      | 7.10.1          |
+| Keycloak          | 14.0.0      | 14.0.0          |
+| Minio             | latest      |                 |
+| Kafka (Zookeeper) | latest      |                 |
+| nginx             | latest      |                 |
+| Angular           | 8           |                 |
+| Kubernetes        | latest      |                 |
+| Helm              | latest      |                 |
+| Docker Compose    | latest      |                 |
 
 ## Stock Frontend Interface
 
