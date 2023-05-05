@@ -34,7 +34,14 @@ npm i @zxing/ngx-scanner@vx.x.x
 \
 For more detail about compatible version you can check this doc - [https://www.npmpeer.dev/packages/@zxing/ngx-scanner/compatibility](https://www.npmpeer.dev/packages/@zxing/ngx-scanner/compatibility)
 
-3\. Import **vc-verification** and **@zxing/ngx-scanner** library in your **app.module.ts** file
+
+3\. Add below CND link in index.html file
+```
+  <script src="https://cdn.jsdelivr.net/npm/@undecaf/zbar-wasm@0.9.12/dist/index.js"></script>
+  ```
+
+
+4\. Import **vc-verification** and **@zxing/ngx-scanner** library in your **app.module.ts** file
 
 ```
 import { VerifyModule } from 'vc-verification';
