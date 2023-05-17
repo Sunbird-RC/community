@@ -4,7 +4,7 @@ The 1st generation of registries were purely a paper-based list maintained in re
 
 With the advent of the Internet and smartphones, as more systems went online, data also migrated to 3rd generation portal based systems. They partially addressed liveness and reuse. But such portals can only be used by humans by visiting a portal or mobile app, making it non-scalable and costly by not allowing other systems to access data in an automated and trustworthy manner.
 
-![](https://lh4.googleusercontent.com/vbSr3ZkYENcMa8XMigCE964kIpPYVILN6qXWXxNQQzPmeII\_e4tyNUoYviTsa5uLyVK\_2SzVMltnjOkIvlhVamIv7xzx872VTipE0TslSD\_XZBarW1H2kd40zhi2wHOXcloECtUN=s0)
+<figure><img src="../.gitbook/assets/Evaluation.png" alt=""><figcaption></figcaption></figure>
 
 ### **Evolution of Registries**
 

@@ -114,10 +114,10 @@ Add all the widgets and click on done Editing
 * Navigate to this repository and create a fork & clone [https://github.com/Sunbird-RC/federated-education-registry](https://github.com/Sunbird-RC/federated-education-registry)
 * Navigate to the federated-education-registry folder
 
-![](../../../.gitbook/assets/15.png)
+![](<../../../.gitbook/assets/unknown (2).png>)
 
 * Make sure your node and npm versions are - node v16.13.1 (npm v8.1.2)
 
 You can also manage these versions using [Node Version Manager](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/)
 
-![](../../../.gitbook/assets/16.png)
+![](<../../../.gitbook/assets/unknown (3).png>)

@@ -17,7 +17,7 @@ Education Registry is a sample (a reference solution) built on Sunbird RC demons
 
 ### User Flow
 
-![](<../../.gitbook/assets/NDEAR - User Flow for Demo (1).jpeg>)
+![](<../../.gitbook/assets/NDEAR - User Flow for Demo.jpeg>)
 
 ## Supported Claims
 

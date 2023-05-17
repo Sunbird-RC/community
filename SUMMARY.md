@@ -64,8 +64,6 @@
 * [Audit Configuration](developer-documentation/audit-configuration.md)
 * [Custom Keycloak Build](developer-documentation/custom-keycloak-build.md)
 * [Metrics](developer-documentation/metrics.md)
-* [Frontent Configurations](developer-documentation/frontent-configurations.md)
-* [Frontent - Proxy configuration](developer-documentation/frontent-proxy-configuration.md)
 
 ## API Reference
 
