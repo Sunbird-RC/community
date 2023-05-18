@@ -1,5 +1,32 @@
 # Setup
 
+### Knowledge Needed 
+A good understanding of docker & docker-compose,nginx
+
+### Prerequisites 
+
+#### Docker
+
+Installation instructions for Docker can be found [here](https://docs.docker.com/engine/install/).
+
+Run `docker -v` in terminal to check if `docker` has been installed correctly:
+
+```
+$ docker -v
+Docker version 20.10.9, build c2ea9bc90b
+```
+
+#### Docker Compose
+
+Installation instructions can be found [here](https://docs.docker.com/compose/install/).
+
+Run `docker compose version` in the terminal to check if `docker compose` has been installed correctly:
+
+```
+$ docker compose version
+Docker Compose version 2.0.1
+```
+
 ### Backend Setup <a href="#_btcqa01b80kx" id="_btcqa01b80kx"></a>
 
 ### Getting Code for Backend <a href="#_pjvmd0ibetjy" id="_pjvmd0ibetjy"></a>
