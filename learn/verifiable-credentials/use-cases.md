@@ -1,6 +1,6 @@
 # Use Cases
 
-<figure><img src="../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Artboard 8.png" alt=""><figcaption></figcaption></figure>
 
 Verifiable Credentials have several use cases across different industries and domains, including:
 
