@@ -1,6 +1,8 @@
 # High level architecture
 
-<figure><img src="../.gitbook/assets/components.png" alt=""><figcaption></figcaption></figure>
+{% embed url="https://www.youtube.com/watch?feature=youtu.be&v=mZjYgdxu0gU" %}
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Registry (Core)
 
