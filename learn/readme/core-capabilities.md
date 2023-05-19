@@ -1,6 +1,6 @@
 # Core Capabilities
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-11-08 at 12.11.40 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Artboard 3.png" alt=""><figcaption></figcaption></figure>
 
 ### Registry
 
