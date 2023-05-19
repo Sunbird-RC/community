@@ -1,5 +1,7 @@
 # Why do we need Sunbird RC?
 
+{% embed url="https://www.youtube.com/watch?v=zWDyQWuB_lw" %}
+
 Sunbird RC can be used to quickly build numerous national registries of individuals, objects, and entities for a variety of domains. Adopters can rapidly build core electronic registries through configurable schemas and workflows. All needed APIs, workflows, and a default user experience are automatically created for key registry stakeholders.&#x20;
 
 Sunbird RC provides microservices to issue portable standard schema based [W3C](https://www.w3.org/TR/vc-data-model/) VC complaint credentials with attestation and verification flows. These credentials may be printed with QR codes, can be translated into many languages, and are instantly verifiable. Sunbird RC, facilitates enrollment, authentication, data ownership, search, issuance and management of verifiable credentials, claim attestation flows between user and attester, sharing of credentials with user consent, amongst others.&#x20;
