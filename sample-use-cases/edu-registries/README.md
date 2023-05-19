@@ -13,7 +13,7 @@ Education Registry is a sample (a reference solution) built on Sunbird RC demons
 
 ### User Journey
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-11-08 at 11.51.42 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Artboard 10.png" alt=""><figcaption></figcaption></figure>
 
 ### User Flow
 
