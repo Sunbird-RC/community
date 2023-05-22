@@ -199,6 +199,19 @@ Currently, we have added custom SPI and themes to support otp based login in key
 3\. Select `browser` in `Browser Flow` option\
 4\. Save the changes
 
+**How to fix the \`Role creation exception\` error in registry logs?**
+
+In the registry, while creating/inviting an entity it throws/returns an error mentioning `Role creation exception`. This could be because `admin-api,` the client which is configured for the registry does not have the required roles. The below steps need to be configured for the same.
+
+1. Goto keycloak admin console (http://keycloak-host/auth/
+2. Login admin credentials
+3. Goto `clients` tab in configure section on the left
+4. Click on `admin-api` client and goto `Service Account Roles` tab
+5. In `Client roles` drop-down, select `realm-management`&#x20;
+6. Make sure `manage-realm` is present `Assigned Roles` section
+7. If not select `manage-realm` from `Available Roles` section and click on `Add selected`
+8. Restart the registry service
+
 
 
 ## Frontend
