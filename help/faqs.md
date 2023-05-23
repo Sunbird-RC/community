@@ -134,6 +134,15 @@ Use \`[http://keycloak:8080/auth/realms/sunbird-rc/protocol/openid-connect/token
 
 API documentation for generating the token is available here, [authenticating-as-an-entity.md](../api-reference/registry/authenticating-as-an-entity.md "mention") [generate-admin-token.md](../api-reference/registry/generate-admin-token.md "mention")
 
+If the above steps did not resolve the problem, please follow the next steps provided.
+
+1. Goto the registry container / docker-compose and identify the value set for `sunbird_sso_url` . Copy the value for further user.
+2. Goto keycloak admin console and select the realm Ex:`sunbird rc (if no new realm was created)` and goto `Realm Settings`&#x20;
+3. Paste the value copied in `Frontend URL` text box
+4. Click on `Save`
+5. If your url is not secure / doesn't have a  SSL, goto `login` tab, select `none` for `Require SSL` and click on `Save`
+6. Restart the registry
+
 ## Ownership
 
 #### Can citizens be allowed to login into the registry to view and suggest updation to his registry entry?&#x20;
