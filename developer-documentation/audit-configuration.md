@@ -6,7 +6,7 @@ description: >-
 
 # Audit Configuration
 
-Sunbird-RC enables audit logging of the schemas. Any operation like ADD/READ/UPDATE/DELETE/SEARCG on the schema will be added to the audit log.
+Sunbird-RC enables audit logging of the schemas. Any operation like ADD/READ/UPDATE/DELETE/SEARCH on the schema will be added to the audit log.
 
 Currently, Sunbird-RC supports two types of audit logging:
 
