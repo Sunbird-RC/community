@@ -22,10 +22,11 @@ This configuration is not provided by keycloak by default even in the latest ver
 #### Build keycloak docker image
 
 * Clone [https://github.com/keycloak/keycloak-containers/tree/main/](https://github.com/keycloak/keycloak-containers/tree/main/) the repository (Contains the build files)
+* `cd server`
 * Run a Python HTTP server in the [keycloak repo](custom-keycloak-build.md#build-keycloak-distribution-jar) to access the distributed jar file. \
   `python -m http.server 8001`
 * Build the keycloak docker image,\
-  `docker build -t sunbirdrc/keycloak --build-arg KEYCLOAK_DIST=http://192.168.1.13:8001/keycloak-14.0.0.tar.gz .`
+  `docker build -t sunbirdrc/keycloak --build-arg KEYCLOAK_DIST=http://<YOUR_IP_ADDRESS>:8001/keycloak-14.0.0.tar.gz .`
 * Tag the new docker image and publish it to dockerhub / docker registry
 
 
