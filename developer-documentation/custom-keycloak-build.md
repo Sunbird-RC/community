@@ -22,6 +22,7 @@ This configuration is not provided by keycloak by default even in the latest ver
 #### Build keycloak docker image
 
 * Clone [https://github.com/keycloak/keycloak-containers/tree/main/](https://github.com/keycloak/keycloak-containers/tree/main/) the repository (Contains the build files)
+* `git checkout 14.0.0`
 * `cd server`
 * Run a Python HTTP server in the [keycloak repo](custom-keycloak-build.md#build-keycloak-distribution-jar) to access the distributed jar file. \
   `python -m http.server 8001`
