@@ -6,6 +6,21 @@ description: >-
 
 # Production setup through Helm
 
+## System requirements
+
+Please note that the below numbers are only for reference, they will vary based on the business domain and scale.&#x20;
+
+1. Kubernetes cluster with 3 nodes&#x20;
+   * Master Node: 2 vCPU, 4 GB RAM, Disc Size: 50 GB, Nodes: 1
+   * Worker Nodes: 4 vCPU, 8 GB RAM, Disc size: 100 GB, Nodes: 3
+2. Bastion server: 2 vCPU, 4 GB RAM, Disc Size: 50GB
+3. Postgres with a read replica: 4 vCPU 8 GB RAM, Disc Size: 100GB
+4. ElasticSearch:  4 vCPU, 8 GB RAM, Disc Size: 100GB
+5. API Gateway
+6. Public domain
+7. Server for Minio: 2 vCPU, 4 GB RAM, Disc Size: 100GB (Optional)
+8. CDN / any other alternative for hosting UI
+
 ### Prerequisites
 
 * Kubernetes Cluster with minimum 3 nodes

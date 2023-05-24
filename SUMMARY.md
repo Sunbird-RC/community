@@ -43,9 +43,9 @@
 
 ## Developer Documentation
 
-* [Installation Guide](developer-documentation/installation-guide/README.md)
+* [Installation Guide](developer-documentation/installation-guide.md)
   * [Registry CLI](developer-documentation/installation-guide/installation-guide/README.md)
-    * [Setup A Registry Instance](developer-documentation/installation-guide/installation-guide/setup-a-registry-instance.md)
+    * [Setup A Registry Instance](developer-documentation/setup-a-registry-instance.md)
   * [Manual installation through docker-compose](developer-documentation/installation-guide/manual-installation-through-docker-compose.md)
   * [Production setup through Helm](developer-documentation/installation-guide/production-setup-through-helm.md)
 * [Introduction To Schemas](developer-documentation/introduction-to-schemas.md)

@@ -92,9 +92,7 @@ Sample Request Body for Teacher as Entity-Type
 
 Important Fields in Response Body
 
-| Field                       | Type     | Description                                                                                    |
-| --------------------------- | -------- | ---------------------------------------------------------------------------------------------- |
-| `result.{entity-type}.osid` | `string` | The ID of the create entity in the registry, used for retrieval and modification of the entity |
+<table><thead><tr><th width="261.3333333333333">Field</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>result.{entity-type}.osid</code></td><td><code>string</code></td><td>The ID of the create entity in the registry, used for retrieval and modification of the entity</td></tr></tbody></table>
 
 ### Usage
 
