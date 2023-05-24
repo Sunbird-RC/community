@@ -4,7 +4,17 @@ description: >-
   local/development environment.
 ---
 
-# Installation Guide
+# Registry CLI
+
+## System requirements
+
+* 4 Cores
+* 8 GB RAM
+* Min 100 GB disk
+
+## Video
+
+{% embed url="https://www.youtube.com/live/C-cmtsEuPU0?feature=share" %}
 
 ## Prerequisites
 
