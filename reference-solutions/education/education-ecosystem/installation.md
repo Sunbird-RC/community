@@ -172,25 +172,46 @@ You can create the admin user on this screen. Once you create the admin user, th
 
 ![](../../../.gitbook/assets/9.png)
 
-Now that you have connected to Clickhouse, you can create queries. Once a query is successful, you can add your visualization in the below
+Now that you have connected to Clickhouse, you can create queries. Once a query is created, you can add your visualization for the same.
 
-For example, query to access the stored data,
+#### Create a query and visualization
 
-select entity.gender as gender from default.scholarshipfromtopclassstudents
+Create a visualization showing the total number of VCs issued for `PreMatricScholarship` schema.
 
-![](../../../.gitbook/assets/10.png)
+* Goto `Queries` tab
+* Click on `Create your first Query`
+* Paste the below query and click on `Save`
 
-![](../../../.gitbook/assets/11.png)
+`select count(*) as count from default.prematricscholarship`
 
-![](../../../.gitbook/assets/12.png)
+* Rename this query `New Query` to `Total PreMatricScholarship VC Issued`&#x20;
 
-Now you can go to dashboard and select edit. You can add widget there. Select the query that you want your visualization to run, choose the visualization. This is which you have created after successfully creating the query. Click on add to dashboard and the corresponding visualization will be visible
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-25 at 12.20.13 PM.png" alt=""><figcaption></figcaption></figure>
 
-![](../../../.gitbook/assets/13.png)
+* Click on `Save` and click on `Publish`
+* Click on `Show Data Only`
+* At the bottom click on `Blue Play Button`
+* Click on `+ New Visualization`
+* Create a visualization with the below values. And click on `Save`
 
-![](../../../.gitbook/assets/14.png)
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-25 at 12.27.35 PM.png" alt=""><figcaption></figcaption></figure>
 
-Add all the widgets and click on done Editing
+*   Click on `Create` and click on `Dashboard`. You can give a name to your dashboard and click on `Save`
+
+    <figure><img src="../../../.gitbook/assets/Screenshot 2023-05-25 at 12.15.09 PM.png" alt=""><figcaption></figcaption></figure>
+* Click on `Add Widget` and select the new visualization created. And click `Add to Dashboard`
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-25 at 12.30.38 PM (1).png" alt=""><figcaption></figcaption></figure>
+
+* Click on `Done editing` and click on `Publish`
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-25 at 12.32.27 PM.png" alt=""><figcaption></figcaption></figure>
+
+*   Now the dashboard can be shared with other members. Click on `Share` and enable `public access` and copy the URL and share it with others for viewing the dashboard
+
+    <figure><img src="../../../.gitbook/assets/Screenshot 2023-05-25 at 12.33.26 PM.png" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Frontend Setup <a href="#_lcjuuta90ki" id="_lcjuuta90ki"></a>
 

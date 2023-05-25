@@ -29,7 +29,6 @@
   * [Sunbird RC in action](learn/readme/sunbird-rc-in-action/README.md)
     * [Implementations](learn/readme/sunbird-rc-in-action/implementations.md)
     * [Possibilities](learn/readme/sunbird-rc-in-action/possibilities.md)
-* [Roadmap](learn/roadmap.md)
 
 ## Use
 
@@ -145,5 +144,6 @@
 
 ## HELP
 
+* [Roadmap](help/roadmap.md)
 * [FAQs](help/faqs.md)
 * [Glossary](help/terminology.md)
