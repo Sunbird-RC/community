@@ -33,7 +33,6 @@
 ## Use
 
 * [Technical Requirements](use/infrastructure-requirements.md)
-* [Schema Configuration](use/schema-configuration.md)
 * [Setup the Backend](use/setup-the-backend.md)
 * [Setup the Frontend](use/setup-the-frontend.md)
 * [Leveraging Existing data stores](use/leveraging-existing-data-stores-directories.md)
@@ -49,6 +48,7 @@
   * [Production setup through Helm](developer-documentation/installation-guide/production-setup-through-helm.md)
 * [Introduction To Schemas](developer-documentation/introduction-to-schemas.md)
 * [Creating Your Own Schemas](developer-documentation/creating-your-own-schemas.md)
+* [Schema Configuration](developer-documentation/schema-configuration.md)
 * [Using The APIs](developer-documentation/using-the-apis.md)
 * [Admin Portal](<build/Build Registry & Credential Platform/admin-portal/README.md>)
   * [Login](build/build-registry-and-credential-platform/admin-portal/login.md)
