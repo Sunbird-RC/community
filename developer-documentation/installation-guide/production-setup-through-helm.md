@@ -26,7 +26,7 @@ Please note that the below numbers are only for reference, they will vary based 
 * Kubernetes Cluster with minimum 3 nodes
 * [Helm](https://helm.sh/docs/intro/install/)
 * kubectl
-* Ingress
+* Ingress ([https://kubernetes.github.io/ingress-nginx/deploy/](https://kubernetes.github.io/ingress-nginx/deploy/))
 * Postgres DB (create a database for `keycloak` and `registry`)
 * ElasticSearch (Optional)
 * Kafka (Optional)
