@@ -10,7 +10,7 @@ description: >-
 
 Please note that the below numbers are only for reference, they will vary based on the business domain and scale.&#x20;
 
-1. Kubernetes cluster with 3 nodes&#x20;
+1. Kubernetes cluster (any version above v1.26.3)
    * Master Node: 2 vCPU, 4 GB RAM, Disc Size: 50 GB, Nodes: 1
    * Worker Nodes: 4 vCPU, 8 GB RAM, Disc size: 100 GB, Nodes: 3
 2. Bastion server: 2 vCPU, 4 GB RAM, Disc Size: 50GB
