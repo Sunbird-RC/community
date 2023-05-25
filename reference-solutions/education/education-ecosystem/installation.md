@@ -151,7 +151,7 @@ How to configure
 Once all the services are up and running, run the following command
 
 ```bash
-docker-compose run --rm server create_db
+dockerompose run --rm server create_db
 ```
 
 This command will run migrations for redash
@@ -164,23 +164,17 @@ You can create the admin user on this screen. Once you create the admin user, th
 
 ![](../../../.gitbook/assets/7.png)
 
-#### Connet to data source
+#### Connect to the data source
 
-* In the home page click on `Connect a Data Source`
+* On the home page click on `Connect a Data Source`
 * Search for `Clickhouse`
-*
-
-Once you click on the create query, if the data sources are not configured, it will ask you to configure
-
-![](../../../.gitbook/assets/8.png)
-
-Add these details on the form to setup a connection with Clickhouse
+* Add these details on the form to set up a connection with Clickhouse
 
 ![](../../../.gitbook/assets/9.png)
 
-Now that you have connected to clickhouse, you can create queries. Once a query is successful, you can add your visualization in the below
+Now that you have connected to Clickhouse, you can create queries. Once a query is successful, you can add your visualization in the below
 
-Example query to access the stored data,
+For example, query to access the stored data,
 
 select entity.gender as gender from default.scholarshipfromtopclassstudents
 
