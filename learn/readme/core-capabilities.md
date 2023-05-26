@@ -2,7 +2,7 @@
 
 <figure><img src="../../.gitbook/assets/Artboard 3 (1).png" alt=""><figcaption></figcaption></figure>
 
-### ageRegistry
+### Registry
 
 A governing body/authority would be able to build registry that acts as a single source of truth
 
