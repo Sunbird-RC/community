@@ -2,7 +2,7 @@
 
 ## Architecture Diagram
 
-![](<../.gitbook/assets/Screenshot 2022-03-15 at 8.19.08 AM.png>)
+<figure><img src="../.gitbook/assets/Artboard 5 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Tech Stack
 
