@@ -1,8 +1,8 @@
 # Core Capabilities
 
-<figure><img src="../../.gitbook/assets/Artboard 3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Artboard 3 (1).png" alt=""><figcaption></figcaption></figure>
 
-### Registry
+### ageRegistry
 
 A governing body/authority would be able to build registry that acts as a single source of truth
 
