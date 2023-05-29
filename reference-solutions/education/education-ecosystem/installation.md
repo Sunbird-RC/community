@@ -1,4 +1,4 @@
-# Setup
+# Installation
 
 ### Knowledge Needed
 
@@ -151,7 +151,7 @@ How to configure
 Once all the services are up and running, run the following command
 
 ```bash
-dockerompose run --rm server create_db
+docker compose run --rm server create_db
 ```
 
 This command will run migrations for redash
