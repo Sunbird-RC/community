@@ -1,6 +1,6 @@
 # Organ Registries
 
-![](<../.gitbook/assets/image (4) (1) (1).png>)
+![](<../.gitbook/assets/image (5) (2).png>)
 
 Organ Registry is a sample (a reference solution) built on Sunbird RC demonstrating registry of the available donors in the country who have pledged to donate their organs and enable verification of authentic recipients seeking organ transplant so that unnecessary or fraudulent organ requests can be avoided.
 

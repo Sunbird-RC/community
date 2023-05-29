@@ -133,3 +133,15 @@ description: Registry provides following configuration properties
 | KEYCLOAK\_PUBLIC\_KEY | public key from keycloak               |
 | KEYCLOAK\_URL         | url for keycloak                       |
 | KEYCLOAK\_REALM       | keycloak realm name                    |
+
+### Digilocker Certificate API
+
+| Properties                  | Description                                                                                                                                         |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DIGILOCKER\_HMAC\_AUTHKEY   | A random generated string. This will be used to verify the HMAC from request and HMAC from the request body. This is the API Key of Digilocker      |
+| DIGILOCKER\_AUTH\_KEYNAME   | Needed to fetch HMAC From Request. Its default value is `x-digilocker-hmac`                                                                         |
+| DIGILOCKER\_DOC\_ID\_PREFIX | Document prefix which needs to be sent it in response in order to map it to correct document in digilocker. This is different for different issuers |
+| KEYCLOAK\_TOKEN\_URL        | Keycloak connection url                                                                                                                             |
+| KEYCLOAK\_CLIENT\_SECRET    | secret key of keycloak admin client set by using sunbird\_sso\_admin\_client\_id                                                                    |
+| KEYCLOAK\_CLIENT\_ID        | client id to be used as admin                                                                                                                       |
+| REGISTRY\_URL               | Registry url                                                                                                                                        |

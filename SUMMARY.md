@@ -66,6 +66,7 @@
 * [Audit Configuration](developer-documentation/audit-configuration.md)
 * [Custom Keycloak Build](developer-documentation/custom-keycloak-build.md)
 * [Metrics](developer-documentation/metrics.md)
+* [Digilocker Integration](developer-documentation/digilocker-integration.md)
 
 ## API Reference
 
