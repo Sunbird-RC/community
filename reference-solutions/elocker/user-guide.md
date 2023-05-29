@@ -2,7 +2,7 @@
 
 ## Login
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 * Enter mobile number
 * Click on “Continue” button
