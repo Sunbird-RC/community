@@ -11,11 +11,11 @@ description: >-
 * Partner account in digilocker. [https://partners.digitallocker.gov.in/](https://partners.digitallocker.gov.in/)
 * Understand how digilocker issuer API works [https://partners.digitallocker.gov.in/assets/img/digital\_locker\_issuer\_api\_specification%20v1.10.pdf](https://partners.digitallocker.gov.in/assets/img/digital\_locker\_issuer\_api\_specification%20v1.10.pdf)
 
-_**Note: Currently digilocker doesnt have a sandbox environment to test the integration. Testing needs to be performed on the production account. So be careful and conscious before making any changes in the partner portal.**_
+_**Note: Currently digilocker doesn't have a sandbox environment to test the integration. Testing needs to be performed on the production account. So be careful and conscious before making any changes in the partner portal.**_
 
 ## Onboarding Sunbird RC in Digilocker
 
-* Login to partner account
+* Log in to partner account
 * Goto digilocker `Pull URI Request` section
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-05-25 at 5.35.55 PM.png" alt=""><figcaption></figcaption></figure>
@@ -24,13 +24,13 @@ _**Note: Currently digilocker doesnt have a sandbox environment to test the inte
 * Add the details as shown below.&#x20;
 * `Search API Id`: You need to give a unique name to your API Id. This id will be passed to your backend for retrieving the VC
 * `Search API Description:` You can update this as per your business functionality.&#x20;
-* `API Key:` You need to create a new unique and secure API key. This key will be used to generate HMAC of the request body sent by digilocker. This key needs to be kept securely and confidential.
+* `API Key:` You need to create a new unique and secure API key. This key will be used to generate the HMAC of the request body sent by digilocker. This key needs to be kept secure and confidential.
 * `Rest API Service URL:` You need to specify the SunbirdRC URL to access the VC. Ex: \`[https://\<host>/digilocker/v1/digilocker/pullUriRequest](broken-reference)\`
 * And click on `Next`
 
 <figure><img src="../.gitbook/assets/image3.png" alt=""><figcaption></figcaption></figure>
 
-* In the next section you can define what user parameters you would need to be sent to backed for accessing the VC. Here you can select few existing user profile parameters like Aadhaar / demographic details. Or else you can also define custom parameters as shown below. `Ex: Certificate ID.` These parameters will be used as search parameters to fetch the VC for the user. In the below section steps to configure the search parameters is defined.
+* In the next section, you can define what user parameters you would need to be sent to backend for accessing the VC. Here you can select a few existing user profile parameters like Aadhaar / demographic details. Or else you can also define custom parameters as shown below. `Ex: Certificate ID.` These parameters will be used as search parameters to fetch the VC for the user. In the below section, the steps to configure the search parameters are defined.
 * Click on \`Next
 
 <figure><img src="../.gitbook/assets/image20.png" alt=""><figcaption></figcaption></figure>
@@ -41,7 +41,7 @@ _**Note: Currently digilocker doesnt have a sandbox environment to test the inte
 <figure><img src="../.gitbook/assets/image8.png" alt=""><figcaption></figcaption></figure>
 
 * Now you can test your configuration. Enter the details of the parameters that are displayed and click on `Test Service.` If all the details were configured correctly, you will be displayed with the VC certificate in the below section.&#x20;
-* Once all the configuration is tested, this can be published. Only if it is published it will be displayed on Digilocker portal for users to pull their credentials.
+* Once all the configuration is tested, this can be published. Only if it is published it will be displayed on the Digilocker portal for users to pull their credentials.
 
 <figure><img src="../.gitbook/assets/image10 (1).png" alt=""><figcaption></figcaption></figure>
 

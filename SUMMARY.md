@@ -26,9 +26,9 @@
   * [Technical Specification Draft](learn/technical-specification-draft.md)
   * [Workflows](learn/readme/workflows.md)
   * [High level architecture](learn/high-level-architecture.md)
-  * [Sunbird RC in action](learn/readme/sunbird-rc-in-action/README.md)
-    * [Implementations](learn/readme/sunbird-rc-in-action/implementations.md)
-    * [Possibilities](learn/readme/sunbird-rc-in-action/possibilities.md)
+* [Sunbird RC in action](learn/sunbird-rc-in-action/README.md)
+  * [Implementations](learn/sunbird-rc-in-action/implementations.md)
+  * [Possibilities](learn/sunbird-rc-in-action/possibilities.md)
 
 ## Use
 
