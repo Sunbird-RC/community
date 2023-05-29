@@ -115,9 +115,12 @@
 
 * [Education](reference-solutions/education/README.md)
   * [Education Ecosystem](reference-solutions/education/education-ecosystem/README.md)
-    * [Setup](reference-solutions/education/education-ecosystem/installation.md)
+    * [Installation](reference-solutions/education/education-ecosystem/installation.md)
   * [Education Registries](sample-use-cases/edu-registries/README.md)
     * [Installation](sample-use-cases/edu-registries/installation.md)
+* [Certificate Issuance](reference-solutions/certificate-issuance/README.md)
+  * [Installation(WIP)](reference-solutions/certificate-issuance/installation-wip.md)
+  * [User Guide](reference-solutions/certificate-issuance/user-guide.md)
 * [eLocker](reference-solutions/elocker/README.md)
   * [High Level Diagram](reference-solutions/elocker/digital-locker.md)
   * [Installation (WIP)](reference-solutions/elocker/installation-wip.md)
@@ -126,8 +129,7 @@
   * [Organ Registries](reference-solutions/health-registries/organ-registries/README.md)
     * [Installation (WIP)](reference-solutions/health-registries/organ-registries/installation-wip.md)
     * [User Guide](reference-solutions/health-registries/organ-registries/user-guide.md)
-* [Certificate Issuance](sample-use-cases/certificate-issuance.md)
-  * [Portal User Guide](reference-solutions/certificate-issuance/portal-user-guide.md)
+* [Certificate Issuance](reference-solutions/certificate-issuance-1.md)
 * [Vaccination Platform](sample-use-cases/vaccination.md)
 * [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform.md)
 

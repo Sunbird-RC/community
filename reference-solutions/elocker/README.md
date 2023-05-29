@@ -1,6 +1,6 @@
 # eLocker
 
-![](<../../.gitbook/assets/image (1) (1).png>)
+![](<../../.gitbook/assets/image (1) (1) (4).png>)
 
 eLockers, also known as digital wallets/lockers allows users to store and manage digital documents and credentials, such as government-issued identity cards, academic certificates, bank statements, and insurance policies which provide users with a safe and convenient way to manage their digital documents, eliminating the need for physical storage spaces and reducing the risk of loss, theft, or damage.
 
