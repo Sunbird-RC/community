@@ -27,7 +27,7 @@
   * [Workflows](learn/readme/workflows.md)
   * [High level architecture](learn/high-level-architecture.md)
 * [Sunbird RC in action](learn/readme/sunbird-rc-in-action/README.md)
-  * [Implementations](learn/readme/sunbird-rc-in-action/implementations.md)
+  * [Implementations (Work in Progress)](learn/readme/sunbird-rc-in-action/implementations.md)
   * [Possibilities](learn/sunbird-rc-in-action/possibilities.md)
 
 ## Use
@@ -129,7 +129,6 @@
   * [Organ Registries](reference-solutions/health-registries/organ-registries/README.md)
     * [Installation (WIP)](reference-solutions/health-registries/organ-registries/installation-wip.md)
     * [User Guide](reference-solutions/health-registries/organ-registries/user-guide.md)
-* [Certificate Issuance](reference-solutions/certificate-issuance-1.md)
 * [Vaccination Platform](sample-use-cases/vaccination.md)
 * [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform.md)
 
