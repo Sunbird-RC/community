@@ -26,8 +26,8 @@
   * [Technical Specification Draft](learn/technical-specification-draft.md)
   * [Workflows](learn/readme/workflows.md)
   * [High level architecture](learn/high-level-architecture.md)
-* [Sunbird RC in action](learn/sunbird-rc-in-action/README.md)
-  * [Implementations](learn/sunbird-rc-in-action/implementations.md)
+* [Sunbird RC in action](learn/readme/sunbird-rc-in-action/README.md)
+  * [Implementations](learn/readme/sunbird-rc-in-action/implementations.md)
   * [Possibilities](learn/sunbird-rc-in-action/possibilities.md)
 
 ## Use
@@ -48,7 +48,7 @@
   * [Production setup through Helm](developer-documentation/installation-guide/production-setup-through-helm.md)
 * [Introduction To Schemas](developer-documentation/introduction-to-schemas.md)
 * [Creating Your Own Schemas](developer-documentation/creating-your-own-schemas.md)
-* [Schema Configuration](developer-documentation/schema-configuration.md)
+* [Schema Configuration](use/schema-configuration.md)
 * [Using The APIs](developer-documentation/using-the-apis.md)
 * [Admin Portal](<build/Build Registry & Credential Platform/admin-portal/README.md>)
   * [Login](build/build-registry-and-credential-platform/admin-portal/login.md)
@@ -119,9 +119,12 @@
   * [Education Registries](sample-use-cases/edu-registries/README.md)
     * [Installation](sample-use-cases/edu-registries/installation.md)
 * [Organ Registries](sample-use-cases/organ-registries.md)
+* [eLocker](reference-solutions/elocker/README.md)
+  * [High Level Diagram](reference-solutions/elocker/digital-locker.md)
+  * [Installation (WIP)](reference-solutions/elocker/installation-wip.md)
+  * [User Guide](reference-solutions/elocker/user-guide.md)
 * [Certificate Issuance](sample-use-cases/certificate-issuance.md)
   * [Portal User Guide](reference-solutions/certificate-issuance/portal-user-guide.md)
-* [ELocker](sample-use-cases/digital-locker.md)
 * [Vaccination Platform](sample-use-cases/vaccination.md)
 * [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform.md)
 
