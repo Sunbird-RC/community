@@ -131,6 +131,7 @@
     * [User Guide](reference-solutions/health-registries/organ-registries/user-guide.md)
 * [Vaccination Platform](sample-use-cases/vaccination.md)
 * [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform.md)
+* [Govt to Person (G2)](reference-solutions/govt-to-person-g2.md)
 
 ## Links
 
