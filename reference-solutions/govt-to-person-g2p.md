@@ -1,4 +1,4 @@
-# Govt to Person (G2)
+# Govt to Person (G2P)
 
 ### Financial Address Mapper
 
