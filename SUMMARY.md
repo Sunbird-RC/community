@@ -8,7 +8,6 @@
   * [What are the key roles in Verifiable Credentials?](learn/verifiable-credentials/what-are-the-key-roles-in-verifiable-credentials.md)
   * [What are the components of Verifiable Credentials?](learn/verifiable-credentials/what-are-the-components-of-verifiable-credentials.md)
   * [What are the benefits of Verifiable Credentials?](learn/verifiable-credentials/what-are-the-benefits-of-verifiable-credentials.md)
-  * [Digital Credentials vs Verifiable Credentials](learn/verifiable-credentials/digital-credentials-vs-verifiable-credentials.md)
   * [QR code vs Verifiable QR code](learn/verifiable-credentials/qr-code-vs-verifiable-qr-code.md)
   * [Use Cases](learn/verifiable-credentials/use-cases.md)
 * [Electronic Registries](learn/electronic-registries/README.md)
