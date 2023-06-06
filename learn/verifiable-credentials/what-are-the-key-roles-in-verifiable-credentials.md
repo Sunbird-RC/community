@@ -1,5 +1,7 @@
 # What are the key roles in Verifiable Credentials?
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Daniel H Hardman, CC BY-SA 4.0 <a href="https://creativecommons.org/licenses/by-sa/4.0">https://creativecommons.org/licenses/by-sa/4.0</a>, via Wikimedia Commons</p></figcaption></figure>
+
 The Key roles involved in the Verifiable Credentials ecosystem are:
 
 **Holder:** Someone who owns the credentials as a proof and is responsible for generating presentations from them. Examples include students, employees, citizens, customers, parents of a children etc.
