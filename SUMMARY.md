@@ -66,6 +66,7 @@
 * [Custom Keycloak Build](developer-documentation/custom-keycloak-build.md)
 * [Metrics](developer-documentation/metrics.md)
 * [Digilocker Integration](developer-documentation/digilocker-integration.md)
+* [Custom QR Code design](developer-documentation/custom-qr-code-design.md)
 
 ## API Reference
 
