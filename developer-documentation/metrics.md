@@ -1,18 +1,22 @@
 ---
 description: >-
-  The following document describes how the metrics can be emitted through
+  The following document describes how events can be emitted through the
   registry
 ---
 
 # Metrics
 
-Sunbird RC enables emitting events from registry. Any operation like ADD, DELETE, UPDATE can emit events. Currently, registry only emits the ADD metrics
+Sunbird RC enables emitting events from the registry. Any operation like ADD, DELETE, UPDATE and READ can emit events
 
-Sunbird RC supports two types in which events can be emitted.&#x20;
+For Sunbird RC to start emitting events, there are few configurations you need to enable.&#x20;
 
-The events emitted are in the format of sunbird telemetry specs. Following is the sample of event that is emitted from registry
+1. **event\_enabled:-** Boolean value which indicates whether the events will be emitted or not
+2. **event\_topic:-** Kafka Topic to which events will be emitted if **event\_providerName** is set to **dev.sunbirdrc.registry.service.impl.KafkaEventService**
+3. **event\_providerName:- dev.sunbirdrc.registry.service.impl.KafkaEventService** for Kafka based and **dev.sunbirdrc.registry.service.impl.FileEventService.java** for File based event logging
 
-```
+The events emitted are in the format of Sunbird telemetry specs. Following is the sample of the event that is emitted from the registry
+
+```json
 {
     "eid": "ADD", //operationType
     "ets": 1678958110872, 
@@ -56,47 +60,70 @@ The events emitted are in the format of sunbird telemetry specs. Following is th
 }
 ```
 
-1. Kafka
-2. File based
+Sunbird RC supports two types in which events can be emitted.&#x20;
 
-### **Kafka based -**&#x20;
+1. [Kafka based](metrics.md#kafka-based)
+2. [File based](metrics.md#file-based)
 
-Registry sends the event in the above format i.e Sunbird Telemetry format to kafka topic configured. Kafka will hold the data and then consumer can run on this to store this into clickhouse
+You can enable this two types by passing a configuration variable. **event\_providerName.**&#x20;
 
-OperationType here can be ADD, UPDATE, DELETE
+The value for this will be class name. For eg: `dev.sunbirdrc.registry.service.impl.KafkaEventService` for Kafka based\
+`dev.sunbirdrc.registry.service.impl.FileEventService.java` For File based
 
-Data of the entity will be masked using configuration defined in the schema.&#x20;
+### **- Kafka based**&#x20;
 
-Schema contains osConfig. In this, you need to define 2 keys namely privateFieldConfig and internalFieldConfig for privateFields and internalFields.&#x20;
+Registry sends the event in the above format i.e. Sunbird Telemetry format to the Kafka topic configured(default events). Kafka will hold the data and then the consumer can run on this to store this in the Clickhouse database
 
-There are 5 types of masking supported\
-1\. NONE - field value will not be emitted\
-2\. FULL - emit the field value as-is \
-3\. HASH - emit the field as a one-way hash (salted) \
-4\. MASK - emit the field using a masking strategy \
-5\. HASH-MASK - emit two values for this field, one hashed and one masked
+OperationType here can be ADD, UPDATE, DELETE, READ
 
-By default, both the configs hold NONE so the private and internal fields will not be emitted
+Data of the entity will be masked using the configuration defined in the schema.&#x20;
 
-#### **Metrics Service -**
+You can check the configuration for masking in [schema configuration](../use/schema-configuration.md).&#x20;
 
-The service is a consumer for the events emitted by registry into kafka topic.&#x20;
+1. InternalFields [here](../use/schema-configuration.md#internalfieldconfig)
+2. PrivateFields [here](../use/schema-configuration.md#privatefieldconfig)
 
-Metric service by default uses clickhouse as the database to store the events. Table Schema for events is as follows
+**Metrics Service**&#x20;
 
-```
+The service is a consumer for the events the registry emits into the Kafka topic.&#x20;
+
+Metric service by default uses Clickhouse as the database to store the events. The table Schema for events is as follows
+
+```sql
 create table <table_name> (
     operationType String,
-    date Date,
+    createdAt Date,
     entityId String,
     entity JSON
 )
 ```
 
-For every distinct type of object, the service creates new table and stores the data related to that object in it.
+For every distinct type of schema, the service creates a new table and stores the data related to that object.
 
-The service also exposes an API which returns the count of all the events emitted. It aggregates the data from all the tables created
+Metric Service also exposes two APIs
 
-### File Based
+* The service also exposes an API which returns the count of all the events emitted. It retrieves the data from all the tables created. ([API Spec](../api-reference/metrics-apis/get-count.md))
+* The service also exposes another API which returns aggregates on all the tables created. The cron job will run and save the result in a Redis. This can be fetched through the API. ([API Spec](../api-reference/metrics-apis/get-aggregates.md))\
+  To configure Metrics Service for aggregates, the following configurations need to be setup for Metrics micro-service\
+  \
+  **CRON\_ENABLE** :- Boolean value which will tell metrics service to run cron job if the value is          set to true\
+  \
+  **SCHEDULE\_INTERVAL**:- Interval period in days to run the cron job after\
+  \
+  **SCHEDULE\_TIME**:- Time in GMT at which the cron job should be running
 
-The events emitted by registry are logged to a log file which is present at `metrics_log/metrics.log` . The log also has a rolling policy based on the size (30MB).
+Based on this, the cron job will run at the scheduled time and the results will be stored in redis. The aggregates API will then return back this results.
+
+The Configuration for Metric Service can be found [here](configuration.md#metrics-service)
+
+### - File Based
+
+The events emitted by the registry are logged into a log file which is present at `metrics_log/metrics.log` . The log also has a rolling policy based on the size (30MB).
+
+
+
+Following is a pictorial representation of the current approach
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-06-15 at 3.58.29 PM.png" alt=""><figcaption><p>Interaction Diagram for Events Thrown and Metric Consuming Events</p></figcaption></figure>
+
+The discussion for all of these features can be found here, [https://github.com/orgs/Sunbird-RC/discussions/356](https://github.com/orgs/Sunbird-RC/discussions/356)

@@ -327,3 +327,45 @@ This property holds the template to be used for generating visual certificate. T
   ...
 }
 ```
+
+### PrivateFieldConfig
+
+The value for this property tells registry that how should privateFields configured in schema be emitted. This can have 5 different types of values.
+
+There are 5 types of masking supported\
+1\. NONE - field value will not be emitted\
+2\. FULL - emit the field value as-is \
+3\. HASH - emit the field as a one-way hash (salted) \
+4\. MASK - emit the field using a masking strategy \
+5\. HASH-MASK - emit two values for this field, one hashed and one masked
+
+By default, both the configs hold NONE so the private and internal fields will not be emitted
+
+```json
+{
+    ...
+    "privateFieldConfig": "FULL",
+    ...
+}
+```
+
+### InternalFieldConfig
+
+The value for this property tells registry that how should internalFields configured in schema be emitted. This can have 5 different types of values.
+
+There are 5 types of masking supported\
+1\. NONE - field value will not be emitted\
+2\. FULL - emit the field value as-is \
+3\. HASH - emit the field as a one-way hash (salted) \
+4\. MASK - emit the field using a masking strategy \
+5\. HASH-MASK - emit two values for this field, one hashed and one masked
+
+By default, both the configs hold NONE so the private and internal fields will not be emitted
+
+```json
+{
+    ...
+    "internalFieldConfig": "FULL",
+    ...
+}
+```
