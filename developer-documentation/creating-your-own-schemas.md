@@ -37,6 +37,8 @@ The following is an example schema for a student entity. The comments should gui
 				"email": { "type": "string" },
 				// What school they are going to (string)
 				"school": { "type": "string" }
+				// The password for the Student entity (string)
+				"passwordToken": { "type": "string" }
 			}
 		}
 	},
@@ -81,6 +83,8 @@ The following is an example schema for a student entity. The comments should gui
                 "mobile": "/phoneNumber",
                 // The path to the field to consider as unique ID of the entity
                 "userId": "/phoneNumber"
+                // The path to the field to consider as the password of the entity
+                "password": "/passwordToken"
             }
         ],
         "attestationPolicies": [

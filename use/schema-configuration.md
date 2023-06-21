@@ -167,11 +167,12 @@ By default login is disabled for the registry, we need to set `enableLogin:true`
         "email": "/email",
         "mobile": "/contact",
         "userId": "/contact"
+        "password": "/password"
       }
     ]
 ```
 
-We can have more than one owner for an entity. The respective json paths for the fields needs to be configured. All the properties are mandatory for creating an owner.
+We can have more than one owner for an entity. The respective json paths for the fields needs to be configured. All the properties are mandatory for creating an owner except password. The password is only set used for entity creation, it is not persisted in database.
 
 ### Attestation policy
 
