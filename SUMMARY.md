@@ -49,7 +49,7 @@
 * [Creating Your Own Schemas](developer-documentation/creating-your-own-schemas.md)
 * [Schema Configuration](use/schema-configuration.md)
 * [Using The APIs](developer-documentation/using-the-apis.md)
-* [Creating And Using the Schemas with Password Configuration](developer-documentation/creating-and-using-the-schemas-with-password-configuration.md)
+* [Create Schemas With Custom Password](developer-documentation/create-schemas-with-custom-password.md)
 * [Admin Portal](<build/Build Registry & Credential Platform/admin-portal/README.md>)
   * [Login](build/build-registry-and-credential-platform/admin-portal/login.md)
   * [Get Started](build/build-registry-and-credential-platform/admin-portal/get-started/README.md)
