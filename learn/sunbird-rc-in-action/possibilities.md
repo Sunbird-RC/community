@@ -1,6 +1,6 @@
 # Possibilities
 
-<figure><img src="../../../.gitbook/assets/Artboard 6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Artboard 6 (1).png" alt=""><figcaption></figcaption></figure>
 
 Sunbird Registry and Credentials provides a secure and scalable way to manage digital identities and credentials. Some of the use cases for Sunbird Registry and Credentials include:
 
@@ -8,4 +8,4 @@ Sunbird Registry and Credentials provides a secure and scalable way to manage di
 2. Healthcare: Sunbird Registry and Credentials can be used to manage healthcare credentials, such as medical licenses, certifications, and training records. This can help healthcare providers to ensure that their staff members are qualified and competent, while also enabling patients to verify the credentials of their healthcare providers.
 3. Government Ecosystem: Sunbird Registry and Credentials can be used by governments to manage citizen identities and credentials, such as driver's licenses, passports, and voter registration. This can help to improve the efficiency and accuracy of government services, while also enhancing the security and privacy of citizen data.
 4. Employment: Sunbird Registry and Credentials can be used to manage employment credentials, such as job certifications, training records, and performance reviews. This can help employers to ensure that their staff members are qualified and competent, while also enabling employees to securely share their credentials with potential employers.
-5. Financial Services: Sunbird Registry and Credentials can be used to manage financial credentials, such as bank account information, credit scores, and investment portfolios. This can help to improve the security and privacy of financial data, while also enabling individuals to securely share their financial information with third-party providers.
+
