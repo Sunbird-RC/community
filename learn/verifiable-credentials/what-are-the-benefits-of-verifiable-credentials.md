@@ -1,8 +1,6 @@
 # What are the benefits of Verifiable Credentials?
 
-<figure><img src="../../.gitbook/assets/Artboard 7.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/Artboard 7 (1).png" alt=""><figcaption></figcaption></figure>
 
 Verifiable credentials offer several benefits over traditional forms of identity and credential verification:
 
