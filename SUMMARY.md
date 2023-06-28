@@ -137,6 +137,7 @@
 * [Vaccination Platform](sample-use-cases/vaccination.md)
 * [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform.md)
 * [Govt to Person (G2P)](reference-solutions/govt-to-person-g2p.md)
+* [Donor Registry](reference-solutions/donor-registry.md)
 
 ## Links
 
