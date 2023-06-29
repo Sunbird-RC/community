@@ -99,13 +99,13 @@ description: Registry provides following configuration properties
 
 ### Notification Service
 
-| Properties                    | Description                                                                               |
-| ----------------------------- | ----------------------------------------------------------------------------------------- |
-| **KAFKA\_BOOTSTRAP\_SERVERS** | host along with port if port is different than default i.e 9092 on which kafka is present |
-| **SMS\_AUTH\_KEY**            | api url to send sms to provided mobile numbers                                            |
-| **SMS\_AUTH\_KEY**            | authorization key for sms api url                                                         |
-| **ENABLE\_SMS**               | flag to enable sending sms using sms api                                                  |
-| **TRACK\_NOTIFICATIONS**      | boolean value to track all sent notifications and fetch them if needed                    |
+| Properties                    | Description                                                            |
+| ----------------------------- | ---------------------------------------------------------------------- |
+| **KAFKA\_BOOTSTRAP\_SERVERS** | Kafka bootstrap servers (ex: host:port)                                |
+| **SMS\_AUTH\_KEY**            | api url to send sms to provided mobile numbers                         |
+| **SMS\_AUTH\_KEY**            | authorization key for sms api url                                      |
+| **ENABLE\_SMS**               | flag to enable sending sms using sms api                               |
+| **TRACK\_NOTIFICATIONS**      | boolean value to track all sent notifications and fetch them if needed |
 
 ### Metrics Service
 
