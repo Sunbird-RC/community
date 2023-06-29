@@ -110,7 +110,7 @@ description: Registry provides following configuration properties
 | **emailsmtp.fromAddress**                                                       | senders email address from which to send email                                            |
 | **emailsmtp.password**                                                          | password for that email address                                                           |
 | **emailsmtp.enable**                                                            | flag to enable sending email using email api                                              |
-| **TRACK\_NOTIFICATIONS in environment variable**                                | boolean value to track all sent notifications and fetch them if needed                    |
+| **TRACK\_NOTIFICATIONS**                                                        | boolean value to track all sent notifications and fetch them if needed                    |
 
 ### Metrics Service
 
