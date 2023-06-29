@@ -103,7 +103,7 @@ Certificate Issuance consists mainly of two major steps.
 
 * Click on the _“Edit Template”_ button
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 * &#x20;Multiple options to edit the template are available to customize the uploaded certificate:
   * &#x20;Layout editing

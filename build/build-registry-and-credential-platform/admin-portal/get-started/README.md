@@ -13,14 +13,14 @@ Get Started in two ways:
 2. Using sample use cases: \
    If your scenario is close to one of the sample use case, you can get started immediately by cloning the sample use case. Please note you can edit the settings of these use cases later as per your requirement.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Building Registry
 
 1. Click **Start** to build your registry
 2. You can optionally select any or all of the sunbird RC modules.
 
-<figure><img src="../../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 Depending on the sunbird RC modules selected, you will get following steps:
 
