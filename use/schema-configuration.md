@@ -373,8 +373,8 @@ By default, both the configs hold NONE so the private and internal fields will n
 
 ### Notification Templates
 
-If you want to send out notifications, you can send it using this template configured in that particular schema. For each operation, you can have different templates. Also, for each operation you can have multiple templates that you can send out.\
-Following is an example for the notificationTemplates
+If you want to send out notifications, you can send it using this template configured in that particular schema. For each operation, you can have different templates. Also, for each operation, you can have multiple templates that you can send out.\
+Following is an example of the notification templates
 
 ```
 {
@@ -384,7 +384,10 @@ Following is an example for the notificationTemplates
             "subject": "Credential Created from schema",
             "body": "{\"sender\": \"AppName\",\"route\": \"4\",\"country\": \"91\",\"unicode\": 1,\"sms\": [{    \"message\": \"{{name}}, Your {{entityType}} credential has been created\",    \"to\": [      \"{{contact}}]\"    ]  
         }],
-        "DLT_TE_ID": "templateId"
+        "invite": [],
+        "update": [],
+        "delete": [],
+        "revoke": []
     }
 }
 ```

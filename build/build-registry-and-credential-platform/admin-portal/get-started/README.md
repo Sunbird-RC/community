@@ -20,7 +20,7 @@ Get Started in two ways:
 1. Click **Start** to build your registry
 2. You can optionally select any or all of the sunbird RC modules.
 
-<figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 Depending on the sunbird RC modules selected, you will get following steps:
 
