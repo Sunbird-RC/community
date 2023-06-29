@@ -71,6 +71,10 @@ Set to
  ENV needs to be enabled
 {% endswagger-parameter %}
 
+{% swagger-parameter in="header" name="viewTemplateId" %}
+File name of view templates configured
+{% endswagger-parameter %}
+
 {% swagger-response status="200: OK" description="Response when content-type is application/json" %}
 ```javascript
 {

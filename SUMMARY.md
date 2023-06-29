@@ -68,7 +68,8 @@
 * [Metrics](developer-documentation/metrics.md)
 * [Digilocker Integration](developer-documentation/digilocker-integration.md)
 * [Custom QR Code design](developer-documentation/custom-qr-code-design.md)
-* [Notifications](developer-documentation/notifications.md)
+* [Notifications Configuration](developer-documentation/notifications-configuration.md)
+* [View Templates Configuration](developer-documentation/view-templates-configuration.md)
 
 ## API Reference
 

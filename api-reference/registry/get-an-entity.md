@@ -25,6 +25,10 @@ Set to
  A valid token of the owner is required
 {% endswagger-parameter %}
 
+{% swagger-parameter in="header" name="viewTemplateId" %}
+File name of view templates configured
+{% endswagger-parameter %}
+
 {% swagger-response status="200: OK" description="Response when content-type is application/json" %}
 ```javascript
 {
