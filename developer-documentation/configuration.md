@@ -99,18 +99,18 @@ description: Registry provides following configuration properties
 
 ### Notification Service
 
-| Properties                                                                      | Description                                                                               |
-| ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| **KAFKA\_BOOTSTRAP\_SERVERS in environment variable or kafka.bootstrapServers** | host along with port if port is different than default i.e 9092 on which kafka is present |
-| **kafka.notifyTopic**                                                           | topic name which holds notification messages                                              |
-| **smsapi.url**                                                                  | api url to send sms to provided mobile numbers                                            |
-| **smsapi.authKey**                                                              | authorization key for sms api url                                                         |
-| **smsapi.enable**                                                               | flag to enable sending sms using sms api                                                  |
-| **smsapi.requestTemplate**                                                      | message template to be sent to mobile number in notification message                      |
-| **emailsmtp.fromAddress**                                                       | senders email address from which to send email                                            |
-| **emailsmtp.password**                                                          | password for that email address                                                           |
-| **emailsmtp.enable**                                                            | flag to enable sending email using email api                                              |
-| **TRACK\_NOTIFICATIONS**                                                        | boolean value to track all sent notifications and fetch them if needed                    |
+| Properties                    | Description                                                                               |
+| ----------------------------- | ----------------------------------------------------------------------------------------- |
+| **KAFKA\_BOOTSTRAP\_SERVERS** | host along with port if port is different than default i.e 9092 on which kafka is present |
+| **kafka.notifyTopic**         | topic name which holds notification messages                                              |
+| **smsapi.url**                | api url to send sms to provided mobile numbers                                            |
+| **smsapi.authKey**            | authorization key for sms api url                                                         |
+| **smsapi.enable**             | flag to enable sending sms using sms api                                                  |
+| **smsapi.requestTemplate**    | message template to be sent to mobile number in notification message                      |
+| **emailsmtp.fromAddress**     | senders email address from which to send email                                            |
+| **emailsmtp.password**        | password for that email address                                                           |
+| **emailsmtp.enable**          | flag to enable sending email using email api                                              |
+| **TRACK\_NOTIFICATIONS**      | boolean value to track all sent notifications and fetch them if needed                    |
 
 ### Metrics Service
 
