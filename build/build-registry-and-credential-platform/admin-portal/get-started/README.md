@@ -13,7 +13,7 @@ Get Started in two ways:
 2. Using sample use cases: \
    If your scenario is close to one of the sample use case, you can get started immediately by cloning the sample use case. Please note you can edit the settings of these use cases later as per your requirement.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Building Registry
 

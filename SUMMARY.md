@@ -70,6 +70,7 @@
 * [Custom QR Code design](developer-documentation/custom-qr-code-design.md)
 * [Notifications Configuration](developer-documentation/notifications-configuration.md)
 * [View Templates Configuration](developer-documentation/view-templates-configuration.md)
+* [Generic Identity And Access Management](developer-documentation/generic-identity-and-access-management.md)
 
 ## API Reference
 
