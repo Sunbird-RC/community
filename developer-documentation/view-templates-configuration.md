@@ -217,3 +217,18 @@ Example:
 curl --location 'localhost:8081/api/v1/StudentWithPassword/1-2ee0c034-0a81-4c7f-a971-058af35911cb' \
 --header 'viewTemplateId: student_view_template.json' \
 ```
+
+View templates can be used in search/discovery APIs. The respective template id needs to be part of the request body as below
+
+```json
+{
+    "filters": {
+
+    },
+    "viewTemplateId": "student_view_template.json"
+}
+```
+
+{% content-ref url="../api-reference/discovery-api/search-an-entity.md" %}
+[search-an-entity.md](../api-reference/discovery-api/search-an-entity.md)
+{% endcontent-ref %}
