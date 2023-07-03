@@ -1,6 +1,6 @@
 # What are the key roles in Verifiable Credentials?
 
-<figure><img src="../../.gitbook/assets/image (58).png" alt=""><figcaption><p>Daniel H Hardman, CC BY-SA 4.0 <a href="https://creativecommons.org/licenses/by-sa/4.0">https://creativecommons.org/licenses/by-sa/4.0</a>, via Wikimedia Commons</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Daniel H Hardman, CC BY-SA 4.0 <a href="https://creativecommons.org/licenses/by-sa/4.0">https://creativecommons.org/licenses/by-sa/4.0</a>, via Wikimedia Commons</p></figcaption></figure>
 
 The Key roles involved in the Verifiable Credentials ecosystem are:
 

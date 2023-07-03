@@ -71,6 +71,15 @@
 * [Notifications Configuration](developer-documentation/notifications-configuration.md)
 * [View Templates Configuration](developer-documentation/view-templates-configuration.md)
 * [Generic Identity And Access Management](developer-documentation/generic-identity-and-access-management.md)
+* [Backup and Restore](developer-documentation/backup-and-restore/README.md)
+  * [PostgreSQL](developer-documentation/backup-and-restore/postgresql/README.md)
+    * [SQL Dump](developer-documentation/backup-and-restore/postgresql/sql-dump.md)
+    * [File System Level Backup](developer-documentation/backup-and-restore/postgresql/file-system-level-backup.md)
+    * [Continuous Archiving and Point-in-Time Recovery (PITR)](developer-documentation/backup-and-restore/postgresql/continuous-archiving-and-point-in-time-recovery-pitr.md)
+  * [Cassandra](developer-documentation/backup-and-restore/cassandra/README.md)
+    * [Snapshot-based backup method](developer-documentation/backup-and-restore/cassandra/snapshot-based-backup-method.md)
+    * [Incremental backup method](developer-documentation/backup-and-restore/cassandra/incremental-backup-method.md)
+    * [Data Restore](developer-documentation/backup-and-restore/cassandra/data-restore.md)
 
 ## API Reference
 
