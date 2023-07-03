@@ -2,7 +2,13 @@
 
 {% embed url="https://www.youtube.com/watch?feature=youtu.be&v=mZjYgdxu0gU" %}
 
-<figure><img src="../.gitbook/assets/Artboard 9 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Artboard 9 (1).png" alt=""><figcaption><p>Key Services</p></figcaption></figure>
+
+#### High-Level Architecture Diagram
+
+<figure><img src="../.gitbook/assets/S-RC Arch.png" alt=""><figcaption><p>High Level Architecture</p></figcaption></figure>
+
+The functionalities and purpose of various microservices built as part of Sunbird-RC are explained below.
 
 #### Registry (Core)
 
