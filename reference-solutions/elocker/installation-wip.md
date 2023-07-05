@@ -10,4 +10,4 @@ The source code to install this example can be found at [https://github.com/Sunb
 
 ## Demo/Sandbox site link
 
-Usecase implementation can be found here at [elocker.sunbirdrc.dev](https://elocker.sunbirdrc.dev/)
+Usecase implementation can be found here at [https://elocker.sunbirdrc.dev/](https://elocker.sunbirdrc.dev/)
