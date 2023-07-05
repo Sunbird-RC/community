@@ -85,9 +85,9 @@ Citizens can pledge to donate their organs once they are declared brain stem dea
 
 ## Demo/Sandbox Site link
 
-Use case implementation can be found here at:
+Use case implementation can be found here at:&#x20;
 
-{% embed url="http://demo-donor-registry.xiv.in/" %}
+[https://demo-donor-registry.sunbirdrc.dev/](https://demo-donor-registry.sunbirdrc.dev/)
 
 
 
