@@ -20,7 +20,7 @@ The reference solution provides various capabilities in a ready-to-use format, a
 
 ## Demo/Sandbox site link
 
-Usecase implementation can be found here at [https://sunbird-certificate-demo.xiv.in/](https://sunbird-certificate-demo.xiv.in/)
+Usecase implementation can be found here at [https://sunbird-certificate-demo.sunbirdrc.dev/](https://sunbird-certificate-demo.sunbirdrc.dev/)
 
 
 
