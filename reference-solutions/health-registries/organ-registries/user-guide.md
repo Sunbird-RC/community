@@ -19,7 +19,7 @@ Currently, organ registries are facilitated with the capability to issue verifia
 
 <figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt="" width="218"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1).png" alt="" width="218"><figcaption></figcaption></figure>
 
 * Click on “Register” button
 * Redirects to the registration screen&#x20;
@@ -39,7 +39,7 @@ Currently, organ registries are facilitated with the capability to issue verifia
 
 ## Edit Pledge
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 Login using registered mobile number
 
@@ -49,7 +49,7 @@ Login using registered mobile number
 
 ## Revoke Pledge
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Login using registered mobile number
 * Click on Un pledge button

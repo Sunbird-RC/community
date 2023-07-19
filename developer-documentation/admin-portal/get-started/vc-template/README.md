@@ -2,7 +2,7 @@
 
 Create a VC template for the schema saved in previous step "Create Schema"
 
-<figure><img src="../../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Template
 

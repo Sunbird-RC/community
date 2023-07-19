@@ -150,6 +150,13 @@
 * [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform.md)
 * [Govt to Person (G2P)](reference-solutions/govt-to-person-g2p.md)
 * [Donor Registry](reference-solutions/donor-registry.md)
+* [Unified Learners Passport (ULP)](reference-solutions/unified-learners-passport-ulp/README.md)
+  * [ULP Capabilities](reference-solutions/unified-learners-passport-ulp/ulp-capabilities.md)
+  * [Example Scenario](reference-solutions/unified-learners-passport-ulp/example-scenario.md)
+  * [Technical Components (WIP)](reference-solutions/unified-learners-passport-ulp/technical-components-wip.md)
+  * [Demo/Sandbox Links (WIP)](reference-solutions/unified-learners-passport-ulp/demo-sandbox-links-wip.md)
+  * [Installation Guide (WIP)](reference-solutions/unified-learners-passport-ulp/installation-guide-wip/README.md)
+    * [Dummy records setup for refrence](reference-solutions/unified-learners-passport-ulp/installation-guide-wip/dummy-records-setup-for-refrence.md)
 
 ## Links
 

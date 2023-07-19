@@ -1,6 +1,6 @@
 # Certificate Issuance
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21) (2).png" alt=""><figcaption></figcaption></figure>
 
 The Certificate Issuance portal is being envisioned as a means to simplify the process of creating and issuing digital certificates. The portal provides a centralized platform for managing digital certificates, empowering the organizations with capabilities to create and issue certificates to individuals. It allows issuers to select a template for their digital certificates and then issue them to individuals.&#x20;
 
