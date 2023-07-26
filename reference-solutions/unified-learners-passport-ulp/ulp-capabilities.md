@@ -24,15 +24,15 @@ The learner represents the recipient of the credentials. This capability allows 
 
 <div>
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt="" width="188"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (4).png" alt="" width="188"><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt="" width="188"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (2).png" alt="" width="188"><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt="" width="188"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt="" width="188"><figcaption></figcaption></figure>
 
 </div>
 
@@ -42,15 +42,15 @@ The verifier plays a crucial role in ensuring the authenticity and validity of t
 
 <div>
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (3).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 

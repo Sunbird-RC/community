@@ -2,7 +2,7 @@
 
 ### Creating Schema for first time
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 ### Add Schema
 
@@ -25,4 +25,4 @@
 
 When sample use cases are selected, the schema and fields are pre-filled. User can review and edit or delete the fields or schema
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>

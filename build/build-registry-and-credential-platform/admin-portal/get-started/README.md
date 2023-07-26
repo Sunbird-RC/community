@@ -37,17 +37,17 @@ Depending on the sunbird RC modules selected, you will get following steps:
     You can 'Create Schema', 'Add Attestation Workflow', 'Add VC template' for the attestation workflow and Publish the schema.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 *   If you have selected "Ownership":\
     You can "Add Ownership" details on who would be authorised to manage the schema/entities.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (19) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 *   If you have selected all the modules:\
     You can configure all the modules and Publish it.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 ### Using Sample Use cases
 
