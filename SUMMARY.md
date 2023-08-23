@@ -80,6 +80,7 @@
     * [Snapshot-based backup method](developer-documentation/backup-and-restore/cassandra/snapshot-based-backup-method.md)
     * [Incremental backup method](developer-documentation/backup-and-restore/cassandra/incremental-backup-method.md)
     * [Data Restore](developer-documentation/backup-and-restore/cassandra/data-restore.md)
+* [Frontend Configurations](developer-documentation/frontend-configurations.md)
 
 ## API Reference
 
