@@ -100,7 +100,7 @@ This should create a JAR file in the `java/registry/target` folder.
 
 Place all your schema files in the `java/registry/src/main/resources/public/_schemas/` folder.
 
-A sample set of schemas for a simple student-teacher registry can be found [here](https://github.com/Sunbird-RC/sunbird-rc-core/tree/main/tools/cli/src/templates/config/schemas). You can learn how to write your own schemas by following [this guide](../use/schema-configuration.md).
+A sample set of schemas for a simple student-teacher registry can be found [here](https://github.com/Sunbird-RC/sunbird-rc-core/tree/main/tools/cli/src/templates/config/schemas). You can learn how to write your own schemas by following [this guide](schema-configuration.md).
 
 ## Configure And Start Dependent Services
 

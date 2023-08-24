@@ -19,7 +19,7 @@
 * Click on edit to edit schema name and description
 * Click on 'JSON Schema' to edit schema using JSON editor
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Pre-filled Schema
 

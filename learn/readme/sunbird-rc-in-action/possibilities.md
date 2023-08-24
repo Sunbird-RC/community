@@ -1,6 +1,6 @@
 # Possibilities
 
-<figure><img src="../../.gitbook/assets/Artboard 6 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Artboard 6 (1).png" alt=""><figcaption></figcaption></figure>
 
 Sunbird Registry and Credentials provides a secure and scalable way to manage digital identities and credentials. Some of the use cases for Sunbird Registry and Credentials include:
 

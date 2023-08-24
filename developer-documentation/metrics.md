@@ -1,6 +1,6 @@
 ---
 description: >-
-  The following document describes how events can be emitted through the
+  The following document describes how the metrics can be emitted through
   registry
 ---
 
@@ -78,10 +78,10 @@ OperationType here can be ADD, UPDATE, DELETE, READ
 
 Data of the entity will be masked using the configuration defined in the schema.&#x20;
 
-You can check the configuration for masking in [schema configuration](../use/schema-configuration.md).&#x20;
+You can check the configuration for masking in [schema configuration](schema-configuration.md).&#x20;
 
-1. InternalFields [here](../use/schema-configuration.md#internalfieldconfig)
-2. PrivateFields [here](../use/schema-configuration.md#privatefieldconfig)
+1. InternalFields [here](schema-configuration.md#internalfieldconfig)
+2. PrivateFields [here](schema-configuration.md#privatefieldconfig)
 
 **Metrics Service**&#x20;
 
