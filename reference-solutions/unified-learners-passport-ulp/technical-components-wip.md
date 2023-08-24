@@ -1,10 +1,3 @@
----
-description: >-
-  ULP is divided into two main parts - microservices & frontend portals. Core
-  APIs for issuing credentials and middleware APIs are used. There are three
-  frontends - Issuance, Holder and Verification.
----
-
 # Technical Components (WIP)
 
 <div data-full-width="true">
