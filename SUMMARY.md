@@ -29,7 +29,7 @@
   * [High level architecture](learn/high-level-architecture.md)
 * [Sunbird RC in action](learn/readme/sunbird-rc-in-action/README.md)
   * [Implementations (Work in Progress)](learn/readme/sunbird-rc-in-action/implementations.md)
-  * [Possibilities](learn/readme/sunbird-rc-in-action/possibilities.md)
+  * [Possibilities](learn/sunbird-rc-in-action/possibilities.md)
 
 ## Use
 
@@ -49,7 +49,7 @@
   * [Production setup through Helm](developer-documentation/installation-guide/production-setup-through-helm.md)
 * [Introduction To Schemas](developer-documentation/introduction-to-schemas.md)
 * [Creating Your Own Schemas](developer-documentation/creating-your-own-schemas.md)
-* [Schema Configuration](developer-documentation/schema-configuration.md)
+* [Schema Configuration](use/schema-configuration.md)
 * [Using The APIs](developer-documentation/using-the-apis.md)
 * [Create Schemas With Custom Password](developer-documentation/create-schemas-with-custom-password.md)
 * [Admin Portal](<build/Build Registry & Credential Platform/admin-portal/README.md>)
@@ -142,11 +142,11 @@
     * [Installation](sample-use-cases/edu-registries/installation.md)
 * [Organ Registries](reference-solutions/organ-registries.md)
 * [Certificate Issuance](reference-solutions/certificate-issuance.md)
-* [Certificate Issuance](reference-solutions/certificate-issuance-1/README.md)
-  * [Installation(WIP)](reference-solutions/certificate-issuance-1/installation-wip.md)
+* [Certificate Issuance](reference-solutions/certificate-issuance/README.md)
+  * [Installation(WIP)](reference-solutions/certificate-issuance/installation-wip.md)
   * [User Guide](reference-solutions/certificate-issuance-1/portal-user-guide.md)
 * [eLocker](reference-solutions/elocker/README.md)
-  * [High Level Diagram](sample-use-cases/digital-locker.md)
+  * [High Level Diagram](reference-solutions/elocker/digital-locker.md)
   * [Installation (WIP)](reference-solutions/elocker/installation-wip/README.md)
     * [Frontend Setup E-locker](reference-solutions/elocker/installation-wip/frontend-setup-e-locker.md)
   * [User Guide](reference-solutions/elocker/user-guide.md)
