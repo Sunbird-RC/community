@@ -43,4 +43,10 @@ ULP will provide learners with a comprehensive platform to consolidate and showc
 
 ## ULP Ecosystem
 
+ULP involves an ecosystem of 3 actors namely the Issuer, the Holder and the Verifier interacting with each other on a level of digital trust backed by a governance authority. The Issuer is in charge of issuing verifiable credentials to the Holder which is stored in a central Verifiable Data Registry. The Holder can share the issued credentials with Verifiers for an opportunity or benefit. The Verifiers can verify the authenticity of the credential by reading from the Verifiable Data Registry. A system of mutual trust is formed where the governance authority (who is trusted by the Verifier) trusts the Issuer. By transitive trust the Verifier trusts the Issuer resulting in a high trust ecosystem overall.
+
+The interconnection of stake holders in the ULP Ecosystem can be showed as below:
+
+<figure><img src="../../.gitbook/assets/ULP.png" alt=""><figcaption><p>ULP Ecosystem</p></figcaption></figure>
+
 <figure><img src="https://lh5.googleusercontent.com/DMceArn4Jyd_RsjcVdncZtlw1upUez8LYNSMIHITH3Ga_EvA9z1KChC4kFCnIN2_xAg6dOOv8rHi2f599SOb2SqtAt-dOEqA6hBlQKfCPdqxBXVjs22LusdFzqTgtTiJa4cHaKaKmp7fogXgFZ1_gi4" alt=""><figcaption></figcaption></figure>

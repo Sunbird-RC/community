@@ -8,7 +8,7 @@
 
 * Click on '+ Add Schema' to add schema name and description
 
-![](<../../../../.gitbook/assets/image (6) (2) (1).png>)
+![](<../../../../.gitbook/assets/image (6) (2) (1) (1).png>)
 
 ### Add Fields in schema
 

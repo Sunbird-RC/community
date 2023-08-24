@@ -46,7 +46,7 @@ The verifier plays a crucial role in ensuring the authenticity and validity of t
 
  
 
-<figure><img src="../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
  
 

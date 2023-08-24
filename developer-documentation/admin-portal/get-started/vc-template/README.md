@@ -11,7 +11,7 @@ Once you have saved schema:
 1. You can now add a verifiable credential template under each schema.
 2. You can select existing template or [create custom template](https://docs.sunbirdrc.dev/developer-documentation/admin-portal/get-started/vc-template/custom-verifiable-credential-template)
 
-<figure><img src="../../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Template for Attestation Workflow
 
