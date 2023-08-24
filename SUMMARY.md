@@ -19,7 +19,6 @@
   * [Design Principles](learn/design-principles.md)
   * [Use Cases](learn/electronic-registries/use-cases.md)
 * [Sunbird RC Overview](learn/readme/README.md)
-  * [Core Registry Verbs](learn/readme-1/verbs.md)
   * [Core Registry Verbs](learn/readme-1/core-registry-verbs.md)
   * [Why do we need Sunbird RC?](learn/readme/why-do-we-need-sunbird-rc.md)
   * [What Sunbird RC is and what it's not? (WIP)](learn/readme/what-sunbird-rc-is-and-what-its-not-wip.md)
