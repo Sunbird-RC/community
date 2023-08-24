@@ -27,7 +27,7 @@ Depending on the sunbird RC modules selected, you will get following steps:
 *   If you have **not** selected any additional modules:\
     You can 'create schema' and 'Publish' it, to build registry.
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 *   If you have selected 'Verifiable Credentials':\
     You can 'create schema' and 'add VC template' for the schemas.\
 
@@ -42,12 +42,12 @@ Depending on the sunbird RC modules selected, you will get following steps:
     You can "Add Ownership" details on who would be authorised to manage the schema/entities.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (19) (1) (2).png" alt=""><figcaption></figcaption></figure>
 *   If you have selected all the modules:\
     You can configure all the modules and Publish it.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Using Sample Use cases
 

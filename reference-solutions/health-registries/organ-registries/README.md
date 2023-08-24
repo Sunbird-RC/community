@@ -36,7 +36,7 @@ Citizens can pledge to donate their organs once they are declared brain stem dea
 
 ## Capabilities Enabled
 
-<figure><img src="../../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * User Onboarding
 * Issuance of Credentials: Generation, Updation and Revocation services

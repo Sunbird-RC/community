@@ -45,7 +45,7 @@ Certificate Issuance consists mainly of two major steps.
 
 ### General Template <a href="#_kfvv0odc9dxl" id="_kfvv0odc9dxl"></a>
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 * &#x20;Click on General Template button
 * Templates appear on the screen
@@ -103,7 +103,7 @@ Certificate Issuance consists mainly of two major steps.
 
 * Click on the _“Edit Template”_ button
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23) (2).png" alt=""><figcaption></figcaption></figure>
 
 * &#x20;Multiple options to edit the template are available to customize the uploaded certificate:
   * &#x20;Layout editing
@@ -117,11 +117,11 @@ Certificate Issuance consists mainly of two major steps.
 
 * The Advance Editor allows to customize the layout of your form by adding, removing, and rearranging form elements.
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Drag and drop elements from the left-hand menu onto the canvas.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Add validations if required
 * Click on _“Save_” button to save the text field component
