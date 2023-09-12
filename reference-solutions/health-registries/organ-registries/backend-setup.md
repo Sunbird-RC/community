@@ -1,4 +1,4 @@
-# Donor Registry
+# Backend Setup
 
 ### Backend Setup
 
@@ -28,7 +28,7 @@ Once logged in, navigate to clients. Select admin-api. Go to the credentials tab
 
 KEYCLOAK\_SECRET=\<copied\_secret>
 
-<figure><img src="../.gitbook/assets/image1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image1.png" alt=""><figcaption></figcaption></figure>
 
 Again navigate to the keycloak homepage. Navigate to the Clients tab in the left subsection. Click on the Create button available on the right side of the screen. Enter client ID as donor-service. Client Protocol as openid-connect and click on save button.&#x20;
 
@@ -117,7 +117,7 @@ Configs ->&#x20;
 | UNPLEDGE\_TEMPLATE\_ID           | Template ID for Sms to be sent out to donor when the donor has successfully unpledged                                                               |
 | LOG\_LEVEL                       | <p></p><p>Log level like info which will only print that logs</p>                                                                                   |
 
-2.  **Certificate signer ->** [certificate-signer](../learn/high-level-architecture.md#certificate-signer)
+2.  **Certificate signer ->** [certificate-signer](../../../learn/high-level-architecture.md#certificate-signer)
 
     Code ->
 
@@ -132,7 +132,7 @@ Configs ->&#x20;
     You can place your signing keys in the document in the path
 
     demo-donor-registry/imports/config.json. Based on the issuer’s name, the key will be picked in order to create signed credentials. Sample for the keys is as follows for scholarship as a issuer
-3.  **Notification service ->** [notification-ms](../learn/high-level-architecture.md#notification-ms)
+3.  **Notification service ->** [notification-ms](../../../learn/high-level-architecture.md#notification-ms)
 
     Technical ->
 
@@ -143,7 +143,7 @@ Configs ->&#x20;
     Configs ->&#x20;
 
     [https://docs.sunbirdrc.dev/developer-documentation/configuration#notification-service](https://docs.sunbirdrc.dev/developer-documentation/configuration#notification-service)
-4.  **Certificate/Presentation service ->** [certificate-api](../learn/high-level-architecture.md#certificate-api)
+4.  **Certificate/Presentation service ->** [certificate-api](../../../learn/high-level-architecture.md#certificate-api)
 
     Technical ->
 
@@ -178,11 +178,11 @@ Configs ->&#x20;
 | SMPP\_USER\_NAME | SMS API Username                   |
 | SMS\_URL         | SMS URL of provider                |
 
-7. **Claims ->** [Claim Service](../learn/high-level-architecture.md#claim-ms)
-8. **Elastic Search ->** [Elastic Search](../learn/high-level-architecture.md#elastic-search)
-9. **MinIO ->** [File storage](../learn/high-level-architecture.md#file-storage-minio)
+7. **Claims ->** [Claim Service](../../../learn/high-level-architecture.md#claim-ms)
+8. **Elastic Search ->** [Elastic Search](../../../learn/high-level-architecture.md#elastic-search)
+9. **MinIO ->** [File storage](../../../learn/high-level-architecture.md#file-storage-minio)
 10. **Verification Service**
 
 Verification of credential refers to verifying the authenticity of the credential that the actor possesses. When a credential is issued, it is signed via issuers private key. This can then be verified by an issuer's public key which is made available to whoever is trying to verify the credentials. This is taken care by certificate-signer service. Certificate signer service provides an API which takes signed Credentials as input. From the issuer name, it fetches the public key of the issuer. Using this public key, the verifier verifies the authenticity of the credential.
 
-Refer to [this](../api-reference/other-apis/verify-api.md) API
+Refer to [this](../../../api-reference/other-apis/verify-api.md) API
