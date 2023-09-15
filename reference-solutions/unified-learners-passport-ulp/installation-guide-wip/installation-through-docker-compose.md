@@ -30,7 +30,7 @@ services:
     env_file:
       - .env
   registry:
-    image: dockerhub/sunbird-rc-core:v0.0.13
+    image: ghcr.io/sunbird-rc/sunbird-rc-core:v0.0.13
     container_name: "registry"
     volumes:
       - ./schemas:/home/sunbirdrc/config/public/_schemas
@@ -79,7 +79,7 @@ services:
       - db
   
   keycloak:
-    image: sunbirdrc/keycloak:latest
+    image: ghcr.io/sunbird-rc/keycloak:latest
     container_name: "keycloak"
     volumes:
       - ./imports:/opt/jboss/keycloak/imports

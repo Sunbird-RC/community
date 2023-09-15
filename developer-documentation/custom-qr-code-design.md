@@ -18,7 +18,7 @@ description: >-
 
 ```
 certificate-api:
-    image: dockerhub/sunbird-rc-certificate-api:latest
+    image: ghcr.io/sunbird-rc/sunbird-rc-certificate-api:latest
     volumes:
       - ./imports/qr_code_config.json:/app/configs/qr_code_config.json
 ```
