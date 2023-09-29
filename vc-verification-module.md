@@ -16,7 +16,9 @@ This NPM module is developed for scanning the QR(Quick Response) codes inside yo
 npm i vc-verification
 ```
 
-**2.** You need to install the @zxing/ngx-scanner npm module. Before installing this npm module you need to check your angular compatible version with this package version. You can check the details below too.
+**2.** The <mark style="color:red;">deprecated</mark> `ngx-scanner` has been removed starting from version 0.0.13
+
+&#x20;You need to install the @zxing/ngx-scanner npm module. Before installing this npm module you need to check your angular compatible version with this package version. You can check the details below too.
 
 Run cmd -
 
@@ -34,18 +36,17 @@ npm i @zxing/ngx-scanner@vx.x.x
 \
 For more detail about compatible version you can check this doc - [https://www.npmpeer.dev/packages/@zxing/ngx-scanner/compatibility](https://www.npmpeer.dev/packages/@zxing/ngx-scanner/compatibility)
 
-
 3\. Add below CND link in index.html file
+
 ```
   <script src="https://cdn.jsdelivr.net/npm/@undecaf/zbar-wasm@0.9.12/dist/index.js"></script>
-  ```
-
+```
 
 4\. Import **vc-verification** and **@zxing/ngx-scanner** library in your **app.module.ts** file
 
 ```
 import { VerifyModule } from 'vc-verification';
-import { ZXingScannerModule } from '@zxing/ngx-scanner';
+import { ZXingScannerModule } from '@zxing/ngx-scanner'; <- not required >=0.0.13
 
 import * as configData from '../assets/config.json';  // Read config from .json file
 
@@ -63,7 +64,7 @@ const configData = {
   .....
   ......
     VerifyModule.forChild(configData),  < —
-    ZXingScannerModule, < —
+    ZXingScannerModule, < — not required >=0.0.13
     .....
   ......
   ],
@@ -115,17 +116,19 @@ this.itemData =
     });
 ```
 
-  This library supports the two QR code scanners (ZXING_QRCODE and ZBAR_QRCODE). By default enable the ZXING_QRCODE scanner to scan QR code. If you want to change the scanner, the user needs to set the **scanner_type** property value to the **ZBAR_QRCODE**.
- 
-  Difference between ZXING_QRCODE and ZBAR_QRCODE.
-   - ZXING_QRCODE doesn't scan QR code which contains a large amount of data, it's working fine with simple QR codes (will Deprecate soon).
-   - ZBAR_QRCODE supports fast scanning and easily scans QR code which contains large amounts of data.
-   
-   
-   From v10 introduced one more **showResult** object under itemData to configure what certificate data the user wants to display on the result card after verifying QR code. In this  object user need to add property path and title which is display on verified card.
-  - to show date on card, you wants to add **type** property with **date** value
-   - if you want remove any string from value, you can achieve this by using **removeStr** property 
-  
+This library supports the two QR code scanners (ZXING\_QRCODE and ZBAR\_QRCODE). By default enable the ZXING\_QRCODE scanner to scan QR code. If you want to change the scanner, the user needs to set the **scanner\_type** property value to the **ZBAR\_QRCODE**.
+
+Difference between ZXING\_QRCODE and ZBAR\_QRCODE.
+
+* ZXING\_QRCODE doesn't scan QR code which contains a large amount of data, it's working fine with simple QR codes (<mark style="color:red;">Deprecated</mark>).
+* ZBAR\_QRCODE supports fast scanning and easily scans QR code which contains large amounts of data.&#x20;
+
+_Starting from version 0.0.13 and onwards, the default scanner type has been changed to **ZBAR\_QRCODE** as ZXING\_QRCODE scanner has been removed by default._
+
+From v10 introduced one more **showResult** object under itemData to configure what certificate data the user wants to display on the result card after verifying QR code. In this object user need to add property path and title which is display on verified card.
+
+* to show date on card, you wants to add **type** property with **date** value
+* if you want remove any string from value, you can achieve this by using **removeStr** property
 
 4.3 If anyone wants to use their own he/she can implement their own UI and he/she can use service methods of vc-verification library.
 
