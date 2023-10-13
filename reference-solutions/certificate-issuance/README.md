@@ -22,5 +22,9 @@ The reference solution provides various capabilities in a ready-to-use format, a
 
 Usecase implementation can be found here at [https://sunbird-certificate-demo.sunbirdrc.dev/](https://sunbird-certificate-demo.sunbirdrc.dev/)
 
+## Expected Capabilities &#x20;
 
+* An option for users to upload their organization logos
+* A feature that enforces a specific logo size when uploaded
+* Implement a feature to enable editing of all SVG files, regardless of their source
 
