@@ -97,6 +97,7 @@ $ cd ..
 This should create a JAR file in the `java/registry/target` folder.
 
 ## Configuring Schemas
+Create `_schemas/` folder in `java/registry/src/main/resources/public/`
 
 Place all your schema files in the `java/registry/src/main/resources/public/_schemas/` folder.
 
@@ -113,7 +114,7 @@ $ curl https://raw.githubusercontent.com/sunbird-rc/sunbird-rc-core/main/tools/c
 To download a minimal keycloak configuration, run the following:
 
 ```
-$ curl https://raw.githubusercontent.com/sunbird-rc/sunbird-rc-core/main/tools/cli/src/templates/examples/student-teacher/imports/realm-export.json > import/realm-export.json
+$ curl https://raw.githubusercontent.com/sunbird-rc/sunbird-rc-core/main/tools/cli/src/templates/examples/student-teacher/imports/realm-export.json > imports/realm-export.json
 ```
 
 Then start Keycloak (`kc`), Postgres (`db`), Elastic Search (`es`) and the Claims Service (`cs`) by running the following command:
