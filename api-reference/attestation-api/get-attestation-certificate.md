@@ -22,31 +22,19 @@ ID of the attestation for that record of entity
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="accept" required="true" %}
-Set to 
-
-`application/pdf, application/json, text/html, image/svg+xml`
+Set to `application/pdf, application/json, text/html, image/svg+xml`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="template" %}
-if 
-
-`enable_external_templates`
-
- is set to true, send in a url which has html template
+if `enable_external_templates` is set to true, send in a url which has html template
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="template-key" %}
-A key pointing to html template which is present in 
-
-`Schema`
+A key pointing to html template which is present in `Schema`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="access-token" %}
-Set to 
-
-`Bearer {access-token}`
-
- if roles in schema is not anonymous. Else authorization can be empty
+Set to `Bearer {access-token}` if roles in schema is not anonymous. Else authorization can be empty
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Successful retrieval of certification" %}

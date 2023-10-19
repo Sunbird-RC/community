@@ -18,11 +18,7 @@ The type of entity to retrieve
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="authorization" required="true" %}
-Set to 
-
-`Bearer {access-token}`
-
- A valid token of the owner is required
+Set to `Bearer {access-token}` A valid token of the owner is required
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="viewTemplateId" %}

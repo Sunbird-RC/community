@@ -31,37 +31,23 @@ To authenticate as an entity, we need to make the following request:
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="content-type" required="true" %}
-Set to 
-
-`application/x-www-form-urlencoded`
+Set to `application/x-www-form-urlencoded`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="grant_type" required="true" %}
-Set to 
-
-`password`
+Set to `password`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="client_id" required="true" %}
-Set to 
-
-`registry-frontend`
+Set to `registry-frontend`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="username" required="true" %}
-The 
-
-`_osConfig.ownershipAttributes.userId`
-
- of the entity according to the schema
+The `_osConfig.ownershipAttributes.userId` of the entity according to the schema
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="password" required="true" %}
-Set to 
-
-`abcd@123`
-
- (default password, specified in registry's application.yml/docker compose file)
+Set to `abcd@123` (default password, specified in registry's application.yml/docker compose file)
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}
@@ -141,7 +127,7 @@ http --form post \
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="grant_type" type="" required="true" %}
-client_credentials
+client\_credentials
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Content-Type" required="true" %}

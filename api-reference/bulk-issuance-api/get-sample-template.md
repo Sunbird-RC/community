@@ -6,15 +6,11 @@ this will download a csv with the all fields that are needed to create entity fo
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="schemaName" type="String" required="true" %}
-name of schema 
+name of schema&#x20;
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" %}
-Set to 
-
-`Bearer {access-token}`
-
- if roles in schema is not anonymous. Else authorization can be empty
+Set to `Bearer {access-token}` if roles in schema is not anonymous. Else authorization can be empty
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="A CSV File with fields for header" %}

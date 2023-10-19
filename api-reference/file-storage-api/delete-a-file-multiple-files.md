@@ -22,11 +22,7 @@ ID of document that was uploaded. If this is not provided, entire directory that
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="authorization" %}
-Set to 
-
-`Bearer {access-token}`
-
- if roles in schema is not anonymous. Else authorization can be empty
+Set to `Bearer {access-token}` if roles in schema is not anonymous. Else authorization can be empty
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Success in deleting a/multiple files" %}

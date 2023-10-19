@@ -10,9 +10,7 @@ Name of the entity to be searched
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="content-type" required="true" %}
-Set to 
-
-`application/json`
+Set to `application/json`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="..." type="Object" required="true" %}

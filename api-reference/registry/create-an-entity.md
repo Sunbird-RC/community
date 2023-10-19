@@ -20,29 +20,15 @@ The type of entity to create
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="content-type" required="true" %}
-Set to 
-
-`application/json`
+Set to `application/json`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="authorization" required="false" %}
-Set to 
-
-`Bearer {access-token}`
-
- if 
-
-`roles`
-
- in schema config is not anonymous else this can be empty
+Set to `Bearer {access-token}` if `roles` in schema config is not anonymous else this can be empty
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="mode" %}
-Query parameter whose value can be 
-
-`async`
-
- if creating an entity should be asynchronously handled
+Query parameter whose value can be `async` if creating an entity should be asynchronously handled
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="..." type="" required="true" %}
@@ -50,13 +36,7 @@ The entity's data
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="callbackUrl" %}
-Query parameter whose value will be a 
-
-`web-hook url`
-
-. The webook will be called once the entity is created in the registry. This is applicable only for 
-
-`async mode`
+Query parameter whose value will be a `web-hook url`. The webook will be called once the entity is created in the registry. This is applicable only for `async mode`
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Success Response of entity Created" %}

@@ -6,21 +6,11 @@
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="content-type" required="true" %}
-Set to 
-
-`application/json`
+Set to `application/json`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="authorization" %}
-Set to 
-
-`Bearer {access-token}`
-
- if roles in schema of which attestation is to raised does not contain 
-
-`anonymous`
-
- else token can be empty
+Set to `Bearer {access-token}` if roles in schema of which attestation is to raised does not contain `anonymous` else token can be empty
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="..." type="Object" required="true" %}

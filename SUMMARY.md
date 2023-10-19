@@ -162,7 +162,7 @@
   * [Technical Components (WIP)](reference-solutions/unified-learners-passport-ulp/technical-components-wip.md)
   * [Demo/Sandbox Links (WIP)](reference-solutions/unified-learners-passport-ulp/demo-sandbox-links-wip.md)
   * [Installation Guide (WIP)](reference-solutions/unified-learners-passport-ulp/installation-guide-wip/README.md)
-    * [Demo or Playground to create Verifiable Credentials](reference-solutions/unified-learners-passport-ulp/installation-guide-wip/demo-or-playground-to-create-verifiable-credentials.md)
+    * [Frontend Setup](reference-solutions/unified-learners-passport-ulp/installation-guide-wip/frontend-setup.md)
     * [Installation through docker-compose](reference-solutions/unified-learners-passport-ulp/installation-guide-wip/installation-through-docker-compose.md)
     * [Dummy records setup for refrence](reference-solutions/unified-learners-passport-ulp/installation-guide-wip/dummy-records-setup-for-refrence.md)
 

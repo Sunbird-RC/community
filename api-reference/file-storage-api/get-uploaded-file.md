@@ -22,21 +22,11 @@ ID of document that was uploaded
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="content-type" required="true" %}
-Set to 
-
-`application/octet-stream`
+Set to `application/octet-stream`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="authorization" required="true" %}
-Set to 
-
-`Bearer {access-token}`
-
- if 
-
-`roles`
-
- in schema config is not anonymous else this can be empty
+Set to `Bearer {access-token}` if `roles` in schema config is not anonymous else this can be empty
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Success response of uploaded file" %}

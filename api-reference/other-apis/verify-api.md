@@ -10,9 +10,7 @@ Signed Credentials
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="authorization" required="true" %}
-Set to 
-
-`Bearer {access-token}`
+Set to `Bearer {access-token}`
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Verified Signature Response" %}

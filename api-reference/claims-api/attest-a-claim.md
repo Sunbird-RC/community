@@ -14,31 +14,15 @@ ID of claim that is to be attested
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="{ "action": "action-type"}" required="true" %}
-action type can be either 
-
-`GRANT_CLAIM`
-
- or 
-
-`REJECT_CLAIM`
+action type can be either `GRANT_CLAIM` or `REJECT_CLAIM`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="authorization" required="true" %}
-Set to 
-
-`Bearer {access-token}`
-
-. 
-
-`access-token`
-
- should have a role with name as entity-type 
+Set to `Bearer {access-token}`. `access-token` should have a role with name as entity-type&#x20;
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="content-type" required="true" %}
-Set to 
-
-`application/json`
+Set to `application/json`
 {% endswagger-parameter %}
 {% endswagger %}
 

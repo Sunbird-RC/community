@@ -8,17 +8,11 @@
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="content-type" required="true" %}
-Set to 
-
-`application/json`
+Set to `application/json`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="authorization" required="false" %}
-Set to 
-
-`Bearer {access-token}`
-
- . The token should be a admin token
+Set to `Bearer {access-token}` . The token should be a admin token
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="name" type="string" required="true" %}

@@ -10,21 +10,11 @@ description: To invite an entity, we need to make the following HTTP request
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="content-type" required="true" %}
-Set to 
-
-`application/json`
+Set to `application/json`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="authorization" %}
-Set to 
-
-`Bearer {access-token}`
-
- if 
-
-`inviteRoles`
-
- in schema config is not anonymous else this can be empty
+Set to `Bearer {access-token}` if `inviteRoles` in schema config is not anonymous else this can be empty
 {% endswagger-parameter %}
 
 {% swagger-parameter in="path" name="entity-type" required="true" %}

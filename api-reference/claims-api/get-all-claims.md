@@ -10,21 +10,11 @@ Name of the entity to which attestation request was sent
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="content-type" required="true" %}
-Set to 
-
-`application/json`
+Set to `application/json`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="authorization" %}
-Set to 
-
-`Bearer {access-token}`
-
- if 
-
-`roles`
-
- in schema config is not anonymous else this can be empty
+Set to `Bearer {access-token}` if `roles` in schema config is not anonymous else this can be empty
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="page" %}

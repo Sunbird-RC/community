@@ -28,17 +28,11 @@ entity property osid which is to be updated in already existing property in enti
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="content-type" required="true" %}
-Set to 
-
-`application/json`
+Set to `application/json`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="authorization" %}
-Set to 
-
-`Bearer {access-token}`
-
- if roles in Schema is not anonymous. Else token can be empty
+Set to `Bearer {access-token}` if roles in Schema is not anonymous. Else token can be empty
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}

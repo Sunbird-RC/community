@@ -28,17 +28,11 @@ Property to be updated
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="authorization" %}
-Set to 
-
-`Bearer {access-token}`
-
- if roles in Schema is not anonymous. Else token can be empty
+Set to `Bearer {access-token}` if roles in Schema is not anonymous. Else token can be empty
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="content-type" required="true" %}
-Set to 
-
-`application/json`
+Set to `application/json`
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}

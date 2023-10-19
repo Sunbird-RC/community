@@ -6,9 +6,7 @@
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="authorization" required="true" %}
-Set to 
-
-`Bearer {access-token}`
+Set to `Bearer {access-token}`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="..." type="Object" required="true" %}
