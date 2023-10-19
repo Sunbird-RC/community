@@ -99,6 +99,7 @@
   * [Update A Property Of An Entity](api-reference/registry/update-a-property-of-an-entity.md)
   * [Revoke An Entity](api-reference/registry/create-a-property-of-an-entity-1.md)
   * [Delete An Entity](api-reference/registry/delete-an-entity.md)
+  * [Revoke A Credential](api-reference/registry/revoke-a-credential.md)
 * [Schema](api-reference/schema/README.md)
   * [Create Schema](api-reference/schema/create-schema.md)
   * [Get Schema](api-reference/schema/get-schema.md)
