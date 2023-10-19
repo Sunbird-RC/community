@@ -1,10 +1,10 @@
 ---
 description: >-
-  To revoke an existing VC (Verifiable Credential), we need to make the
-  following HTTP request
+  To revoke an existing VC (Verifiable Credential) or an entity, we need to make
+  the following HTTP request
 ---
 
-# Revoke An Entity
+# Revoke a Credential
 
 {% swagger method="post" path="/api/v1/{entity-type}/{id}/revoke" baseUrl=" " summary="This revokes an existing  verifiable credential" expanded="true" %}
 {% swagger-description %}

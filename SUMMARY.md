@@ -83,7 +83,6 @@
     * [Data Restore](developer-documentation/backup-and-restore/cassandra/data-restore.md)
 * [Frontend Configurations](developer-documentation/frontend-configurations.md)
 * [Frontend - Proxy configuration](developer-documentation/frontend-proxy-configuration.md)
-* [Frontend Configurations](developer-documentation/frontend-configurations-1.md)
 
 ## API Reference
 
@@ -97,9 +96,8 @@
   * [Update An Entity](api-reference/registry/update-an-entity.md)
   * [Create A Property Of An Entity](api-reference/registry/create-a-property-of-an-entity.md)
   * [Update A Property Of An Entity](api-reference/registry/update-a-property-of-an-entity.md)
-  * [Revoke An Entity](api-reference/registry/create-a-property-of-an-entity-1.md)
+  * [Revoke a Credential](api-reference/registry/create-a-property-of-an-entity-1.md)
   * [Delete An Entity](api-reference/registry/delete-an-entity.md)
-  * [Revoke A Credential](api-reference/registry/revoke-a-credential.md)
 * [Schema](api-reference/schema/README.md)
   * [Create Schema](api-reference/schema/create-schema.md)
   * [Get Schema](api-reference/schema/get-schema.md)
