@@ -14,7 +14,7 @@
 | Linux / Docker    | any         | any             |
 | Postgre sql       | latest      | v8              |
 | Redis             | latest      | 4               |
-| ElasticSearch     | 7.10.1      | 7.10.1          |
+| ElasticSearch     | 7.17.13     | 7.10.1          |
 | Keycloak          | 14.0.0      | 14.0.0          |
 | Minio             | latest      |                 |
 | Kafka (Zookeeper) | latest      |                 |

@@ -52,7 +52,7 @@ Docker Compose version 2.0.1
 
 | ENV              | Value   | Description                                                                                                                                                   |
 | ---------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| RELEASE\_VERSION | v0.0.13 | Use the latest release version of SunbirdRC. [https://github.com/Sunbird-RC/sunbird-rc-core/releases](https://github.com/Sunbird-RC/sunbird-rc-core/releases) |
+| RELEASE\_VERSION | v0.0.14 | Use the latest release version of SunbirdRC. [https://github.com/Sunbird-RC/sunbird-rc-core/releases](https://github.com/Sunbird-RC/sunbird-rc-core/releases) |
 | SCHEMA\_DIR      | schemas | Relative path to the directory where schemas are created                                                                                                      |
 
 * Create the [schema](../introduction-to-schemas.md) files in the `schemas` directory
