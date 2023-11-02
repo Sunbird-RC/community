@@ -1,6 +1,8 @@
 # What issues will Verifiable Credentials address?
 
-* Complex and time consuming traditional verification processes
+Traditional verification processes, especially those reliant on physical documents and in-person checks, have several inherent problems and limitations, including
+
+* Complex and time consuming&#x20;
 * Lengthy and cumbersome manual document verification
 * Fake Certificates leading to data misuse, record manipulation, fraud, scams, identity theft, and other criminal activities.
 * Lack of transparency
