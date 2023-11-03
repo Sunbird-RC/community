@@ -19,7 +19,6 @@
   * [Design Principles](learn/design-principles.md)
   * [Use Cases](learn/electronic-registries/use-cases.md)
 * [Sunbird RC Overview](learn/readme/README.md)
-  * [Features](learn/readme-1/features.md)
   * [Core Registry Verbs](learn/readme-1/core-registry-verbs.md)
   * [Why do we need Sunbird RC?](learn/readme/why-do-we-need-sunbird-rc.md)
   * [What Sunbird RC is and what it's not? (WIP)](learn/readme/what-sunbird-rc-is-and-what-its-not-wip.md)
@@ -34,8 +33,6 @@
 ## Use
 
 * [Technical Requirements](use/infrastructure-requirements.md)
-* [Releases](use/releases.md)
-* [Artifacts](use/artifacts.md)
 * [Setup the Backend](use/setup-the-backend.md)
 * [Setup the Frontend](use/setup-the-frontend.md)
 * [Leveraging Existing data stores](use/leveraging-existing-data-stores-directories.md)
