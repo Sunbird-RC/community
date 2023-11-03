@@ -1,12 +1,8 @@
----
-description: Release notes and artifacts
----
-
 # Releases
 
-{% tabs %}
-{% tab title="Release Notes" %}
-### v0.0.14 (30 June, 2023)
+### Release Notes
+
+#### v0.0.14 (30 June, 2023)
 
 * Add Bulk issuance services
 * Add Digilocker Certificate API services
@@ -22,10 +18,10 @@ description: Release notes and artifacts
 * Unique index creation for nested fields in entities
 * Assorted bug fixes
 
+For a comprehensive list of changes in all our releases, you can find the detailed changelog available at this link. [https://github.com/Sunbird-RC/sunbird-rc-core/releases](https://github.com/Sunbird-RC/sunbird-rc-core/releases)
 
-{% endtab %}
+### Artifacts
 
-{% tab title="Artifacts" %}
 The various artifacts that form the crux of the Sunbird-RC platform are as follows. All of Sunbird-RC's artifacts are hosted on the Github Container Registry.&#x20;
 
 | Artifact               | Image                                                    |
@@ -42,10 +38,6 @@ The various artifacts that form the crux of the Sunbird-RC platform are as follo
 | Context Proxy services | ghcr.io/sunbird-rc/sunbird-rc-context-proxy-service      |
 | Keycloak               | ghcr.io/sunbird-rc/sunbird-rc-keycloak                   |
 
-The image tag **`latest`** always points to the latest version of the platform. One can also use the version number as the image tag. The current version of the platform is **`v0.0.14`**
-{% endtab %}
-{% endtabs %}
+The **`latest`** tag always points to the latest version of the platform. The current version is also tagged to the image. The current version is **`v0.0.14`**
 
-
-
-For a comprehensive list of changes in all our releases, you can find the detailed changelog available at this link. [https://github.com/Sunbird-RC/sunbird-rc-core/releases](https://github.com/Sunbird-RC/sunbird-rc-core/releases)
+The details about the various docker images are available at: [https://github.com/orgs/Sunbird-RC/packages?repo\_name=sunbird-rc-core](https://github.com/orgs/Sunbird-RC/packages?repo\_name=sunbird-rc-core)
