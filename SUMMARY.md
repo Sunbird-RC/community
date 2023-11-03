@@ -34,6 +34,7 @@
 ## Use
 
 * [Technical Requirements](use/infrastructure-requirements.md)
+* [Releases](use/releases.md)
 * [Setup the Backend](use/setup-the-backend.md)
 * [Setup the Frontend](use/setup-the-frontend.md)
 * [Leveraging Existing data stores](use/leveraging-existing-data-stores-directories.md)
