@@ -49,8 +49,3 @@ The image tag **`latest`** always points to the latest version of the platform. 
 
 
 For a comprehensive list of changes in all our releases, you can find the detailed changelog available at this link. [https://github.com/Sunbird-RC/sunbird-rc-core/releases](https://github.com/Sunbird-RC/sunbird-rc-core/releases)
-
-###
-
-
-
