@@ -4,19 +4,19 @@
 
 #### v0.0.14 (30 June, 2023)
 
-* Add Bulk issuance services
-* Add Digilocker Certificate API services
-* Customization of QR Code and PDF
-* Metrics service
-* Configuring passwords in schema definitions
-* Credential Revocation
-* SSL support for Elastic Search
-* Notifications when an entity is create, updated or invited
-* Helm charts for Sunbird-RC installation
-* Keycloak update
-* Elastic Search update
-* Unique index creation for nested fields in entities
-* Assorted bug fixes
+* Implemented the capability to issue Verifiable credentials in bulk directly from CSV files.
+* Added support for pushing Verifiable credentials to Digilocker for enhanced accessibility.
+* Introduced the option to customize both QR Codes and PDFs for a more tailored experience.
+* Included a metrics service to generate Sunbird telemetry-compatible events, capturing entity audit events efficiently.
+* Provided the ability to configure password generation when issuing a Verifiable credential, facilitating entity owner access.
+* Enabled support for the revocation of verifiable credentials, enhancing security management.
+* Implemented SSL support for Elastic Search to ensure secure data storage.
+* Added the feature to generate notifications when entities are created, updated, or invited, improving user engagement.
+* Introduced Helm charts for straightforward Sunbird-RC installation.
+* Upgraded the Keycloak image to support nonce for better security.
+* Updated Elastic Search libraries in the registry to enhance performance and compatibility.
+* Configured and generated unique index creation for nested fields in entities, ensuring data integrity.
+* Addressed various bug fixes to enhance the overall user experience.
 
 For a comprehensive list of changes in all our releases, you can find the detailed changelog available at this link. [https://github.com/Sunbird-RC/sunbird-rc-core/releases](https://github.com/Sunbird-RC/sunbird-rc-core/releases)
 
