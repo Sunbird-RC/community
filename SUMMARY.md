@@ -176,6 +176,7 @@
 ## Community
 
 * [Discussion Forum](community/discussions.md)
+* [Contributors](community/contributors.md)
 * [Contributing](engage/contributing.md)
 * [Contribution Guidebook](community/contribution-guidebook.md)
 * [Code of Conduct](engage/code-of-conduct.md)
