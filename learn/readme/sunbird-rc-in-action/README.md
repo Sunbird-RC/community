@@ -1,2 +1,0 @@
-# Sunbird RC in action
-

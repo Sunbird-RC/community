@@ -9,13 +9,13 @@
   * [Core Registry Verbs](learn/readme-1/core-registry-verbs.md)
   * [Workflows](learn/readme/workflows.md)
   * [What Sunbird RC is and what it's not? (WIP)](learn/readme/what-sunbird-rc-is-and-what-its-not-wip.md)
-* [Sunbird RC in action](learn/readme/sunbird-rc-in-action/README.md)
-  * [Implementations (Work in Progress)](learn/readme/sunbird-rc-in-action/implementations.md)
-  * [Possibilities](learn/sunbird-rc-in-action/possibilities.md)
 * [Technical Overview](learn/technical-overview/README.md)
   * [High level architecture](learn/technical-overview/high-level-architecture.md)
   * [Technical Specification Draft](learn/technical-overview/technical-specification-draft.md)
   * [Tech Stack and Requirements](learn/technical-overview/infrastructure-requirements.md)
+* [Adopters](learn/adopters.md)
+* [Possibilities](learn/possibilities.md)
+* [Roadmap](learn/roadmap.md)
 
 ## Use
 
