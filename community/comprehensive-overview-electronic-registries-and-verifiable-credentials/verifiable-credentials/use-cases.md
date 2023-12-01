@@ -1,6 +1,6 @@
 # Use Cases
 
-<figure><img src="../../.gitbook/assets/Artboard 8 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Artboard 8 (1).png" alt=""><figcaption></figcaption></figure>
 
 Verifiable Credentials have several use cases across different industries and domains, including:
 
@@ -11,4 +11,3 @@ Verifiable Credentials have several use cases across different industries and do
 5. **Employment:** Verifiable credentials can be used to issue and verify employment credentials, such as work permits, background checks, and professional licenses. This can help employers make better hiring decisions, reduce spends and time on background verification and ensure that their employees are properly qualified and trained.
 6. **Supply Chain:** Verifiable credentials can be used to issue and verify the authenticity and provenance of products and materials in the supply chain. This can help to prevent counterfeiting, fraud, and other supply chain risks in the ecosystem.
 7. **Civic Registration:** Verifiable credentials can offer a more secure, efficient, and privacy-preserving way to issue and verify birth and death certificates, which can benefit individuals, government agencies, and other organizations involved in the process.
-

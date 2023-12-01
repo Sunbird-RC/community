@@ -1,6 +1,6 @@
 # What are the benefits of Verifiable Credentials?
 
-<figure><img src="../../.gitbook/assets/Artboard 7 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Artboard 7 (1).png" alt=""><figcaption></figcaption></figure>
 
 Verifiable credentials offer several benefits over traditional forms of identity and credential verification:
 
@@ -10,4 +10,3 @@ Verifiable credentials offer several benefits over traditional forms of identity
 4. **Instantly Verifiable**: Verifiable credentials can be easily verified by third parties, reducing the need for manual verification processes that are time-consuming and expensive. This can lead to increased efficiency and cost savings.
 5. **Greater control & data ownership:** Individuals have greater control over their own data with verifiable credentials. They can choose which information to share, with whom, and for how long. This puts individuals in control of their own data and reduces the risk of data breaches or misuse.
 6. **Interoperability:** Verifiable credentials are designed to be interoperable across different systems and platforms. This means that credentials issued by one organization can be easily verified by another, even if they use different technologies or standards. This increases the usefulness and adoption of verifiable credentials.
-
