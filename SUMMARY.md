@@ -12,10 +12,10 @@
 * [Sunbird RC in action](learn/readme/sunbird-rc-in-action/README.md)
   * [Implementations (Work in Progress)](learn/readme/sunbird-rc-in-action/implementations.md)
   * [Possibilities](learn/sunbird-rc-in-action/possibilities.md)
-* [Tech Overview](learn/tech-overview/README.md)
-  * [High level architecture](learn/tech-overview/high-level-architecture.md)
-  * [Technical Specification Draft](learn/tech-overview/technical-specification-draft.md)
-  * [Tech Stack and Requirements](learn/tech-overview/infrastructure-requirements.md)
+* [Technical Overview](learn/technical-overview/README.md)
+  * [High level architecture](learn/technical-overview/high-level-architecture.md)
+  * [Technical Specification Draft](learn/technical-overview/technical-specification-draft.md)
+  * [Tech Stack and Requirements](learn/technical-overview/infrastructure-requirements.md)
 
 ## Use
 
