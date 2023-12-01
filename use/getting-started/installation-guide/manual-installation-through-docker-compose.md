@@ -46,7 +46,7 @@ Docker Compose version 2.0.1
 
 ## Installation
 
-* Download the latest docker-compose file [https://github.com/Sunbird-RC/sunbird-rc-core/blob/main/docker-compose.yml](https://github.com/Sunbird-RC/sunbird-rc-core/blob/main/docker-compose.yml). Modify the values inside the compose file based on the requirements. More details on the configurations can be found [here](../configuration.md).
+* Download the latest docker-compose file [https://github.com/Sunbird-RC/sunbird-rc-core/blob/main/docker-compose.yml](https://github.com/Sunbird-RC/sunbird-rc-core/blob/main/docker-compose.yml). Modify the values inside the compose file based on the requirements. More details on the configurations can be found [here](../../developers-guide/configuration/).
 * Download or create a `.env` file. [https://github.com/Sunbird-RC/sunbird-rc-core/blob/main/.env](https://github.com/Sunbird-RC/sunbird-rc-core/blob/main/.env)
 * Add the below environment variables to `.env` file
 
@@ -55,7 +55,7 @@ Docker Compose version 2.0.1
 | RELEASE\_VERSION | v0.0.14 | Use the latest release version of SunbirdRC. [https://github.com/Sunbird-RC/sunbird-rc-core/releases](https://github.com/Sunbird-RC/sunbird-rc-core/releases) |
 | SCHEMA\_DIR      | schemas | Relative path to the directory where schemas are created                                                                                                      |
 
-* Create the [schema](../introduction-to-schemas.md) files in the `schemas` directory
+* Create the [schema](../../developers-guide/schema-setup/introduction-to-schemas.md) files in the `schemas` directory
 * Create a directory `imports`
 * Download the [keycloak realm](https://github.com/Sunbird-RC/sunbird-rc-core/blob/main/imports/realm-export.json) file in `imports` directory
 * Download the [sample signing key](https://github.com/Sunbird-RC/sunbird-rc-core/blob/main/imports/config.json) file in `imports` directory. Please note to update the signing keys before going to production.
@@ -63,7 +63,7 @@ Docker Compose version 2.0.1
 
     * Start the database container
 
-    `docker-compose up -d db`&#x20;
+    `docker-compose up -d db`
 
     * Start the keycloak container
 
@@ -75,6 +75,4 @@ Docker Compose version 2.0.1
 * Set `KEYCLOAK_SECRET` with the copied value in `.env` file
 * Start all the services, `docker-compose up -d`
 * Check if all the services are started using `docker-compose ps`
-* Access the registry swagger json \`[http://localhost:8081/api/docs/swagger.json](http://localhost:8081/api/docs/swagger.json)\`\
-
-
+* Access the registry swagger json \`[http://localhost:8081/api/docs/swagger.json](http://localhost:8081/api/docs/swagger.json)\`\\

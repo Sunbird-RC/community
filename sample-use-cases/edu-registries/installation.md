@@ -2,7 +2,7 @@
 
 ### **Pre-requisites**
 
-It is required to have followed all the steps mentioned in the [installation guide](../../developer-documentation/installation-guide.md)
+It is required to have followed all the steps mentioned in the [installation guide](../../use/getting-started/installation-guide/)
 
 ### Configure Schemas
 
@@ -11,16 +11,16 @@ Once all the registry components have been successfully started, the below steps
 #### Clone the repository
 
 {% embed url="https://github.com/Sunbird-RC/demo-education-registry" %}
-Clone the above repo using https or ssh&#x20;
+Clone the above repo using https or ssh
 {% endembed %}
 
 #### Copy schema files
 
-Copy all the schemas present in `demo-education-registry/schemas` directory to the directory where the registry CLI `<registry-cli-directory>/config/schemas` is installed.&#x20;
+Copy all the schemas present in `demo-education-registry/schemas` directory to the directory where the registry CLI `<registry-cli-directory>/config/schemas` is installed.
 
-> If any exisiting schemas are present in that directory, you can remove it or move it to a different directory.&#x20;
+> If any exisiting schemas are present in that directory, you can remove it or move it to a different directory.
 
-Make sure all the schema files are present in `<registry-cli-directory>/config/schemas` directory.&#x20;
+Make sure all the schema files are present in `<registry-cli-directory>/config/schemas` directory.
 
 ```
 BaseAttestationField.json
@@ -46,7 +46,7 @@ registry status
 
 ### API Documentation
 
-The postman collection is available&#x20;
+The postman collection is available
 
 {% embed url="https://github.com/Sunbird-RC/demo-education-registry/blob/main/Tech%20Webinar.postman_collection.json" %}
 

@@ -82,7 +82,7 @@ The response will be transformed to:
 }
 ```
 
-The view templates support configuring what fields should be displayed, changing the field names, and also performing functionalities on top of the fields.&#x20;
+The view templates support configuring what fields should be displayed, changing the field names, and also performing functionalities on top of the fields.
 
 In the above template, a field called `firstName` which is present in the entity is been renamed to `NAME.`
 
@@ -93,7 +93,7 @@ In the above template, a field called `firstName` which is present in the entity
 }
 ```
 
-By default, all fields defined in the template are treated to be `"display": true`. If the fields  are not supposed to be displayed then we can set `"display": false`
+By default, all fields defined in the template are treated to be `"display": true`. If the fields are not supposed to be displayed then we can set `"display": false`
 
 ```json
 {
@@ -114,7 +114,7 @@ We can also define expressions or custom functions to perform complex/custom tra
 },
 ```
 
-In the above example, a custom JEXL expression to concatenate two fields is inline defined in the view template.&#x20;
+In the above example, a custom JEXL expression to concatenate two fields is inline defined in the view template.
 
 ```json
 {
@@ -138,7 +138,7 @@ We can also write Java code which can be used to perform custom/complex operatio
 
 The implementation of the above provider is here, [https://github.com/Sunbird-RC/sunbird-rc-core/blob/3dcca8a7ca6be355991808a0d1ebfc3a824c43c5/java/view-templates/src/main/java/dev/sunbirdrc/provider/SampleViewFunctionProvider.java](https://github.com/Sunbird-RC/sunbird-rc-core/blob/3dcca8a7ca6be355991808a0d1ebfc3a824c43c5/java/view-templates/src/main/java/dev/sunbirdrc/provider/SampleViewFunctionProvider.java)
 
-A custom provider function should implement `IViewFunctionProvider`&#x20;
+A custom provider function should implement `IViewFunctionProvider`
 
 Similarly, SunbirdRC is shipped with another provider functions that can be used for transformation,\
 [RemovePathFunctionProvider](https://github.com/Sunbird-RC/sunbird-rc-core/blob/3dcca8a7ca6be355991808a0d1ebfc3a824c43c5/java/view-templates/src/main/java/dev/sunbirdrc/provider/RemovePathFunctionProvider.java)\
@@ -203,12 +203,12 @@ to the below format
 
 The view templates can be applied to both the GET APIs. We need to pass a `viewTemplateId` the header which contains the value of the view template file to be applied.
 
-{% content-ref url="../api-reference/registry/get-an-entity.md" %}
-[get-an-entity.md](../api-reference/registry/get-an-entity.md)
+{% content-ref url="../../../api-reference/registry/get-an-entity.md" %}
+[get-an-entity.md](../../../api-reference/registry/get-an-entity.md)
 {% endcontent-ref %}
 
-{% content-ref url="../api-reference/registry/get-an-entity-by-id.md" %}
-[get-an-entity-by-id.md](../api-reference/registry/get-an-entity-by-id.md)
+{% content-ref url="../../../api-reference/registry/get-an-entity-by-id.md" %}
+[get-an-entity-by-id.md](../../../api-reference/registry/get-an-entity-by-id.md)
 {% endcontent-ref %}
 
 Example:
@@ -229,6 +229,6 @@ View templates can be used in search/discovery APIs. The respective template id 
 }
 ```
 
-{% content-ref url="../api-reference/discovery-api/search-an-entity.md" %}
-[search-an-entity.md](../api-reference/discovery-api/search-an-entity.md)
+{% content-ref url="../../../api-reference/discovery-api/search-an-entity.md" %}
+[search-an-entity.md](../../../api-reference/discovery-api/search-an-entity.md)
 {% endcontent-ref %}

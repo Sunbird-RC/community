@@ -1,10 +1,10 @@
-# Creating And Using the Schemas with Password Configuration
+# Create Schemas With Custom Password
 
 This page demonstrates how to configure the schemas to allow entities to set their own password and walks you through the create and invite Registry APIs using the example of a Student to set the password.
 
 ## Configuring A Schema
 
-We can create a schema in the registry using the [Schema API Endpoint](../api-reference/schema/create-schema.md) and using JSON schema files as well
+We can create a schema in the registry using the [Schema API Endpoint](../../../api-reference/schema/create-schema.md) and using JSON schema files as well
 
 Here we are creating a `Student` schema, we would configure as following
 
@@ -49,15 +49,15 @@ Here we are creating a `Student` schema, we would configure as following
 
 ```
 
-This will configure the entity to create a password while creating the entity object. Here ownership attribute password is required, Its value can be any path in the Student object we decide. If we don't set the password ownership attribute, It will take the default password [configured in the registry environment](configuration.md).&#x20;
+This will configure the entity to create a password while creating the entity object. Here ownership attribute password is required, Its value can be any path in the Student object we decide. If we don't set the password ownership attribute, It will take the default password [configured in the registry environment](../configuration/).
 
-**Note: **_**Password will only be used while creation of the Student object and Updating password using update entity API Endpoint is not supported.**_
+**Note: \_Password will only be used while creation of the Student object and Updating password using update entity API Endpoint is not supported.**\_
 
-**Note: **_**If the user is already created by another entity, the password will not be updated to the existing user account.**_
+**Note: \_If the user is already created by another entity, the password will not be updated to the existing user account.**\_
 
 ## Inviting An Entity
 
-We can create entities in the registry using the [Invite Entity API Endpoint](broken-reference).
+We can create entities in the registry using the [Invite Entity API Endpoint](../../../developer-documentation/broken-reference/).
 
 To create a `Student` entity named Pranav Agate, we would make the following API call:
 
@@ -91,7 +91,7 @@ echo '{
 	'content-type: application/json'
 ```
 
-This will store the entity in the registry, create the user account in IAM (keycloak) with given password for the `Student`  and return the following object:
+This will store the entity in the registry, create the user account in IAM (keycloak) with given password for the `Student` and return the following object:
 
 ```json
 {
@@ -158,7 +158,7 @@ This API call should return a JSON object as follows:
 
 ## Retrieving An Entity
 
-We can retrieve entities in the registry using the [Retrieve Entity API Endpoint](broken-reference).
+We can retrieve entities in the registry using the [Retrieve Entity API Endpoint](../../../developer-documentation/broken-reference/).
 
 So to retrieve the entity we created earlier, we would make the following request:
 

@@ -11,10 +11,10 @@ description: >-
 
 SunbirdRC requires an IAM platform for mainly two purposes.
 
-1. authN & authZ of users to enable trust between the user and the entity.&#x20;
+1. authN & authZ of users to enable trust between the user and the entity.
 2. to manage user accounts for the entities created
 
-### Below steps will enable authenticating and authorizing tokens generated from any oauth2 complaint IAM service&#x20;
+### Below steps will enable authenticating and authorizing tokens generated from any oauth2 complaint IAM service
 
 * Configure the below environment variables for the registry core service
 
@@ -36,11 +36,11 @@ SunbirdRC requires an IAM platform for mainly two purposes.
 
 **Fusionauth: \`http://domain/\` (The value of the issuer configured in the tenant page)**
 
-`oauth2_resource_email_path` should be configured  with the path to be used for fetching email id from the token
+`oauth2_resource_email_path` should be configured with the path to be used for fetching email id from the token
 
-`oauth2_resource_consent_path` (OPTIONAL) should be configured  with the _path_ to be used for fetching consent fields from the token
+`oauth2_resource_consent_path` (OPTIONAL) should be configured with the _path_ to be used for fetching consent fields from the token
 
-`oauth2_resource_roles_path` should be configured with the _path_ to be used for fetching roles  from the token&#x20;
+`oauth2_resource_roles_path` should be configured with the _path_ to be used for fetching roles from the token
 
 `oauth2_resource_entity_path` (OPTIONAL) should be configured with the _path_ to be used for fetching entities from the token
 
@@ -48,7 +48,7 @@ SunbirdRC requires an IAM platform for mainly two purposes.
 
 Currently, one needs to write a custom implementation to support creating users in the respective IAM platforms. SunbirdRC provided two ways to configure it:
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 ### **1. Sub module in Sunbird RC**
 
@@ -75,8 +75,7 @@ The module needs to be added to the core registry and you need to build a custom
 * Implement this provider [https://github.com/Sunbird-RC/sunbird-rc-core/blob/generic-auth/java/middleware/registry-middleware/identity-provider/src/main/java/dev/sunbirdrc/registry/identity\_providers/providers/IdentityProvider.java](https://github.com/Sunbird-RC/sunbird-rc-core/blob/generic-auth/java/middleware/registry-middleware/identity-provider/src/main/java/dev/sunbirdrc/registry/identity\_providers/providers/IdentityProvider.java), which returns the IdentityManager which handles user creation functionality. (Example [https://github.com/Sunbird-RC/sunbird-rc-core/blob/generic-auth/java/middleware/registry-middleware/keycloak/src/main/java/dev/sunbirdrc/auth/keycloak/KeycloakProviderImpl.java](https://github.com/Sunbird-RC/sunbird-rc-core/blob/generic-auth/java/middleware/registry-middleware/keycloak/src/main/java/dev/sunbirdrc/auth/keycloak/KeycloakProviderImpl.java))
 * The IdentityManager should implement the [https://github.com/Sunbird-RC/sunbird-rc-core/blob/generic-auth/java/middleware/registry-middleware/identity-provider/src/main/java/dev/sunbirdrc/registry/identity\_providers/pojos/IdentityManager.java](https://github.com/Sunbird-RC/sunbird-rc-core/blob/generic-auth/java/middleware/registry-middleware/identity-provider/src/main/java/dev/sunbirdrc/registry/identity\_providers/pojos/IdentityManager.java), which handles user creation and returns the user id. (Example: [https://github.com/Sunbird-RC/sunbird-rc-core/blob/generic-auth/java/middleware/registry-middleware/keycloak/src/main/java/dev/sunbirdrc/auth/keycloak/KeycloakAdminUtil.java](https://github.com/Sunbird-RC/sunbird-rc-core/blob/generic-auth/java/middleware/registry-middleware/keycloak/src/main/java/dev/sunbirdrc/auth/keycloak/KeycloakAdminUtil.java))
 * A Service Provider is configured and identified through a provider configuration file which we put in the resource directory META-INF/services. The file name is the fully-qualified name of the SPI and its content is the fully-qualified name of the SPI implementation. (Example: [https://github.com/Sunbird-RC/sunbird-rc-core/blob/generic-auth/java/middleware/registry-middleware/keycloak/src/main/resources/META-INF/services/dev.sunbirdrc.registry.identity\_providers.providers.IdentityProvider](https://github.com/Sunbird-RC/sunbird-rc-core/blob/generic-auth/java/middleware/registry-middleware/keycloak/src/main/resources/META-INF/services/dev.sunbirdrc.registry.identity\_providers.providers.IdentityProvider))
-* Update `identity_provider` env with the provider package name\
-
+* Update `identity_provider` env with the provider package name\\
 
 ### **2. Wrapper service**
 
@@ -92,6 +91,3 @@ You need to configure the below env with respective values
 identity_provider: dev.sunbirdrc.auth.genericiam.AuthProviderImpl
 sunbird_sso_url: http://localhost:8080/auth/ (Replace the value with your service endpoint)
 ```
-
-
-
