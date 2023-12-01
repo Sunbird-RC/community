@@ -1,8 +1,8 @@
-# Technical Requirements
+# Tech Stack and Requirements
 
 ## Architecture Diagram
 
-<figure><img src="../.gitbook/assets/Artboard 5 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Artboard 5 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Tech Stack
 
@@ -36,8 +36,8 @@ For development, a single VM with docker will work.
 
 The steps to setup the development environment is available here.
 
-{% content-ref url="../developer-documentation/installation-guide.md" %}
-[installation-guide.md](../developer-documentation/installation-guide.md)
+{% content-ref url="../../developer-documentation/installation-guide.md" %}
+[installation-guide.md](../../developer-documentation/installation-guide.md)
 {% endcontent-ref %}
 
 For production, Kubernetes is recommended.

@@ -4,20 +4,21 @@
 
 * [Introduction](README.md)
 * [Sunbird RC Overview](learn/readme/README.md)
-  * [Core Registry Verbs](learn/readme-1/core-registry-verbs.md)
   * [Why do we need Sunbird RC?](learn/readme/why-do-we-need-sunbird-rc.md)
-  * [What Sunbird RC is and what it's not? (WIP)](learn/readme/what-sunbird-rc-is-and-what-its-not-wip.md)
   * [Core Capabilities](learn/readme/core-capabilities.md)
-  * [Technical Specification Draft](learn/technical-specification-draft.md)
+  * [Core Registry Verbs](learn/readme-1/core-registry-verbs.md)
   * [Workflows](learn/readme/workflows.md)
-  * [High level architecture](learn/high-level-architecture.md)
+  * [What Sunbird RC is and what it's not? (WIP)](learn/readme/what-sunbird-rc-is-and-what-its-not-wip.md)
 * [Sunbird RC in action](learn/readme/sunbird-rc-in-action/README.md)
   * [Implementations (Work in Progress)](learn/readme/sunbird-rc-in-action/implementations.md)
   * [Possibilities](learn/sunbird-rc-in-action/possibilities.md)
+* [Tech Overview](learn/tech-overview/README.md)
+  * [High level architecture](learn/tech-overview/high-level-architecture.md)
+  * [Technical Specification Draft](learn/tech-overview/technical-specification-draft.md)
+  * [Tech Stack and Requirements](learn/tech-overview/infrastructure-requirements.md)
 
 ## Use
 
-* [Technical Requirements](use/infrastructure-requirements.md)
 * [Setup the Backend](use/setup-the-backend.md)
 * [Setup the Frontend](use/setup-the-frontend.md)
 * [Leveraging Existing data stores](use/leveraging-existing-data-stores-directories.md)

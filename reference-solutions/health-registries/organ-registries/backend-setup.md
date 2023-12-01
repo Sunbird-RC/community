@@ -18,7 +18,7 @@ Navigate into demo-donor-registry folder and run the following command
 docker-compose up -d
 ```
 
-This will start all the required services.&#x20;
+This will start all the required services.
 
 #### Setting up Keycloak
 
@@ -30,7 +30,7 @@ KEYCLOAK\_SECRET=\<copied\_secret>
 
 <figure><img src="../../../.gitbook/assets/image1.png" alt=""><figcaption></figcaption></figure>
 
-Again navigate to the keycloak homepage. Navigate to the Clients tab in the left subsection. Click on the Create button available on the right side of the screen. Enter client ID as donor-service. Client Protocol as openid-connect and click on save button.&#x20;
+Again navigate to the keycloak homepage. Navigate to the Clients tab in the left subsection. Click on the Create button available on the right side of the screen. Enter client ID as donor-service. Client Protocol as openid-connect and click on save button.
 
 This will create a new client named donor-service in keycloak. This will be used to communicate with the registry from the donor-service microservice.
 
@@ -42,7 +42,7 @@ After the client configurations are saved, in the top tabs section you will see 
 SERVICE_ACCOUNT_CLIENT_SECRET=<copied_secret>
 ```
 
-Recreate registry so that it reflects the keycloak secrets. This can be done using&#x20;
+Recreate registry so that it reflects the keycloak secrets. This can be done using
 
 ```
 docker-compose up -d –force-recreate –no-deps registry donor-service
@@ -86,12 +86,12 @@ docker-compose up -d –force-recreate –no-deps <service_name>
 \
 You need to have access to sandbox environment of [https://healthid.abdm.gov.in](https://healthid.abdm.gov.in) and you should have access to abdm APIs from this.
 
-Sandbox environment will have the URL of [https://healthidsbx.abdm.gov.in/](https://healthidsbx.abdm.gov.in/).&#x20;
+Sandbox environment will have the URL of [https://healthidsbx.abdm.gov.in/](https://healthidsbx.abdm.gov.in/).
 
 Following are the configurations needed for donor-service
 
-Code -> [https://github.com/Sunbird-RC/demo-donor-registry/tree/main/backend/donor-service ](https://github.com/Sunbird-RC/demo-donor-registry/tree/main/backend/donor-service)\
-Configs ->&#x20;
+Code -> [https://github.com/Sunbird-RC/demo-donor-registry/tree/main/backend/donor-service](https://github.com/Sunbird-RC/demo-donor-registry/tree/main/backend/donor-service)\
+Configs ->
 
 | Environment Variable             | Description                                                                                                                                         |
 | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -115,9 +115,9 @@ Configs ->&#x20;
 | NOTIFY\_TEMPLATE\_ID             | Template ID for Sms to be sent out to the contact mentioned in the notification Details so that he knows the donor and who has successfully pledged |
 | UPDATE\_TEMPLATE\_ID             | Template ID for Sms to be sent out to donor when the donor has successfully edited the pledged                                                      |
 | UNPLEDGE\_TEMPLATE\_ID           | Template ID for Sms to be sent out to donor when the donor has successfully unpledged                                                               |
-| LOG\_LEVEL                       | <p></p><p>Log level like info which will only print that logs</p>                                                                                   |
+| LOG\_LEVEL                       | Log level like info which will only print that logs                                                                                                 |
 
-2.  **Certificate signer ->** [certificate-signer](../../../learn/high-level-architecture.md#certificate-signer)
+2.  **Certificate signer ->** [certificate-signer](../../../learn/tech-overview/high-level-architecture.md#certificate-signer)
 
     Code ->
 
@@ -132,7 +132,7 @@ Configs ->&#x20;
     You can place your signing keys in the document in the path
 
     demo-donor-registry/imports/config.json. Based on the issuer’s name, the key will be picked in order to create signed credentials. Sample for the keys is as follows for scholarship as a issuer
-3.  **Notification service ->** [notification-ms](../../../learn/high-level-architecture.md#notification-ms)
+3.  **Notification service ->** [notification-ms](../../../learn/tech-overview/high-level-architecture.md#notification-ms)
 
     Technical ->
 
@@ -140,10 +140,10 @@ Configs ->&#x20;
 
     [https://github.com/Sunbird-RC/sunbird-rc-core/tree/main/services/notification-service](https://github.com/Sunbird-RC/sunbird-rc-core/tree/main/services/notification-service)
 
-    Configs ->&#x20;
+    Configs ->
 
     [https://docs.sunbirdrc.dev/developer-documentation/configuration#notification-service](https://docs.sunbirdrc.dev/developer-documentation/configuration#notification-service)
-4.  **Certificate/Presentation service ->** [certificate-api](../../../learn/high-level-architecture.md#certificate-api)
+4.  **Certificate/Presentation service ->** [certificate-api](../../../learn/tech-overview/high-level-architecture.md#certificate-api)
 
     Technical ->
 
@@ -158,16 +158,16 @@ Configs ->&#x20;
 
     This service will take a template as a pdf and return a pdf with the actual certificate.
 
-    Technical ->&#x20;
+    Technical ->
 
-    Code -> [https://github.com/Sunbird-RC/demo-donor-registry/tree/main/backend/certificate-pdf-service](https://github.com/Sunbird-RC/demo-donor-registry/tree/main/backend/certificate-pdf-service)&#x20;
+    Code -> [https://github.com/Sunbird-RC/demo-donor-registry/tree/main/backend/certificate-pdf-service](https://github.com/Sunbird-RC/demo-donor-registry/tree/main/backend/certificate-pdf-service)
 6.  **Notification Service ->**
 
     Used to send notifications
 
     Technical ->
 
-    Code -> [https://github.com/Sunbird-RC/demo-donor-registry/tree/main/backend/notification-service](https://github.com/Sunbird-RC/demo-donor-registry/tree/main/backend/notification-service) \
+    Code -> [https://github.com/Sunbird-RC/demo-donor-registry/tree/main/backend/notification-service](https://github.com/Sunbird-RC/demo-donor-registry/tree/main/backend/notification-service)\
     Configs ->
 
 |                  |                                    |
@@ -178,9 +178,9 @@ Configs ->&#x20;
 | SMPP\_USER\_NAME | SMS API Username                   |
 | SMS\_URL         | SMS URL of provider                |
 
-7. **Claims ->** [Claim Service](../../../learn/high-level-architecture.md#claim-ms)
-8. **Elastic Search ->** [Elastic Search](../../../learn/high-level-architecture.md#elastic-search)
-9. **MinIO ->** [File storage](../../../learn/high-level-architecture.md#file-storage-minio)
+7. **Claims ->** [Claim Service](../../../learn/tech-overview/high-level-architecture.md#claim-ms)
+8. **Elastic Search ->** [Elastic Search](../../../learn/tech-overview/high-level-architecture.md#elastic-search)
+9. **MinIO ->** [File storage](../../../learn/tech-overview/high-level-architecture.md#file-storage-minio)
 10. **Verification Service**
 
 Verification of credential refers to verifying the authenticity of the credential that the actor possesses. When a credential is issued, it is signed via issuers private key. This can then be verified by an issuer's public key which is made available to whoever is trying to verify the credentials. This is taken care by certificate-signer service. Certificate signer service provides an API which takes signed Credentials as input. From the issuer name, it fetches the public key of the issuer. Using this public key, the verifier verifies the authenticity of the credential.
