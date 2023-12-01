@@ -2,6 +2,10 @@
 
 **What is Sunbird RC?**
 
+#### Video on "What is Sunbird RC?"
+
+To understand Sunbird RC, listen to Dr Pramod Varma, CTO of EkStep foundation
+
 {% embed url="https://www.youtube.com/watch?feature=youtu.be&v=HsQK5uSUnDk" %}
 What is Sunbird RC? by Dr Pramod Varma
 {% endembed %}
