@@ -1,11 +1,11 @@
 # Get all uploaded Files
 
-{% swagger method="get" path="bulk/v1/uploadedFiles" baseUrl=" /" summary="" %}
+{% swagger method="get" path="bulk/v1/uploads" baseUrl="/" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" %}
+{% swagger-parameter in="header" name="Authorization" required="false" %}
 Set to Bearer {access-token} if roles in schema is not anonymous. Else authorization can be empty
 {% endswagger-parameter %}
 

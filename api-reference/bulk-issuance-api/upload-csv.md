@@ -1,6 +1,6 @@
 # Upload CSV
 
-{% swagger method="post" path="/bulk/v1/uploadFiles/{schemaName}" baseUrl=" " summary="" %}
+{% swagger method="post" path="/bulk/v1/{schemaName}/upload" baseUrl=" " summary="" expanded="false" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -9,11 +9,11 @@
 Schema for which you want to bulk create entities
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="file" type="multipart/form-data" required="true" %}
-csv file
+{% swagger-parameter in="body" name="files" type="multipart/form-data" required="true" %}
+csv file (body type should be form-data)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="Authorization" %}
+{% swagger-parameter in="header" name="Authorization" required="false" %}
 Set to Bearer {access-token} if roles in schema is not anonymous. Else authorization can be empty
 {% endswagger-parameter %}
 
