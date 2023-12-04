@@ -12,7 +12,9 @@ Traditionally such data is owned and maintained within registers and kept freque
 
 The government, educational industry, and other ecosystems issue certificates, licenses, etc. Availability of these in paper form creates issues of low trust, lack of credibility, information asymmetry, time consuming physical verification, and non-portability amongst many others. Additionally, it is difficult to verify the legitimacy of these documents. Verification is a time-consuming and challenging procedure that frequently takes weeks or even months to complete. Moreover, Users have very little control over who has access to their personal information, where their papers are stored, and how they are used.
 
-#### _An interoperable and unified registry infrastructure needs to be built to enable "live", "reusable", and “trustworthy” registries as a “single source of truth” to address the above three core issues._&#x20;
+[Click here](community/guide-to-electronic-registries-and-verifiable-credentials/) to learn more about electronic registries and verifiable credentials
+
+#### _An interoperable and unified registry infrastructure needs to be built to enable "live", "reusable", and “trustworthy” registries as a “single source of truth” to address the above three core issues._
 
 **Sunbird RC** is a "low code" framework to enable organizations to rapidly build next generation electronic registries and verifiable credentials. Sunbird RC uses a set of configurations to rapidly build out registries, automatically generate CRUD (create/ read/ update/ delete) APIs without any coding, enable registry searches and access via open APIs, issue and manage verifiable credentials, manage user consent flows if required, manage attestation and verification flows, etc.
 
@@ -20,8 +22,6 @@ Sunbird RC is listed as a global Digital Public Good (DPG) within the [Digital P
 
 Sunbird RC is open sourced under [MIT license](https://opensource.org/licenses/MIT). Any individual or organisation can leverage this building block for free for their purposes in accordance with the MIT license. We strongly encourage you to participate in the community and contribute back to help improve this project.
 
-
-
-_**“This website abides by the**_ [_**Terms of Use**_](https://sunbird.org/terms-conditions) _**and**_ [_**Privacy Policy**_](https://sunbird.org/privacy-policy) _**of**_ [_**www.sunbird.org**_](http://www.sunbird.org)_**.”**_&#x20;
+_**“This website abides by the**_ [_**Terms of Use**_](https://sunbird.org/terms-conditions) _**and**_ [_**Privacy Policy**_](https://sunbird.org/privacy-policy) _**of**_ [_**www.sunbird.org**_](http://www.sunbird.org)_**.”**_
 
 _“Copyright © 2021 EkStep Foundation. This work is licensed under a_ [_Creative Commons Attribution (CC-BY-4.0) International License_](https://creativecommons.org/licenses/by/4.0/) _unless otherwise noted.”_

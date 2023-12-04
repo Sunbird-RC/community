@@ -7,4 +7,4 @@ Electronic Registries can help organizations save time and money, reduce errors,
 3. **Enhanced security:** Electronic registries are typically more secure than paper-based systems, using encryption, access controls, and other measures to protect data from theft, loss, or damage.
 4. **Increased efficiency:** Electronic registries can streamline processes, reduce manual effort, and improve turnaround times, helping organizations save time and money.
 
-\
+\\
