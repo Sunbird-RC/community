@@ -203,12 +203,12 @@ to the below format
 
 The view templates can be applied to both the GET APIs. We need to pass a `viewTemplateId` the header which contains the value of the view template file to be applied.
 
-{% content-ref url="../api-reference/registry/get-an-entity.md" %}
-[get-an-entity.md](../api-reference/registry/get-an-entity.md)
+{% content-ref url="../../../api-reference/registry/get-an-entity.md" %}
+[get-an-entity.md](../../../api-reference/registry/get-an-entity.md)
 {% endcontent-ref %}
 
-{% content-ref url="../api-reference/registry/get-an-entity-by-id.md" %}
-[get-an-entity-by-id.md](../api-reference/registry/get-an-entity-by-id.md)
+{% content-ref url="../../../api-reference/registry/get-an-entity-by-id.md" %}
+[get-an-entity-by-id.md](../../../api-reference/registry/get-an-entity-by-id.md)
 {% endcontent-ref %}
 
 Example:
@@ -229,6 +229,6 @@ View templates can be used in search/discovery APIs. The respective template id 
 }
 ```
 
-{% content-ref url="../api-reference/discovery-api/search-an-entity.md" %}
-[search-an-entity.md](../api-reference/discovery-api/search-an-entity.md)
+{% content-ref url="../../../api-reference/discovery-api/search-an-entity.md" %}
+[search-an-entity.md](../../../api-reference/discovery-api/search-an-entity.md)
 {% endcontent-ref %}

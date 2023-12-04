@@ -53,7 +53,7 @@ Sunbird RC is designed to handle large volumes of data and concurrent users, wit
 
 * Support for multiple databases employing out-of-the-box adapters for multiple DB support - including graphs DBs(Neo4j), RDBMS(Postgres)
 
-[Click here](../../community/comprehensive-overview-electronic-registries-and-verifiable-credentials/) to learn more about electronic registries and verifiable credentials
+[Click here](../../community/guide-to-electronic-registries-and-verifiable-credentials/) to learn more about electronic registries and verifiable credentials
 
 Use the GitHub [discussions board](https://github.com/Sunbird-RC/community/discussions) or [use this invite to join Discord community channel](https://discord.gg/Q5mvw2mGC8) to participate in the community and help improve. For feature requests and issues, use the [issue tracker](https://github.com/Sunbird-RC/community/issues). We also encourage you to help fix documentation and code by doing pull requests on the appropriate repos here.
 

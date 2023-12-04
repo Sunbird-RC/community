@@ -12,7 +12,7 @@ Traditionally such data is owned and maintained within registers and kept freque
 
 The government, educational industry, and other ecosystems issue certificates, licenses, etc. Availability of these in paper form creates issues of low trust, lack of credibility, information asymmetry, time consuming physical verification, and non-portability amongst many others. Additionally, it is difficult to verify the legitimacy of these documents. Verification is a time-consuming and challenging procedure that frequently takes weeks or even months to complete. Moreover, Users have very little control over who has access to their personal information, where their papers are stored, and how they are used.
 
-[Click here](community/comprehensive-overview-electronic-registries-and-verifiable-credentials/) to learn more about electronic registries and verifiable credentials
+[Click here](community/guide-to-electronic-registries-and-verifiable-credentials/) to learn more about electronic registries and verifiable credentials
 
 #### _An interoperable and unified registry infrastructure needs to be built to enable "live", "reusable", and “trustworthy” registries as a “single source of truth” to address the above three core issues._
 

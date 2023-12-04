@@ -13,4 +13,4 @@ After initial setup, tenant can access tenant portal
 1. Tenant can login with username and password provided
 2. First time users can change the username and password
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
