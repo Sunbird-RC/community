@@ -36,8 +36,8 @@ For development, a single VM with docker will work.
 
 The steps to setup the development environment is available here.
 
-{% content-ref url="../developer-documentation/installation-guide.md" %}
-[installation-guide.md](../developer-documentation/installation-guide.md)
+{% content-ref url="../developer-documentation-1/installation-guide/" %}
+[installation-guide](../developer-documentation-1/installation-guide/)
 {% endcontent-ref %}
 
 For production, Kubernetes is recommended.
