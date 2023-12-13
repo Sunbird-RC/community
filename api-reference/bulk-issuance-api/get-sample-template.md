@@ -1,15 +1,17 @@
 # Get Sample Template
 
-{% swagger method="get" path="/bulk/v1/sample/{schemaName}" baseUrl=" " summary="" %}
+
+
+{% swagger method="get" path="/bulk/v1/{schemaName}/sample-csv" baseUrl=" " summary="" %}
 {% swagger-description %}
 this will download a csv with the all fields that are needed to create entity for this schema
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="schemaName" type="String" required="true" %}
-name of schema&#x20;
+name of schema
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="Authorization" %}
+{% swagger-parameter in="header" name="Authorization" required="false" %}
 Set to `Bearer {access-token}` if roles in schema is not anonymous. Else authorization can be empty
 {% endswagger-parameter %}
 

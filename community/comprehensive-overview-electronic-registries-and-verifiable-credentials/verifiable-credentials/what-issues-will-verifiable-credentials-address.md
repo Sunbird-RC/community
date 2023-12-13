@@ -1,10 +1,12 @@
 # What issues will Verifiable Credentials address?
 
-There are multiple issues with our traditional verification process. The traditional verification process is becoming increasingly difficult to manage due to its complexity and time-consuming nature. It requires the holder to show the entire credential resulting in exposing the personal information which is not even required to be shared. It can be a lengthy process to manually verify the authenticity of the document, especially in cases where multiple documents are needed for authentication.
+Traditional verification processes, especially those reliant on physical documents and in-person checks, have several inherent problems and limitations, including
 
-With the advancement of technology, it is now easier than ever to create fake documents that appear authentic. This makes it difficult for individuals and organizations to trust the authenticity of any physical certificate or document they receive.
-
-The consequences of forging physical certificates and documents can be dire, as they can lead to misuse of data, manipulation of records, frauds, scams, identity thefts and other criminal activities.
+* Complex and time consuming&#x20;
+* Lengthy and cumbersome manual document verification
+* Fake Certificates leading to data misuse, record manipulation, fraud, scams, identity theft, and other criminal activities.
+* Lack of transparency
+* Lack of integrated mechanism for verifiability and security
 
 To resolve the aforementioned challenges, Verifiable Credentials play a crucial role and offer several benefits:
 
