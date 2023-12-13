@@ -4,7 +4,7 @@ The following guide walks you through the different Registry APIs using the exam
 
 ## Inviting An Entity
 
-We can create entities in the registry using the [Invite Entity API Endpoint](broken-reference/).
+We can create entities in the registry using the [Invite Entity API Endpoint](../developer-documentation/broken-reference/).
 
 To create a `Teacher` entity named Pranav Agate who teaches Math at UP Public School, we would make the following API call:
 
@@ -206,7 +206,7 @@ Important variables in the response body:
 
 ## Retrieving An Entity
 
-We can retrieve entities in the registry using the [Retrieve Entity API Endpoint](broken-reference/).
+We can retrieve entities in the registry using the [Retrieve Entity API Endpoint](../developer-documentation/broken-reference/).
 
 So to retrieve the entity we created earlier, we would make the following request:
 
@@ -253,7 +253,7 @@ Important variables in the response body:
 
 ## Updating An Entity
 
-We can update entities in the registry using the [Update Entity API Endpoint](broken-reference/).
+We can update entities in the registry using the [Update Entity API Endpoint](../developer-documentation/broken-reference/).
 
 So to update the subject our `Teacher` entity Pranav Agate teaches to `Biology`, we would make the following API call:
 
@@ -313,7 +313,7 @@ This will update the entity in the registry and return the following object:
 
 ## Deleting An Entity
 
-We can delete entities in the registry using the [Delete Entity API Endpoint](broken-reference/).
+We can delete entities in the registry using the [Delete Entity API Endpoint](../developer-documentation/broken-reference/).
 
 So to delete the subject our `Teacher` entity, we would make the following API call:
 
@@ -342,7 +342,7 @@ This will delete the entity in the registry and return a blank HTTP 200 response
 
 ## Making A Claim
 
-To make a claim, we can use the [Claim API Endpoint](broken-reference/).
+To make a claim, we can use the [Claim API Endpoint](../developer-documentation/broken-reference/).
 
 First, let us create a `Student` entity named Prashant Joshi who also goes to UP Public School:
 

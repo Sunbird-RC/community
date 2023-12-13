@@ -57,7 +57,7 @@ This will configure the entity to create a password while creating the entity ob
 
 ## Inviting An Entity
 
-We can create entities in the registry using the [Invite Entity API Endpoint](broken-reference/).
+We can create entities in the registry using the [Invite Entity API Endpoint](../developer-documentation/broken-reference/).
 
 To create a `Student` entity named Pranav Agate, we would make the following API call:
 
@@ -158,7 +158,7 @@ This API call should return a JSON object as follows:
 
 ## Retrieving An Entity
 
-We can retrieve entities in the registry using the [Retrieve Entity API Endpoint](broken-reference/).
+We can retrieve entities in the registry using the [Retrieve Entity API Endpoint](../developer-documentation/broken-reference/).
 
 So to retrieve the entity we created earlier, we would make the following request:
 

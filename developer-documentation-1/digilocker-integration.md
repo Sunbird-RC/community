@@ -25,7 +25,7 @@ _**Note: Currently digilocker doesn't have a sandbox environment to test the int
 * `Search API Id`: You need to give a unique name to your API Id. This id will be passed to your backend for retrieving the VC
 * `Search API Description:` You can update this as per your business functionality.
 * `API Key:` You need to create a new unique and secure API key. This key will be used to generate the HMAC of the request body sent by digilocker. This key needs to be kept secure and confidential.
-* `Rest API Service URL:` You need to specify the SunbirdRC URL to access the VC. Ex: \`[https://\<host>/digilocker/v1/digilocker/pullUriRequest](broken-reference/)\`
+* `Rest API Service URL:` You need to specify the SunbirdRC URL to access the VC. Ex: \`[https://\<host>/digilocker/v1/digilocker/pullUriRequest](../developer-documentation/broken-reference/)\`
 * And click on `Next`
 
 <figure><img src="../.gitbook/assets/image3.png" alt=""><figcaption></figcaption></figure>

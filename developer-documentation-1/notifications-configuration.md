@@ -4,7 +4,7 @@
 
 Sunbird RC Provides a way to send out notifications to the owner of the entity. Whenever the entity under a particular schema is Invited/Created/Modified/Deleted/Revoked, the notifications can be sent out to owner of that entity.
 
-The schema should be configured with the notification templates. [Here](../use/schema-configuration.md#notification-templates) is the way to configure the schema to send out notifications. The configuration shows an example for create notification templates which will be sent on creating an entity. Following are the other type of operations that are supported by Sunbird RC to send out notifications
+The schema should be configured with the notification templates. [Here](schema-configuration.md#notification-templates) is the way to configure the schema to send out notifications. The configuration shows an example for create notification templates which will be sent on creating an entity. Following are the other type of operations that are supported by Sunbird RC to send out notifications
 
 1. update for Updating entity
 2. invite for Inviting an Entity
