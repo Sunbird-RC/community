@@ -49,7 +49,7 @@ A governing body/authority would be able to build registry that acts as a single
 
 ### VC Verification
 
-* Offline verification of Verifiable Credentials:[ Reference SDK](https://docs.sunbirdrc.dev/vc-verification-module)
+* Offline verification of Verifiable Credentials:[ Reference SDK](https://docs.sunbirdrc.dev/use/developers-guide/vc-verification-module)
 * Consent based access: Able to provide consent to another system/person to access Verifiable Credentials for the purpose of transaction/interaction.
 
 ### Digital Wallet
