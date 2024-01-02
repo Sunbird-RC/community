@@ -1,12 +1,8 @@
 # High level architecture
 
-{% embed url="https://www.youtube.com/watch?feature=youtu.be&v=mZjYgdxu0gU" %}
+<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption><p>High Level Architecture Diagram</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/Artboard 9 (1).png" alt=""><figcaption><p>Key Services</p></figcaption></figure>
-
-#### High-Level Architecture Diagram
-
-<figure><img src="../../.gitbook/assets/S-RC Arch (1).png" alt=""><figcaption><p>High Level Architecture</p></figcaption></figure>
 
 The functionalities and purpose of various microservices built as part of Sunbird-RC are explained below.
 
@@ -87,3 +83,5 @@ Kafka service is required to create entities in an asynchronous fashion. If the 
 #### Bulk Issuance
 
 Bulk issuance service will allow the issuers to upload their csv files and issue credentials to all those actors present in each row of a csv. The service also has the capability to return a file based reports which will download a csv file which will contain a column of errors that occurred for a that specific actors data
+
+{% embed url="https://youtu.be/mZjYgdxu0gU" %}
