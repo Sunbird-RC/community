@@ -84,4 +84,12 @@ Kafka service is required to create entities in an asynchronous fashion. If the 
 
 Bulk issuance service will allow the issuers to upload their csv files and issue credentials to all those actors present in each row of a csv. The service also has the capability to return a file based reports which will download a csv file which will contain a column of errors that occurred for a that specific actors data
 
+**Encryption**
+
+Encryption service can be used to store private fields configured in a schema in encrypted form in db, which can only be decrypted by the encryption service. It requires to be enabled through appropriate environment variables.
+
+**ID Gen**
+
+ID Gen service can be used to generate IDs with given format for any fields in the schema. It requires format configurations to be provided in schema configurations. and enabled through environment variables.
+
 {% embed url="https://youtu.be/mZjYgdxu0gU" %}
