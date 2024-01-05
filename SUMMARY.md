@@ -58,6 +58,8 @@
   * [SSO with existing systems](use/sso-with-existing-systems/README.md)
   * [Digilocker Meripehchaan SSO](use/sso-with-existing-systems/digilocker-meripehchaan-sso.md)
   * [Digilocker Integration](developer-documentation/digilocker-integration.md)
+* [Latest Release - v1.0.0](use/latest-release-v1.0.0/README.md)
+  * [Release Notes](use/latest-release-v1.0.0/release-notes.md)
 
 ## API Reference
 
@@ -106,8 +108,6 @@
   * [Verify API](api-reference/other-apis/verify-api.md)
   * [Swagger JSON API](api-reference/other-apis/swagger-json-api.md)
   * [Health API](api-reference/other-apis/health-api.md)
-* [Latest Release - v1.0.0](api-reference/latest-release-v1.0.0/README.md)
-  * [Release Notes](api-reference/latest-release-v1.0.0/release-notes.md)
 
 ## Reference Solutions
 
