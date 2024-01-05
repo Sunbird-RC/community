@@ -10,6 +10,7 @@
   * [Workflows](learn/readme/workflows.md)
   * [What Sunbird RC is and what it's not? (WIP)](learn/readme/what-sunbird-rc-is-and-what-its-not-wip.md)
   * [Possibilities](learn/readme-1/possibilities.md)
+  * [Demo](learn/readme-1/demo.md)
 * [Technical Overview](learn/technical-overview/README.md)
   * [High level architecture](learn/technical-overview/high-level-architecture.md)
   * [Technical Specification Draft](learn/technical-overview/technical-specification-draft.md)
