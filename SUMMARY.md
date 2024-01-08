@@ -10,7 +10,7 @@
   * [Workflows](learn/readme/workflows.md)
   * [What Sunbird RC is and what it's not? (WIP)](learn/readme/what-sunbird-rc-is-and-what-its-not-wip.md)
   * [Possibilities](learn/readme-1/possibilities.md)
-  * [Demo](learn/readme-1/demo.md)
+  * [Demo Links](learn/readme-1/demo-links.md)
 * [Technical Overview](learn/technical-overview/README.md)
   * [High level architecture](learn/technical-overview/high-level-architecture.md)
   * [Technical Specification Draft](learn/technical-overview/technical-specification-draft.md)
@@ -59,8 +59,8 @@
   * [SSO with existing systems](use/sso-with-existing-systems/README.md)
   * [Digilocker Meripehchaan SSO](use/sso-with-existing-systems/digilocker-meripehchaan-sso.md)
   * [Digilocker Integration](developer-documentation/digilocker-integration.md)
-* [Latest Release - v1.0.0](use/latest-release-v1.0.0/README.md)
-  * [Release Notes](use/latest-release-v1.0.0/release-notes.md)
+* [Release Notes](use/latest-release-v1.0.0/README.md)
+  * [Latest Release - v1.0.0](use/latest-release-v1.0.0/release-notes.md)
 
 ## API Reference
 
