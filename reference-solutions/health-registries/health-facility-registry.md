@@ -4,7 +4,7 @@ Health Facility Registry acts as a  comprehensive repository of all healthcare f
 
 
 
-<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 ### Sunbird RC Reference Solution
 
