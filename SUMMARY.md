@@ -130,6 +130,7 @@
     * [Frontend Setup](reference-solutions/health-registries/organ-registries/frontend-setup.md)
     * [Backend Setup](reference-solutions/health-registries/organ-registries/backend-setup.md)
     * [User Guide](reference-solutions/health-registries/organ-registries/user-guide.md)
+* [Health Facility Registry](reference-solutions/health-facility-registry.md)
 * [Vaccination Platform](sample-use-cases/vaccination.md)
 * [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform.md)
 * [Govt to Person (G2P)](reference-solutions/govt-to-person-g2p.md)
