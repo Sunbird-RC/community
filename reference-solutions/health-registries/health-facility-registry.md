@@ -41,3 +41,6 @@ Health Facility Registry is a sample (a reference solution) built on Sunbird RC 
 [**UI Issuance Portal**](https://github.com/Sunbird-RC/sunbird-rc-issuance-ui)
 
 [**Verification App**](https://github.com/Sunbird-RC/vc-verification)
+
+[**Click here**](https://www.figma.com/file/lFratoAR8VQDlTm0XxXwoa/Sri-Lanka?type=design\&mode=design) **to explore Health facility registry**
+
