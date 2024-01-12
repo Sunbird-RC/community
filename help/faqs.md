@@ -221,17 +221,17 @@ In the registry, while creating/inviting an entity it throws/returns an error me
 
 #### How can I create QR codes using VC in Sunbird?
 
-**Configure Certificate API Service:**
+_**Configure Certificate API Service:**_
 
 Begin by configuring your [certificate API service](https://rc.sunbird.org/use/developers-guide/configuration#certificate-api-service).&#x20;
 
-#### **Enable Signing in the Registry:**
+_**Enable Signing in the Registry:**_
 
 In the second step, ensure that signing is enabled in the registry by setting the signature\_enabled parameter.
 
 Add credentialTemplates design in the schema to facilitate QR code creation, or Alternatively, you can enable external templates for the registry. This allows you to pass the template while fetching the QR code via API.
 
-#### Sample Template:
+_**Sample Template:**_
 
 Explore a sample template [here](https://raw.githubusercontent.com/dileepbapat/ref-sunbirdrc-certificate/main/schemas/templates/TrainingCertificate.svg).
 

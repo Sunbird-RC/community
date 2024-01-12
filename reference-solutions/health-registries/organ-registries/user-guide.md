@@ -1,6 +1,6 @@
 # User Guide
 
-Organ Registries play an important role to facilitate organ donation & transplantation. There are multiple registries which are part of the ecosystem like&#x20;
+Organ Registries play an important role to facilitate organ donation & transplantation. There are multiple registries which are part of the ecosystem like
 
 * Pledge Registry
 * Live Donor Registry (WIP)
@@ -22,7 +22,7 @@ Currently, organ registries are facilitated with the capability to issue verifia
 <figure><img src="../../../.gitbook/assets/image (9) (1).png" alt="" width="218"><figcaption></figcaption></figure>
 
 * Click on “Register” button
-* Redirects to the registration screen&#x20;
+* Redirects to the registration screen
 * Select the mode of identification and authenticates
 * Demographic details get auto populated
 * Select/Enter the organ details
@@ -49,7 +49,7 @@ Login using registered mobile number
 
 ## Revoke Pledge
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Login using registered mobile number
 * Click on Un pledge button
@@ -67,7 +67,6 @@ After Pledging Again, users can download the certificate.
 
 ##
 
-\
+\\
 
-
-\
+\\
