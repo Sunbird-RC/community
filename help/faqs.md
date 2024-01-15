@@ -227,9 +227,7 @@ Begin by configuring your [certificate API service](https://rc.sunbird.org/use/d
 
 _**Enable Signing in the Registry:**_
 
-In the second step, ensure that signing is enabled in the registry by setting the signature\_enabled parameter.
-
-Add credentialTemplates design in the schema to facilitate QR code creation, or Alternatively, you can enable external templates for the registry. This allows you to pass the template while fetching the QR code via API.
+The certificate template should have the handlebars parameter "\{{qrCode\}}" to render a qr code in the certificate. Additionally to know more about how to create a certificate template, please go through the : [https://rc.sunbird.org/use/developers-guide/schema-setup/schema-configuration#certificate-template](https://rc.sunbird.org/use/developers-guide/schema-setup/schema-configuration#certificate-template)
 
 _**Sample Template:**_
 
