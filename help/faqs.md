@@ -24,7 +24,7 @@ Two methods have been implemented in the underlying architecture to ensure the s
 
 **Can the credentials issued by Sunbird RC be in multiple languages?**
 
-Yes, Sunbird RC supports the issuance of credentials in multiple languages. Organizations/Countries can provide their citizens with credentials that are localized to their language of choice.&#x20;
+Yes, Sunbird RC supports the issuance of credentials in multiple languages. Organizations/Countries can provide their citizens with credentials that are localized to their language of choice.
 
 **Are the credentials issued by Sunbird RC usable offline?**
 
@@ -74,11 +74,9 @@ Sunbird RC welcomes contributions from the community. There are several ways in 
 
 **Contributing to the core registry:** If you have experience with software development, you can contribute to the core registry by submitting bug fixes, code improvements, or new features. You can do this by submitting a pull request on the Sunbird RC GitHub repository.
 
-**Contributing to the registry CLI**:  If you have experience with CLI development, you can [contribute to the registry CLI ](https://github.com/Sunbird-RC/sunbird-rc-core/blob/main/tools/cli/contributing.md)by submitting code improvements or new features.
+**Contributing to the registry CLI**: If you have experience with CLI development, you can [contribute to the registry CLI ](https://github.com/Sunbird-RC/sunbird-rc-core/blob/main/tools/cli/contributing.md)by submitting code improvements or new features.
 
 **Improving documentation:** Another way to contribute to Sunbird RC is by improving the documentation. This can include updating existing documentation, adding new sections, or improving the clarity and accuracy of the documentation.
-
-
 
 ## Registry
 
@@ -94,33 +92,33 @@ Yes, this can be done through scripts that allow bulk import of the source data 
 
 Yes, since Sunbird RC supports defining a registry schema using a JSON Schema format, the properties can be defined with validations like mentioned here: https://json-schema.org/draft/2019-09/json-schema-validation.html#:\~:text=JSON%20Schema%20validation%20asserts%20constraints,descriptive%20metadata%20and%20usage%20hints.
 
-#### Is there a facility to easily create a form for inputting data into registry followed by approval process?&#x20;
+#### Is there a facility to easily create a form for inputting data into registry followed by approval process?
 
 Yes, the Sunbird RC UI supports the generation of dynamic forms, based on the schema created; as well as support creating “approval” workflows to aid the attestation & subsequent persistence of the “data” into the registry.
 
-#### Can schema be re-defined (i.e., adding some extra data fields or removing certain fields)? If Yes, how versioning is managed and what happens to existing requests with old schema.&#x20;
+#### Can schema be re-defined (i.e., adding some extra data fields or removing certain fields)? If Yes, how versioning is managed and what happens to existing requests with old schema.
 
-No, it doesn't support versioning now. This needs to be handled manually outside Sunbird RC 2.&#x20;
+No, it doesn't support versioning now. This needs to be handled manually outside Sunbird RC 2.
 
-#### Can validations be defined at field level, at the database level and also at the user interface level?&#x20;
+#### Can validations be defined at field level, at the database level and also at the user interface level?
 
 Yes, field and user interface level validations can be defined.
 
-#### Does bulk upload of facilities create schema automatically, if yes all that one can do while creating schema be achieved through bulk upload also?&#x20;
+#### Does bulk upload of facilities create schema automatically, if yes all that one can do while creating schema be achieved through bulk upload also?
 
 The schema needs to be created first, before seeding the data to the registry
 
 **What databases can be used for Registry?**
 
-The registry requires a main DB that is used as the main store for storing all data. The following DB providers can be used:&#x20;
+The registry requires a main DB that is used as the main store for storing all data. The following DB providers can be used:
 
-* Graph database (Neo4J)&#x20;
-* Relational databases (Postgresql, HSQLDB, H2, MariaDB, MySQL, MSSQLServer)&#x20;
+* Graph database (Neo4J)
+* Relational databases (Postgresql, HSQLDB, H2, MariaDB, MySQL, MSSQLServer)
 * NoSQL databases (Cassandra)
 
 #### **The registry is throwing unauthorized issues (401) on retrieving entity. The registry throws "getaddrinfo ENOTFOUND keycloak" error.**
 
-In dev/local setup, it is required that keycloak hostname is added to '/etc/hosts' file.&#x20;
+In dev/local setup, it is required that keycloak hostname is added to '/etc/hosts' file.
 
 ```bash
 vi /etc/hosts
@@ -137,25 +135,25 @@ API documentation for generating the token is available here, [authenticating-as
 If the above steps did not resolve the problem, please follow the next steps provided.
 
 1. Goto the registry container / docker-compose and identify the value set for `sunbird_sso_url` . Copy the value for further user.
-2. Goto keycloak admin console and select the realm Ex:`sunbird rc (if no new realm was created)` and goto `Realm Settings`&#x20;
+2. Goto keycloak admin console and select the realm Ex:`sunbird rc (if no new realm was created)` and goto `Realm Settings`
 3. Paste the value copied in `Frontend URL` text box
 4. Click on `Save`
-5. If your url is not secure / doesn't have a  SSL, goto `login` tab, select `none` for `Require SSL` and click on `Save`
+5. If your url is not secure / doesn't have a SSL, goto `login` tab, select `none` for `Require SSL` and click on `Save`
 6. Restart the registry
 
 ## Ownership
 
-#### Can citizens be allowed to login into the registry to view and suggest updation to his registry entry?&#x20;
+#### Can citizens be allowed to login into the registry to view and suggest updation to his registry entry?
 
 Yes, Sunbird-RC supports “user login” and also ownership management for a schema. Hence if the registry needs to have “citizen” access; it can be enabled. Just a point to reiterate, the purpose of a registry can be non-individual centric as well (in which case, the authorized “user”, can be institutional staff roles as well).
 
-**Can we we use  single sign on? or use any other authentication?**
+**Can we we use single sign on? or use any other authentication?**
 
 Currently, Sunbird works on Keycloak OAuth. However, we can write a custom service to authenticate the user, with other authentication methods.
 
 ## Consent
 
-#### Is consent given individually or can be given to a group of individuals or entities**?**
+#### Is consent given individually or can be given to a group of individuals or entities\*\*?\*\*
 
 Currently, consent is given by an individual to the entities that he/she has ownership of (i.e. to the entities which were created by him/her). Consent can be given to one or more attributes that are part of the schema.
 
@@ -171,18 +169,18 @@ Yes, attestation can be done with an external system. We need to write the funct
 
 ## **Postgres**
 
-#### For what all purpose Postgres is used**?**
+#### For what all purpose Postgres is used\*\*?\*\*
 
-We have three services that uses Postgres**.**
+We have three services that uses Postgres\*\*.\*\*
 
 1. Keycloak: Data related to user management, client management, realm management, consent etc will be stored
-2. Registry core: All data created under the schemas will be stored.&#x20;
-3. Claims: All data related to attestation flows(claims) will be stored.&#x20;
+2. Registry core: All data created under the schemas will be stored.
+3. Claims: All data related to attestation flows(claims) will be stored.
 
-Sunbird RC can work on the below DBs:&#x20;
+Sunbird RC can work on the below DBs:
 
-1. Graph database (Neo4J)&#x20;
-2. Relational databases (Postgresql, HSQLDB, H2, MariaDB, MySQL, MSSQLServer)&#x20;
+1. Graph database (Neo4J)
+2. Relational databases (Postgresql, HSQLDB, H2, MariaDB, MySQL, MSSQLServer)
 3. NoSQL databases (Cassandra)
 
 ## Keycloak
@@ -192,9 +190,9 @@ Sunbird RC can work on the below DBs:&#x20;
 You can check the following registry cli [https://docs.sunbirdrc.dev/developer-documentation/installation-guide.](https://docs.sunbirdrc.dev/developer-documentation/installation-guide.) All the prerequisites are mentioned here. Using this cli you will be able to bring up all the services required.\
 The following keycloak configurations need to be configured in SB-RC.
 
-&#x20;[https://github.com/Sunbird-RC/sunbird-rc-core/blob/main/docker-compose.yml#L36-L40](https://github.com/Sunbird-RC/sunbird-rc-core/blob/main/docker-compose.yml#L36-L40)
+[https://github.com/Sunbird-RC/sunbird-rc-core/blob/main/docker-compose.yml#L36-L40](https://github.com/Sunbird-RC/sunbird-rc-core/blob/main/docker-compose.yml#L36-L40)
 
-#### **How to enable password based login in keycloak instead of otp based login?**&#x20;
+#### **How to enable password based login in keycloak instead of otp based login?**
 
 Currently, we have added custom SPI and themes to support otp based login in keycloak. If your usecase requires password based login, then the below changes need to be done in keycloak.\
 **Changing the theme**\
@@ -216,15 +214,27 @@ In the registry, while creating/inviting an entity it throws/returns an error me
 2. Login admin credentials
 3. Goto `clients` tab in configure section on the left
 4. Click on `admin-api` client and goto `Service Account Roles` tab
-5. In `Client roles` drop-down, select `realm-management`&#x20;
+5. In `Client roles` drop-down, select `realm-management`
 6. Make sure `manage-realm` is present `Assigned Roles` section
 7. If not select `manage-realm` from `Available Roles` section and click on `Add selected`
 8. Restart the registry service
 
+#### How can I create QR codes using VC in Sunbird?
 
+_**Configure Certificate API Service:**_
+
+Begin by configuring your [certificate API service](https://rc.sunbird.org/use/developers-guide/configuration#certificate-api-service).&#x20;
+
+_**Enable Signing in the Registry:**_
+
+The certificate template should have the handlebars parameter "\{{qrCode\}}" to render a qr code in the certificate. Additionally to know more about how to create a certificate template, please go through the : [https://rc.sunbird.org/use/developers-guide/schema-setup/schema-configuration#certificate-template](https://rc.sunbird.org/use/developers-guide/schema-setup/schema-configuration#certificate-template)
+
+_**Sample Template:**_
+
+Explore a sample template [here](https://raw.githubusercontent.com/dileepbapat/ref-sunbirdrc-certificate/main/schemas/templates/TrainingCertificate.svg).
 
 ## Frontend
 
 **How to resolve CORS errors on local development environment?**
 
-Please Refer  to the link for the solution: [https://github.com/Sunbird-RC/sunbird-rc-ui/edit/main/README.md#faqs](https://github.com/Sunbird-RC/sunbird-rc-ui/edit/main/README.md#faqs)
+Please Refer to the link for the solution: [https://github.com/Sunbird-RC/sunbird-rc-ui/edit/main/README.md#faqs](https://github.com/Sunbird-RC/sunbird-rc-ui/edit/main/README.md#faqs)
