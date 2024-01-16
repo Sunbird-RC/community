@@ -141,6 +141,14 @@ If the above steps did not resolve the problem, please follow the next steps pro
 5. If your url is not secure / doesn't have a SSL, goto `login` tab, select `none` for `Require SSL` and click on `Save`
 6. Restart the registry
 
+#### How can I create QR codes using VC in Sunbird RC?
+
+* Firstly [certificate API service](../developer-documentation/configuration.md#certificate-api-service) should be configured to generate certificates.
+* The certificate template should have the handlebars parameter `{{qrCode}}` to render a QR code in the certificate.
+* Explore a sample template here - [svg](https://github.com/Sunbird-RC/demo-certificate-issuance/blob/main/sample.svg?short\_path=bd1d135) , [html](https://raw.githubusercontent.com/Sunbird-RC/demo-certificate-issuance/main/samples/TrainingCertificate.html)
+
+_Additionally to know more about how to create a certificate template, please go through the documentation_ [_developers-guide/schema-setup/schema-configuration#certificate-template_](../use/schema-configuration.md#certificate-template)
+
 ## Ownership
 
 #### Can citizens be allowed to login into the registry to view and suggest updation to his registry entry?
@@ -219,19 +227,7 @@ In the registry, while creating/inviting an entity it throws/returns an error me
 7. If not select `manage-realm` from `Available Roles` section and click on `Add selected`
 8. Restart the registry service
 
-#### How can I create QR codes using VC in Sunbird?
 
-_**Configure Certificate API Service:**_
-
-Begin by configuring your [certificate API service](https://rc.sunbird.org/use/developers-guide/configuration#certificate-api-service).&#x20;
-
-_**Enable Signing in the Registry:**_
-
-The certificate template should have the handlebars parameter "\{{qrCode\}}" to render a qr code in the certificate. Additionally to know more about how to create a certificate template, please go through the : [https://rc.sunbird.org/use/developers-guide/schema-setup/schema-configuration#certificate-template](https://rc.sunbird.org/use/developers-guide/schema-setup/schema-configuration#certificate-template)
-
-_**Sample Template:**_
-
-Explore a sample template [here](https://raw.githubusercontent.com/dileepbapat/ref-sunbirdrc-certificate/main/schemas/templates/TrainingCertificate.svg).
 
 ## Frontend
 
