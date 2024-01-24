@@ -195,3 +195,4 @@
     * [Design Principles](community/comprehensive-overview-electronic-registries-and-verifiable-credentials/electronic-registries/design-principles.md)
     * [Use Cases](community/comprehensive-overview-electronic-registries-and-verifiable-credentials/electronic-registries/use-cases.md)
   * [Leveraging Existing data stores](use/leveraging-existing-data-stores-directories.md)
+* [External Open Source Software Attributions](help/external-open-source-software-attributions.md)
