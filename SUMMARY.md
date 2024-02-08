@@ -1,8 +1,10 @@
 # Table of contents
 
+* [We have moved](README.md)
+
 ## Learn
 
-* [Introduction](README.md)
+* [Introduction](<README (1).md>)
 * [Sunbird RC Overview](learn/readme/README.md)
   * [Why do we need Sunbird RC?](learn/readme/why-do-we-need-sunbird-rc.md)
   * [Core Capabilities](learn/readme/core-capabilities.md)
@@ -10,7 +12,6 @@
   * [Workflows](learn/readme/workflows.md)
   * [What Sunbird RC is and what it's not? (WIP)](learn/readme/what-sunbird-rc-is-and-what-its-not-wip.md)
   * [Possibilities](learn/readme-1/possibilities.md)
-  * [Demo Links](learn/readme-1/demo-links.md)
 * [Technical Overview](learn/technical-overview/README.md)
   * [High level architecture](learn/technical-overview/high-level-architecture.md)
   * [Technical Specification Draft](learn/technical-overview/technical-specification-draft.md)
@@ -59,8 +60,6 @@
   * [SSO with existing systems](use/sso-with-existing-systems/README.md)
   * [Digilocker Meripehchaan SSO](use/sso-with-existing-systems/digilocker-meripehchaan-sso.md)
   * [Digilocker Integration](developer-documentation/digilocker-integration.md)
-* [Release Notes](use/latest-release-v1.0.0/README.md)
-  * [Latest Release - v1.0.0](use/latest-release-v1.0.0/release-notes.md)
 
 ## API Reference
 
@@ -109,6 +108,8 @@
   * [Verify API](api-reference/other-apis/verify-api.md)
   * [Swagger JSON API](api-reference/other-apis/swagger-json-api.md)
   * [Health API](api-reference/other-apis/health-api.md)
+* [Latest Release - v1.0.0](api-reference/latest-release-v1.0.0/README.md)
+  * [Release Notes](api-reference/latest-release-v1.0.0/release-notes.md)
 
 ## Reference Solutions
 
@@ -130,7 +131,6 @@
     * [Frontend Setup](reference-solutions/health-registries/organ-registries/frontend-setup.md)
     * [Backend Setup](reference-solutions/health-registries/organ-registries/backend-setup.md)
     * [User Guide](reference-solutions/health-registries/organ-registries/user-guide.md)
-  * [Health Facility Registry](reference-solutions/health-registries/health-facility-registry.md)
 * [Vaccination Platform](sample-use-cases/vaccination.md)
 * [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform.md)
 * [Govt to Person (G2P)](reference-solutions/govt-to-person-g2p.md)
@@ -195,4 +195,3 @@
     * [Design Principles](community/comprehensive-overview-electronic-registries-and-verifiable-credentials/electronic-registries/design-principles.md)
     * [Use Cases](community/comprehensive-overview-electronic-registries-and-verifiable-credentials/electronic-registries/use-cases.md)
   * [Leveraging Existing data stores](use/leveraging-existing-data-stores-directories.md)
-* [External Open Source Software Attributions](help/external-open-source-software-attributions.md)
