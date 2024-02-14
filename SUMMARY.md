@@ -61,6 +61,16 @@
   * [Digilocker Integration](developer-documentation/digilocker-integration.md)
 * [Release Notes](use/latest-release-v1.0.0/README.md)
   * [Latest Release - v1.0.0](use/latest-release-v1.0.0/release-notes.md)
+* [Admin Portal](use/admin-portal/README.md)
+  * [Login](use/admin-portal/login.md)
+  * [Get Started](use/admin-portal/get-started/README.md)
+    * [Create Schema](use/admin-portal/get-started/create-schema.md)
+    * [Attestation Workflows (WIP)](use/admin-portal/get-started/attestation-workflows-wip.md)
+    * [VC Template](use/admin-portal/get-started/vc-template/README.md)
+      * [Custom VC Template (WIP)](use/admin-portal/get-started/vc-template/verifiable-credential-template-wip.md)
+    * [Ownership (WIP)](use/admin-portal/get-started/ownership-wip.md)
+    * [Publish (WIP)](use/admin-portal/get-started/publish-wip.md)
+  * [Dashboard](use/admin-portal/dashboard.md)
 
 ## API Reference
 
@@ -124,16 +134,6 @@
     * [User Guide](reference-solutions-for-functional-registries/health-registries/organ-registries/user-guide.md)
   * [Health Facility Registry](reference-solutions-for-functional-registries/health-registries/health-facility-registry.md)
 * [Govt to Person (G2P)](reference-solutions-for-functional-registries/govt-to-person-g2p.md)
-* [Admin Portal](reference-solutions-for-functional-registries/admin-portal/README.md)
-  * [Login](reference-solutions-for-functional-registries/admin-portal/login.md)
-  * [Get Started](reference-solutions-for-functional-registries/admin-portal/get-started/README.md)
-    * [Create Schema](reference-solutions-for-functional-registries/admin-portal/get-started/create-schema.md)
-    * [Attestation Workflows (WIP)](reference-solutions-for-functional-registries/admin-portal/get-started/attestation-workflows-wip.md)
-    * [VC Template](reference-solutions-for-functional-registries/admin-portal/get-started/vc-template/README.md)
-      * [Custom VC Template (WIP)](reference-solutions-for-functional-registries/admin-portal/get-started/vc-template/verifiable-credential-template-wip.md)
-    * [Ownership (WIP)](reference-solutions-for-functional-registries/admin-portal/get-started/ownership-wip.md)
-    * [Publish (WIP)](reference-solutions-for-functional-registries/admin-portal/get-started/publish-wip.md)
-  * [Dashboard](reference-solutions-for-functional-registries/admin-portal/dashboard.md)
 
 ## Reference Solution for Digital Credentials
 
