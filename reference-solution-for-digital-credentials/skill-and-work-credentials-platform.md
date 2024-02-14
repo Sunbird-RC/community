@@ -19,8 +19,6 @@ Currently we have have envisaged providing the following type of credentials
 * **Attndee / Student**
 * **Industry Admins**
 
-
-
 **The following Demo Scenario has been developed.**
 
 ACT #1 Pulse Skilling Center in Nashik registers with the National Skill Registry Platform
@@ -59,6 +57,4 @@ The source code to install this example can be found at [https://github.com/Sunb
 
 [https://github.com/orgs/Sunbird-RC/projects/7](https://github.com/orgs/Sunbird-RC/projects/7)
 
-## Demo/Sandbox site link
-
-Usecase implementation can be found here at [https://skills.xiv.in/](https://skills.xiv.in/)
+##

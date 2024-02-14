@@ -49,7 +49,7 @@ Login using registered mobile number
 
 ## Revoke Pledge
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Login using registered mobile number
 * Click on Un pledge button

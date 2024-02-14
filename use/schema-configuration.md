@@ -391,3 +391,27 @@ Following is an example of the notification templates
     }
 }
 ```
+
+### UniqueIdentifierFields
+
+If you want to auto generate some fields with specific format, you can generate those using this configuration in schema. each configuration of generatable field has 3 properties `field`, `idName`, `format` . Where field value should be path to the schema property you want to auto generate, idName is name with which you want to store the format, format is blueprint in which you want ids to be generated.\
+Following is an example of uniqueIdentifierFields configuration
+
+```
+"_osConfig": {
+  ...
+  "uniqueIdentifierFields": [
+    {
+      "field": "/studentId",
+      "idName": "student.id",
+      "format": "ABN-[d{6}]"
+    },
+    {
+      "field": "/classDetails/rollNumber",
+      "idName": "class.details.roll.number",
+      "format": "STD[SEQ_ROLLNUMBER]"
+    }
+  ],
+  ...
+}
+```
