@@ -78,10 +78,10 @@ OperationType here can be ADD, UPDATE, DELETE, READ
 
 Data of the entity will be masked using the configuration defined in the schema.
 
-You can check the configuration for masking in [schema configuration](../use/schema-configuration.md).
+You can check the configuration for masking in [schema configuration](schema-setup/schema-configuration.md).
 
-1. InternalFields [here](../use/schema-configuration.md#internalfieldconfig)
-2. PrivateFields [here](../use/schema-configuration.md#privatefieldconfig)
+1. InternalFields [here](schema-setup/schema-configuration.md#internalfieldconfig)
+2. PrivateFields [here](schema-setup/schema-configuration.md#privatefieldconfig)
 
 **Metrics Service**
 
@@ -102,8 +102,8 @@ For every distinct type of schema, the service creates a new table and stores th
 
 Metric Service also exposes two APIs
 
-* The service also exposes an API which returns the count of all the events emitted. It retrieves the data from all the tables created. ([API Spec](../api-reference/metrics-apis/get-count.md))
-* The service also exposes another API which returns aggregates on all the tables created. The cron job will run and save the result in a Redis. This can be fetched through the API. ([API Spec](../api-reference/metrics-apis/get-aggregates.md))\
+* The service also exposes an API which returns the count of all the events emitted. It retrieves the data from all the tables created. ([API Spec](../../../api-reference/metrics-apis/get-count.md))
+* The service also exposes another API which returns aggregates on all the tables created. The cron job will run and save the result in a Redis. This can be fetched through the API. ([API Spec](../../../api-reference/metrics-apis/get-aggregates.md))\
   To configure Metrics Service for aggregates, the following configurations need to be setup for Metrics micro-service\
   \
   **CRON\_ENABLE** :- Boolean value which will tell metrics service to run cron job if the value is set to true\
@@ -114,7 +114,7 @@ Metric Service also exposes two APIs
 
 Based on this, the cron job will run at the scheduled time and the results will be stored in redis. The aggregates API will then return back this results.
 
-The Configuration for Metric Service can be found [here](configuration.md#metrics-service)
+The Configuration for Metric Service can be found [here](configuration/#metrics-service)
 
 ### - File Based
 
@@ -122,6 +122,6 @@ The events emitted by the registry are logged into a log file which is present a
 
 Following is a pictorial representation of the current approach
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-06-15 at 3.58.29 PM.png" alt=""><figcaption><p>Interaction Diagram for Events Thrown and Metric Consuming Events</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-06-15 at 3.58.29 PM.png" alt=""><figcaption><p>Interaction Diagram for Events Thrown and Metric Consuming Events</p></figcaption></figure>
 
 The discussion for all of these features can be found here, [https://github.com/orgs/Sunbird-RC/discussions/356](https://github.com/orgs/Sunbird-RC/discussions/356)

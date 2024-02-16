@@ -117,7 +117,7 @@ Configs ->
 | UNPLEDGE\_TEMPLATE\_ID           | Template ID for Sms to be sent out to donor when the donor has successfully unpledged                                                               |
 | LOG\_LEVEL                       | Log level like info which will only print that logs                                                                                                 |
 
-2.  **Certificate signer ->** [certificate-signer](../../../learn/technical-overview/high-level-architecture.md#certificate-signer)
+2.  **Certificate signer ->** [certificate-signer](../../../learn/technical-overview/registry/high-level-architecture.md#certificate-signer)
 
     Code ->
 
@@ -132,7 +132,7 @@ Configs ->
     You can place your signing keys in the document in the path
 
     demo-donor-registry/imports/config.json. Based on the issuer’s name, the key will be picked in order to create signed credentials. Sample for the keys is as follows for scholarship as a issuer
-3.  **Notification service ->** [notification-ms](../../../learn/technical-overview/high-level-architecture.md#notification-ms)
+3.  **Notification service ->** [notification-ms](../../../learn/technical-overview/registry/high-level-architecture.md#notification-ms)
 
     Technical ->
 
@@ -143,7 +143,7 @@ Configs ->
     Configs ->
 
     [https://docs.sunbirdrc.dev/developer-documentation/configuration#notification-service](https://docs.sunbirdrc.dev/developer-documentation/configuration#notification-service)
-4.  **Certificate/Presentation service ->** [certificate-api](../../../learn/technical-overview/high-level-architecture.md#certificate-api)
+4.  **Certificate/Presentation service ->** [certificate-api](../../../learn/technical-overview/registry/high-level-architecture.md#certificate-api)
 
     Technical ->
 
@@ -178,9 +178,9 @@ Configs ->
 | SMPP\_USER\_NAME | SMS API Username                   |
 | SMS\_URL         | SMS URL of provider                |
 
-7. **Claims ->** [Claim Service](../../../learn/technical-overview/high-level-architecture.md#claim-ms)
-8. **Elastic Search ->** [Elastic Search](../../../learn/technical-overview/high-level-architecture.md#elastic-search)
-9. **MinIO ->** [File storage](../../../learn/technical-overview/high-level-architecture.md#file-storage-minio)
+7. **Claims ->** [Claim Service](../../../learn/technical-overview/registry/high-level-architecture.md#claim-ms)
+8. **Elastic Search ->** [Elastic Search](../../../learn/technical-overview/registry/high-level-architecture.md#elastic-search)
+9. **MinIO ->** [File storage](../../../learn/technical-overview/registry/high-level-architecture.md#file-storage-minio)
 10. **Verification Service**
 
 Verification of credential refers to verifying the authenticity of the credential that the actor possesses. When a credential is issued, it is signed via issuers private key. This can then be verified by an issuer's public key which is made available to whoever is trying to verify the credentials. This is taken care by certificate-signer service. Certificate signer service provides an API which takes signed Credentials as input. From the issuer name, it fetches the public key of the issuer. Using this public key, the verifier verifies the authenticity of the credential.

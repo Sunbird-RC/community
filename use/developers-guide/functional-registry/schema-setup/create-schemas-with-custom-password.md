@@ -4,7 +4,7 @@ This page demonstrates how to configure the schemas to allow entities to set the
 
 ## Configuring A Schema
 
-We can create a schema in the registry using the [Schema API Endpoint](../api-reference/schema/create-schema.md) and using JSON schema files as well
+We can create a schema in the registry using the [Schema API Endpoint](../../../../api-reference/schema/create-schema.md) and using JSON schema files as well
 
 Here we are creating a `Student` schema, we would configure as following
 
@@ -49,7 +49,7 @@ Here we are creating a `Student` schema, we would configure as following
 
 ```
 
-This will configure the entity to create a password while creating the entity object. Here ownership attribute password is required, Its value can be any path in the Student object we decide. If we don't set the password ownership attribute, It will take the default password [configured in the registry environment](configuration.md).
+This will configure the entity to create a password while creating the entity object. Here ownership attribute password is required, Its value can be any path in the Student object we decide. If we don't set the password ownership attribute, It will take the default password [configured in the registry environment](../configuration/).
 
 **Note: \_Password will only be used while creation of the Student object and Updating password using update entity API Endpoint is not supported.**\_
 
@@ -57,7 +57,7 @@ This will configure the entity to create a password while creating the entity ob
 
 ## Inviting An Entity
 
-We can create entities in the registry using the [Invite Entity API Endpoint](broken-reference/).
+We can create entities in the registry using the [Invite Entity API Endpoint](../../../../developer-documentation/broken-reference/).
 
 To create a `Student` entity named Pranav Agate, we would make the following API call:
 
@@ -158,7 +158,7 @@ This API call should return a JSON object as follows:
 
 ## Retrieving An Entity
 
-We can retrieve entities in the registry using the [Retrieve Entity API Endpoint](broken-reference/).
+We can retrieve entities in the registry using the [Retrieve Entity API Endpoint](../../../../developer-documentation/broken-reference/).
 
 So to retrieve the entity we created earlier, we would make the following request:
 

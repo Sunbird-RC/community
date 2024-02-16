@@ -143,11 +143,11 @@ If the above steps did not resolve the problem, please follow the next steps pro
 
 #### How can I create QR codes using VC in Sunbird RC?
 
-* Firstly [certificate API service](../developer-documentation/configuration.md#certificate-api-service) should be configured to generate certificates.
+* Firstly [certificate API service](../use/developers-guide/functional-registry/configuration/#certificate-api-service) should be configured to generate certificates.
 * The certificate template should have the handlebars parameter `{{qrCode}}` to render a QR code in the certificate.
 * Explore a sample template here - [svg](https://github.com/Sunbird-RC/demo-certificate-issuance/blob/main/sample.svg?short\_path=bd1d135) , [html](https://raw.githubusercontent.com/Sunbird-RC/demo-certificate-issuance/main/samples/TrainingCertificate.html)
 
-_Additionally to know more about how to create a certificate template, please go through the documentation_ [_developers-guide/schema-setup/schema-configuration#certificate-template_](../use/schema-configuration.md#certificate-template)
+_Additionally to know more about how to create a certificate template, please go through the documentation_ [_developers-guide/schema-setup/schema-configuration#certificate-template_](../use/developers-guide/functional-registry/schema-setup/schema-configuration.md#certificate-template)
 
 ## Ownership
 
@@ -226,8 +226,6 @@ In the registry, while creating/inviting an entity it throws/returns an error me
 6. Make sure `manage-realm` is present `Assigned Roles` section
 7. If not select `manage-realm` from `Available Roles` section and click on `Add selected`
 8. Restart the registry service
-
-
 
 ## Frontend
 

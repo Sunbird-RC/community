@@ -1,7 +1,10 @@
-# Tech Overview
+# Technical Overview
 
-Here are the articles in this section:
+Sunbird-RC has two core components.&#x20;
+
+* Registry
+* Credentialling
 
 
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td>High Level Architecture</td><td></td><td><a href="high-level-architecture.md">high-level-architecture.md</a></td></tr><tr><td></td><td>Technical Specification Draft</td><td></td><td><a href="technical-specification-draft.md">technical-specification-draft.md</a></td></tr><tr><td></td><td>Tech Stack and requirements</td><td></td><td><a href="infrastructure-requirements.md">infrastructure-requirements.md</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards" data-full-width="false"><thead><tr><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center">Registry</td><td><a href="registry/">registry</a></td></tr><tr><td align="center">Credentialling</td><td><a href="credentialling/">credentialling</a></td></tr></tbody></table>

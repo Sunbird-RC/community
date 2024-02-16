@@ -48,7 +48,7 @@ SunbirdRC requires an IAM platform for mainly two purposes.
 
 Currently, one needs to write a custom implementation to support creating users in the respective IAM platforms. SunbirdRC provided two ways to configure it:
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 ### **1. Sub module in Sunbird RC**
 

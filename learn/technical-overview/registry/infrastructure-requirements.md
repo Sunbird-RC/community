@@ -2,14 +2,13 @@
 
 ## Architecture Diagram
 
-<figure><img src="../../.gitbook/assets/Artboard 5 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Artboard 5 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Tech Stack
 
 | Software/Language | Recommended | Minimum Version |
 | ----------------- | ----------- | --------------- |
 | Java              | 1.8         | 1.8             |
-| Node JS           | v18.12.1    | v18.12.1        |
 | Go Lang           | 1.15        | 1.15            |
 | Linux / Docker    | any         | any             |
 | Postgre sql       | latest      | v8              |
@@ -36,8 +35,8 @@ For development, a single VM with docker will work.
 
 The steps to setup the development environment is available here.
 
-{% content-ref url="../../developer-documentation/installation-guide.md" %}
-[installation-guide.md](../../developer-documentation/installation-guide.md)
+{% content-ref url="../../../use/developers-guide/functional-registry/installation-guide/" %}
+[installation-guide](../../../use/developers-guide/functional-registry/installation-guide/)
 {% endcontent-ref %}
 
 For production, Kubernetes is recommended.
