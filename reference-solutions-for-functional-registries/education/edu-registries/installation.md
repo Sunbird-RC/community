@@ -2,7 +2,7 @@
 
 ### **Pre-requisites**
 
-It is required to have followed all the steps mentioned in the [installation guide](../../use/developers-guide/functional-registry/installation-guide/)
+It is required to have followed all the steps mentioned in the [installation guide](../../../use/developers-guide/functional-registry/installation-guide/)
 
 ### Configure Schemas
 
