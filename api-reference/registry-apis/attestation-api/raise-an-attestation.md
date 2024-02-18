@@ -9,7 +9,7 @@
 Set to `application/json`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="authorization" %}
+{% swagger-parameter in="header" name="authorization" required="false" %}
 Set to `Bearer {access-token}` if roles in schema of which attestation is to raised does not contain `anonymous` else token can be empty
 {% endswagger-parameter %}
 
@@ -53,7 +53,7 @@ Sample Request Body
 
 \
 \
-If you retrieve the entity by the [Retrieve Entity API Endpoint](broken-reference), you can see the `id` field in `osid`
+If you retrieve the entity by the [Retrieve Entity API Endpoint](../../attestation-api/broken-reference/), you can see the `id` field in `osid`
 
 ### Usage
 

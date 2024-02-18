@@ -102,8 +102,8 @@ For every distinct type of schema, the service creates a new table and stores th
 
 Metric Service also exposes two APIs
 
-* The service also exposes an API which returns the count of all the events emitted. It retrieves the data from all the tables created. ([API Spec](../../../api-reference/metrics-apis/get-count.md))
-* The service also exposes another API which returns aggregates on all the tables created. The cron job will run and save the result in a Redis. This can be fetched through the API. ([API Spec](../../../api-reference/metrics-apis/get-aggregates.md))\
+* The service also exposes an API which returns the count of all the events emitted. It retrieves the data from all the tables created. ([API Spec](../../../api-reference/registry-apis/metrics-apis/get-count.md))
+* The service also exposes another API which returns aggregates on all the tables created. The cron job will run and save the result in a Redis. This can be fetched through the API. ([API Spec](../../../api-reference/registry-apis/metrics-apis/get-aggregates.md))\
   To configure Metrics Service for aggregates, the following configurations need to be setup for Metrics micro-service\
   \
   **CRON\_ENABLE** :- Boolean value which will tell metrics service to run cron job if the value is set to true\

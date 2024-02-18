@@ -130,7 +130,7 @@ vi /etc/hosts
 
 Use \`[http://keycloak:8080/auth/realms/sunbird-rc/protocol/openid-connect/token](http://keycloak:8080/auth/realms/sunbird-rc/protocol/openid-connect/token)\` url to fetch the token
 
-API documentation for generating the token is available here, [authenticating-as-an-entity.md](../api-reference/registry/authenticating-as-an-entity.md "mention") [generate-admin-token.md](../api-reference/registry/generate-admin-token.md "mention")
+API documentation for generating the token is available here, [authenticating-as-an-entity.md](../api-reference/registry-apis/registry/authenticating-as-an-entity.md "mention") [generate-admin-token.md](../api-reference/registry-apis/registry/generate-admin-token.md "mention")
 
 If the above steps did not resolve the problem, please follow the next steps provided.
 

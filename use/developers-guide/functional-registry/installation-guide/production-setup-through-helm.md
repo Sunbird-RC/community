@@ -41,8 +41,8 @@ The above optional services are not mandatory for SunbirdRC services. It can be 
 #### Clone the repo
 
 ```bash
-git clone https://github.com/Sunbird-RC/sunbird-rc-core.git
-cd infra
+git clone https://github.com/Sunbird-RC/devops.git
+cd deploy-as-code/helm/v1
 ```
 
 #### Pre-check

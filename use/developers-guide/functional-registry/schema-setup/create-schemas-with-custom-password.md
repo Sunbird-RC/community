@@ -4,7 +4,7 @@ This page demonstrates how to configure the schemas to allow entities to set the
 
 ## Configuring A Schema
 
-We can create a schema in the registry using the [Schema API Endpoint](../../../../api-reference/schema/create-schema.md) and using JSON schema files as well
+We can create a schema in the registry using the [Schema API Endpoint](../../../../api-reference/registry-apis/schema/create-schema.md) and using JSON schema files as well
 
 Here we are creating a `Student` schema, we would configure as following
 
