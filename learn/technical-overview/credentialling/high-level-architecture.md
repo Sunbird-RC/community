@@ -6,9 +6,11 @@ dSunbird-RC's credentialling service is an amalgamation of three microservices.
 * **Credential Schema Microservice:** This service stores the schema of the Verifiable Credential along with the associated view template.
 * **Credential Issuance Microservice:** This is the core issuance service. This service is called with the payload, which is then transformed into a W3C-compliant Verifiable Credential in JSON-LD format.  The payload is then signed using the private key which was generated as part of the original Issuer creation.&#x20;
 
-### Architecture Diagram
+### High level component Diagram
 
 
+
+<figure><img src="../../../.gitbook/assets/credentialling.drawio.png" alt=""><figcaption></figcaption></figure>
 
 ### How it works
 
