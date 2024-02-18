@@ -78,6 +78,16 @@
 * [Release Notes](use/latest-release-v1.0.0/README.md)
   * [Registry](use/latest-release-v1.0.0/release-notes.md)
   * [Credentialling](use/latest-release-v1.0.0/credentialling.md)
+* [Admin Portal](use/admin-portal/README.md)
+  * [Login](use/admin-portal/login.md)
+  * [Get Started](use/admin-portal/get-started/README.md)
+    * [Create Schema](use/admin-portal/get-started/create-schema.md)
+    * [Attestation Workflows (WIP)](use/admin-portal/get-started/attestation-workflows-wip.md)
+    * [VC Template](use/admin-portal/get-started/vc-template/README.md)
+      * [Custom VC Template (WIP)](use/admin-portal/get-started/vc-template/verifiable-credential-template-wip.md)
+    * [Ownership (WIP)](use/admin-portal/get-started/ownership-wip.md)
+    * [Publish (WIP)](use/admin-portal/get-started/publish-wip.md)
+  * [Dashboard](use/admin-portal/dashboard.md)
 
 ## API Reference
 
@@ -163,16 +173,6 @@
     * [Frontend Setup](reference-solutions-for-digital-credentials/unified-learners-passport-ulp/installation-guide-wip/frontend-setup.md)
     * [Installation through docker-compose](reference-solutions-for-digital-credentials/unified-learners-passport-ulp/installation-guide-wip/installation-through-docker-compose.md)
     * [Dummy records setup for refrence](reference-solutions-for-digital-credentials/unified-learners-passport-ulp/installation-guide-wip/dummy-records-setup-for-refrence.md)
-* [Admin Portal](reference-solutions-for-digital-credentials/admin-portal/README.md)
-  * [Login](reference-solutions-for-digital-credentials/admin-portal/login.md)
-  * [Get Started](reference-solutions-for-digital-credentials/admin-portal/get-started/README.md)
-    * [Create Schema](reference-solutions-for-digital-credentials/admin-portal/get-started/create-schema.md)
-    * [Attestation Workflows (WIP)](reference-solutions-for-digital-credentials/admin-portal/get-started/attestation-workflows-wip.md)
-    * [VC Template](reference-solutions-for-digital-credentials/admin-portal/get-started/vc-template/README.md)
-      * [Custom VC Template (WIP)](reference-solutions-for-digital-credentials/admin-portal/get-started/vc-template/verifiable-credential-template-wip.md)
-    * [Ownership (WIP)](reference-solutions-for-digital-credentials/admin-portal/get-started/ownership-wip.md)
-    * [Publish (WIP)](reference-solutions-for-digital-credentials/admin-portal/get-started/publish-wip.md)
-  * [Dashboard](reference-solutions-for-digital-credentials/admin-portal/dashboard.md)
 
 ## Links
 
