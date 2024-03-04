@@ -155,7 +155,7 @@
   * [Installation (WIP)](reference-solution-for-digital-credentials/elocker/installation-wip/README.md)
     * [Frontend Setup E-locker](reference-solution-for-digital-credentials/elocker/installation-wip/frontend-setup-e-locker.md)
   * [User Guide](reference-solution-for-digital-credentials/elocker/user-guide.md)
-* [Skills & Work Credentials](reference-solution-for-digital-credentials/skill-and-work-credentials-platform.md)
+* [Skills & Work Credentials](sample-use-cases/skill-and-work-credentials-platform.md)
 
 ## Links
 

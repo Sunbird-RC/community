@@ -6,6 +6,28 @@ You can get the latest code from the Sunbird RC UI Repository [https://github.co
 
 This is an Angular 8 project, and you need to install the dependencies, and run the project.
 
+### Steps to follow
+
+1. Make sure your back-end services are up and running
+2. **Keycloak Configuration changes**:&#x20;
+   * Once keycloak ([http://localhost:8080/auth/](http://localhost:8080/auth/)) is up and running. Login to keycloak using the default username (admin) and password (admin). Navigate to Realm settings and update the _**FrontendURL**_ attribute to - [http://localhost:4200/auth](http://localhost:4200/auth)
+   * Then navigate to `Clients -> registry-frontend` and make sure to update these fields/ attibutes as mentioned below&#x20;
+     1. &#x20;`Valid Redirect URIs` to [http://localhost:4200/\*](http://localhost:4200/\*)&#x20;
+     2. `Web Origins` to [http://localhost:4200](http://localhost:4200/\*)
+3. Clone the Sunbird RC UI Repository [https://github.com/Sunbird-RC/sunbird-rc-ui](https://github.com/Sunbird-RC/sunbird-rc-ui)
+4. First step is to create a `ui-config` file in the directory `sunbird-rc-ui/src/assets/config`. We have provided a **sample-ui-config** in the same directory as a reference.
+5. Sunbird-RC UI is a template that can be used to customise your UI application based on your use case. To do that you have to make changes in the UI-config and the angular application accordingly. You can refer Configuration section below to make the necessary changes based on your use case.
+6. Commands to run :
+
+```
+yarn
+
+npm start
+```
+
+7. If yarn is not available on you PC you can also use `npm install`.
+8. Once the project is up and running - you can access it at [http://localhost:4200](http://localhost:4200/).
+
 ### Configuration
 
 The application needs to be configured with the appropriate fields to be able to use it. Example configuration is provided in the `src/examples` folder.
