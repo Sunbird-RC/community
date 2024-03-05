@@ -41,4 +41,4 @@ Project link: [https://github.com/orgs/Sunbird-RC/projects/5](https://github.com
 
 ## Demo/Sandbox site link
 
-Use case implementation can be found here at [https://demo-education-registry.xiv.in/](https://demo-education-registry.xiv.in/)
+Use case implementation can be found here at [https://demo-education-registry.sunbirdrc.dev/](https://demo-education-registry.sunbirdrc.dev/)

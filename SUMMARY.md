@@ -144,7 +144,7 @@
     * [Installation](reference-solutions-for-functional-registries/education/education-ecosystem/installation.md)
   * [Education Registries](reference-solutions-for-functional-registries/education/edu-registries/README.md)
     * [Installation](reference-solutions-for-functional-registries/education/edu-registries/installation.md)
-* [User Guide](reference-solutions-for-functional-registries/user-guide.md)
+    * [User Guide](reference-solutions-for-functional-registries/education/edu-registries/user-guide.md)
 * [Health Registries](reference-solutions-for-functional-registries/health-registries/README.md)
   * [Organ Registries](reference-solutions-for-functional-registries/health-registries/organ-registries/README.md)
     * [Frontend Setup](reference-solutions-for-functional-registries/health-registries/organ-registries/frontend-setup.md)
