@@ -66,7 +66,3 @@ Login using registered mobile number
 After Pledging Again, users can download the certificate.
 
 ##
-
-\\
-
-\\
