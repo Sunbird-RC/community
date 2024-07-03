@@ -227,6 +227,12 @@ In the registry, while creating/inviting an entity it throws/returns an error me
 7. If not select `manage-realm` from `Available Roles` section and click on `Add selected`
 8. Restart the registry service
 
+## Identity Service
+
+**How to fix 'The database schema is not empty. Read more about how to baseline an existing production database' error?**
+
+Follow the steps [here](https://www.prisma.io/docs/orm/prisma-migrate/workflows/baselining) in prisma documentation to initialise the migration with empty migration. Then restart the identity service. Or you can setup from scratch, then empty your database and start identity service first, then after run other services like registry, claim-ms, keycloak etc.
+
 ## Frontend
 
 **How to resolve CORS errors on local development environment?**
