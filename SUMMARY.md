@@ -68,6 +68,7 @@
       * [Docker compose based](use/developers-guide/credentialling-services/installation-guide/docker-compose-based.md)
       * [Helm based](use/developers-guide/credentialling-services/installation-guide/helm-based.md)
     * [Configurations](use/developers-guide/credentialling-services/configurations.md)
+    * [Working with the Vault](use/developers-guide/credentialling-services/working-with-the-vault.md)
 * [Integrations](use/integrations/README.md)
   * [SSO with existing systems](use/sso-with-existing-systems/README.md)
   * [Digilocker Meripehchaan SSO](use/sso-with-existing-systems/digilocker-meripehchaan-sso.md)
