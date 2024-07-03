@@ -16,6 +16,7 @@ The services can be configured by passing values to the environment.
 | SIGNING\_ALGORITHM   | Algorithm to generate Key Pair in. Example: `Ed25519Signature2020, Ed25519Signature2018, RSASignature2018` |
 | JWKS\_URI            | JWKS URI of the OAuth2 Resource server for handling Bearer tokens.                                         |
 | ENABLE\_AUTH         | To enable or disable authentication. Example: `false`                                                      |
+| WEB\_DID\_BASE\_URL  | To set base URL to generate a web based DID                                                                |
 
 
 
@@ -30,10 +31,12 @@ The services can be configured by passing values to the environment.
 
 ### Credential Issuance Service
 
-| Environment Variable | Description                                                                                         |
-| -------------------- | --------------------------------------------------------------------------------------------------- |
-| DATABASE\_URL        | JDBC URL for the database. Example: `postgres://<username>:<password>@<db_url>:<db_port>/<db_name>` |
-| IDENTITY\_BASE\_URL  | Address for the Identity Microservice: `http://identity-service:3332`                               |
-| SCHEMA\_BASE\_URL    | Address for the Credential Schema Microservice: `http://cred-schema-service:3333`                   |
-| JWKS\_URI            | JWKS URI of the OAuth2 Resource server for handling Bearer tokens.                                  |
-| ENABLE\_AUTH         | To enable or disable authentication. Example: `false`                                               |
+| Environment Variable           | Description                                                                                         |
+| ------------------------------ | --------------------------------------------------------------------------------------------------- |
+| DATABASE\_URL                  | JDBC URL for the database. Example: `postgres://<username>:<password>@<db_url>:<db_port>/<db_name>` |
+| IDENTITY\_BASE\_URL            | Address for the Identity Microservice: `http://identity-service:3332`                               |
+| SCHEMA\_BASE\_URL              | Address for the Credential Schema Microservice: `http://cred-schema-service:3333`                   |
+| CREDENTIAL\_SERVICE\_BASE\_URL | base url for credential service to be exposed with to set the verify url in the qr code             |
+| JWKS\_URI                      | JWKS URI of the OAuth2 Resource server for handling Bearer tokens.                                  |
+| ENABLE\_AUTH                   | To enable or disable authentication. Example: `false`                                               |
+| QR\_TYPE                       | set it as `W3C_VC` to have compressed vc in the qr code instead of verify credential url            |

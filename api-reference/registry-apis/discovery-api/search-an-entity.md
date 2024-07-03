@@ -1,48 +1,65 @@
 # Search An Entity
 
-{% swagger method="post" path="/api/v1/{entity-name}/search" baseUrl=" " summary="" expanded="true" %}
-{% swagger-description %}
+<mark style="color:green;">`POST`</mark> `/api/v1/{entity-name}/search`
 
-{% endswagger-description %}
+Or <mark style="color:blue;">`GET`</mark> `/api/v1/{entity-name}/search?search=<base64 encoded payload>`
 
-{% swagger-parameter in="path" name="entity-name" required="true" %}
-Name of the entity to be searched
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="header" name="content-type" required="true" %}
-Set to `application/json`
-{% endswagger-parameter %}
+| Name                                          | Type   | Description                       |
+| --------------------------------------------- | ------ | --------------------------------- |
+| entity-name<mark style="color:red;">\*</mark> | String | Name of the entity to be searched |
 
-{% swagger-parameter in="body" name="..." type="Object" required="true" %}
-Filters to be sent in order to identify an entity
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-response status="200: OK" description="Success Response of Search" %}
+| Name                                           | Type   | Description               |
+| ---------------------------------------------- | ------ | ------------------------- |
+| content-type<mark style="color:red;">\*</mark> | String | Set to `application/json` |
+
+#### Query Parameters
+
+| Name   | Type                   | Description                                                                                                                                                                                                                            |
+| ------ | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| search | base64 encoded payload | <p>Sets the query for searching and pagination of the data.<br>example: <br><code>eyJvZmZzZXQiOjIsImxpbWl0IjoyLCJmaWx0ZXJzIjp7fSwiZW50aXR5VHlwZSI6WyJJbnN1cmFuY2UiXX0=</code> contains { "offset": 2, "limit": 2, "filters": { } }</p> |
+
+#### Request Body
+
+| Name                                  | Type   | Description                                       |
+| ------------------------------------- | ------ | ------------------------------------------------- |
+| ...<mark style="color:red;">\*</mark> | Object | Filters to be sent in order to identify an entity |
+
+{% tabs %}
+{% tab title="200: OK Success Response of Search" %}
 ```javascript
-[
-    {
-        "school": "UP Public School",
-        "name": "Pranav Agate",
-        "contact": "1234567890",
-        "subject": "Math",
-        "osid": "{id}",
-        "osOwner": ["{osOwner}"]
-    }
-]
+{
+    "totalCount": 10,
+    "nextPage": "<registry-url>/api/v1/Student?search=<base64 encoded search payload>",
+    "prevPage": "<registry-url>/api/v1/Student?search=<base64 encoded search payload>",
+    "data": [
+        {
+            "school": "UP Public School",
+            "name": "Pranav Agate",
+            "contact": "1234567890",
+            "subject": "Math",
+            "osid": "{id}",
+            "osOwner": ["{osOwner}"]
+        }
+    ]
+}
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 Sample Request Body
 
 > {\
->  "filters": {\
->   "school": {\
->    "eq": "UP Public School"\
->   }\
->  },\
->  "limit": 1,\
->  "offset": 0\
+> "filters": {\
+> "school": {\
+> "eq": "UP Public School"\
+> }\
+> },\
+> "limit": 1,\
+> "offset": 0\
 > }
 
 > Important Fields in Request Body

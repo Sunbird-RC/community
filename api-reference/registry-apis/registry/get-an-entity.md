@@ -6,36 +6,48 @@ description: >-
 
 # Get An Entity
 
+<mark style="color:blue;">`GET`</mark> `/api/v1/{entity-type}`
 
+#### Path Parameters
 
-{% swagger method="get" path="/api/v1/{entity-type}" baseUrl=" " summary="" expanded="true" %}
-{% swagger-description %}
+| Name                                          | Type   | Description                    |
+| --------------------------------------------- | ------ | ------------------------------ |
+| entity-type<mark style="color:red;">\*</mark> | String | The type of entity to retrieve |
 
-{% endswagger-description %}
+#### Query Parameters
 
-{% swagger-parameter in="path" name="entity-type" required="true" %}
-The type of entity to retrieve
-{% endswagger-parameter %}
+Use search query parameter for pagination and filters
 
-{% swagger-parameter in="header" name="authorization" required="true" %}
-Set to `Bearer {access-token}` A valid token of the owner is required
-{% endswagger-parameter %}
+| Name   | Type                       | Description                                                                                                                                                                                                                            |
+| ------ | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| search | base64 encoded data string | <p>Sets the query for searching and pagination of the data.<br>example: <br><code>eyJvZmZzZXQiOjIsImxpbWl0IjoyLCJmaWx0ZXJzIjp7fSwiZW50aXR5VHlwZSI6WyJJbnN1cmFuY2UiXX0=</code> contains { "offset": 2, "limit": 2, "filters": { } }</p> |
 
-{% swagger-parameter in="header" name="viewTemplateId" %}
-File name of view templates configured
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-response status="200: OK" description="Response when content-type is application/json" %}
+| Name                                            | Type   | Description                                                           |
+| ----------------------------------------------- | ------ | --------------------------------------------------------------------- |
+| authorization<mark style="color:red;">\*</mark> | String | Set to `Bearer {access-token}` A valid token of the owner is required |
+| viewTemplateId                                  | String | File name of view templates configured                                |
+
+{% tabs %}
+{% tab title="200: OK Response when content-type is application/json" %}
+{% code overflow="wrap" %}
 ```javascript
 {
-	"phoneNumber": "1234567890",
-	"school": "UP Public School",
-	"subject": "Math",
-	"name": "Pranav Agate",
-	"osid": "{id}",
-	"osOwner": ["{owner-id}"],
-	"_osState/school": "DRAFT"
+	"totalCount": 1,
+	"nextPage": "<registry-url>/api/v1/Student?search=<base64 encoded search payload>"
+	"prevPage": "<registry-url>/api/v1/Student?search=<base64 encoded search payload>"
+	"data": [{
+		"phoneNumber": "1234567890",
+		"school": "UP Public School",
+		"subject": "Math",
+		"name": "Pranav Agate",
+		"osid": "{id}",
+		"osOwner": ["{owner-id}"],
+		"_osState/school": "DRAFT"
+	}]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endcode %}
+{% endtab %}
+{% endtabs %}
