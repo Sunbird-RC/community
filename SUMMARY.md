@@ -31,7 +31,6 @@
 * [Developer's Guide](use/developers-guide/README.md)
   * [Functional Registry](use/developers-guide/functional-registry/README.md)
     * [Installation Guide](use/developers-guide/functional-registry/installation-guide/README.md)
-      * [Run for development](use/developers-guide/functional-registry/installation-guide/run-for-development.md)
       * [Registry CLI](use/developers-guide/functional-registry/installation-guide/installation-guide/README.md)
         * [Setup A Registry Instance](use/developers-guide/functional-registry/installation-guide/installation-guide/setup-a-registry-instance.md)
       * [Manual installation through docker-compose](use/developers-guide/functional-registry/installation-guide/manual-installation-through-docker-compose.md)
