@@ -78,6 +78,66 @@ Sunbird RC welcomes contributions from the community. There are several ways in 
 
 **Improving documentation:** Another way to contribute to Sunbird RC is by improving the documentation. This can include updating existing documentation, adding new sections, or improving the clarity and accuracy of the documentation.
 
+#### How do i get started ? Which services should i start and how? Which repository should i use for my use-case?
+
+We should understand the Sunbird registry and credentials first before jumping directly into applying it in a real use-case. we can follow the below roadmap to get started quickly -
+
+1. Introduction - [link](https://rc.sunbird.org/)
+2. Read about services and high level architecture -
+   * [registry and other services](https://rc.sunbird.org/learn/technical-overview/registry/high-level-architecture)
+   * [credentialling services architecture](https://rc.sunbird.org/learn/technical-overview/credentialling/high-level-architecture)
+3. Write down your requirements and the feature you can leverage to using sunbird-rc
+4. Understand how to configure a schema, micro level details are here - [link](https://rc.sunbird.org/use/developers-guide/functional-registry/schema-setup/schema-configuration)
+5. Check the Api references for registry - [link](https://rc.sunbird.org/api-reference/registry-apis)
+6. Try out deployments with default configurations to understand more, installation guides are there
+   * If your requirement is only credentialing, you can checkout this - [link](https://github.com/Sunbird-RC/devops/tree/main/deploy-as-code/docker/v2/credentialling) , Also checkout this demo project -&#x20;
+     * [demo-mosip-rc](https://github.com/Sunbird-RC/demo-mosip-rc) (it uses registry for only storing data only) - this has postman collections as well to try out. And one click installation - just start with `make start`
+   * If your requirement is registry and credentialing use this - [link](https://github.com/Sunbird-RC/devops/tree/main/deploy-as-code/docker/v2/registry\_and\_credentialling)
+7. Create your own schemas and then try
+8. Search [here](https://rc.sunbird.org/?q=) if there are some issues or doubts
+9. Still there are issues and not resolved, reach out to community discord or github discussions
+
+#### What is the difference between a credential schema and a registry schema?
+
+**Credential schema** - It is a JsonSchema of draft - \`[https://json-schema.org/draft/2020-12/schema](https://json-schema.org/draft/2020-12/schema)\`. It is created and managed using credential-schema service and used in credentials service to validate the credential subject while issuing a Verifiable Credential.
+
+**Registry Schema** - It is a JsonSchema of draft - \`http://json-schema.org/draft-07/schema\`. It is used in registry service. It is responsible for -
+
+1. Creating APIs for an entity to be managed in the registry.
+2. Schema Configurations used in registry - is configured with key `_osConfig` , more details \[here]\([https://rc.sunbird.org/use/developers-guide/functional-registry/schema-setup/schema-configuration](https://rc.sunbird.org/use/developers-guide/functional-registry/schema-setup/schema-configuration))
+
+#### What are the differences between registry release v1 and release v2?
+
+There are a couple of difference and changes between v1 and v2 releases of registry. we can read more in the release notes on github though. The main difference is here -&#x20;
+
+v2 release of registry introduced new signing and credentialing architecture design. v2 release is configurable to use v1 signing services or the new architecture. \
+The env variables in registry, which can be used to configure or switch between the two versions -
+
+* SIGNATURE\_PROVIDER `dev.sunbirdrc.registry.service.impl.SignatureV2ServiceImpl , dev.sunbirdrc.registry.service.impl.SignatureV1ServiceImpl`
+* When using v2 version, make sure all the variables which has prefix `did_`, `signature_v2_` are provided in the registry
+
+v2 has pagination support for List entity and Search entity APIs and have different response structure for these apis then v1
+
+Both has difference in signing services and architecture -
+
+| Release v1 and older                                                                               | Release v2                                                                                                                                                                            |
+| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Keys used to sign should be created manually and place them in a file config.json before deploying | Keys used to sign are created when issuer is created using identity service while signing using registry. the keys are stored in db and private key part is stored in hashicorp vault |
+| To add new key, create and store them in the file manually and deploy                              | Keys are dynamically created while signing                                                                                                                                            |
+| Are not very safe are private keys also stored in the same file                                    | Are safe as private key is stored in hashicorp vault                                                                                                                                  |
+| Supports only one signature suite `RsaSignature2018`                                               | Has support for different signature suites `Ed25519Signature2020` , `Ed25519Signature2018` ,  `RsaSignature2018`                                                                      |
+| Depends on services certificate-signer, certificate-api                                            | Depends on services identity, credential-schema, credentials and the vault                                                                                                            |
+
+v2 support complete unique indexes and indexes creation
+
+v2 has a lot more bug fixes which makes it easy to use without facing many errors.
+
+v2 can be used to verify any verifiable credentials(with above signature types) then just issued by itself
+
+Above are the main differences between two releases, checkout release notes for more details
+
+#### Facing issues while creating an entity like "User is not allowed to perform the operation on this entity" or "Exception executing consequence for rule 'Create entity owner for newly added owner fields'" or&#x20;
+
 ## Registry
 
 #### **Can an existing database, which gets routinely updated tho’ Business processes of department, be used as a source to create and dynamically update a sunbird powered registry?**
@@ -214,6 +274,25 @@ Currently, we have added custom SPI and themes to support otp based login in key
 3\. Select `browser` in `Browser Flow` option\
 4\. Save the changes
 
+#### How to fix the "401 unauthorized code" error when authentication enabled and providing the correct token?
+
+1. Check what url host being used to generate a token
+2. If you are not using http://keycloak:8080/auth then follow these steps -
+   1. Change the keycloak frontend url using keycloak UI
+   2. Login to the keycloak UI
+   3. Select the realm - default `sunbird-rc`
+   4. Go to `General Settings`
+   5. Check for the field `frontend url`
+   6. i.e., if you want to use `http://localhost:8080/auth` to generate token then set this value
+   7. Recreate the registry container
+   8. Regenerate a new token and use.
+3. If you have fixed point 2, then check if the client credentials are valid -
+   1. Login to keycloak UI and select the realm
+   2. Go to `Credentials` tab
+   3. Regenerate the secret and copy
+   4. Use them as keycloak secret in the registry
+   5. Env Variable exposed in docker-compose.yml is `KEYCLOAK_SECRET` which can be set in .env file and recreate the registry container
+
 #### **How to fix the \`Role creation exception\` error in registry logs?**
 
 In the registry, while creating/inviting an entity it throws/returns an error mentioning `Role creation exception`. This could be because `admin-api,` the client which is configured for the registry does not have the required roles. The below steps need to be configured for the same.
@@ -229,7 +308,7 @@ In the registry, while creating/inviting an entity it throws/returns an error me
 
 ## Identity Service
 
-**How to fix 'The database schema is not empty. Read more about how to baseline an existing production database' error?**
+#### **How to fix 'The database schema is not empty. Read more about how to baseline an existing production database' error?**
 
 Follow the steps [here](https://www.prisma.io/docs/orm/prisma-migrate/workflows/baselining) in prisma documentation to initialise the migration with empty migration. Then restart the identity service. Or you can setup from scratch, then empty your database and start identity service first, then after run other services like registry, claim-ms, keycloak etc.
 
