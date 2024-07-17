@@ -17,7 +17,7 @@ The below service is dependent on the vault -
 
 * Identity Service - [identity-service-apis.md](../../../api-reference/credentialling-apis/identity-service-apis.md "mention")
 
-## Setting up the Vault
+## Setting up the Vault Manually
 
 There are some steps followed to setup the vault
 
@@ -30,21 +30,24 @@ There are some steps followed to setup the vault
 ### Unsealing the vault
 
 * Vault should be unsealed whenever it gets restarted or recreated while having the same volume or data
-* Use cmd `vault operator unseal "<key>"` to unseal the vault
+* Use cmd `vault operator unseal` to unseal the vault
+* It should ask for unseal key
 * The key here should be from generated in the [#initialising-the-vault](working-with-the-vault.md#initialising-the-vault "mention") step
 * This unseal command should be run with 3 different keys to unseal
 * After unsealing the vault, the container should show `healthy` status
 
 ### Enable a key-value path kv
 
-* To enable a key value path kv of type kv-v2 use the below cmd&#x20;
+* To enable a key value path kv of type kv-v2 , follow below steps
+* Login to the vault using the root token generated in the [#initialising-the-vault](working-with-the-vault.md#initialising-the-vault "mention")
+* cmd to login `vault login` inside the container vault, then run&#x20;
 * `vault secrets enable -path=kv kv-v2`&#x20;
 
 ### Use the root token for identity service to work
 
 Provide the value token to identity service environment variable `VAULT_TOKEN`
 
-
+## Setting up the vault using the script
 
 All of the above steps are created into a bash script [here](https://github.com/Sunbird-RC/sunbird-rc-core/blob/main/setup\_vault.sh).  Run below command to setup the vault OR can check if you require docker-compose specific commands -
 
@@ -66,4 +69,4 @@ If the vault container is showing unhealthy -
 * Check if the Vault unsealed.
 * Check if the path of type \`kv-v2\` is created at \`kv\`
 
-If vault is showing `healthy` then there shouldn't be any issue with the vault.
+If vault is showing `healthy` then there shouldn't be any issue with the vault. If identity-service is showing unhealthy or showing some error related to vault, then confirm if vault token is set[#use-the-root-token-for-identity-service-to-work](working-with-the-vault.md#use-the-root-token-for-identity-service-to-work "mention")

@@ -96,7 +96,7 @@ Collection of data values are also supported as multiple data value might repres
 
 3 types of visibility on attributes.
 
-1. Public
+1. Public (not required to configure)
 2. Private (privateFields)
 3. Internal
 
@@ -106,6 +106,18 @@ Private attributes can be accessed by the owner by default, with consent 3rd par
 
 Internal fields are system fields that only serve internal functionalities, these can never be accessed by any actors in the system.
 
+Configuring in the schema -&#x20;
+
+```
+{
+    ...
+    "_osConfig": {
+        ...
+        "privateFields": ["$.email", "$.mobile"],
+        "internalFields": ["$.mobile"]
+}
+```
+
 ### System fields:
 
 The following property is used to add additional audit fields to entity, to know who/when created/updated the entity.
@@ -114,6 +126,21 @@ The following property is used to add additional audit fields to entity, to know
 2. osUpdatedAt
 3. osCreatedBy
 4. osUpdatedBy
+5. \_osClaimId
+6. \_osCredentialId
+7. \_osSignedData
+8. \_osAttestedData
+
+Configure in the schema -
+
+```
+{
+    ...
+    "_osConfig": {
+        ...
+        "systemFields": ["osCreatedAt", "osUpdatedAt"]
+}
+```
 
 ### Index field set
 
@@ -212,19 +239,19 @@ List of policies can be configured for the attestation.
 
 #### name
 
-A unique name for identifying an attestation policy. This name will be used to refer an attestation policy while raising a claim.
+(required) A unique name for identifying an attestation policy. This name will be used to refer an attestation policy while raising a claim.
 
 #### attestationProperties
 
-This field refers the schema properties which will be considered for attestation.
+(required) This field refers the schema properties which will be considered for attestation.
 
 #### additionalInput
 
-This denotes the additional inputs that needs to be captured outside the existing entity/schema fields for generating/processing the attestation.
+(optional) This denotes the additional inputs that needs to be captured outside the existing entity/schema fields for generating/processing the attestation.
 
 #### type
 
-This denotes if the attestation should be raised manually or automatically.
+(required) This denotes if the attestation should be raised manually or automatically.
 
 * MANUAL: In this two types of user will come into the picture, i.e Attestor and Requestor, Requestor will rise a claim, and the Attestor will approve/reject. The authorization of the attestor will be defined in the config using `conditions` attribute.
 
@@ -274,7 +301,11 @@ For this scenario the condition would be, `conditions: "(ATTESTOR#$.experience.[
 
 #### attestorPlugin
 
-This denotes who processes the claims that is been raised by the user. By default SunbirdRC will be shipped with a `ClaimPluginActor` who will process and store the respective claims in DB. If we need additional or different functionalities then we can
+(required) This denotes who processes the claims that is been raised by the user. By default SunbirdRC will be shipped with a `ClaimPluginActor` who will process and store the respective claims in DB. If we need additional or different functionalities then we can
+
+#### credentialTemplate
+
+(optional) This template is required if we want to generate a certificate of attestation or generate a credential for attestation. The value is set similarly to [#credential-template](schema-configuration.md#credential-template "mention")
 
 ### Credential Template
 
@@ -394,8 +425,18 @@ Following is an example of the notification templates
 
 ### UniqueIdentifierFields
 
-If you want to auto generate some fields with specific format, you can generate those using this configuration in schema. each configuration of generatable field has 3 properties `field`, `idName`, `format` . Where field value should be path to the schema property you want to auto generate, idName is name with which you want to store the format, format is blueprint in which you want ids to be generated.\
-Following is an example of uniqueIdentifierFields configuration
+If you want to auto generate some fields with specific format, you can generate those using this configuration in schema. each configuration of generatable field has 3 properties `field`, `idName`, `format` . Where field value should be path to the schema property you want to auto generate, idName is name with which you want to store the format, format is blueprint in which you want ids to be generated.&#x20;
+
+It can generate using different format, we can use below formatter in a square bracket to format our field (case insensitive) -
+
+1. Using `seq` to generate a sequence
+2. Using `fy` to generate financial year date
+3. Using `cy` to generate a date in the current year
+4. Using java regex to generate a random value of desired format
+
+Following is an example of uniqueIdentifierFields configuration -&#x20;
+
+The first configuration would generate a 6 digit number with prefix `ABN-` and the second would generate a sequence with prefix `STD` ie. `ABN-321123` , `STD1`
 
 ```
 "_osConfig": {

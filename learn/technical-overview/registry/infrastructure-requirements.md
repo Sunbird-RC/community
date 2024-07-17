@@ -6,7 +6,7 @@
 
 ## Tech Stack
 
-<table><thead><tr><th width="284">Software/Language</th><th>Recommended</th><th>Minimum Version</th></tr></thead><tbody><tr><td>Java</td><td>1.8</td><td>1.8</td></tr><tr><td>Go Lang</td><td>1.15</td><td>1.15</td></tr><tr><td>Linux / Docker</td><td>any</td><td>any</td></tr><tr><td>Postgre sql</td><td>latest</td><td>v8</td></tr><tr><td>Redis</td><td>latest</td><td>4</td></tr><tr><td>ElasticSearch</td><td>7.17.13</td><td>7.10.1</td></tr><tr><td>Keycloak</td><td>14.0.0</td><td>14.0.0</td></tr><tr><td>Minio</td><td>latest</td><td></td></tr><tr><td>Kafka (Zookeeper)</td><td>latest</td><td></td></tr><tr><td>nginx</td><td>latest</td><td></td></tr><tr><td>Angular</td><td>8</td><td></td></tr><tr><td>Kubernetes</td><td>latest</td><td></td></tr><tr><td>Helm</td><td>latest</td><td></td></tr><tr><td>Docker Compose</td><td>latest</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="284">Software/Language</th><th>Recommended</th><th>Minimum Version</th></tr></thead><tbody><tr><td>Java</td><td>1.8</td><td>1.8</td></tr><tr><td>Go Lang</td><td>1.15</td><td>1.15</td></tr><tr><td>Linux / Docker</td><td>any</td><td>any</td></tr><tr><td>Postgre sql</td><td>latest</td><td>v8</td></tr><tr><td>Redis</td><td>latest</td><td>4</td></tr><tr><td>ElasticSearch</td><td>6.8.23</td><td>v6</td></tr><tr><td>Keycloak</td><td>14.0.0</td><td>14.0.0</td></tr><tr><td>Minio</td><td>latest</td><td></td></tr><tr><td>Kafka (Zookeeper)</td><td>latest</td><td></td></tr><tr><td>nginx</td><td>latest</td><td></td></tr><tr><td>Angular</td><td>10</td><td></td></tr><tr><td>Kubernetes</td><td>latest</td><td></td></tr><tr><td>Helm</td><td>latest</td><td></td></tr><tr><td>Docker Compose</td><td>latest</td><td></td></tr></tbody></table>
 
 ## Stock Frontend Interface
 
