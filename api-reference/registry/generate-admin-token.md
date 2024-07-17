@@ -1,6 +1,6 @@
 # Generate admin token
 
-## Pre-requisites&#x20;
+## Pre-requisites
 
 #### Steps to create an admin role
 
@@ -25,32 +25,27 @@ You can create a new user or update the existing user with the above role. A [cl
 
 To authenticate as an entity, we need to make the following request:
 
-{% swagger method="post" path="http:/keycloak-url/auth/realms/{realm}/protocol/openid-connect/token" baseUrl=" " summary="Generate token API  " expanded="false" %}
-{% swagger-description %}
+## Generate token API &#x20;
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `http:/keycloak-url/auth/realms/{realm}/protocol/openid-connect/token`
 
-{% swagger-parameter in="header" name="content-type" required="true" %}
-Set to `application/x-www-form-urlencoded`
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="grant_type" required="true" %}
-Set to `password`
-{% endswagger-parameter %}
+| Name                                           | Type   | Description                                |
+| ---------------------------------------------- | ------ | ------------------------------------------ |
+| content-type<mark style="color:red;">\*</mark> | String | Set to `application/x-www-form-urlencoded` |
 
-{% swagger-parameter in="body" name="client_id" required="true" %}
-Set to `registry-frontend`
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="username" required="true" %}
-The `_osConfig.ownershipAttributes.userId` of the entity according to the schema
-{% endswagger-parameter %}
+| Name                                          | Type   | Description                                                                                       |
+| --------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------- |
+| grant\_type<mark style="color:red;">\*</mark> | String | Set to `password`                                                                                 |
+| client\_id<mark style="color:red;">\*</mark>  | String | Set to `registry-frontend`                                                                        |
+| username<mark style="color:red;">\*</mark>    | String | The `_osConfig.ownershipAttributes.userId` of the entity according to the schema                  |
+| password<mark style="color:red;">\*</mark>    | String | Set to `abcd@123` (default password, specified in registry's application.yml/docker compose file) |
 
-{% swagger-parameter in="body" name="password" required="true" %}
-Set to `abcd@123` (default password, specified in registry's application.yml/docker compose file)
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
+{% tabs %}
+{% tab title="200: OK " %}
 ```json
 {
 	"access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lk...2cSSaBKuB58I2OYDGw",
@@ -63,8 +58,8 @@ Set to `abcd@123` (default password, specified in registry's application.yml/doc
 	"token_type": "Bearer"
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 Important variables in the response body:
 
@@ -115,36 +110,32 @@ http --form post \
 * Turn on `Service Accounts Enabled` button.
 * Add a `Valid Redirect Url` Ex: [http://localhost:8081/auth](http://localhost:8081/auth)
 * And click on the save button
-* Goto `Service Account Roles` tab&#x20;
+* Goto `Service Account Roles` tab
 * Select `admin` role from the `Available Roles` and click on `Add selected`
-* &#x20;Goto `Credentials` section  and click on `Regenerate secret` and copy the value
+* Goto `Credentials` section and click on `Regenerate secret` and copy the value
 
 **Use the below API to get the token for the above client created**
 
-{% swagger method="post" path="  http:/keycloak-url/auth/realms/{realm}/protocol/openid-connect/token" baseUrl=" " summary="Generate token api" %}
-{% swagger-description %}
+## Generate token api
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `http:/keycloak-url/auth/realms/{realm}/protocol/openid-connect/token`
 
-{% swagger-parameter in="body" name="grant_type" type="" required="true" %}
-client\_credentials
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="header" name="Content-Type" required="true" %}
-application/x-www-form-urlencoded
-{% endswagger-parameter %}
+| Name                                           | Type   | Description                       |
+| ---------------------------------------------- | ------ | --------------------------------- |
+| Content-Type<mark style="color:red;">\*</mark> | String | application/x-www-form-urlencoded |
 
-{% swagger-parameter in="body" name="client_id" required="true" %}
-Use the client name that was used above
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="client_secret" required="true" %}
-Use the client secret that was generated in the above steps
-{% endswagger-parameter %}
+| Name                                             | Type   | Description                                                 |
+| ------------------------------------------------ | ------ | ----------------------------------------------------------- |
+| grant\_type<mark style="color:red;">\*</mark>    |        | client\_credentials                                         |
+| client\_id<mark style="color:red;">\*</mark>     | String | Use the client name that was used above                     |
+| client\_secret<mark style="color:red;">\*</mark> | String | Use the client secret that was generated in the above steps |
 
-{% swagger-response status="200: OK" description="" %}
-
-
+{% tabs %}
+{% tab title="200: OK " %}
 ```json
 {
 	"access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lk...2cSSaBKuB58I2OYDGw",
@@ -157,6 +148,5 @@ Use the client secret that was generated in the above steps
 	"token_type": "Bearer"
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
-
+{% endtab %}
+{% endtabs %}

@@ -6,34 +6,34 @@ description: >-
 
 # Revoke a Credential
 
-{% swagger method="post" path="/api/v1/{entity-type}/{id}/revoke" baseUrl=" " summary="This revokes an existing  verifiable credential" expanded="true" %}
-{% swagger-description %}
+## This revokes an existing  verifiable credential
 
+<mark style="color:green;">`POST`</mark> `/api/v1/{entity-type}/{id}/revoke`
 
 The API revokes a verifiable credential by updating the signature data attached to it. This is done by updating the _\_osSignedData_ field in the corresponding entity table to an _Empty String_. and storing the signedData in the **RevokedCredential** Registry.
-{% endswagger-description %}
 
-{% swagger-parameter in="path" name="entity-type" required="true" %}
-Type of entity to update
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="path" required="true" name="id" %}
-id of the entity to revoke
-{% endswagger-parameter %}
+| Name                                          | Type   | Description                |
+| --------------------------------------------- | ------ | -------------------------- |
+| entity-type<mark style="color:red;">\*</mark> | String | Type of entity to update   |
+| id<mark style="color:red;">\*</mark>          | String | id of the entity to revoke |
 
-{% swagger-parameter in="header" name="authorization" %}
-Set to `Bearer {access-token}` if roles in Schema is not anonymous. Else token can be empty
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="header" name="content-type" required="true" %}
-Set to `application/json`
-{% endswagger-parameter %}
+| Name                                           | Type   | Description                                                                                 |
+| ---------------------------------------------- | ------ | ------------------------------------------------------------------------------------------- |
+| authorization                                  | String | Set to `Bearer {access-token}` if roles in Schema is not anonymous. Else token can be empty |
+| content-type<mark style="color:red;">\*</mark> | String | Set to `application/json`                                                                   |
 
-{% swagger-parameter in="body" %}
+#### Request Body
 
-{% endswagger-parameter %}
+| Name | Type   | Description |
+| ---- | ------ | ----------- |
+|      | String |             |
 
-{% swagger-response status="200: OK" description="Entity is Succesfully revoked" %}
+{% tabs %}
+{% tab title="200: OK Entity is Succesfully revoked" %}
 ```json
 {
     "id": "sunbird-rc.utils.revoke",
@@ -49,15 +49,13 @@ Set to `application/json`
     "responseCode": "OK"
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="401: Unauthorized" description="Issue in the token authentication - unauthorised" %}
+{% tab title="401: Unauthorized Issue in the token authentication - unauthorised" %}
 
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="500: Internal Server Error" description="Credential is already revoked " %}
-
-
+{% tab title="500: Internal Server Error Credential is already revoked " %}
 ```json
 revoked response: {
     "id": "sunbird-rc.utils.revoke",
@@ -73,8 +71,8 @@ revoked response: {
     "responseCode": "OK"
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ## Usage
 

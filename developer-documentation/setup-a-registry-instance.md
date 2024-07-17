@@ -14,7 +14,27 @@ cd ~/Registries/example
 registry init
 ```
 
-This will present you with a set of questions to setup the registry. For the purpose of this getting started guide, you can hit enter and use the default values for the registry.
+This will present you with a set of questions to setup the registry. For the purpose of this getting started guide, you can hit enter and use the default values for the registry. Please follow the references below
+
+* _**Registry Version**_
+
+<figure><img src="../.gitbook/assets/registry_Versions.png" alt=""><figcaption><p>registry version</p></figcaption></figure>
+
+* _**Auxiliary Services**_
+
+The registry provides a set of auxiliary services that you can use in addition to the core registry. To select or deselect any of these services, use the _**SPACE BAR**_.
+
+Reference solutions for digital credentialing, including administration or issuance portals, are available in Auxiliary services.
+
+<figure><img src="../.gitbook/assets/Auxilary_services.png" alt=""><figcaption></figcaption></figure>
+
+* _**Type of QR**_
+
+When VC Issuance is enabled, you'll be prompted to choose the type of QR code to generate on your certificates.
+
+<figure><img src="../.gitbook/assets/Type_Of_QR_Code.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/registry_1.0.0.png" alt=""><figcaption><p>registry init - v1.0.0 </p></figcaption></figure>
 
 #### Registry Status
 
@@ -26,27 +46,7 @@ registry status
 
 The above command should return the status of all the services, like below
 
-```bash
-
-| ID                     | Name                            | Status             | Port                 |
-| ---------------------- | ------------------------------- | ------------------ | -------------------- |
-| a559b14f7306           | certificate-api                 | running            | 8078                 |
-| e2c655ee0733           | certificate-signer              | running            | 8079                 |
-| 9e0bf898a9ff           | claim-ms                        | running            | 8082                 |
-| 2676722038e6           | context-proxy-service           | running            | 4400                 |
-| 9b7f22afac7e           | db                              | running            | 5432                 |
-| 0b0225d40568           | es                              | running            | 9200, 9300           |
-| 6251e52152ab           | file-storage                    | running            | 9000, 9001           |
-| c009d6eb5bb9           | kafka                           | running            | 9092                 |
-| 2581e17915b4           | keycloak                        | running            | 8080, 9990           |
-| 2d9d6360a563           | nginx                           | running            | 80                   |
-| df81b2772a03           | notification-ms                 | running            | 8765                 |
-| 212be4fed2e9           | public-key-service              | running            | 3300                 |
-| 13b95a5d8377           | redis                           | running            | 6379                 |
-| 8b48caead08e           | registry                        | running            | 8081                 |
-| a143f7d6697a           | zookeeper                       | running            | 2181                 |
-
-```
+<figure><img src="../.gitbook/assets/registry_status.png" alt=""><figcaption></figcaption></figure>
 
 Make sure that the status of all the services is in the `running` state. If any of the services are in `exited` status you can restart only that particular service.
 
@@ -59,3 +59,13 @@ To restart the registry use the below command
 ```sh
 SCHEMA_DIR=config/schemas docker-compos up -d --force-recreate --no-deps registry
 ```
+
+#### Registry Down
+
+To stop the running services, you can use the below command
+
+```
+registry down
+```
+
+<figure><img src="../.gitbook/assets/registry_down.png" alt=""><figcaption></figcaption></figure>
