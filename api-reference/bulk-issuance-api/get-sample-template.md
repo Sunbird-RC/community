@@ -1,27 +1,31 @@
 # Get Sample Template
 
-{% swagger method="get" path="/bulk/v1/sample/{schemaName}" baseUrl=" " summary="" %}
-{% swagger-description %}
+<mark style="color:blue;">`GET`</mark> `/bulk/v1/{schemaName}/sample-csv`
+
 this will download a csv with the all fields that are needed to create entity for this schema
-{% endswagger-description %}
 
-{% swagger-parameter in="path" name="schemaName" type="String" required="true" %}
-name of schema&#x20;
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="header" name="Authorization" %}
-Set to `Bearer {access-token}` if roles in schema is not anonymous. Else authorization can be empty
-{% endswagger-parameter %}
+| Name                                         | Type   | Description    |
+| -------------------------------------------- | ------ | -------------- |
+| schemaName<mark style="color:red;">\*</mark> | String | name of schema |
 
-{% swagger-response status="200: OK" description="A CSV File with fields for header" %}
+#### Headers
 
-{% endswagger-response %}
+| Name          | Type   | Description                                                                                                                                                                                                                                                                  |
+| ------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | String | <p>Set to <code>Bearer {access-token}</code> if roles in schema is not anonymous. Else authorization can be empty<br>* make sure ROLES env property has this role <a data-mention href="../../developer-documentation/configuration.md#bulk-issuance">#bulk-issuance</a></p> |
 
-{% swagger-response status="403: Forbidden" description="if the token is expired or you do not have appropriate permission to create entity" %}
+{% tabs %}
+{% tab title="200: OK A CSV File with fields for header" %}
 
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="404: Not Found" description="If schema is not found in the system" %}
+{% tab title="403: Forbidden if the token is expired or you do not have appropriate permission to create entity" %}
 
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+
+{% tab title="404: Not Found If schema is not found in the system" %}
+
+{% endtab %}
+{% endtabs %}

@@ -150,17 +150,18 @@ description: Registry provides following configuration properties
 
 ### Bulk Issuance
 
-| Properties            | Description                            |
-| --------------------- | -------------------------------------- |
-| REGISTRY\_BASE\_URL   | url on which registry is hosted        |
-| DATABASE\_HOST        | host address of database               |
-| DATABASE\_PORT        | port on which database is running      |
-| DATABASE\_USER        | username of database                   |
-| DATABASE\_PASSWORD    | password for that user of the database |
-| DATABASE\_NAME        | database name                          |
-| KEYCLOAK\_PUBLIC\_KEY | public key from keycloak               |
-| KEYCLOAK\_URL         | url for keycloak                       |
-| KEYCLOAK\_REALM       | keycloak realm name                    |
+| Properties            | Description                              |
+| --------------------- | ---------------------------------------- |
+| REGISTRY\_BASE\_URL   | url on which registry is hosted          |
+| DATABASE\_HOST        | host address of database                 |
+| DATABASE\_PORT        | port on which database is running        |
+| DATABASE\_USER        | username of database                     |
+| DATABASE\_PASSWORD    | password for that user of the database   |
+| DATABASE\_NAME        | database name                            |
+| KEYCLOAK\_PUBLIC\_KEY | public key from keycloak                 |
+| KEYCLOAK\_URL         | url for keycloak                         |
+| KEYCLOAK\_REALM       | keycloak realm name                      |
+| ROLES                 | roles which are allowed to issue in bulk |
 
 ### Digilocker Certificate API
 

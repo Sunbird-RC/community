@@ -1,19 +1,21 @@
 # Download a Report File
 
-{% swagger method="get" path="/bulk/v1/download/{id}" baseUrl="" summary="" %}
-{% swagger-description %}
+<mark style="color:blue;">`GET`</mark> `/bulk/v1/{id}/report`
 
-{% endswagger-description %}
+#### Path Parameters
 
-{% swagger-parameter in="path" required="true" %}
-Id of the report file you want to download
-{% endswagger-parameter %}
+| Name                                 | Type   | Description                                |
+| ------------------------------------ | ------ | ------------------------------------------ |
+| id<mark style="color:red;">\*</mark> | String | Id of the report file you want to download |
 
-{% swagger-parameter in="header" name="Authorization" %}
-Set to Bearer {access-token} if roles in schema is not anonymous. Else authorization can be empty
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-response status="200: OK" description="File will be downloaded with error response" %}
+| Name          | Type   | Description                                                                                       |
+| ------------- | ------ | ------------------------------------------------------------------------------------------------- |
+| Authorization | String | Set to Bearer {access-token} if roles in schema is not anonymous. Else authorization can be empty |
 
-{% endswagger-response %}
-{% endswagger %}
+{% tabs %}
+{% tab title="200: OK File will be downloaded with error response" %}
+
+{% endtab %}
+{% endtabs %}

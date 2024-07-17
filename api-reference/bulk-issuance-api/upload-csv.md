@@ -1,31 +1,35 @@
 # Upload CSV
 
-{% swagger method="post" path="/bulk/v1/uploadFiles/{schemaName}" baseUrl=" " summary="" %}
-{% swagger-description %}
+<mark style="color:green;">`POST`</mark> `/bulk/v1/{schemaName}/upload`
 
-{% endswagger-description %}
+#### Path Parameters
 
-{% swagger-parameter in="path" name="schemaName" required="true" %}
-Schema for which you want to bulk create entities
-{% endswagger-parameter %}
+| Name                                         | Type   | Description                                       |
+| -------------------------------------------- | ------ | ------------------------------------------------- |
+| <mark style="color:red;">\*</mark>schemaName | String | Schema for which you want to bulk create entities |
 
-{% swagger-parameter in="body" name="file" type="multipart/form-data" required="true" %}
-csv file
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="header" name="Authorization" %}
-Set to Bearer {access-token} if roles in schema is not anonymous. Else authorization can be empty
-{% endswagger-parameter %}
+| Name          | Type   | Description                                                                                                                                                                                                                                                                     |
+| ------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | String | <p>Set to Bearer {access-token} if roles in schema is not anonymous. Else authorization can be empty<br>* make sure roles env in bulk issuance service is configured <a data-mention href="../../developer-documentation/configuration.md#bulk-issuance">#bulk-issuance</a></p> |
 
-{% swagger-response status="200: OK" description="Information with ID of the file uploaded, number of success and failures" %}
+#### Request Body
 
-{% endswagger-response %}
+| Name                                   | Type                | Description |
+| -------------------------------------- | ------------------- | ----------- |
+| file<mark style="color:red;">\*</mark> | multipart/form-data | csv file    |
 
-{% swagger-response status="403: Forbidden" description="if the token is expired or you do not have appropriate permission to create entity" %}
+{% tabs %}
+{% tab title="200: OK Information with ID of the file uploaded, number of success and failures" %}
 
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="500: Internal Server Error" description="If invalid csv file is passed" %}
+{% tab title="403: Forbidden if the token is expired or you do not have appropriate permission to create entity" %}
 
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+
+{% tab title="500: Internal Server Error If invalid csv file is passed" %}
+
+{% endtab %}
+{% endtabs %}

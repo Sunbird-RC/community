@@ -118,6 +118,13 @@ The registry requires a main DB that is used as the main store for storing all d
 
 #### **The registry is throwing unauthorized issues (401) on retrieving entity. The registry throws "getaddrinfo ENOTFOUND keycloak" error.**
 
+If you are using registry version v1.0.0, you can upgrade to v1.0.1 to resolve this without any host changes -
+
+1. Upgrade to v1.0.1 registry version
+2. In keycloak set your frontend url to the host from where you are generating a token ie `http:localhost:8080/auth`&#x20;
+3. Recreate the registry container and generate new token and use
+
+With host changes -\
 In dev/local setup, it is required that keycloak hostname is added to '/etc/hosts' file.
 
 ```bash

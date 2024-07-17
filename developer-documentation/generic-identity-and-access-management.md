@@ -7,7 +7,7 @@ description: >-
 
 # Generic Identity And Access Management
 
-> Generic IAM is part of release-1.0.0
+> Generic IAM is part of release-1.0.0 and above
 
 SunbirdRC requires an IAM platform for mainly two purposes.
 
