@@ -36,7 +36,7 @@ Run `node -v` in the terminal if `node` has been installed correctly:
 
 ```
 $ node -v
-v16.13.0
+v16.20.2
 ```
 
 ### Docker
@@ -66,10 +66,10 @@ Docker Compose version 2.0.1
 To install the official Registry CLI, run:
 
 ```
-$ npm install --global registry-cli
+$ npm install --global @sunbird-rc/registry-cli
 ```
 
-> In case you encounter a permission denied/access denied error here, prefix the command with `sudo`: `sudo npm install --global registry-cli`.
+> In case you encounter a permission denied/access denied error here, prefix the command with `sudo`: `sudo npm install --global` @sunbird-rc/registry-cli
 
 To check if the Registry CLI has been installed correctly, run:
 
