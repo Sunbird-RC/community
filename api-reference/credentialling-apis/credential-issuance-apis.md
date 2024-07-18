@@ -20,6 +20,6 @@
 [https://raw.githubusercontent.com/Sunbird-RC/sunbird-rc-core/main/api-documentation/issue-api.yaml](https://raw.githubusercontent.com/Sunbird-RC/sunbird-rc-core/main/api-documentation/issue-api.yaml)
 {% endswagger %}
 
-{% swagger src="https://raw.githubusercontent.com/Sunbird-RC/sunbird-rc-core/main/api-documentation/issue-api.yaml" path="/revocation-list" method="get" %}
+{% swagger src="https://raw.githubusercontent.com/Sunbird-RC/sunbird-rc-core/main/api-documentation/issue-api.yaml" path="/credentials/revocation-list" method="get" %}
 [https://raw.githubusercontent.com/Sunbird-RC/sunbird-rc-core/main/api-documentation/issue-api.yaml](https://raw.githubusercontent.com/Sunbird-RC/sunbird-rc-core/main/api-documentation/issue-api.yaml)
 {% endswagger %}
