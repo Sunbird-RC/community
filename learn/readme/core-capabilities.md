@@ -35,7 +35,7 @@ A governing body/authority would be able to build registry that acts as a single
 * Multi-level attestation for a claim can be created i.e. the claim can be reviewed by multiple parties or levels of approval.
 * Define Validity
 
-2. &#x20;**Consent:**
+2. **Consent:**
 
 * Grant or Revoke Consent: Able to receive consent requests to grant or revoke the consent access.
 * Consent Auditing
@@ -52,7 +52,7 @@ A governing body/authority would be able to build registry that acts as a single
 * Offline verification of Verifiable Credentials:[ Reference SDK](https://docs.sunbirdrc.dev/vc-verification-module)
 * Consent based access: Able to provide consent to another system/person to access Verifiable Credentials for the purpose of transaction/interaction.
 
-### Digital Wallet
+### Digital Wallet (Comming soon...)
 
 Citizen (credential owners/holders) can access Verifiable Credentials anytime anywhere.
 
