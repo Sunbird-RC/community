@@ -52,9 +52,9 @@ A governing body/authority would be able to build registry that acts as a single
 * Offline verification of Verifiable Credentials:[ Reference SDK](https://docs.sunbirdrc.dev/vc-verification-module)
 * Consent based access: Able to provide consent to another system/person to access Verifiable Credentials for the purpose of transaction/interaction.
 
-### Digital Wallet (Comming soon...)
+### Digital Wallet (Coming soon...)
 
 Citizen (credential owners/holders) can access Verifiable Credentials anytime anywhere.
 
-1. Fetch and store personal verifiable credentials :With digital wallet, individuals can access their credentials anytime anywhere as the wallet can fetch and store the issued credentials from various entities.
-2. Consent based sharing of verifiable credentials:The digital wallet also enables consent-based sharing of verifiable credentials with third parties, such as employers, service providers, or other organizations that require proof of identity ,qualifications, association etc. This means that the individuals can control who has access to their personal information and can choose to share only the necessary information for a specific purpose.
+1. Fetch and store personal verifiable credentials: With digital wallet, individuals can access their credentials anytime anywhere as the wallet can fetch and store the issued credentials from various entities.
+2. Consent based sharing of verifiable credentials: The digital wallet also enables consent-based sharing of verifiable credentials with third parties, such as employers, service providers, or other organizations that require proof of identity ,qualifications, association etc. This means that the individuals can control who has access to their personal information and can choose to share only the necessary information for a specific purpose.
