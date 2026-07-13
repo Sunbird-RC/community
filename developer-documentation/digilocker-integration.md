@@ -9,7 +9,7 @@ description: >-
 ## Pre-requisites
 
 * Partner account in digilocker. [https://partners.digitallocker.gov.in/](https://partners.digitallocker.gov.in/)
-* Understand how digilocker issuer API works [https://partners.digitallocker.gov.in/assets/img/digital\_locker\_issuer\_api\_specification%20v1.10.pdf](https://partners.digitallocker.gov.in/assets/img/digital\_locker\_issuer\_api\_specification%20v1.10.pdf)
+* Understand how digilocker issuer API works [https://partners.digitallocker.gov.in/assets/img/digital\_locker\_issuer\_api\_specification%20v1.10.pdf](https://partners.digitallocker.gov.in/assets/img/digital_locker_issuer_api_specification%20v1.10.pdf)
 
 _**Note: Currently digilocker doesn't have a sandbox environment to test the integration. Testing needs to be performed on the production account. So be careful and conscious before making any changes in the partner portal.**_
 
@@ -25,7 +25,7 @@ _**Note: Currently digilocker doesn't have a sandbox environment to test the int
 * `Search API Id`: You need to give a unique name to your API Id. This id will be passed to your backend for retrieving the VC
 * `Search API Description:` You can update this as per your business functionality.
 * `API Key:` You need to create a new unique and secure API key. This key will be used to generate the HMAC of the request body sent by digilocker. This key needs to be kept secure and confidential.
-* `Rest API Service URL:` You need to specify the SunbirdRC URL to access the VC. Ex: \`[https://\<host>/digilocker/v1/digilocker/pullUriRequest](broken-reference/)\`
+* `Rest API Service URL:` You need to specify the SunbirdRC URL to access the VC. Ex: \`[https://\<host>/digilocker/v1/digilocker/pullUriRequest](https://github.com/Sunbird-RC/community/blob/v2.0.0/developer-documentation/broken-reference/README.md)\`
 * And click on `Next`
 
 <figure><img src="../.gitbook/assets/image3.png" alt=""><figcaption></figcaption></figure>
@@ -80,7 +80,7 @@ Following is the sample JSON file.
 
 Example JSON file:
 
-`The below sample JSON is configured to fetch the` [`Pre Matric Scholarship`](https://github.com/Sunbird-RC/demo-education-registry/blob/federated\_edu\_registry/sample\_schemas/PreMatricScholarship.json) `Credential`
+`The below sample JSON is configured to fetch the` [`Pre Matric Scholarship`](https://github.com/Sunbird-RC/demo-education-registry/blob/federated_edu_registry/sample_schemas/PreMatricScholarship.json) `Credential`
 
 ```json
 {

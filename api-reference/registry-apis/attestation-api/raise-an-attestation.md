@@ -1,23 +1,24 @@
 # Raise An Attestation
 
-{% swagger method="post" path="/api/v1/send" baseUrl=" " summary="Making a Claim" expanded="true" %}
-{% swagger-description %}
+## Making a Claim
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `/api/v1/send`
 
-{% swagger-parameter in="header" name="content-type" required="true" %}
-Set to `application/json`
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="header" name="authorization" required="false" %}
-Set to `Bearer {access-token}` if roles in schema of which attestation is to raised does not contain `anonymous` else token can be empty
-{% endswagger-parameter %}
+| Name                                           | Type   | Description                                                                                                                              |
+| ---------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| content-type<mark style="color:red;">\*</mark> | String | Set to `application/json`                                                                                                                |
+| authorization                                  | String | Set to `Bearer {access-token}` if roles in schema of which attestation is to raised does not contain `anonymous` else token can be empty |
 
-{% swagger-parameter in="body" name="..." type="Object" required="true" %}
-The value of the claim
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-response status="200: OK" description="Success Response of attestation sent" %}
+| Name                                  | Type   | Description            |
+| ------------------------------------- | ------ | ---------------------- |
+| ...<mark style="color:red;">\*</mark> | Object | The value of the claim |
+
+{% tabs %}
+{% tab title="200: OK Success Response of attestation sent" %}
 ```json
 {
     "id": "sunbird-rc.registry.send",
@@ -36,8 +37,8 @@ The value of the claim
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 Sample Request Body
 
@@ -53,7 +54,7 @@ Sample Request Body
 
 \
 \
-If you retrieve the entity by the [Retrieve Entity API Endpoint](../../attestation-api/broken-reference/), you can see the `id` field in `osid`
+If you retrieve the entity by the [Retrieve Entity API Endpoint](https://github.com/Sunbird-RC/community/blob/v2.0.0/api-reference/attestation-api/broken-reference/README.md), you can see the `id` field in `osid`
 
 ### Usage
 
