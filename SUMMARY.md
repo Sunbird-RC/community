@@ -84,6 +84,7 @@
   * [Credentialing](use/latest-release-v1.0.0/credentialing/README.md)
     * [v2.0.0](use/latest-release-v1.0.0/credentialing/v2.0.0.md)
     * [v2.0.3](use/latest-release-v1.0.0/credentialing/v2.0.3.md)
+    * [v2.1.0](use/latest-release-v1.0.0/credentialing/v2.1.0.md)
 * [Admin Portal](use/admin-portal/README.md)
   * [Login](use/admin-portal/login.md)
   * [Get Started](use/admin-portal/get-started/README.md)
