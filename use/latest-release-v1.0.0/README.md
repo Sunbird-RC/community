@@ -1,4 +1,16 @@
-# Release Notes
+# Releases
+
+### Version 2.1.0 (Latest)
+
+Date of Release - 10 August 2026
+
+[Release Notes](credentialing/v2.1.0-latest.md)
+
+### Version 2.0.3
+
+Date of Release - 21 May 2026
+
+[Release Notes](release-notes/#version-2.0.3)
 
 ### Version 1.0.0
 
