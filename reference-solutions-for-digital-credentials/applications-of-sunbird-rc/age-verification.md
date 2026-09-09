@@ -49,14 +49,7 @@ citizen sees who is asking and what they want, and consents. The verifier checks
 the signature, the issuer, the holder binding, the nonce and the audience — and
 only then applies its rule.
 
-```mermaid
-flowchart LR
-  C[Citizen] --> I[Identity authority]
-  I -->|Age Verification Credential| W[Citizen wallet]
-  S[Age-restricted service] -->|Requests ageOver18 only| W
-  W -->|Consented presentation| S
-  S --> D[Approved or denied]
-```
+![Citizen obtains an Age Verification Credential from the identity authority, stores it in a wallet, and presents only ageOver18 to an age-restricted service](../../.gitbook/assets/age-verification-journey.png)
 
 ## How Sunbird RC enables it
 
@@ -92,7 +85,7 @@ answers and are reported differently.
 
 | Requested and disclosed | Never requested |
 | ----------------------- | --------------- |
-| `ageOver18` | Date of birth, name, address, gender, district, state, citizen identifier, holder identifier |
+| `ageOver18` | Date of birth, name, gender, district, state, citizen identifier, holder identifier |
 
 A refusal is also a valid outcome. If the citizen declines, the service is told
 **no data was shared** — reported as a refusal, never as a verification error or

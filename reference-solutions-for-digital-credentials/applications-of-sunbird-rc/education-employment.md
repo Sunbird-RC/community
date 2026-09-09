@@ -60,21 +60,7 @@ authorities, one holder key.
 Then two different organisations ask two different questions of that same
 evidence.
 
-```mermaid
-flowchart LR
-  L[Learner] --> S[School issuer]
-  L --> C[College issuer]
-  L --> U[University issuer]
-  S -->|School Record Credential| W[Learner wallet]
-  C -->|College Record Credential| W
-  U -->|University Record Credential| W
-  M[University admissions] -->|Requests three credentials| W
-  J[Employer] -->|Requests three credentials| W
-  W -->|Consented presentation| M
-  W -->|Consented presentation| J
-  M --> MA[Admission-pool eligibility]
-  J --> JA[Interview-round eligibility]
-```
+![Learner obtains three credentials from school, college and university issuers, and presents the same three to university admissions and to an employer, which reach different eligibility answers](../../.gitbook/assets/education-employment-journey.png)
 
 ## The point of this example
 
@@ -161,9 +147,15 @@ offer, an appointment or a final selection.
 
 ## What each verifier learns
 
+The withheld list is not written by hand on this page. It is version-controlled
+beside the requests it is the complement of, served from the verifier's
+`/policy` endpoint, and asserted by a test against the registry schemas — so if
+a future request started asking for one of these, the claim would break loudly
+rather than quietly become untrue.
+
 | Disclosed | Never requested by either |
 | --------- | ------------------------- |
-| `learnerId`, completion status, degree level, field of study, and the percentages the rule uses | National identifier, school/college/university student identifiers, name, address, date of birth, contact details, transcripts, subject-level marks, unrelated credentials |
+| `learnerId`, completion status, degree level, field of study, and the percentages the rule uses | National identifier, school/college/university student identifiers, name, address, date of birth, contact details, transcripts, subject-level marks, college qualification and specialization, completion and graduation years |
 
 ## Watch the demonstration
 

@@ -60,18 +60,7 @@ The bank then does what neither registry can do alone: it checks that the
 asserting facts about the same identifier, verified by a third party that trusts
 neither with a database connection.
 
-```mermaid
-flowchart LR
-  F[Farmer] --> FR[Farmer registry]
-  F --> LR[Land registry]
-  FR -->|Farmer Identity Credential| W[Farmer wallet]
-  LR -->|Land Ownership Credential| W
-  B[Bank] -->|Requests both credentials| W
-  W -->|One consented presentation| B
-  B --> C{Same farmerId?}
-  C -->|Yes| D[Eligibility and loan ceiling]
-  C -->|No| R[Rejected: unable to verify]
-```
+![Farmer obtains credentials from the farmer registry and the land registry, and presents both to a bank, which checks the farmerId matches before deciding](../../.gitbook/assets/agriculture-rural-credit-journey.png)
 
 ## How Sunbird RC enables it
 
@@ -96,9 +85,10 @@ mint the other's.
 | Farmer Identity Credential | Farmer registry | `farmerId`, `registeredFarmer` |
 | Land Ownership Credential | Land registry | `farmerId`, `ownershipStatus`, `cropType`, `cultivatedAreaAcres` |
 
-Illustrative values, all synthetic: `farmerId: FRM-KA-0041`,
-`registeredFarmer: true`, `ownershipStatus: ACTIVE`, `cropType: WHEAT`,
-`cultivatedAreaAcres: 3.5`.
+Illustrative values, taken from the synthetic fixture the demonstration
+actually seeds: `farmerId: FRM-KA-0041`, `registeredFarmer: true`,
+`ownershipStatus: ACTIVE`, `cropType: PADDY`, `cultivatedAreaAcres: 4`. Against
+the rate table below that is 30,000 x 4 = an indicative ₹1,20,000.
 
 ### Correlation and multi-credential verification
 
@@ -130,9 +120,14 @@ loan, a disbursement or a commitment, and the application says so on screen.
 
 ## What the bank learns
 
+Everything in the right-hand column is a field the two registries genuinely
+hold and the bank never receives — not a hypothetical. Note in particular
+`landAreaAcres`: the bank learns the **cultivated** area its rule needs, and
+not the farmer's total holding.
+
 | Disclosed | Never requested |
 | --------- | --------------- |
-| `farmerId`, `registeredFarmer`, `ownershipStatus`, `cropType`, `cultivatedAreaAcres` | Name, address, national identifier, contact details, bank details, total land holding, other plots, other crops |
+| `farmerId`, `registeredFarmer`, `ownershipStatus`, `cropType`, `cultivatedAreaAcres` | National identifier, farmer category, district, state, land parcel identifier, total land area |
 
 ## Watch the demonstration
 

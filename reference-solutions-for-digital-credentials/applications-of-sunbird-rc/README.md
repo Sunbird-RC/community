@@ -37,24 +37,7 @@ The complete source, configuration, tests and evidence for all three
 Every application follows the same six steps. Only the domain, the policy and the
 number of credentials change.
 
-```
-Authoritative sector records
-            │
-            ▼
-    Sunbird RC Registry
-            │
-            ▼
-   Trusted credential issuer
-            │
-            ▼
- Standards-compatible wallet
-            │  holder consent, selected information only
-            ▼
-  Verifier or relying service
-            │
-            ▼
-Trusted service, entitlement or decision
-```
+![The common pattern: authoritative sector records become registry entries, an issuer derives a credential, a wallet holds it, and a verifier applies its own rule](../../.gitbook/assets/sunbird-rc-credential-pattern.png)
 
 1. Model authoritative records as Registry schemas.
 2. Connect authenticated users to their own records.
@@ -95,6 +78,27 @@ Each ecosystem still has to decide, deliberately:
 * wallet and protocol-profile compatibility;
 * each verifier's purpose, policy and user-facing outcome; and
 * production privacy, security, revocation and audit controls.
+
+## What these examples run on
+
+The registry, credential, identity and schema services are released Sunbird RC
+**v2.1.0**, unmodified.
+
+One capability is not yet in a release. All three applications issue
+**wallet-driven**: the holder signs in and the wallet fetches the credential
+straight from the issuer, with no QR code and no issuer web page. That uses the
+OpenID4VCI `authorization_code` grant with an external authorization server,
+which released `v2.1.0` does not yet support — it offers the pre-authorised
+grant. The demonstration therefore runs `oid4vc-service` with that capability
+added, and the change has been proposed upstream:
+
+{% embed url="https://github.com/Sunbird-RC/sunbird-rc-core/pull/371" %}
+feat(oid4vc-service): Keycloak-as-authorization-server issuance, and issuer authorization on the credential endpoint
+{% endembed %}
+
+It is an opt-in addition: with no authorization server configured the service
+behaves exactly as `v2.1.0` does, and existing pre-authorised deployments are
+unaffected. Everything else on these pages runs on the released images.
 
 ## About the data in these examples
 
