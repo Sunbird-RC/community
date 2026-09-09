@@ -131,6 +131,17 @@ not the farmer's total holding.
 
 ## Watch the demonstration
 
+<!-- VIDEO SLOT - not yet published.
+     When the clip is live on the Sunbird YouTube channel, replace this
+     whole comment with the embed below, keeping the caption line.
+     Source film: RC_video/New_Flow/Agri_Demo/Agriculture-Rural-Credit-Showcase-31Aug.mp4
+     Suggested title: Sunbird RC — Agriculture and rural credit: two registries, one consented presentation
+
+     {% embed url="https://youtu.be/VIDEO_ID" %}
+     Rural credit: two independent registries attest separately, and a bank correlates them without a shared database
+     {% endembed %}
+-->
+
 {% embed url="https://github.com/Sunbird-RC/sunbird-rc-reference-implementations/tree/main/docs/evidence/02-agriculture" %}
 Acceptance evidence, captured test runs and the recorded walkthrough
 {% endembed %}

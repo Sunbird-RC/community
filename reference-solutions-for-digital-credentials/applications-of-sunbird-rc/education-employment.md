@@ -159,6 +159,17 @@ rather than quietly become untrue.
 
 ## Watch the demonstration
 
+<!-- VIDEO SLOT - not yet published.
+     When the clip is live on the Sunbird YouTube channel, replace this
+     whole comment with the embed below, keeping the caption line.
+     Source film: RC_video/New_Flow/Edu_Demo/Education-Employment-Showcase-01Sep.mp4
+     Suggested title: Sunbird RC — Education and employment: three credentials, two decisions, two different answers
+
+     {% embed url="https://youtu.be/VIDEO_ID" %}
+     Education and employment: the same three qualifications give a university and an employer different answers
+     {% endembed %}
+-->
+
 {% embed url="https://github.com/Sunbird-RC/sunbird-rc-reference-implementations/tree/main/docs/evidence/03-education" %}
 Acceptance evidence, captured test runs and the recorded walkthrough
 {% endembed %}

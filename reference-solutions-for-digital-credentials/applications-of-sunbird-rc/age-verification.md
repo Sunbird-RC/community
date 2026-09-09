@@ -102,6 +102,17 @@ carries no other entitlement.
 
 ## Watch the demonstration
 
+<!-- VIDEO SLOT - not yet published.
+     When the clip is live on the Sunbird YouTube channel, replace this
+     whole comment with the embed below, keeping the caption line.
+     Source film: RC_video/New_Flow/27-08-2016/Age-Verification-Showcase-27Aug.mp4
+     Suggested title: Sunbird RC — Age verification: prove you are over 18 without revealing your date of birth
+
+     {% embed url="https://youtu.be/VIDEO_ID" %}
+     Age verification: one credential, one disclosed fact, and a date of birth that never leaves the registry
+     {% endembed %}
+-->
+
 {% embed url="https://github.com/Sunbird-RC/sunbird-rc-reference-implementations/tree/main/docs/evidence/01-age" %}
 Acceptance evidence, captured test runs and the recorded walkthrough
 {% endembed %}
